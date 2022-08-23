@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Background | My Report</title>
   <meta name="description" content="My Description." />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Background | My Report" />
   <meta property="og:type" content="book" />
@@ -29,7 +29,7 @@
   
   
 <link rel="prev" href="intro.html"/>
-<link rel="next" href="references.html"/>
+<link rel="next" href="qml-file-manipulation.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,6 +50,8 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 <script type="text/javascript">
 
@@ -186,6 +188,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Acknowledgement</a></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="background.html"><a href="background.html"><i class="fa fa-check"></i><b>2</b> Background</a></li>
+<li class="chapter" data-level="3" data-path="qml-file-manipulation.html"><a href="qml-file-manipulation.html"><i class="fa fa-check"></i><b>3</b> qml file manipulation</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="chapter" data-level="" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i>Session Info</a></li>
 <li class="divider"></li>
@@ -212,7 +215,7 @@ div.csl-indent {
 <h1><span class="header-section-number">2</span> Background<a href="background.html#background" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="project-location" class="section level2 hasAnchor" number="2.1">
 <h2><span class="header-section-number">2.1</span> Project Location<a href="background.html#project-location" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="background.html#cb6-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/nge-icon_name.png&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="background.html#cb5-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/nge-icon_name.png&quot;</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:overview-map"></span>
 <img src="fig/nge-icon_name.png" alt="Overview map of Study Areas" width="100%" />
 <p class="caption">
@@ -220,9 +223,9 @@ Figure 2.1: Overview map of Study Areas
 </p>
 </div>
 <p><br></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="background.html#cb7-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/nge-icon_name.png&quot;</span>)</span>
-<span id="cb7-2"><a href="background.html#cb7-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/pixel.png&quot;</span>)</span>
-<span id="cb7-3"><a href="background.html#cb7-3" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/nge-icon_name.png&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="background.html#cb6-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/nge-icon_name.png&quot;</span>)</span>
+<span id="cb6-2"><a href="background.html#cb6-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/pixel.png&quot;</span>)</span>
+<span id="cb6-3"><a href="background.html#cb6-3" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">&quot;fig/nge-icon_name.png&quot;</span>)</span></code></pre></div>
 <div class="figure"><span style="display:block;" id="fig:hydrology-plot"></span>
 <img src="fig/nge-icon_name.png" alt="Hydrograph for Bulkley River at Quick (Station #08EE004) and near Houston (Station #08EE003)." width="49.5%" /><img src="fig/pixel.png" alt="Hydrograph for Bulkley River at Quick (Station #08EE004) and near Houston (Station #08EE003)." width="1%" /><img src="fig/nge-icon_name.png" alt="Hydrograph for Bulkley River at Quick (Station #08EE004) and near Houston (Station #08EE003)." width="49.5%" />
 <p class="caption">
@@ -239,7 +242,7 @@ Figure 2.2: Hydrograph for Bulkley River at Quick (Station #08EE004) and near Ho
         </div>
       </div>
 <a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="qml-file-manipulation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

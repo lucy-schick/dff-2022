@@ -1,0 +1,6548 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 qml file manipulation | Digital Field Forms</title>
+  <meta name="description" content="My Description." />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 qml file manipulation | Digital Field Forms" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="My Description." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 qml file manipulation | Digital Field Forms" />
+  
+  <meta name="twitter:description" content="My Description." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<script type="text/javascript">
+
+// toggle visibility of R source blocks in R Markdown output
+function toggle_R() {
+  var x = document.getElementsByClassName('r');
+  if (x.length == 0) return;
+  function toggle_vis(o) {
+    var d = o.style.display;
+    o.style.display = (d == 'block' || d == '') ? 'none':'block';
+  }
+
+  for (i = 0; i < x.length; i++) {
+    var y = x[i];
+    if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+  }
+
+    var elem = document.getElementById("myButton1");
+    if (elem.value === "Show/Hide Code") elem.value = "Show/Hide Code";
+    else elem.value = "Show/Hide Code";
+}
+
+document.write('<input onclick="toggle_R();" type="button" value="Show/Hide Code" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+
+document.addEventListener('DOMContentLoaded', toggle_R);
+
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Template</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Acknowledgement</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="qml-file-manipulation.html"><a href="qml-file-manipulation.html"><i class="fa fa-check"></i><b>2</b> qml file manipulation</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="session-info.html"><a href="session-info.html"><i class="fa fa-check"></i>Session Info</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/NewGraphEnvironment/dff-2022" target="blank">Scripts and Data</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Digital Field Forms</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="qml-file-manipulation" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> qml file manipulation<a href="qml-file-manipulation.html#qml-file-manipulation" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>We should look to see what the qml files look like so we can manipulate them with data like comments downloaded from <code>bcdata</code> and from custom csv files that could hold the info we want to turn into forms.</p>
+<p><br></p>
+<p>Let’s try loading one with only the <code>form</code> exported and inspect.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="qml-file-manipulation.html#cb5-1" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read.delim</span>(<span class="st">&quot;data/survey_form_only.qml&quot;</span>)</span>
+<span id="cb5-2"><a href="qml-file-manipulation.html#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="qml-file-manipulation.html#cb5-3" aria-hidden="true" tabindex="-1"></a>my_data <span class="sc">%&gt;%</span> </span>
+<span id="cb5-4"><a href="qml-file-manipulation.html#cb5-4" aria-hidden="true" tabindex="-1"></a>  fpr<span class="sc">::</span><span class="fu">fpr_kable</span>()</span></code></pre></div>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:500px; overflow-x: scroll; width:100%; ">
+<table class="table table-condensed table-responsive" style="font-size: 11px; margin-left: auto; margin-right: auto;">
+<caption style="font-size: initial !important;">
+<span id="tab:unnamed-chunk-3">Table 2.1: </span>
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+X..DOCTYPE.qgis.PUBLIC..http…mrcc.com.qgis.dtd…SYSTEM..
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+&lt;qgis styleCategories=Forms version=3.22.3-Białowieża&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;fieldConfiguration&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=fid&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=date&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=DateTime&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=allow_null/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=calendar_popup/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=yyyy-MM-dd name=display_format/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=yyyy-MM-dd name=field_format/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=field_iso_format/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=camera_id&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=gps_id&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=gps_waypoint_id&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=pscis_crossing_id&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=my_crossing_reference&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=crew_members&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=utm_zone&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=double value=11 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=double value=7 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=double value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=easting&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=northing&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=stream_name&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=road_name&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=road_km_mark&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=road_tenure&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=crossing_type&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ValueMap&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=List name=map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=CBS name=CBS/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=OBS name=OBS/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=OTHER name=OTHER/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=crossing_subtype&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ValueMap&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=List name=map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=BRIDGE name=BRIDGE/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=CRTBOX name=CRTBOX/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=FORD name=FORD/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=OVAL name=OVAL/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=PIPEARCH name=PIPEARCH/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=ROUND name=ROUND/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=WEIR name=WEIR/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=WOODBOX name=WOODBOX/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=diameter_or_span_meters&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=length_or_width_meters&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=continuous_embeddedment_yes_no&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=CheckBox&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=Yes name=CheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=TextDisplayMethod/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=No name=UncheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=average_depth_embededdment_meters&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=resemble_channel_yes_no&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=CheckBox&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=Yes name=CheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=TextDisplayMethod/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=No name=UncheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=backwatered_yes_no&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=CheckBox&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=Yes name=CheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=TextDisplayMethod/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=No name=UncheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=percentage_backwatered&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=fill_depth_meters&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=outlet_drop_meters&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=outlet_pool_depth_0_01m&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=inlet_drop_yes_no&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=CheckBox&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=Yes name=CheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=TextDisplayMethod/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=No name=UncheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=culvert_slope_percent&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=downstream_channel_width_meters&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=stream_slope&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=beaver_activity_yes_no&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=CheckBox&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=Yes name=CheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=TextDisplayMethod/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=No name=UncheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=fish_observed_yes_no&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=CheckBox&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=Yes name=CheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=TextDisplayMethod/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=No name=UncheckedState/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=valley_fill&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ValueMap&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=List name=map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=BR name=BR/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=DF name=DF/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SF name=SF/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=habitat_value&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ValueMap&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=List name=map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=HIGH name=HIGH/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=LOW name=LOW/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=MEDIUM name=MEDIUM/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=stream_width_ratio&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=barrier_result&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=crossing_fix&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=recommended_diameter_or_span_meters&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=assessment_comment&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=source&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=aggregated_crossings_id&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=2147483647 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=-2147483648 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=time_start&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=date_time_start&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=DateTime&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=allow_null/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=calendar_popup/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=yyyy-MM-dd HH:mm:ss name=display_format/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=yyyy-MM-dd HH:mm:ss name=field_format/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=field_iso_format/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=utm_corrected&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=CheckBox&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=utm_corrected_easting&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=utm_corrected_northing&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=embankment_issues&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=3 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=blockage_issues&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=3 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=flooding&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=5 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=mergin_user&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=TextEdit&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=IsMultiline/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=false name=UseHtml/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=erosion&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=5 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=debris_accumulation&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=5 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=deforming&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=5 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=corrosion_rust&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=5 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=piping_leakage&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=Range&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=AllowNull/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=5 name=Max/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Min/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=Precision/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=Step/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=SpinBox name=Style/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=photo_road&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ExternalResource&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString <a href="mailto:value=@project" class="email">value=@project</a>_folder + ‘/photos’ name=DefaultRoot/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=DocumentViewer/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerHeight/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerWidth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidget/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidgetButton/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=FileWidgetFilter/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=PropertyCollection&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=properties&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=propertyRootPath&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=active/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString <a href="mailto:value=@project" class="email">value=@project</a>_home + ‘/photos’ name=expression/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=3 name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=collection name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=RelativeStorage/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageAuthConfigId/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=StorageMode/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageType/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=photo_upstream&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ExternalResource&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=DocumentViewer/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerHeight/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerWidth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidget/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidgetButton/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=FileWidgetFilter/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=PropertyCollection&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=properties&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=propertyRootPath&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=active/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString <a href="mailto:value=@project" class="email">value=@project</a>_home + ‘/photos’ name=expression/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=3 name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=collection name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=RelativeStorage/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageAuthConfigId/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=StorageMode/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageType/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=photo_inlet&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ExternalResource&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=DocumentViewer/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerHeight/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerWidth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidget/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidgetButton/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=FileWidgetFilter/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=PropertyCollection&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=properties&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=propertyRootPath&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=active/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString <a href="mailto:value=@project" class="email">value=@project</a>_home + ‘/photos’ name=expression/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=3 name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=collection name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=RelativeStorage/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageAuthConfigId/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=StorageMode/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageType/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=photo_downstream&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ExternalResource&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=DocumentViewer/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerHeight/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerWidth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidget/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidgetButton/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=FileWidgetFilter/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=PropertyCollection&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=properties&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=propertyRootPath&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=active/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString <a href="mailto:value=@project" class="email">value=@project</a>_home + ‘/photos’ name=expression/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=3 name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=collection name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=RelativeStorage/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageAuthConfigId/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=StorageMode/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageType/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=photo_outlet&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ExternalResource&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=DocumentViewer/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerHeight/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerWidth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidget/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidgetButton/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=FileWidgetFilter/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=PropertyCollection&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=properties&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=propertyRootPath&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=active/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString <a href="mailto:value=@project" class="email">value=@project</a>_home + ‘/photos’ name=expression/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=3 name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=collection name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=RelativeStorage/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageAuthConfigId/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=StorageMode/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageType/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field name=photo_barrel&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editWidget type=ExternalResource&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=DocumentViewer/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerHeight/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=DocumentViewerWidth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidget/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=FileWidgetButton/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=FileWidgetFilter/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=PropertyCollection&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=properties&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=Map name=propertyRootPath&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=bool value=true name=active/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString <a href="mailto:value=@project" class="email">value=@project</a>_home + ‘/photos’ name=expression/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=3 name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value=collection name=type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=1 name=RelativeStorage/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageAuthConfigId/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=int value=0 name=StorageMode/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;Option type=QString value= name=StorageType/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/Option&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/config&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editWidget&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/field&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/fieldConfiguration&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editform tolerant=1&gt;&lt;/editform&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editforminit/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editforminitcodesource&gt;0&lt;/editforminitcodesource&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editforminitfilepath&gt;&lt;/editforminitfilepath&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editforminitcode&gt;&lt;[CDATA[# -<em>- coding: utf-8 -</em>- ]]&gt;&lt;/editforminitcode&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;featformsuppress&gt;0&lt;/featformsuppress&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editorlayout&gt;tablayout&lt;/editorlayout&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorForm&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorContainer showLabel=1 visibilityExpressionEnabled=0 name=Location and Overview Information groupBox=1 visibilityExpression= backgroundColor=#ffffff columnCount=1&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=crew_members index=7/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=date index=1/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=date_time_start index=43/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=mergin_user index=50/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=gps_id index=3/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=camera_id index=2/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=gps_waypoint_id index=4/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=pscis_crossing_id index=5/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=my_crossing_reference index=6/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=utm_zone index=8/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=easting index=9/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=northing index=10/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=stream_name index=11/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=road_name index=12/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=road_km_mark index=13/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=road_tenure index=14/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/attributeEditorContainer&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorContainer showLabel=1 visibilityExpressionEnabled=0 name=Field Observations and Assessment Measurements groupBox=1 visibilityExpression= backgroundColor=#ffffff columnCount=1&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=crossing_type index=15/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=crossing_subtype index=16/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=diameter_or_span_meters index=17/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=length_or_width_meters index=18/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/attributeEditorContainer&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorContainer showLabel=1 visibilityExpressionEnabled=1 name=Stream Information groupBox=1 visibilityExpression= &amp;quot;crossing_type&amp;quot; = ‘CBS’ backgroundColor=#ffffff columnCount=1&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=continuous_embeddedment_yes_no index=19/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorContainer showLabel=0 visibilityExpressionEnabled=1 name=Embeddedment groupBox=1 visibilityExpression= &amp;quot;continuous_embeddedment_yes_no&amp;quot; = ‘Yes’ columnCount=1&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=average_depth_embededdment_meters index=20/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/attributeEditorContainer&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=resemble_channel_yes_no index=21/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=backwatered_yes_no index=22/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorContainer showLabel=0 visibilityExpressionEnabled=1 name=Backwatered groupBox=1 visibilityExpression= &amp;quot;backwatered_yes_no&amp;quot; = ‘Yes’ columnCount=1&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=percentage_backwatered index=23/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/attributeEditorContainer&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=fill_depth_meters index=24/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=outlet_drop_meters index=25/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=outlet_pool_depth_0_01m index=26/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=inlet_drop_yes_no index=27/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=culvert_slope_percent index=28/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=downstream_channel_width_meters index=29/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=stream_slope index=30/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=valley_fill index=33/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=habitat_value index=34/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/attributeEditorContainer&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=beaver_activity_yes_no index=31/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=fish_observed_yes_no index=32/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=assessment_comment index=39/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorContainer showLabel=1 visibilityExpressionEnabled=0 name=Climate Risk/Maintenance groupBox=1 visibilityExpression= columnCount=1&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=embankment_issues index=47/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=blockage_issues index=48/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=piping_leakage index=55/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=flooding index=49/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=debris_accumulation index=52/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=deforming index=53/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=corrosion_rust index=54/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=erosion index=51/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/attributeEditorContainer&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorContainer showLabel=1 visibilityExpressionEnabled=0 name=Photos groupBox=1 visibilityExpression= backgroundColor=#ffffff columnCount=1&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=photo_road index=56/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=photo_barrel index=61/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=photo_upstream index=57/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=photo_inlet index=58/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=photo_outlet index=60/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;attributeEditorField showLabel=1 name=photo_downstream index=59/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/attributeEditorContainer&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/attributeEditorForm&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;editable&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=aggregated_crossings_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=assessment_comment/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=assessment_date/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=average_depth_embededdment/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=average_depth_embededdment_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=backwatered_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=backwatered_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=barrier_result/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=barrier_status/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=beaver_activity_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=beaver_activity_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=blockage_issues/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=blue_line_key/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=camera_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=continuous_embeddedment_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=continuous_embeddedment_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=corrosion/rust/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=corrosion_rust/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=crew_members/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=crossing_fix/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=crossing_subtype/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=crossing_subtype_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=crossing_type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=crossing_type_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=culvert_slope/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=culvert_slope_percent/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=dam_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=date/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=date_time_start/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=dbm_mof_50k_grid/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=debris_accumulation/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=deforming/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=diameter_or_span/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=diameter_or_span_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=downstream_channel_width/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=downstream_channel_width1/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=downstream_channel_width2/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=downstream_channel_width3/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=downstream_channel_width_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=easting/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=embankment_issues/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=erosion/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=external_crossing_reference/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=fid/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=fill_depth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=fill_depth_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=fish_observed_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=fish_observed_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=flooding/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=ften_client_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=ften_client_number/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=ften_file_type_description/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=ften_forest_file_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=funding_project_number/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=gnis_stream_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=gps_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=gps_waypoint_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=gps_wp/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=habitat_value/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=habitat_value_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=inlet_drop_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=inlet_drop_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=lat/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=length_or_width/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=length_or_width_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=linear_feature_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=lon/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=mergin_user/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=modelled_crossing_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=my_crossing_reference/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=northing/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=observedspp_upstr/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=outlet_drop/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=outlet_drop_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=outlet_pool_depth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=outlet_pool_depth_0_01m/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=percentage_backwatered/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=photo/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=photo_barrel/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=photo_downstream/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=photo_inlet/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=photo_outlet/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=photo_road/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=photo_upstream/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=piping_leakage/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=pscis_crossing_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=pscis_status/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=rail_owner_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=recommended_diameter_or_span_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=resemble_channel_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=resemble_channel_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=road_km_mark/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=road_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=road_tenure/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=source/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=stream_crossing_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=stream_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=stream_order/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=stream_slope/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=stream_width_ratio/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=surveyor/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=surveyor_camera/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=surveyor_gps/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=test/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=time_start/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=transport_line_structured_name_1/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=user_barrier_anthropogenic_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=utm_corrected/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=utm_corrected_easting/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=utm_corrected_northing/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=utm_easting/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=utm_easting_pscis/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=utm_northing/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=utm_northing_pscis/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=utm_zone/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=valley_fill/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=1 name=valley_fill_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field editable=0 name=watershed_group_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/editable&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;labelOnTop&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=aggregated_crossings_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=assessment_comment/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=assessment_date/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=average_depth_embededdment/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=average_depth_embededdment_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=backwatered_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=backwatered_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=barrier_result/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=barrier_status/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=beaver_activity_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=beaver_activity_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=blockage_issues/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=blue_line_key/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=camera_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=continuous_embeddedment_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=continuous_embeddedment_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=corrosion/rust/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=corrosion_rust/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=crew_members/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=crossing_fix/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=crossing_subtype/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=crossing_subtype_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=crossing_type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=crossing_type_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=culvert_slope/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=culvert_slope_percent/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=dam_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=date/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=date_time_start/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=dbm_mof_50k_grid/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=debris_accumulation/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=deforming/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=diameter_or_span/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=diameter_or_span_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=downstream_channel_width/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=downstream_channel_width1/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=downstream_channel_width2/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=downstream_channel_width3/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=downstream_channel_width_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=easting/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=embankment_issues/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=erosion/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=external_crossing_reference/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=fid/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=fill_depth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=fill_depth_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=fish_observed_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=fish_observed_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=flooding/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=ften_client_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=ften_client_number/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=ften_file_type_description/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=ften_forest_file_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=funding_project_number/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=gnis_stream_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=gps_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=gps_waypoint_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=gps_wp/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=habitat_value/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=habitat_value_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=inlet_drop_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=inlet_drop_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=lat/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=length_or_width/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=length_or_width_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=linear_feature_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=lon/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=mergin_user/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=modelled_crossing_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=my_crossing_reference/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=northing/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=observedspp_upstr/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=outlet_drop/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=outlet_drop_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=outlet_pool_depth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=outlet_pool_depth_0_01m/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=percentage_backwatered/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=photo/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=photo_barrel/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=photo_downstream/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=photo_inlet/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=photo_outlet/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=photo_road/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=photo_upstream/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=piping_leakage/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=pscis_crossing_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=pscis_status/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=rail_owner_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=recommended_diameter_or_span_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=resemble_channel_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=resemble_channel_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=road_km_mark/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=road_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=road_tenure/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=source/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=stream_crossing_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=stream_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=stream_order/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=stream_slope/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=stream_width_ratio/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=surveyor/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=surveyor_camera/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=surveyor_gps/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=test/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=time_start/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=transport_line_structured_name_1/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=user_barrier_anthropogenic_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=utm_corrected/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=utm_corrected_easting/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=utm_corrected_northing/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=utm_easting/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=utm_easting_pscis/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=utm_northing/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=utm_northing_pscis/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=utm_zone/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=valley_fill/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=valley_fill_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field labelOnTop=0 name=watershed_group_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/labelOnTop&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;reuseLastValue&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=aggregated_crossings_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=assessment_comment/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=assessment_date/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=average_depth_embededdment/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=average_depth_embededdment_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=backwatered_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=backwatered_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=barrier_result/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=barrier_status/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=beaver_activity_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=beaver_activity_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=blockage_issues/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=blue_line_key/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=camera_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=continuous_embeddedment_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=continuous_embeddedment_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=corrosion/rust/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=corrosion_rust/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=crew_members/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=crossing_fix/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=crossing_subtype/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=crossing_subtype_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=crossing_type/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=crossing_type_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=culvert_slope/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=culvert_slope_percent/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=dam_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=date/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=date_time_start/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=dbm_mof_50k_grid/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=debris_accumulation/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=deforming/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=diameter_or_span/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=diameter_or_span_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=downstream_channel_width/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=downstream_channel_width1/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=downstream_channel_width2/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=downstream_channel_width3/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=downstream_channel_width_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=easting/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=embankment_issues/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=erosion/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=external_crossing_reference/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=fid/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=fill_depth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=fill_depth_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=fish_observed_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=fish_observed_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=flooding/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=ften_client_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=ften_client_number/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=ften_file_type_description/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=ften_forest_file_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=funding_project_number/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=gnis_stream_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=gps_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=gps_waypoint_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=gps_wp/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=habitat_value/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=habitat_value_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=inlet_drop_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=inlet_drop_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=lat/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=length_or_width/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=length_or_width_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=linear_feature_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=lon/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=mergin_user/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=modelled_crossing_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=my_crossing_reference/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=northing/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=observedspp_upstr/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=outlet_drop/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=outlet_drop_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=outlet_pool_depth/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=outlet_pool_depth_0_01m/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=percentage_backwatered/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=photo/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=photo_barrel/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=photo_downstream/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=photo_inlet/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=photo_outlet/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=photo_road/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=photo_upstream/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=piping_leakage/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=pscis_crossing_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=pscis_status/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=rail_owner_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=recommended_diameter_or_span_meters/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=resemble_channel_ind/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=resemble_channel_yes_no/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=road_km_mark/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=road_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=road_tenure/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=source/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=stream_crossing_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=stream_name/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=stream_order/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=stream_slope/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=stream_width_ratio/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=surveyor/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=surveyor_camera/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=surveyor_gps/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=test/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=time_start/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=transport_line_structured_name_1/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=user_barrier_anthropogenic_id/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=utm_corrected/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=utm_corrected_easting/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=utm_corrected_northing/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=utm_easting/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=utm_easting_pscis/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=utm_northing/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=utm_northing_pscis/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=utm_zone/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=valley_fill/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=valley_fill_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;field reuseLastValue=0 name=watershed_group_code/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/reuseLastValue&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;dataDefinedFieldProperties/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;widgets/&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;layerGeometryType&gt;0&lt;/layerGeometryType&gt;
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+&lt;/qgis&gt;
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img src="fig/screenshots/qlm_form_export.png" /></p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "night",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Template.pdf", "Template.html"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

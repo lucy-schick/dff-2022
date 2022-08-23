@@ -1,5 +1,5 @@
 --- 
-title: "My Report"
+title: "Digital Field Forms"
 author: |
  |
  | Prepared for
@@ -7,13 +7,12 @@ author: |
  |
  |
  | Prepared by
- | Al Irvine, B.Sc., R.P.Bio.
+ | Al Irvine, B.Sc., R.P.Bio. and Mateo Winterscheidt, B.Sc.
  | New Graph Environment Ltd.
 
 date: |
  |
- | Version 0.0.1
- | `r format(Sys.Date(), "%Y-%m-%d")`
+ | Version 0.0.2 `r format(Sys.Date(), "%Y-%m-%d")`
 toc-title: Table of Contents
 site: bookdown::bookdown_site
 output: 
@@ -23,7 +22,7 @@ output:
 nocite: |
 
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography: [book.bib, packages.bib, references.bib]
 biblio-style: apalike
 link-citations: no
 github-repo: rstudio/bookdown-demo
@@ -91,48 +90,30 @@ title.innerHTML = '<img src="fig/nge-full_white.png" alt="NewGraph">' + title.in
 
 # Introduction {#intro}
 
-`r if(identical(gitbook_on, FALSE))knitr::asis_output("This report is available as pdf and as an online [interactive report](https://newgraphenvironment.github.io/mybookdown-template/) at https://newgraphenvironment.github.io/mybookdown-template/. We recommend viewing online as the web-hosted html version contains more features and is more easily navigable.")` 
-
-
-`r if(identical(gitbook_on, FALSE)){knitr::asis_output("<br>")}`
-
-
-
-
-## Header with no number {-}
-
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+We are going to 
 
 <!--chapter:end:0100-intro.Rmd-->
 
 
 
-# Background
+# qml file manipulation
 
-
-## Project Location
-
-```{r overview-map, fig.cap = 'Overview map of Study Areas',eval=T}
-knitr::include_graphics("fig/nge-icon_name.png")
-```
+We should look to see what the qml files look like so we can manipulate them with data like comments downloaded from `bcdata` and from custom csv files that could hold the info we want to turn into forms.
 
 <br>
 
-```{r hydrology-plot, fig.cap = 'Hydrograph for Bulkley River at Quick (Station #08EE004) and near Houston (Station #08EE003).', fig.show="hold", out.width= c("49.5%","1%","49.5%"), eval=T}
-knitr::include_graphics("fig/nge-icon_name.png")
-knitr::include_graphics("fig/pixel.png")
-knitr::include_graphics("fig/nge-icon_name.png")
+Let's try loading one with only the `form` exported and inspect.
+
+```{r}
+my_data <- read.delim("data/survey_form_only.qml")
+
+my_data %>% 
+  fpr::fpr_kable()
 ```
 
+![](fig/screenshots/qlm_form_export.png)
 
-`r if(gitbook_on){knitr::asis_output("<br>")} else knitr::asis_output("<br><br><br><br>")`
-
-<!--chapter:end:0200-background.Rmd-->
+<!--chapter:end:0400-qml.Rmd-->
 
 `r if (knitr::is_html_output()){ '
 # References {-}
