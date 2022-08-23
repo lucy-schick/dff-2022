@@ -1,0 +1,18 @@
+
+
+# qml file manipulation
+
+We should look to see what the qml files look like so we can manipulate them with data like comments downloaded from `bcdata` and from custom csv files that could hold the info we want to turn into forms.
+
+<br>
+
+Let's try loading one with only the `form` exported and inspect.
+
+```{r}
+my_data <- read.delim("data/survey_form_only.qml")
+
+my_data %>% 
+  fpr::fpr_kable()
+```
+
+![](fig/screenshots/qlm_form_export.png)
