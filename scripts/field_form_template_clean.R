@@ -15,10 +15,10 @@ unique(form_prep1$utm_zone)
 # name the project directory we are burning to
 dir_project <- 'bcfishpass_skeena_20220823'
 
-# name the form using the date and turning off the layer delete on the geopackage burn later
+# name the form using the date and time
 # we should be able to name the form the same in the active project but the files can be versioned
 # seems safer...
-file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d"))
+file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d%H%m"))
 
 form_prep2 <- form_prep1 %>%
   # example - drop  columns that we don't need - there are more
@@ -81,5 +81,5 @@ form_prep2 %>%
                       '/',
                       file_name,
                       '.gpkg'),
-                      # turned this false
-               delete_layer = F)
+                      # turned this T now that we have time in name
+               delete_layer = T)
