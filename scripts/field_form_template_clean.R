@@ -24,13 +24,22 @@ form_prep2 <- form_prep1 %>%
                 utm_corrected = NA_character_, #this should be yes/no if defaults for $x and $y not used
                 # utm_corrected_easting = NA_real_, #constraints 6digits long
                 # utm_corrected_northing = NA_real_, #constraints 7digits long
-                likelihood_flood_event_affecting_culvert = NA_character_,
+                embankment_issues = NA_integer_,
+                blockage_issues = NA_integer_,
+                condition_rank = NA_integer_,
+                likelihood_flood_event_affecting_culvert = NA_integer_,
+                consequence_flood_event_affecting_culvert = NA_integer_,
+                climate_change_flood_risk = NA_integer_,
+                vulnerability_rank = NA_integer_,
+                traffic_volume = NA_integer_,
+                community_access = NA_integer_,
+                cost = NA_integer_,
+                constructability = NA_integer_,
+                fish_bearing = NA_integer_,
+                environmental_impacts = NA_integer_,
+                priority_rank = NA_integer_,
+                overall_rank = NA_integer_,
                 mergin_user = NA_character_,
-                erosion = NA_character_,
-                debris_accumulation = NA_character_,
-                deforming = NA_character_,
-                corrosion_rust = NA_character_,
-                piping_leakage = NA_character_,
                 photo_road = NA_character_,
                 photo_upstream = NA_character_,
                 photo_inlet = NA_character_,
@@ -58,7 +67,7 @@ form_prep2 %>%
   # lets try transforming to the utm of the area we are working in
   # for our manual utms. we need to watch for watershed groups that overlap more than one zone though
 
-  sf::st_transform(crs = 32611) %>%
+  sf::st_transform(crs = 32609) %>%
   # make this filepath whatever - this just backs out two directories and then walks into `gis`.
-  sf::st_write('../../gis/mergin/bcfishpass_20220726c/form_pscis.gpkg',
+  sf::st_write('../../gis/mergin/bcfishpass_skeena_20220823/form_pscis.gpkg',
                delete_layer = TRUE)
