@@ -70,8 +70,6 @@ form_prep2 <- form_prep1 %>%
   # don't forget to put it in the right crs too!! - google the crs id for utm zone 9
   sf::st_as_sf(coords = c("easting", "northing"),
                crs = 32609, remove = F) %>%
-  # slice it down so it doesn't have any rows
-  dplyr::slice(0) %>%
   # reorder the columns - more to do than this
   select(date,
          camera_id,
@@ -85,6 +83,8 @@ form_prep2 %>%
   # lets try transforming to the utm of the area we are working in
   # for our manual utms. we need to watch for watershed groups that overlap more than one zone though
   sf::st_transform(crs = 32609) %>%
+  # slice it down so it doesn't have any rows
+  dplyr::slice(1) %>%
   # make this filepath whatever - this just backs out two directories and then walks into `gis`.
   sf::st_write(paste0('../../gis/mergin/',
                       dir_project,
