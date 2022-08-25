@@ -29,9 +29,12 @@ form_prep2 <- form_prep1 %>%
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_id = NA_character_,
+                mot_culvert_id = NA_integer_,
                 utm_corrected = NA_character_, #this should be yes/no if defaults for $x and $y not used
                 # utm_corrected_easting = NA_real_, #constraints 6digits long
                 # utm_corrected_northing = NA_real_, #constraints 7digits long
+                condition = NA_integer_,
+                erosion = NA_integer_,
                 embankment_issues = NA_integer_,
                 blockage_issues = NA_integer_,
                 condition_rank = NA_integer_,
@@ -53,7 +56,13 @@ form_prep2 <- form_prep1 %>%
                 photo_inlet = NA_character_,
                 photo_downstream = NA_character_,
                 photo_outlet = NA_character_,
-                photo_barrel = NA_character_
+                photo_barrel = NA_character_,
+                photo_condition = NA_character_,
+                photo_embankment = NA_character_,
+                photo_blockage = NA_character_,
+                photo_extra1 = NA_character_,
+                photo_extra2 = NA_character_,
+                photo_additional_notes = NA_character_
   ) %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
   # !!!!!this won't work until you rename 'lon' and 'lat' so they are our x and y columns for this dataset (hint: look at the column names)
