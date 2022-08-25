@@ -12,6 +12,14 @@ names(form_prep1)
 # which utm zone do all the coordinates fall into?
 unique(form_prep1$utm_zone)
 
+# name the project directory we are burning to
+dir_project <- 'bcfishpass_skeena_20220823'
+
+# name the form using the date and turning off the layer delete on the geopackage burn later
+# we should be able to name the form the same in the active project but the files can be versioned
+# seems safer...
+file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d"))
+
 form_prep2 <- form_prep1 %>%
   # example - drop  columns that we don't need - there are more
   select(-contains('score')) %>%
@@ -66,8 +74,12 @@ form_prep2 <- form_prep1 %>%
 form_prep2 %>%
   # lets try transforming to the utm of the area we are working in
   # for our manual utms. we need to watch for watershed groups that overlap more than one zone though
-
   sf::st_transform(crs = 32609) %>%
   # make this filepath whatever - this just backs out two directories and then walks into `gis`.
-  sf::st_write('../../gis/mergin/bcfishpass_skeena_20220823/form_pscis.gpkg',
-               delete_layer = TRUE)
+  sf::st_write(paste0('../../gis/mergin/',
+                      dir_project,
+                      '/',
+                      file_name,
+                      '.gpkg'),
+                      # turned this false
+               delete_layer = F)
