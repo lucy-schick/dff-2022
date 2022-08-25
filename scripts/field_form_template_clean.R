@@ -62,15 +62,16 @@ form_prep2 <- form_prep1 %>%
                 photo_blockage = NA_character_,
                 photo_extra1 = NA_character_,
                 photo_extra2 = NA_character_,
-                photo_additional_notes = NA_character_
+                photo_extra1_tag = NA_character_,
+                photo_extra2_tag = NA_character_
   ) %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
   # !!!!!this won't work until you rename 'lon' and 'lat' so they are our x and y columns for this dataset (hint: look at the column names)
   # don't forget to put it in the right crs too!! - google the crs id for utm zone 9
   sf::st_as_sf(coords = c("easting", "northing"),
                crs = 32609, remove = F) %>%
-  # slice it down so it only has one row
-  dplyr::slice(1) %>%
+  # slice it down so it doesn't have any rows
+  dplyr::slice(0) %>%
   # reorder the columns - more to do than this
   select(date,
          camera_id,
