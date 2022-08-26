@@ -12,12 +12,12 @@ file_name <- paste0('form_fiss_site_', format(lubridate::now(), "%Y%m%d%H%m"))
 
 
 # import the fish data submission template (needs to be in the data directory)
-form_prep1 <- fpr::fpr_import_hab_con() %>%
+form_raw <- fpr::fpr_import_hab_con() %>%
   # pull out just the site info page for now
   pluck(4)
 
 # see the names of the columns
-names(form_prep1)
+names(form_raw)
 
 # which utm zone do all the coordinates fall into?
 unique(form_prep1$utm_zone)
@@ -34,14 +34,14 @@ str_tags_refine <- c('avg', 'method')
 
 
 # pull out the columns to tag
-names_col_to_tag <- form_prep1 %>%
+names_col_to_tag <- form_raw %>%
   select(contains(all_of(str_tags_scope))) %>%
   select(-contains(all_of(str_tags_refine))) %>%
   # just keep one row
   slice(1)
 
 # pull out the columns that won't get tagged
-names_col_no_tag <- form_prep1 %>%
+names_col_no_tag <- form_raw %>%
   # select(-contains('width')) %>%
   # select(-contains('gradient')) %>%
   # lose the averages just for now
@@ -97,10 +97,23 @@ form_prep1 <- bind_cols(
   mutate(across(contains('gradient'), as.numeric)) %>%
   mutate(across(contains('time'), as.Date))
 
-form_prep2 <- form_prep1 %>%
+
+# add the averages to the end with some coordinates
+form_prep2 <- bind_rows(
+  form_prep1,
+  form_raw %>% select(contains('utm'))
+) %>%
+
+  bind_rows(
+    .,
+    form_raw %>% select(contains('average'))) %>%
+  filter(!is.na(utm_zone)) %>%
+  slice(1)
+
+
+
+form_prep3 <- form_prep2 %>%
   # example - drop  columns that we don't need - there are more
-  select(-contains('score')) %>%
-  select(-rowid, -site_id) %>%
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
   dplyr::mutate(date_time_start = NA_Date_,
                 camera_id = NA_character_,
@@ -116,21 +129,11 @@ form_prep2 <- form_prep1 %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
   # !!!!!this won't work until you rename 'lon' and 'lat' so they are our x and y columns for this dataset (hint: look at the column names)
   # don't forget to put it in the right crs too!! - google the crs id for utm zone 9
-  sf::st_as_sf(coords = c("easting", "northing"),
+  sf::st_as_sf(coords = c("utm_easting", "utm_northing"),
                crs = 32609, remove = F) %>%
-  select(contains('id',
+  select(contains('_id'),
                   everything(),
-                  ))
-
-
-#change it to a province wide crs for now and burn it to your project of choice
-form_prep2 %>%
-  # lets try transforming to the utm of the area we are working in
-  # for our manual utms. we need to watch for watershed groups that overlap more than one zone though
-  sf::st_transform(crs = 32609) %>%
-  # slice it down so it doesn't have any rows
-  dplyr::slice(1) %>%
-  # make this filepath whatever - this just backs out two directories and then walks into `gis`.
+                  ) %>%
   sf::st_write(paste0('../../gis/mergin/',
                       dir_project,
                       '/',
@@ -138,3 +141,6 @@ form_prep2 %>%
                       '.gpkg'),
                # turned this T now that we have time in name
                delete_layer = T)
+
+
+
