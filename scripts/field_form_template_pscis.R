@@ -25,7 +25,7 @@ form_prep2 <- form_prep1 %>%
   select(-contains('score')) %>%
   select(-rowid, -site_id) %>%
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
-  dplyr::mutate(date_time_start = NA_Date_,
+  dplyr::mutate(date_time_start = NA_POSIXct_,
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_id = NA_character_,
@@ -38,10 +38,12 @@ form_prep2 <- form_prep1 %>%
                 embankment_issues = NA_integer_,
                 blockage_issues = NA_integer_,
                 condition_rank = NA_integer_,
+                condition_notes = NA_character_,
                 likelihood_flood_event_affecting_culvert = NA_integer_,
                 consequence_flood_event_affecting_culvert = NA_integer_,
                 climate_change_flood_risk = NA_integer_,
                 vulnerability_rank = NA_integer_,
+                climate_notes = NA_character_,
                 traffic_volume = NA_integer_,
                 community_access = NA_integer_,
                 cost = NA_integer_,
@@ -50,6 +52,7 @@ form_prep2 <- form_prep1 %>%
                 environmental_impacts = NA_integer_,
                 priority_rank = NA_integer_,
                 overall_rank = NA_integer_,
+                priority_notes = NA_character_,
                 mergin_user = NA_character_,
                 photo_road = NA_character_,
                 photo_upstream = NA_character_,
@@ -70,12 +73,18 @@ form_prep2 <- form_prep1 %>%
   # don't forget to put it in the right crs too!! - google the crs id for utm zone 9
   sf::st_as_sf(coords = c("easting", "northing"),
                crs = 32609, remove = F) %>%
+  mutate(date = NA_POSIXct_) %>%
   # reorder the columns - more to do than this
   select(date,
-         camera_id,
-         gps_id,
-         gps_waypoint_id,
+         date_time_start,
+         contains('_id'),
+         # camera_id,
+         # gps_id,
+         # gps_waypoint_id,
          everything())
+
+
+glimpse(form_prep2)
 
 
 #change it to a province wide crs for now and burn it to your project of choice
