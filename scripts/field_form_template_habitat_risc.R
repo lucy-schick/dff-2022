@@ -20,7 +20,7 @@ form_raw <- fpr::fpr_import_hab_con() %>%
 names(form_raw)
 
 # which utm zone do all the coordinates fall into?
-unique(form_prep1$utm_zone)
+unique(form_raw$utm_zone)
 
 # for every column that contains the words width, depth gradient (except the average - 'avg' and 'method' columns) we want to
 # tag them with a time so that we can georeference with our tracks running from the gps
@@ -28,94 +28,136 @@ unique(form_prep1$utm_zone)
 # rod to our phones through something like avenza and run a phone track.
 
 # identify the strings that we want the pull as columns and add time tags for
-str_tags_scope <- c('width', 'gradient')
-str_tags_refine <- c('avg', 'method')
+str_tags_scope <- c('width', 'gradient', 'depth')
 
-
+# these are the colunns to leave till the end and calculate or remove
+str_tags_refine <- c('avg', 'method','average')
 
 # pull out the columns to tag
-names_col_to_tag <- form_raw %>%
-  select(contains(all_of(str_tags_scope))) %>%
+names_to_tag_chan <- form_raw %>%
+  select(contains('channel')) %>%
+  select(-contains(all_of(str_tags_refine))) %>%
+  select(-contains('pattern')) %>%
+  # just keep one row
+  slice(1)
+
+names_to_tag_wet <- form_raw %>%
+  select(contains('wetted')) %>%
   select(-contains(all_of(str_tags_refine))) %>%
   # just keep one row
   slice(1)
 
-# pull out the columns that won't get tagged
-names_col_no_tag <- form_raw %>%
-  # select(-contains('width')) %>%
-  # select(-contains('gradient')) %>%
-  # lose the averages just for now
-  select(-contains(all_of(c('average',
-                            'depth',
-                            'method',
-                            'width',
-                            'gradient'
-                            )))) %>%
+# combine the widths
+names_to_tag_widths <- tibble::tibble(
+  v1 = names(names_to_tag_wet),
+  v2 = names(names_to_tag_chan)
+) %>%
+  mutate(name = paste(v1, v2, sep = '-')) %>%
+  mutate(value = 'time') %>%
+  select(name, value) %>%
+  pivot_wider()
 
-  # select(-contains('ave')) %>%
+# define time tagged columns that are not widths
+names_to_tag_rest <- form_raw %>%
+  select(contains(all_of(str_tags_scope))) %>%
+  select(-contains(all_of(str_tags_refine))) %>%
+  select(-contains('width')) %>%
   # just keep one row
   slice(1)
 
+# join toghether
+names_to_tag <- bind_cols(
+  names_to_tag_widths,
+  names_to_tag_rest
+)
 
-
-# build an empty tibble that defines the column names for the tags
-names_col_tag <- paste0(
-  names(names_col_to_tag),
+# make the time names
+names_with_time <- paste0(
+  names(names_to_tag),
   '_time'
-) %>%
+)
+
+names_tag_time_prep1 <- vctrs::vec_interleave(names(names_to_tag),
+                                          names_with_time) %>%
+    tibble::tibble() %>%
+    purrr::set_names(nm = 'name')
+
+# split out the wet and chan widths
+names_tag_time_prep2 <- names_tag_time_prep1 %>%
+  filter(str_detect(name, 'width')) %>%
+  filter(!str_detect(name, 'time')) %>%
+  tidyr::separate(name,
+                  into = c('name1', 'name2'),
+                  sep = '-')
+
+names_tag_time_prep3 <- names_tag_time_prep1 %>%
+  filter(str_detect(name, 'time')) %>%
+  filter(str_detect(name, 'width'))
+
+
+names_tag_width <- vctrs::vec_interleave(names_tag_time_prep2 %>% pull(name1),
+                      names_tag_time_prep2 %>% pull(name2),
+                      names_tag_time_prep3 %>% pull(name))
+
+# make time columns for the rest and interleave
+names_tag_rest <- vctrs::vec_interleave(
+  names(names_to_tag_rest),
+  paste0(names(names_to_tag_rest), '_time')
+)
+
+# join all the time tagged columns together
+names_tagged <- c(names_tag_width, names_tag_rest) %>%
   tibble::tibble() %>%
   purrr::set_names(nm = 'name') %>%
   mutate(value = 'time') %>%
-  pivot_wider() %>%
-  slice(1)
+  pivot_wider()
 
+# define the columns the tibbles have in common
+col_to_remove <- intersect(names(form_raw),
+                           names(names_tagged))
 
-# make a tibble with the cols for time and time cols
-names_time <- vctrs::vec_interleave(names(names_col_to_tag),
-                                    names(names_col_tag)) %>%
-                                      tibble::tibble() %>%
-                                      purrr::set_names(nm = 'name') %>%
-                                      mutate(value = 'time') %>%
-                                      pivot_wider() %>%
-                                      slice(0)
+# remove the col that we are about to join then
+# join to the time tagged columns
+form_prep1 <- bind_cols(
+  form_raw %>%
+  select(-all_of(col_to_remove)),
+
+  names_tagged)
+
 
 str_type_numeric <- c('average',
                       'depth',
                       'width',
-                      'gradient')
+                      'gradient',
+                      'temperature',
+                      'utm',
+                      'avg',
+                      'p_h',
+                      'temperature')
+
+str_type_character <- c('texture',
+                        'morphology')
 
 
 # combine non-tagged columns and combined tagged columns
-form_prep1 <- bind_cols(
-  names_col_no_tag,
-  names_time
-) %>%
+form_prep2 <- form_prep1 %>%
   # set the column types
-  mutate(across(contains('average'), as.numeric)) %>%
-  mutate(across(contains('depth'), as.numeric)) %>%
-  mutate(across(contains('width'), as.numeric))%>%
-  mutate(across(contains('gradient'), as.numeric)) %>%
-  mutate(across(contains('time'), as.Date))
-
-
-# add the averages to the end with some coordinates
-form_prep2 <- bind_rows(
-  form_prep1,
-  form_raw %>% select(contains('utm'))
-) %>%
-
-  bind_rows(
-    .,
-    form_raw %>% select(contains('average'))) %>%
+  mutate(across(matches(str_type_numeric), as.numeric)) %>%
+  # mutate(across(contains('average'), as.numeric)) %>%
+  # mutate(across(contains('depth'), as.numeric)) %>%
+  # mutate(across(contains('width'), as.numeric))%>%
+  # mutate(across(contains('gradient'), as.numeric)) %>%
+  mutate(across(contains('time'), as_datetime)) %>%
+  # select(contains('average')) %>%
   filter(!is.na(utm_zone)) %>%
   slice(1)
-
 
 
 form_prep3 <- form_prep2 %>%
   # example - drop  columns that we don't need - there are more
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
-  dplyr::mutate(date_time_start = NA_Date_,
+  dplyr::mutate(date_time_start = NA_POSIXct_,
+                mergin_user = NA_character_,
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_id = NA_character_,
@@ -124,16 +166,33 @@ form_prep3 <- form_prep2 %>%
                 photo_extra1 = NA_character_,
                 photo_extra2 = NA_character_,
                 photo_extra1_tag = NA_character_,
-                photo_extra2_tag = NA_character_
+                photo_extra2_tag = NA_character_,
+                comments2 = NA_character_
   ) %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
   # !!!!!this won't work until you rename 'lon' and 'lat' so they are our x and y columns for this dataset (hint: look at the column names)
   # don't forget to put it in the right crs too!! - google the crs id for utm zone 9
+  filter(!is.na(utm_zone)) %>%
+  slice(1) %>%
   sf::st_as_sf(coords = c("utm_easting", "utm_northing"),
                crs = 32609, remove = F) %>%
-  select(contains('_id'),
-                  everything(),
-                  ) %>%
+  relocate(date_time_start,
+           mergin_user,
+           contains('_id'),
+           contains('name'),
+           matches('temperature'),
+         matches('p_h'),
+         matches('conductivity'),
+         matches('utm'),
+         matches('width'),
+         matches('gradient'),
+         matches('depth'),
+         matches('average'),
+         matches('method'),
+         matches('photo')) %>%
+  relocate(everything(), .after = last_col()) %>%
+  relocate(matches('method'), .after = last_col()) %>%
+  relocate(matches('average|avg'), .after = last_col()) %>%
   sf::st_write(paste0('../../gis/mergin/',
                       dir_project,
                       '/',
