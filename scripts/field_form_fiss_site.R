@@ -10,9 +10,15 @@ dir_project <- 'bcfishpass_skeena_20220823'
 # seems safer...
 file_name <- paste0('form_fiss_site_', format(lubridate::now(), "%Y%m%d%H%m"))
 
+# define your utm zone.  This can cause errors if you use the form in more than
+# one zone!!!!! beware
+utm_zone <- 9
 
-# import the fish data submission template (needs to be in the data directory)
-form_raw <- fpr::fpr_import_hab_con() %>%
+#' import the fish data submission template (needs to be in the data directory)
+#' because we want to keep the backup file clean for the value maps and because
+#' we are not worried about version controling this data we turn the `backup` function to `FALSE`
+
+form_raw <- fpr::fpr_import_hab_con(backup = F) %>%
   # pull out just the site info page for now
   pluck(4)
 
@@ -158,16 +164,30 @@ form_prep3 <- form_prep2 %>%
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
   dplyr::mutate(date_time_start = NA_POSIXct_,
                 mergin_user = NA_character_,
+                surveyor_1 = NA_character_,
+                surveyor_2 = NA_character_,
+                surveyor_3 = NA_character_,
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_id = NA_character_,
-                photo_gravel1 = NA_character_,
-                photo_pool1 = NA_character_,
-                photo_extra1 = NA_character_,
-                photo_extra2 = NA_character_,
-                photo_extra1_tag = NA_character_,
-                photo_extra2_tag = NA_character_,
-                comments2 = NA_character_
+                photo_gravel = NA_character_,
+                photo_pool = NA_character_,
+                photo_typical_1 = NA_character_,
+                photo_typical_2 = NA_character_,
+                photo_extra_1 = NA_character_,
+                photo_extra_1_tag = NA_character_,
+                photo_extra_2 = NA_character_,
+                photo_extra_2_tag = NA_character_,
+                comments_2 = NA_character_,
+                feature_time = NA_POSIXct_,
+                feature_type_2 = NA_character_,
+                feature_height_2_m = NA_character_,
+                feature_length_2_m = NA_character_,
+                feature_time_2 = NA_POSIXct_,
+                feature_type_3 = NA_character_,
+                feature_height_3_m = NA_character_,
+                feature_length_3_m = NA_character_,
+                feature_time_3 = NA_POSIXct_
   ) %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
   # !!!!!this won't work until you rename 'lon' and 'lat' so they are our x and y columns for this dataset (hint: look at the column names)
@@ -175,22 +195,27 @@ form_prep3 <- form_prep2 %>%
   filter(!is.na(utm_zone)) %>%
   slice(1) %>%
   sf::st_as_sf(coords = c("utm_easting", "utm_northing"),
-               crs = 32609, remove = F) %>%
+               crs = 32600 + utm_zone, remove = F) %>%
   relocate(date_time_start,
            mergin_user,
+           contains('surveyor'),
            contains('_id'),
            contains('name'),
            matches('temperature'),
-         matches('p_h'),
-         matches('conductivity'),
-         matches('utm'),
-         matches('width'),
-         matches('gradient'),
-         matches('depth'),
-         matches('average'),
-         matches('method'),
-         matches('photo')) %>%
+           'p_h',
+           matches('conductivity'),
+           'turbidity',
+           'stage',
+           matches('utm'),
+           matches('width'),
+           matches('gradient'),
+           matches('depth'),
+           matches('bed_material'),
+           matches('comments'),
+           matches('average'),
+           matches('method')) %>%
   relocate(everything(), .after = last_col()) %>%
+  relocate(matches('photo'), .after = last_col()) %>%
   relocate(matches('method'), .after = last_col()) %>%
   relocate(matches('average|avg'), .after = last_col()) %>%
   sf::st_write(paste0('../../gis/mergin/',
