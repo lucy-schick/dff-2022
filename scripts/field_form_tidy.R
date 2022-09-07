@@ -11,7 +11,7 @@ library(dplyr)
 dir_project <- 'bcfishpass_skeena_20220823'
 
 # name the form we are reading
-form_id <- 'form_pscis_202208282108.gpkg'
+form_id <- 'form_pscis_202209050809.gpkg'
 
 path <- paste0('../../gis/mergin/',
                dir_project,
