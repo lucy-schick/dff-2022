@@ -1,17 +1,17 @@
-# build a raw field form template using the excel file as the template for our template
+#'  build a raw field form template using the excel file as the template for our template
 
 source('scripts/packages.R')
 
-# name the project directory we are burning to
+#' name the project directory we are burning to
 dir_project <- 'bcfishpass_skeena_20220823'
 
-# name the form using the date and time
-# we should be able to name the form the same in the active project but the files can be versioned
-# seems safer...
+#' name the form using the date and time
+#' we should be able to name the form the same in the active project but the files can be versioned
+#' seems safer...
 file_name <- paste0('form_fiss_site_', format(lubridate::now(), "%Y%m%d%H%m"))
 
-# define your utm zone.  This can cause errors if you use the form in more than
-# one zone!!!!! beware
+#' define your utm zone.  This can cause errors if you use the form in more than
+#' one zone!!!!! beware
 utm_zone <- 9
 
 #' import the fish data submission template (needs to be in the data directory)
