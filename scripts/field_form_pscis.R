@@ -20,22 +20,32 @@ dir_project <- 'bcfishpass_skeena_20220823'
 # seems safer...
 file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d%H%m"))
 
+#' define your utm zone.  This can cause errors if you use the form in more than
+#' one zone!!!!! beware
+utm_zone <- 9
+
 form_prep2 <- form_prep1 %>%
   # example - drop  columns that we don't need - there are more
-  select(-contains('score')) %>%
-  select(-rowid, -site_id) %>%
+  # select(-contains('score')) %>%
+  # select(-rowid,
+  #        -site_id) %>%
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
   dplyr::mutate(date_time_start = NA_POSIXct_,
+                mergin_user = NA_character_,
+                surveyor_1 = NA_character_,
+                surveyor_2 = NA_character_,
+                surveyor_3 = NA_character_,
                 camera_id = NA_character_,
                 gps_id = NA_character_,
-                gps_waypoint_id = NA_character_,
+                gps_waypoint_number = NA_character_,
                 mot_culvert_id = NA_integer_,
+                habitat_comment = NA_character_, #let's encourage the tinyest bit of info here
                 utm_corrected = NA_character_, #this should be yes/no if defaults for $x and $y not used
                 # utm_corrected_easting = NA_real_, #constraints 6digits long
                 # utm_corrected_northing = NA_real_, #constraints 7digits long
-                condition = NA_integer_,
-                erosion = NA_integer_,
-                embankment_issues = NA_integer_,
+                # condition = NA_integer_,
+                erosion_issues = NA_integer_,
+                embankment_fill_issues = NA_integer_,
                 blockage_issues = NA_integer_,
                 condition_rank = NA_integer_,
                 condition_notes = NA_character_,
@@ -56,12 +66,12 @@ form_prep2 <- form_prep1 %>%
                 mergin_user = NA_character_,
                 photo_road = NA_character_,
                 photo_upstream = NA_character_,
-                photo_inlet = NA_character_,
                 photo_downstream = NA_character_,
-                photo_outlet = NA_character_,
+                photo_inlet = NA_character_,
                 photo_barrel = NA_character_,
+                photo_outlet = NA_character_,
                 photo_condition = NA_character_,
-                photo_embankment = NA_character_,
+                photo_embankment_fill = NA_character_,
                 photo_blockage = NA_character_,
                 photo_extra1 = NA_character_,
                 photo_extra2 = NA_character_,
@@ -72,18 +82,26 @@ form_prep2 <- form_prep1 %>%
   # !!!!!this won't work until you rename 'lon' and 'lat' so they are our x and y columns for this dataset (hint: look at the column names)
   # don't forget to put it in the right crs too!! - google the crs id for utm zone 9
   sf::st_as_sf(coords = c("easting", "northing"),
-               crs = 32609, remove = F) %>%
-  mutate(date = NA_POSIXct_) %>%
+               crs = 32600 + utm_zone, remove = F) %>%
+  # mutate(date = NA_POSIXct_) %>%
   # reorder the columns - more to do than this
-  select(date,
-         date_time_start,
-         contains('_id'),
-         # camera_id,
-         # gps_id,
-         # gps_waypoint_id,
+  select(date_time_start,
+         pscis_crossing_id,
+         my_crossing_reference,
+         crew_members,
+         matches('surveyor_'),
+         matches('_id'),
+         gps_waypoint_number,
+         stream_name,
+         matches('road_'),
+         matches('crossing'),
+         diameter_or_span_meters,
+         length_or_width_meters,
+         assessment_comment,
+         habitat_comment,
          everything())
 
-
+glimpse(form_prep1)
 glimpse(form_prep2)
 
 
@@ -91,7 +109,7 @@ glimpse(form_prep2)
 form_prep2 %>%
   # lets try transforming to the utm of the area we are working in
   # for our manual utms. we need to watch for watershed groups that overlap more than one zone though
-  sf::st_transform(crs = 32609) %>%
+  sf::st_transform(crs = 32600 + utm_zone) %>%
   # slice it down so it doesn't have any rows
   dplyr::slice(1) %>%
   # make this filepath whatever - this just backs out two directories and then walks into `gis`.
