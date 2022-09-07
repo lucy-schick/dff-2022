@@ -20,7 +20,7 @@ file_name <- paste0('form_fiss_site_values_', format(lubridate::now(), "%Y%m%d%H
 #' Read in the populated spreadsheet using our `fpr` package.
 
 hab_con <- fpr::fpr_import_hab_con(path = 'data/FDS_Template2021-01-28.xls',
-                                   backup = FALSE)
+                                   backup = T)
 
 
   # select(feature_height_length_method)
