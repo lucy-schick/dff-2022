@@ -141,6 +141,8 @@ str_type_numeric <- c('average',
                       'p_h',
                       'temperature')
 
+
+# add method to this
 str_type_character <- c('texture',
                         'morphology')
 
@@ -169,7 +171,9 @@ form_prep3 <- form_prep2 %>%
                 surveyor_3 = NA_character_,
                 camera_id = NA_character_,
                 gps_id = NA_character_,
-                gps_waypoint_id = NA_character_,
+                gps_waypoint_number = NA_character_,
+                site_length = NA_integer_,
+                habitat_value_rating = NA_character_,
                 photo_gravel = NA_character_,
                 photo_pool = NA_character_,
                 photo_typical_1 = NA_character_,
@@ -212,6 +216,7 @@ form_prep3 <- form_prep2 %>%
            matches('depth'),
            matches('bed_material'),
            matches('comments'),
+           'habitat_value_rating',
            matches('average'),
            matches('method')) %>%
   relocate(everything(), .after = last_col()) %>%
