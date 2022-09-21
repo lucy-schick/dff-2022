@@ -68,3 +68,6 @@ filename_html <- 'Skeena2021'
   file.remove(paste0(getwd(), '/', filename_html, '.html'))
 
 }
+
+knitr::spin('value_map_create_fiss_site.R')
+rmarkdown::render('scripts/value_map_create_fiss_site.R')
