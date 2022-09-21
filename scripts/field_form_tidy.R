@@ -1,6 +1,6 @@
 source('scripts/packages.R')
-library(magrittr)
-library(dplyr)
+# library(magrittr)
+# library(dplyr)
 
 # import a geopackage and rearrange then burn to csv
 
@@ -8,20 +8,46 @@ library(dplyr)
 # use an absolute path if you have to but it is preferable to keep our relative paths the same so we can collab
 
 # name the project directory we are pulling from
-dir_project <- 'bcfishpass_skeena_20220823'
+dir_project <- 'bcfishpass_pars_20220810'
 
-# name the form we are reading
-form_id <- 'form_pscis_202209050809.gpkg'
+# find all the pscis forms in the file
+list.files(path = paste0('../../gis/mergin/',
+                  dir_project),
+           # ?glob2rx is a funky little unit
+           pattern = glob2rx('survey_form_*.gpkg')
+           )
+
+# lets do multiple forms manually for the pars and then we will get into purrr functions
+# and read them all in at once for the skeena
+
+
+# name the first form we are reading
+form_id <- 'survey_form_20220810.gpkg'
 
 path <- paste0('../../gis/mergin/',
                dir_project,
                '/',
                form_id)
 
-form <- sf::st_read(path)
+# read in the first form
+form1 <- sf::st_read(path)
 
-# see the column names
-names(form)
+# name the second form we are reading
+form_id <- 'survey_form_20220818.gpkg'
+
+path <- paste0('../../gis/mergin/',
+               dir_project,
+               '/',
+               form_id)
+
+form2 <- sf::st_read(path)
+
+# join our forms together
+form_raw <- bind_rows(
+  form1,
+  form2
+)
+
 
 # this is a table that cross references column names for pscis table and has the columns in the same order as the spreadsheet
 xref_names_pscis <- fpr::xref_names_pscis
@@ -36,52 +62,66 @@ name_pscis_sprd_ordered <- fpr::xref_names_pscis %>%
 
 
 # this one is the gov names
-name_pscis_bcdata_ordered <- fpr::xref_names_pscis %>%
-  filter(!is.na(bcdata)) %>%
-  select(bcdata) %>%
-  pull(bcdata)
+# name_pscis_bcdata_ordered <- fpr::xref_names_pscis %>%
+#   filter(!is.na(bcdata)) %>%
+#   select(bcdata) %>%
+#   pull(bcdata)
 
 # see names that coincide between the xref table and what we have
-intersect(name_pscis_sprd_ordered, names(form))
+intersect(name_pscis_sprd_ordered, names(form_raw))
 
 # see names that coincide between the xref table and what we have
-intersect(name_pscis_bcdata_ordered, names(form))
+# intersect(name_pscis_bcdata_ordered, names(form))
 
 # see which are different
-setdiff(name_pscis_bcdata_ordered, names(form))
+setdiff(name_pscis_sprd_ordered, names(form_raw))
+# order matters
+setdiff(names(form_raw), name_pscis_sprd_ordered)
 
 
-# see the *_template.R script to see how to convert CRS and pull out coordinates
-
-
-form_prep1 <- form %>%
+form_prep1 <- form_raw %>%
   # filter out to get only the records newly created
   filter(!is.na(date_time_start)) %>%
+  # when necessary split your time into a date and time - skeena only
   # note the call to anyof
-  select(any_of(name_pscis_bcdata_ordered)) %>%
-  # i can see the funding_project_number and geom are going to mess us up so remove
-  sf::st_drop_geometry() %>%
-  select(-funding_project_number)
+  select(any_of(name_pscis_sprd_ordered)) %>%
+  # we are better off leaving the coordinates as per the crossings layer of bcfishpass than moving them around if
+  # the switch that utm_corrected is not hit.  If it was we can pull out the coordinates from the geom or use the ones that autopopulate
+  # they should be the same but we should qa it
+  # see the *_template.R script to see how to convert CRS and pull out coordinates
+  # geom is not a column in the spreadsheet template so remove
+  sf::st_drop_geometry()
 
 
-names_old <- names(form_prep1)
+# to use all the columns from the template first we make an empty dataframe from a template
+template <- fpr::fpr_import_pscis() %>%
+  slice(0)
 
-# swap the names for the pscis spreadsheet names and get them ready to assign
-names_new <- fpr::xref_names_pscis %>%
-  filter(bcdata %in% names(form_prep1)) %>%
-  pull(spdsht)
+# then we join it to our populated spreadsheet
+# we may as well keep all the columns that are not in the spreadsheet and append to the end
+form <- bind_rows(
+  template,
 
-
-form_prep <- form_prep1 %>%
-  purrr::set_names(nm = names_new) %>%
-  # arrange to make copy and paste easier (view name of object to work through order)
-  arrange(crossing_type, continuous_embeddedment_yes_no, backwatered_yes_no)
+  form_raw %>%
+    # we are better off leaving the coordinates as per the crossings layer of bcfishpass than moving them around if
+    # the switch that utm_corrected is not hit.  If it was we can pull out the coordinates from the geom or use the ones that autopopulate
+    # they should be the same but we should QA it
+    # see the *_template.R script to see how to convert CRS and pull out coordinates
+    # geom is not a column in the spreadsheet template so remove
+    sf::st_drop_geometry()
+) %>%
+  # then arrange it so it is easy to see how to sort to seperate spreadsheets
+  arrange(crossing_type,
+          continuous_embeddedment_yes_no,
+          backwatered_yes_no)
 
 
 # burn to a csv
-
-form_prep %>%
-  readr::write_csv('../../gis/mergin/bcfishpass_20220707b/survey_form_2022071851.csv')
+form %>%
+  readr::write_csv(paste0(
+    'data/pars/survey_form_',
+    format(lubridate::now(), "%Y%m%d"),
+    '.csv'))
 
 
 
