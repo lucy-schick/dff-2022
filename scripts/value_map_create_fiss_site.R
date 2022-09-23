@@ -7,6 +7,8 @@
 #' spreadsheets with R was not easily done so we decided to populate a blank template
 #' with each of the available values.
 #'
+#' Things to do include potentially adding types to the table or exporting as seperate schema
+#'
 #'
 #'
 #' name the project directory we are burning to
