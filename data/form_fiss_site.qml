@@ -2866,7 +2866,7 @@
     <alias field="surveyor_1" name="" index="3"/>
     <alias field="surveyor_2" name="" index="4"/>
     <alias field="surveyor_3" name="" index="5"/>
-    <alias field="waterbody_id" name="" index="6"/>
+    <alias field="waterbody_id" name="waterbody_id which is 00000 then the Watershed Group Code (ie. 00000BULK for bulkley streams)" index="6"/>
     <alias field="camera_id" name="" index="7"/>
     <alias field="gps_id" name="" index="8"/>
     <alias field="gazetted_names" name="" index="9"/>
@@ -3011,7 +3011,7 @@
     <default field="surveyor_1" expression="@mergin_username" applyOnUpdate="0"/>
     <default field="surveyor_2" expression="" applyOnUpdate="0"/>
     <default field="surveyor_3" expression="" applyOnUpdate="0"/>
-    <default field="waterbody_id" expression="@mergin_username" applyOnUpdate="0"/>
+    <default field="waterbody_id" expression="" applyOnUpdate="0"/>
     <default field="camera_id" expression="@mergin_username" applyOnUpdate="0"/>
     <default field="gps_id" expression="@mergin_username" applyOnUpdate="0"/>
     <default field="gazetted_names" expression="" applyOnUpdate="0"/>
