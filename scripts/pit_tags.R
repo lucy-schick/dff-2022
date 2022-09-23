@@ -3,7 +3,7 @@
 source('scripts/packages.R')
 
 #import the pit tag csv
-path <- '../../current/2022-050-sern-parsnip-fish-passage/tag_01_01.csv'
+path <- '../../repo/dff-2022/data/pars/tag_01_01.csv'
 
 pit_tag <- read.csv(path)
 
@@ -14,7 +14,7 @@ tags <- tidyr::separate(pit_tag, col=tag, into=c('date', 'tag_id'), sep=27)
 rows <- dplyr::mutate(tags, id= row_number())
 
 #import csv with fish data
-path2 <- '../../current/2022-050-sern-parsnip-fish-passage/fish_data.csv'
+path2 <- '../../repo/dff-2022/data/pars/fish_data.csv'
 
 fish <- read.csv(path2)
 
