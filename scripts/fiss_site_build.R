@@ -3,16 +3,16 @@
 source('scripts/packages.R')
 
 #' name the project directory we are burning to
-dir_project <- 'bcfishpass_skeena_20220823'
+dir_project <- 'bcfishpass_elkr_20220904'
 
 #' name the form using the date and time
 #' we should be able to name the form the same in the active project but the files can be versioned
 #' seems safer...
-file_name <- paste0('form_fiss_site_', format(lubridate::now(), "%Y%m%d%H%m"))
+file_name <- paste0('form_fiss_site_', format(lubridate::now(), "%Y%m%d"))
 
 #' define your utm zone.  This can cause errors if you use the form in more than
 #' one zone!!!!! beware
-utm_zone <- 9
+utm_zone <- 11
 
 #' import the fish data submission template (needs to be in the data directory)
 #' because we want to keep the backup file clean for the value maps and because
