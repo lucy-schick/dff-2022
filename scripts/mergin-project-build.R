@@ -6,7 +6,7 @@ source('scripts/packages.R')
 
 
 # name your watershed group
-wsg <- c('ZYMO', 'BULK', 'KISP', 'MORR')
+wsg <- c('KOTL', 'ELKR')
 
 # name your project
 name_prj <- paste0('bcfishpass_', stringr::str_to_lower(wsg))
@@ -31,11 +31,15 @@ conn <- DBI::dbConnect(
 )
 
 # define the schema, table and alias for a layer we want to clip and burn to file
-schema <- "whse_fish"
-table <- "pscis_habitat_confirmation_svw"
-alias <- "p"
+# schema <- "whse_fish"
+# table <- "pscis_habitat_confirmation_svw"
+# alias <- "p"
 
-schema_table_alias <-  paste0(schema, '.', table, ' ', alias) %>% noquote()
+schema <- c('whse_fish', 'whse_fish')
+table <- c('pscis_assessment_svw', 'pscis_habitat_confirmation_svw')
+wsg <- c('KOTL', 'ELKR')
+
+# schema_table_alias <-  paste0(schema, '.', table, ' ', alias) %>% noquote()
 
 # clip a layer and burn to remove quotes like https://stackoverflow.com/questions/70395987/how-to-remove-quotes-around-string-using-glue-sql-and-sub-inside-a-loop
 # need to exclude when inside of brackets as per https://stackoverflow.com/questions/10038650/how-to-exclude-something-from-being-replaced-by-gsub
@@ -76,17 +80,19 @@ sql_multi <- function(schema1 = schema,
          ")")
 }
 
-schema <- c('whse_fish', 'whse_fish')
-table <- c('pscis_assessment_svw', 'pscis_habitat_confirmation_svw')
-wsg <- c('BULK', 'BULK')
+queries <- sql_multi()
 
 # build sql for a bunch of layers at the same time
-sql <- clip_layers()
+# sql <- clip_layers()
 
 # read in multiple layers
 st_read_multi <- function(x){
   st_read(query = x, dsn = conn)
 }
+
+
+tables_clipped <- queries %>%
+  map(st_read_multi)
 
 df %>%
   sf::st_write(paste0('../../gis/mergin/bcfishpass_skeena_20220823/',
@@ -96,9 +102,10 @@ df %>%
 
 # having issues with this and the deparse call
 st_write_multi <- function(dat,
-                           gpkg_name = 'bcfishpass_mergin'){
-  this <- as.call(dat)
-  nm <- deparse(substitute(this))
+                           gpkg_name = 'bcfishpass_mergin',
+                           nm = table){
+  # this <- as.call(dat)
+  # nm <- deparse(substitute(this))
   dat %>%
     sf::st_write(paste0('../../gis/mergin/test/',
                         gpkg_name,
@@ -107,11 +114,11 @@ st_write_multi <- function(dat,
                delete_layer = T)
 }
 
-go <- sql_multi() %>%
+sql_multi() %>%
   map(st_read_multi) %>%
   purrr::set_names(nm = table) %>%
-# breaks here
-  map(st_write_multi)
+  mapply(st_write_multi, dat = ., nm = table)
+
 
 # trying to work out why deparse(substitute) is not working for a list
 
