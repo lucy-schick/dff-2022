@@ -132,7 +132,7 @@ form_prep1 <- form_raw %>%
   # when necessary split your time into a date and time - skeena only
   form_prep1$date <- as.Date(form_prep1$date_time_start)
   form_prep1$time <- format(as.POSIXct(form_prep1$date_time_start),"%H:%M:%S") %>%
-  # note the call to anyof
+  # note the call to any of
   select(any_of(name_pscis_sprd_ordered)) %>%
   # we are better off leaving the coordinates as per the crossings layer of bcfishpass than moving them around if
   # the switch that utm_corrected is not hit.  If it was we can pull out the coordinates from the geom or use the ones that autopopulate
