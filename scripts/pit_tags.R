@@ -30,7 +30,7 @@ fish_tags <- dplyr::left_join(fish,
   relocate(tag_id, .after = last_col()) %>%
   # remove the first row because it was from the office. We need to pass the object piped to nrow as a "."
   # as the first object gets passed to the slice function only
-  dplyr::slice(2:nrow(.)) %>%
+  dplyr::slice(1:nrow(.)) %>%
   # add a period, a space and the row number to the pit tag to go in the comments to make it easy to pull anything out we want later
   dplyr::mutate(tag_id = case_when(
     !is.na(tag_id) ~ paste0(tag_id, '. Row ID ', tag_row, '. '),
