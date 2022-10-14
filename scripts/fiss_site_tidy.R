@@ -85,11 +85,10 @@ dups <- form_site_info_prep %>%
   group_by(local_name) %>%
   filter(n()>1)
 
-# have a look
-view(dups)
+# unhash below to have a look
+# view(dups)
 
 # not sure why it is identifying the ef sites in Gramaphone as dupes... Looks like row 4 is the only real issue so we pull it out and
-
 
 # make the loc form
 form_loc <- bind_rows(
@@ -112,7 +111,7 @@ form_loc <- bind_rows(
            time)
 ) %>%
   # there is a messed up coordinate because it was on my way home and out of the crs
-  filter(survey_date < '2022-09-16') %>%
+  filter(survey_date != '2022-09-16') %>%
   select(rowid, everything())
 
 # make the site form
