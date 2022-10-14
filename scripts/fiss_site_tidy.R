@@ -9,126 +9,144 @@ source('scripts/packages.R')
 # name the project directory we are pulling from
 dir_project <- 'bcfishpass_skeena_20220823'
 
-# find all the fiss forms in the file
-form_l <- list.files(path = paste0('../../gis/mergin/',
+# list all the fiss form names in the file
+form_names_l <- list.files(path = paste0('../../gis/mergin/',
                   dir_project),
            # ?glob2rx is a funky little unit
            pattern = glob2rx('*site_2022*.gpkg'),
            full.names = T
            )
 
-# read in all the forms and join
-forms <- form_l %>%
+# read all the forms into a list of dataframes using colwise to guess the column types
+# if we don't try to guess the col types we have issues later with the bind_rows join
+form <- form_names_l %>%
   purrr::map(sf::st_read) %>%
-  bind_rows()
+  purrr::map(plyr::colwise(type.convert)) %>%
+  # name the data.frames so we can add it later as a "source" column - we use basename to leave the filepath behind
+  purrr::set_names(nm = basename(form_names_l)) %>%
+  bind_rows(.id = 'source')
 
-form1 <- sf::st_read(form_l %>% pluck(1))
+# see the names of our form
+names(form)
 
-# name the first form we are reading
-form_id <- 'survey_form_20220810.gpkg'
+# let's get the names of the input template
+# there is lots of work to do to pull out all the information we can use so we will start with one small step at a time
+# lets just populate the location and site info pages for now and then move on to the other information later.  It should be ok but might take some gymnastics
+form_raw_names_site <- fpr::fpr_import_hab_con(backup = F) %>%
+  # pull out just the site info page for now
+  pluck(4) %>%
+  # only keep the names of the columns
+  names()
 
+# location names
+form_raw_names_location <- fpr::fpr_import_hab_con(backup = F) %>%
+  # pull out just the site info page for now
+  pluck(1) %>%
+  # only keep the names of the columns
+  names()
 
-# make a little function to read in the forms
+# we don't want duplicate column names because it messes with them (renames them both) so we need to get rid of dupes
+names_dup <- intersect(form_raw_names_site, form_raw_names_location)
 
-
-path <- paste0('../../gis/mergin/',
-               dir_project,
-               '/',
-               form_id)
-
-# read in the first form
-form1 <- sf::st_read(path)
-
-# name the second form we are reading
-form_id <- 'survey_form_20220818.gpkg'
-
-path <- paste0('../../gis/mergin/',
-               dir_project,
-               '/',
-               form_id)
-
-form2 <- sf::st_read(path)
-
-# join our forms together
-form_raw <- bind_rows(
-  form1,
-  form2
-)
+# join the names of our two target tables together without (!) the dupes
+form_raw_names_sl <- c(form_raw_names_location,
+                       form_raw_names_site[!form_raw_names_site %in% names_dup])
 
 
-# this is a table that cross references column names for pscis table and has the columns in the same order as the spreadsheet
-xref_names_pscis <- fpr::xref_names_pscis
-
-# get order of columns as per the excel template spreadsheet
-# this can be used as a select(all_of(name_pscis_sprd_ordered)) later
-# to order columns for the fieldform and/or put the field entered table inorder
-name_pscis_sprd_ordered <- fpr::xref_names_pscis %>%
-  filter(!is.na(spdsht)) %>%
-  select(spdsht) %>%
-  pull(spdsht)
-
-
-# this one is the gov names
-# name_pscis_bcdata_ordered <- fpr::xref_names_pscis %>%
-#   filter(!is.na(bcdata)) %>%
-#   select(bcdata) %>%
-#   pull(bcdata)
-
-# see names that coincide between the xref table and what we have
-intersect(name_pscis_sprd_ordered, names(form_raw))
-
-# see names that coincide between the xref table and what we have
-# intersect(name_pscis_bcdata_ordered, names(form))
-
-# see which are different
-setdiff(name_pscis_sprd_ordered, names(form_raw))
-# order matters
-setdiff(names(form_raw), name_pscis_sprd_ordered)
+# tidy our populated table to PASTE SPECIAL value only!!! to our template. Might need to be in chunks but so be it
+# we also want to know who did the assessments and when to be able to sort the input order and populate the habitat_confirmation_priorities spreadsheet so we will add the who and extract the when
+# we also want the second comment field and have it appended to the first
+# use names(form) to see options
+form_site_info_prep <- form %>%
+  dplyr::filter(!is.na(date_time_start)) %>%
+  dplyr::select(mergin_user,
+                date_time_start,
+                dplyr::contains('surveyor'),
+                dplyr::any_of(form_raw_names_sl),
+                comments_2) %>%
+  # split out the date and the time - change type of column first
+  dplyr::mutate(date_time_start = lubridate::ymd_hms(date_time_start),
+                survey_date = lubridate::date(date_time_start),
+                time = hms::as_hms(date_time_start)) %>%
+  # arrange by surveyor and time
+  dplyr::arrange(mergin_user,
+                 date_time_start) %>%
+  #give each row and index so we can filter
+  tibble::rowid_to_column()
 
 
-form_prep1 <- form_raw %>%
-  # filter out to get only the records newly created
-  filter(!is.na(date_time_start)) %>%
-  # when necessary split your time into a date and time - skeena only
-  # note the call to anyof
-  select(any_of(name_pscis_sprd_ordered)) %>%
-  # we are better off leaving the coordinates as per the crossings layer of bcfishpass than moving them around if
-  # the switch that utm_corrected is not hit.  If it was we can pull out the coordinates from the geom or use the ones that autopopulate
-  # they should be the same but we should qa it
-  # see the *_template.R script to see how to convert CRS and pull out coordinates
-  # geom is not a column in the spreadsheet template so remove
-  sf::st_drop_geometry()
+# identify duplicate sites (that are not NAs) as we don't want to input two of the same
+dups <- form_site_info_prep %>%
+  filter(!is.na(local_name)) %>%
+  group_by(local_name) %>%
+  filter(n()>1)
+
+# have a look
+view(dups)
+
+# not sure why it is identifying the ef sites in Gramaphone as dupes... Looks like row 4 is the only real issue so we pull it out and
 
 
-# to use all the columns from the template first we make an empty dataframe from a template
-template <- fpr::fpr_import_pscis() %>%
-  slice(0)
+# make the loc form
+form_loc <- bind_rows(
 
-# then we join it to our populated spreadsheet
-# we may as well keep all the columns that are not in the spreadsheet and append to the end
-form <- bind_rows(
-  template,
+  # we need the raw form or we don't have all the right columns
+  fpr::fpr_import_hab_con(backup = F) %>%
+    # pull out just the site info page for now
+    pluck(1) %>%
+    # need to convert type for some reason (should be guessed already..)
+    mutate(survey_date = lubridate::as_date(survey_date)) %>%
+    slice(0),
 
-  form_raw %>%
-    # we are better off leaving the coordinates as per the crossings layer of bcfishpass than moving them around if
-    # the switch that utm_corrected is not hit.  If it was we can pull out the coordinates from the geom or use the ones that autopopulate
-    # they should be the same but we should QA it
-    # see the *_template.R script to see how to convert CRS and pull out coordinates
-    # geom is not a column in the spreadsheet template so remove
-    sf::st_drop_geometry()
+  form_site_info_prep %>%
+  filter(rowid != 4) %>%
+    # alias local name is not called the same in both sheets so rename
+    rename(alias_local_name = local_name) %>%
+    select(rowid,
+           dplyr::any_of(form_raw_names_location),
+           # add the time to help put the puzzle together after)
+           time)
 ) %>%
-  # then arrange it so it is easy to see how to sort to seperate spreadsheets
-  arrange(crossing_type,
-          continuous_embeddedment_yes_no,
-          backwatered_yes_no)
+  # there is a messed up coordinate because it was on my way home and out of the crs
+  filter(survey_date < '2022-09-16') %>%
+  select(rowid, everything())
 
+# make the site form
+form_site <- bind_rows(
 
-# burn to a csv
-form %>%
+  # we need the raw form or we don't have all the right columns
+  fpr::fpr_import_hab_con(backup = F) %>%
+    # pull out just the site info page for now - should use the name but willuse index bc short on time
+    pluck(4) %>%
+    slice(0),
+
+  form_site_info_prep %>%
+    filter(rowid != 4) %>%
+    select(rowid,
+           dplyr::any_of(form_raw_names_site),
+           # add the time to help put the puzzle together after)
+           survey_date,
+           time)
+) %>%
+  # there is a messed up coordinate because it was on my way home and out of the crs
+  filter(survey_date < '2022-09-16') %>%
+  select(rowid, everything())
+
+# burn to file
+
+form_loc %>%
   readr::write_csv(paste0(
-    'data/pars/survey_form_',
+    'data/skeena/form_fiss_loc_tidy_',
     format(lubridate::now(), "%Y%m%d"),
-    '.csv'))
+    '.csv'),
+    na = '')
+
+form_site %>%
+  readr::write_csv(paste0(
+    'data/skeena/form_fiss_site_tidy_',
+    format(lubridate::now(), "%Y%m%d"),
+    '.csv'),
+    na = '')
 
 
 
