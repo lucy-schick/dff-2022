@@ -1,5 +1,9 @@
 source('scripts/packages.R')
 
+# things to note
+# the utms are from the form and not the object - although they should be the same some of the sites where moved so those will be wrong
+# later we can pull the coordinates from the
+
 
 # import a geopackage and rearrange then burn to csv
 
@@ -126,8 +130,13 @@ form_site <- bind_rows(
            dplyr::any_of(form_raw_names_site),
            # add the time to help put the puzzle together after)
            survey_date,
-           time)
+           time,
+           comments_2)
 ) %>%
+  # join the comments
+  dplyr::mutate(comments = case_when(
+    !is.na(comments_2) ~ paste0(comments, '. ', comments_2, '. ', time),
+     T ~ paste0(comments, '. ', time))) %>%
   # there is a messed up coordinate because it was on my way home and out of the crs
   filter(survey_date < '2022-09-16') %>%
   select(rowid, everything())
