@@ -138,7 +138,7 @@ form_site <- bind_rows(
     !is.na(comments_2) ~ paste0(comments, '. ', comments_2, '. ', time),
      T ~ paste0(comments, '. ', time))) %>%
   # there is a messed up coordinate because it was on my way home and out of the crs
-  filter(survey_date < '2022-09-16') %>%
+  filter(survey_date != '2022-09-16') %>%
   select(rowid, everything())
 
 # burn to file
