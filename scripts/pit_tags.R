@@ -8,9 +8,14 @@ source('scripts/packages.R')
 # relative to that
 # path <- '../../repo/dff-2022/data/pars/tag_01_01.csv'
 path <- 'data/pars/tag_01_01.csv'
+# path <- 'data/skeena/tag_01_02.csv'
+
 
 # using readr is better than read.csv
-pit_tag <- readr::read_csv(path) %>%
+# looks like tag_01_01 reads in with a column named tag but tag_01_02 does not have a column name
+# for that reason the call to read_csv needs to be different (change col_names to F for that file).
+# you will need to change the name of the column that gets seperated and the slice row below will not likely be necessary
+pit_tag <- readr::read_csv(path, col_names = T) %>%
   #separate the pit tag out from the rest of the info in the pit tag csv
   # https://stackoverflow.com/questions/66696779/separate-by-pattern-word-in-tidyr-and-dplyr
   tidyr::separate(col=tag, into=c('date', 'tag_id'), sep='\\s*TAG\\s*') %>%
