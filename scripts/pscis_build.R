@@ -14,15 +14,16 @@ unique(form_prep1$utm_zone)
 
 # name the project directory we are burning to
 dir_project <- 'bcfishpass_skeena_20220823'
+#dir_project <- 'bcfishpass_southisland_202201028'
 
 # name the form using the date and time
 # we should be able to name the form the same in the active project but the files can be versioned
 # seems safer...
-file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d%H%m"))
+file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d"))
 
 #' define your utm zone.  This can cause errors if you use the form in more than
 #' one zone!!!!! beware
-utm_zone <- 9
+utm_zone <- 10
 
 form_prep2 <- form_prep1 %>%
   # example - drop  columns that we don't need - there are more
