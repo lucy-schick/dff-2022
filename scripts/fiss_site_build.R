@@ -42,14 +42,14 @@ str_tags_refine <- c('avg', 'method','average')
 # pull out the columns to tag
 names_to_tag_chan <- form_raw %>%
   select(contains('channel')) %>%
-  select(-contains(all_of(str_tags_refine))) %>%
+  select(-contains(str_tags_refine)) %>%
   select(-contains('pattern')) %>%
   # just keep one row
   slice(1)
 
 names_to_tag_wet <- form_raw %>%
   select(contains('wetted')) %>%
-  select(-contains(all_of(str_tags_refine))) %>%
+  select(-contains(str_tags_refine)) %>%
   # just keep one row
   slice(1)
 
@@ -65,8 +65,10 @@ names_to_tag_widths <- tibble::tibble(
 
 # define time tagged columns that are not widths
 names_to_tag_rest <- form_raw %>%
-  select(contains(all_of(str_tags_scope))) %>%
-  select(-contains(all_of(str_tags_refine))) %>%
+  # select(contains(all_of(str_tags_scope))) %>%
+  select(contains(str_tags_scope)) %>%
+  select(-contains(str_tags_refine)) %>%
+  # select(-contains(all_of(str_tags_refine))) %>%
   select(-contains('width')) %>%
   # just keep one row
   slice(1)
