@@ -43,6 +43,7 @@ str_tags_refine <- c('avg', 'method','average')
 names_to_tag_chan <- form_raw %>%
   select(contains('channel')) %>%
   select(-contains(str_tags_refine)) %>%
+  # channel_pattern doesn't need to be in there
   select(-contains('pattern')) %>%
   # just keep one row
   slice(1)
