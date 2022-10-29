@@ -51,69 +51,20 @@ BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 -
 # ---------------
 ogr2ogr -f GPKG background_layers.gpkg \
     -update \
+    -nln crossings \
     -t_srs EPSG:3005 \
     -dim XY \
     -spat $BOUNDS \
     -spat_srs EPSG:3005 \
-    /vsizip//vsicurl/https://www.hillcrestgeo.ca/outgoing/fishpassage/data/bcfishpass/outputs/bcfishpass.gdb.zip \
-    crossings
+    /vsicurl/https://www.hillcrestgeo.ca/outgoing/fishpassage/data/bcfishpass/outputs/flatgeobuf/crossings.fgb
 
 ogr2ogr -f GPKG background_layers.gpkg \
     -update \
+    -nln streams \
     -t_srs EPSG:3005 \
     -dim XY \
     -spat $BOUNDS \
-    -sql "select segmented_stream_id,
-     linear_feature_id,
-     edge_type,
-     blue_line_key,
-     watershed_key,
-     watershed_group_code,
-     downstream_route_measure,
-     length_metre,
-     waterbody_key,
-     wscode_ltree,
-     localcode_ltree,
-     gnis_name,
-     stream_order,
-     stream_magnitude,
-     gradient,
-     feature_code,
-     upstream_route_measure,
-     upstream_area_ha,
-     map_upstream,
-     channel_width,
-     mad_m3s,
-     barriers_anthropogenic_dnstr,
-     barriers_pscis_dnstr,
-     barriers_remediated_dnstr,
-     barriers_bt_dnstr,
-     barriers_ch_co_sk_dnstr,
-     barriers_ch_co_sk_b_dnstr,
-     barriers_pk_dnstr,
-     barriers_st_dnstr,
-     barriers_wct_dnstr,
-     obsrvtn_pnt_distinct_upstr,
-     obsrvtn_species_codes_upstr,
-     access_model_bt,
-     access_model_ch_co_sk,
-     access_model_ch_co_sk_b,
-     access_model_st,
-     access_model_wct,
-     cast(spawning_model_ch as boolean) as spawning_model_ch,
-     cast(spawning_model_co as boolean) as spawning_model_co,
-     cast(spawning_model_sk as boolean) as spawning_model_sk,
-     cast(spawning_model_st as boolean) as spawning_model_st,
-     cast(spawning_model_wct as boolean) as spawning_model_wct,
-     cast(rearing_model_ch as boolean) as rearing_model_ch,
-     cast(rearing_model_co as boolean) as rearing_model_co,
-     cast(rearing_model_sk as boolean) as rearing_model_sk,
-     cast(rearing_model_st as boolean) as rearing_model_st,
-     cast(rearing_model_wct as boolean) as rearing_model_wct,
-     geom
-     from streams
-    " \
-    /vsizip//vsicurl/https://www.hillcrestgeo.ca/outgoing/fishpassage/data/bcfishpass/outputs/bcfishpass.gdb.zip
+    /vsicurl/https://www.hillcrestgeo.ca/outgoing/fishpassage/data/bcfishpass/outputs/flatgeobuf/streams.fgb
     
 
 # ---------------
