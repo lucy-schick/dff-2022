@@ -1,4 +1,4 @@
-# DFF-2022
+# dff-2022
 
 Workflows to create digital field forms and QGIS projects that integrate with [Mergin Maps](https://merginmaps.com/?gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVPAtSEg0pF915dFv6b4kge16gvwTRnX75S0gEB4Xj2wRZevorN3n3EaAhSrEALw_wcB) for field data collection related to fish passage assessment, habitat assessment and stream crossing climate change/maintenance issue risk assessment
 
