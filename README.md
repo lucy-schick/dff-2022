@@ -4,7 +4,7 @@ Workflows to create digital field forms and QGIS projects that integrate with [M
 
 ## Digital Field Forms
 
-Standardized provincial submission templates used to generate digital field form skeletons modified with `scripts/build_*` scripts include:
+Standardized provincial submission templates used to generate digital field form skeletons imported and modified with `scripts/build_*` scripts include:
 
 -   Fish Passage - [pscis_assessment_template_v24.xls](https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/fish/aquatic-habitat-management/fish-passage/fish-passage-technical/assessment-projects)
 
@@ -14,7 +14,7 @@ At this point the forms are intended to be tidied using R scripts (currently hou
 
 ## QGIS Projects to Sync and Serve on IOS and Android phones/tablets
 
-QGIS project layers (with the exception of field forms) are clipped to watershed group areas in British Columbia are bulk downloaded from the [BC Data Catalogue](https://catalogue.data.gov.bc.ca/dataset?download_audience=Public), [Hillcrest Geographics server](https://www.hillcrestgeo.ca/outgoing/fishpassage/data/bcfishpass/outputs/), [fwapg](https://features.hillcrestgeo.ca/fwa/), and [Provincial Government FTP site](https://www2.gov.bc.ca/gov/content/data/geographic-data-services/topographic-data/roads) using [`bcdata`](https://github.com/smnorris/bcdata), `ogr2ogr` and `wget` by running the `scripts/background_layers.sh` and specifying watershed groups of interest as a comma separated, single quoted string eg.
+QGIS project layers (with the exception of field forms) clipped to [watershed group areas](https://catalogue.data.gov.bc.ca/dataset/freshwater-atlas-watershed-groups) in British Columbia are bulk downloaded from the [BC Data Catalogue](https://catalogue.data.gov.bc.ca/dataset?download_audience=Public), [Hillcrest Geographics server](https://www.hillcrestgeo.ca/outgoing/fishpassage/data/bcfishpass/outputs/), [fwapg](https://features.hillcrestgeo.ca/fwa/), and [Provincial Government FTP site](https://www2.gov.bc.ca/gov/content/data/geographic-data-services/topographic-data/roads) using [`bcdata`](https://github.com/smnorris/bcdata), `ogr2ogr` and `wget` by running `scripts/background_layers.sh` and specifying watershed groups of interest as a comma separated, single quoted string eg.
 
 `$ ./background_layers.sh "'VICT','COWN'"`
 
