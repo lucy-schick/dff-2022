@@ -1,31 +1,18 @@
-Custom template for New Graph Environment Ltd. reporting
+Workflows to create digital field forms and QGIS projects that integrate with [Mergin Maps](https://merginmaps.com/?gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVPAtSEg0pF915dFv6b4kge16gvwTRnX75S0gEB4Xj2wRZevorN3n3EaAhSrEALw_wcB) for field data collection related to fish passage assessment, habitat assessment and stream crossing climate change/maintenance issue risk assessment. 
 
-see `scripts/run.R`
+At this point the forms are intended to be tidied using R scripts (currently housed in project specific repositories) and exported to csv for copy and paste into standardized submission templates that can be submitted to the province.  However, there is currently more information gathered that can be used for custom reporting including climate change risk and maintenance issue risk assessment.
 
-Track version changes in [`NEWS.md`]('NEWS.md`)
+`build_*` scripts within the `scripts` directory read in Provincial Government data submission templates as detailed below to provide the skeletons for the geopackage tables produced to serve as forms.
 
+`qml` files which provide `QGIS` styling for forms are kept in the `data` directory along with `QGIS` project `qlr` files that can be used to provide styling for all project layers. 
 
-Adapted from a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "[Get Started](https://bookdown.org/yihui/bookdown/get-started.html)" at https://bookdown.org/yihui/bookdown/ for how to compile this example into HTML. More detailed instructions are available here https://bookdown.org/yihui/bookdown/build-the-book.html.
+Project layers clipped to watershed group areas in British Columbia are bulk downloaded from the [BC Data Catalogue](https://catalogue.data.gov.bc.ca/dataset?download_audience=Public), [Hillcrest Geographics server](https://www.hillcrestgeo.ca/outgoing/fishpassage/data/bcfishpass/outputs/), [fwapg](https://features.hillcrestgeo.ca/fwa/), and [Provincial Government FTP site](https://www2.gov.bc.ca/gov/content/data/geographic-data-services/topographic-data/roads) using [`bcdata`](https://github.com/smnorris/bcdata), `ogr2ogr` and `wget` by running the `scripts/background_layers.sh` and specifying watershed groups of interest as a comma separated, single quoted string eg. 
 
-So if we want to use this repo to update specific files in existing repos generated from the template we need to can do the following from the production report.  NEED TO TEST A BUNCH.  See https://stackoverflow.com/questions/24815952/git-pull-from-another-repository:
+`$ ./background_layers.sh "'VICT','COWN'"`
 
-    git remote add upstream https://github.com/NewGraphEnvironment/mybookdown-template.git
-    git config remote.upstream.pushurl "maybe dont push to the template from here bud"
-    git fetch upstream
-    git checkout upstream/master -- path/to/file
-    
-    
-A better option is likely to use submodules http://blog.joncairns.com/2011/10/how-to-use-git-submodules/ but we will look into that next time
+Standardized provincial submission templates used to generate digital field form skeletons modified with `scripts/build_*` scripts include:
 
-In order to avoid commit huge files run this every once and a while https://stackoverflow.com/questions/4035779/gitignore-by-file-size
-https://stackoverflow.com/questions/37768376/remove-duplicate-lines-and-overwrite-file-in-same-command
+ + Fish Passage - [pscis_assessment_template_v24.xls](https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/fish/aquatic-habitat-management/fish-passage/fish-passage-technical/assessment-projects)
 
-    find . -size +50M | sed 's|^\./||g' >> .gitignore; awk '!seen[$0]++' .gitignore | sponge .gitignore
-    
-    
-This is a common move to deal with repeated headers in pagedown knitr table outputs when the page breaks.  If we don't have an extra `<br>`
-
-`r if(gitbook_on){knitr::asis_output("<br>")} else knitr::asis_output("\\pagebreak<br>")`
-    
-
+ + Fish Passage - [Fish Data Submission Spreadsheet Template - V 2.0, January 20, 2020 (FDS_Template2021-01-28.xls) ](https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/fish/fish-and-fish-habitat-data-information/fish-data-submission/submit-fish-data#submitfish) 
    
