@@ -10,7 +10,7 @@ Standardized provincial submission templates used to generate digital field form
 
 -   Fish Passage - [Fish Data Submission Spreadsheet Template - V 2.0, January 20, 2020 (FDS_Template2021-01-28.xls)](https://www2.gov.bc.ca/gov/content/environment/plants-animals-ecosystems/fish/fish-and-fish-habitat-data-information/fish-data-submission/submit-fish-data#submitfish)
 
-At this point the forms are intended to be tidied using R scripts (currently housed in project specific repositories) and exported to csv for copy and paste into standardized submission templates that can be submitted to the province. However, there is currently more information gathered that can be used for custom reporting including climate change risk and maintenance issue risk assessment.
+At this point the forms are intended to be tidied using R scripts (currently housed in project specific repositories) and exported to csv for copy and paste into standardized submission templates that can be submitted to the province. However, there is currently more information gathered that can be used for custom reporting including road/stream crossing climate change risk and maintenance issue risk assessment.
 
 ## QGIS Projects to Sync and Serve on IOS and Android phones/tablets
 
