@@ -2,21 +2,17 @@
 #' Here we are going to build the value map csv's that we will point to
 #' in our `QGIS` forms.
 #'
-#' Not sure it is the best way to do it but after a bit of research it seemed
-#' as though reading the dropdown menus embedded in our submission template
-#' spreadsheets with R was not easily done so we decided to populate a blank template
-#' with each of the available values.
-#'
-#' Things to do include potentially adding types to the table or exporting as seperate schema
-#'
-#'
+#' we decided to populate a blank template with each of the available values.
+
 #'
 #' name the project directory we are burning to
 dir_project <- 'bcfishpass_skeena_20220823'
 
-# name the form using the date and time
-# we should be able to name the form the same in the active project but the files can be versioned
-# seems safer...
+# in the past we named the form using the date and time.  This has likely led to a setup where our resulting table
+# is linked to a specific table name (form_fiss_site_values_202209100809) so i think we are stuck with that
+#  and should not overwrite.  For this reason I have left the date/time stamp so we are less likely to overwrite the
+#  currrent data/form_fis_site_values.gpkg file!!!!
+
 file_name <- paste0('form_fiss_site_values_', format(lubridate::now(), "%Y%m%d%H%m"))
 #'
 #' Read in the populated spreadsheet using our `fpr` package.
