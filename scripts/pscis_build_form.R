@@ -13,7 +13,7 @@ names(form_prep1)
 unique(form_prep1$utm_zone)
 
 # name the project directory we are burning to
-dir_project <- 'bcfishpass_skeena_20220823'
+dir_project <- 'bcfishpass_cown_vict'
 #dir_project <- 'bcfishpass_southisland_202201028'
 
 # name the form using the date and time
@@ -23,7 +23,7 @@ file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d"))
 
 #' define your utm zone.  This can cause errors if you use the form in more than
 #' one zone!!!!! beware
-utm_zone <- 10
+utm_zone <- 9
 
 form_prep2 <- form_prep1 %>%
   # example - drop  columns that we don't need - there are more
@@ -39,7 +39,7 @@ form_prep2 <- form_prep1 %>%
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_number = NA_character_,
-                mot_culvert_id = NA_integer_,
+                moti_chris_culvert_id = NA_integer_,
                 habitat_comment = NA_character_, #let's encourage the tinyest bit of info here
                 utm_corrected = NA_character_, #this should be yes/no if defaults for $x and $y not used
                 # utm_corrected_easting = NA_real_, #constraints 6digits long
