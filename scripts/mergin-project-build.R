@@ -3,7 +3,10 @@
 
 source('scripts/packages.R')
 
+# need to script over data/bcfishpass_dff.qlr and data/form_fiss_site_values.gpkg
 
+
+###################### not currently used #########################
 
 # name your watershed group
 wsg <- c('KOTL', 'ELKR')
