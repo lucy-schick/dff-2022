@@ -3,7 +3,7 @@
 source('scripts/packages.R')
 
 
-# import the pscis template
+# import a populated pscis template (habitat_confirmations.xls)
 form_prep1 <- fpr::fpr_import_pscis()
 
 # see the names of the columns
@@ -13,7 +13,7 @@ names(form_prep1)
 unique(form_prep1$utm_zone)
 
 # name the project directory we are burning to
-dir_project <- 'skeena_mateo'
+dir_project <- 'bcfishpasss_cown_vict'
 #dir_project <- 'bcfishpass_cown_vict'
 
 # name the form using the date and time
@@ -23,7 +23,7 @@ file_name <- paste0('form_monitor_', format(lubridate::now(), "%Y%m%d"))
 
 #' define your utm zone.  This can cause errors if you use the form in more than
 #' one zone!!!!! beware
-utm_zone <- 10
+utm_zone <- 9
 
 form_prep2 <- form_prep1 %>%
   # example - drop  columns that we don't need - there are more
@@ -39,9 +39,9 @@ form_prep2 <- form_prep1 %>%
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_number = NA_character_,
-                moti__chris_culvert_id = NA_integer_,
+                moti_chris_culvert_id = NA_integer_,
                 habitat_comment = NA_character_, #let's encourage the tinyest bit of info here
-                utm_corrected = NA_character_, #this should be yes/no if defaults for $x and $y not used
+                utm_corrected = NA_character_, #this should be yes/no if defaults for $x and $y not used.  need to explain in alias
                 # condition = NA_integer_,
                 erosion_issues = NA_integer_,
                 embankment_fill_issues = NA_integer_,
@@ -77,37 +77,41 @@ form_prep2 <- form_prep1 %>%
                 photo_extra2_tag = NA_character_,
                 dewatering = NA_integer_,
                 dewatering_notes = NA_character_,
-                dewatering_photo = NA_character_,
+                photo_dewatering = NA_character_,
                 velocity = NA_integer_,
                 velocity_notes = NA_character_,
-                velocity_photo = NA_character_,
+                photo_velocity = NA_character_,
                 constriction = NA_integer_,
                 constriction_notes = NA_character_,
-                constriction_photo = NA_character_,
+                photo_constriction = NA_character_,
                 substrate = NA_integer_,
                 substrate_notes = NA_character_,
-                substrate_photo = NA_character_,
+                photo_substrate = NA_character_,
                 riparian = NA_integer_,
                 riparian_notes = NA_character_,
-                riparian_photo = NA_character_,
+                photo_riparian = NA_character_,
                 flow_depth = NA_integer_,
                 flow_depth_notes = NA_character_,
-                flow_depth_photo = NA_character_,
+                photo_flow_depth = NA_character_,
                 stability = NA_integer_,
                 stability_notes = NA_character_,
-                stability_photo = NA_character_,
+                photo_stability = NA_character_,
                 revegetation = NA_integer_,
                 revegetation_notes = NA_character_,
-                revegetation_photo = NA_character_,
+                photo_revegetation = NA_character_,
                 cover = NA_integer_,
                 cover_notes = NA_character_,
-                cover_photo = NA_character_,
+                photo_cover = NA_character_,
                 maintenance = NA_integer_,
                 maintenance_notes = NA_character_,
-                maintenance_photo = NA_character_,
+                photo_maintenance = NA_character_,
                 uav_flight = NA_character_,
                 fish_sampling = NA_character_,
-                site_card_filled = NA_character_
+                site_card_filled = NA_character_,
+                photo_extra3 = NA_character_,
+                photo_extra4 = NA_character_,
+                photo_extra3_tag = NA_character_,
+                photo_extra4_tag = NA_character_,
 
   ) %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
@@ -131,7 +135,11 @@ form_prep2 <- form_prep1 %>%
          length_or_width_meters,
          assessment_comment,
          habitat_comment,
-         everything())
+         everything(),
+         -utm_zone,
+         -easting,
+         -northing,
+         -rowid)
 
 glimpse(form_prep1)
 glimpse(form_prep2)
@@ -141,23 +149,19 @@ glimpse(form_prep2)
 form_prep2 %>%
   # lets try transforming to the utm of the area we are working in
   # for our manual utms. we need to watch for watershed groups that overlap more than one zone though
-  sf::st_transform(crs = 32600 + utm_zone) %>%
+  # sf::st_transform(crs = 32600 + utm_zone) %>%
+  # lets just put it in albers since we are considering ditching the utms
+  sf::st_transform(crs = 3005) %>%
   # slice it down so it doesn't have any rows
   dplyr::slice(1) %>%
-  # just burning it to my project for now until Al shares south island project with me
-  sf::st_write(paste0('../../gis/skeena_mateo/',
-      '/',
-      file_name,
-      '.gpkg'),
-      # turned this T now that we have time in name
-      delete_layer = T)
-
-
   # make this filepath whatever - this just backs out two directories and then walks into `gis`.
-  # sf::st_write(paste0('../../gis/mergin/',
-  #                     dir_project,
-  #                     '/',
-  #                     file_name,
-  #                     '.gpkg'),
-  #              # turned this T now that we have time in name
-  #              delete_layer = T)
+  sf::st_write(paste0('../../gis/mergin/',
+                      dir_project,
+                      '/',
+                      file_name,
+                      '.gpkg'),
+               # turned this T now that we have time in name
+               delete_layer = T)
+
+
+
