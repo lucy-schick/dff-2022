@@ -31,7 +31,8 @@ form_prep2 <- form_prep1 %>%
   # select(-rowid,
   #        -site_id) %>%
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
-  dplyr::mutate(date_time_start = NA_POSIXct_,
+  dplyr::mutate(-rowid,
+                date_time_start = NA_POSIXct_,
                 mergin_user = NA_character_,
                 surveyor_1 = NA_character_,
                 surveyor_2 = NA_character_,
