@@ -1,0 +1,41 @@
+# Methods
+
+This repo is designed as a place for default projects as well as templates and scripts required for data extraction and application. Also included are descriptions of workflows utilising Mergin Maps in QGIS to collect data in the field for fish passage assessment, habitat assessment and stream crossing climate change/maintenance issue risk assessment.
+
+<br>
+
+Mergin Maps is an open source GIS integration software developped by Lutra Consulting. It uses a plugin found in QGIS and communicates with an associated mobile app to make field data collection even easier. A link to their website with helpful documentation and a place to sign up for a free account can be found [here](https://merginmaps.com/?gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVPAtSEg0pF915dFv6b4kge16gvwTRnX75S0gEB4Xj2wRZevorN3n3EaAhSrEALw_wcB). Note that free accounts only come with 100mb storage capacity to start. However, projects shared with you from other individuals do not take up storage space on your account. In the 2022 field season, we carried out a pilot project where we utilised mergin to collect our fish passage data through a digital interface.
+
+How to build a mergin project:
+
+-   Run bash script located `scripts/background_layers.sh` on command line. This script can be customised depending on the area of interest.
+-   Use the qml file found in the `data` directory to style project layers
+-   Qlr file in `data` directory contains background layers that can be used for styling and data integration. Clip the layers to match study area.
+
+Modifying data to align with provincial templates:
+
+-   Build forms for phase 1 culvert assessments using the script `pscis_build_form.R`
+-   Make adjustments to form attributes and styling in QGIS to make data collection in the field simpler (helpful documentation found [here](https://merginmaps.com/docs/layer/settingup_forms/)). Ensure you save style to a .qml file for reproducibility and backup.
+-   Extract and tidy all phase 1 data collected in the field and align with provincial template using `pscis_tidy.R`. Template found in `data/pscis_assessment_template_v24.xlsm`
+-   Build forms for phase 2 habitat confirmations using the script `fiss_site_build_form.R`
+-   Extract and tidy all phase 2 habitat confirmation data collected in the field and align with provincial template using `fiss_site_tidy.R`. Template found in `data/habitat_confirmations.xlsm`
+-   Data is manipulated and prepared for reporting using the customised `fpr` package (repo found [here](https://github.com/NewGraphEnvironment/fpr))
+
+Field data collection:
+
+-   Mergin projects in QGIS are synchronised to the server and opened in the mobile app
+-   Maps can be viewed offline by adding layers to "map themes" in the QGIS layers tab
+-   Ensure the required photos are taken for PSCIS submission. Take lots of photos when surveying streams, using the time stamp camera app. GPS devices are run when working in the field so data from gps tracks can be used to link with time stamped photos and give an exact location of specific stream characteristics.
+-   
+
+Next steps:
+
+-   Mergin integration into our workflows is still in its early stages and will undergo many changes going forward. There is still lots to test and improve.
+
+-   Finish `fhap_build.R` script to build form for Fish Habitat Assessment Procedures (FHAP). Template can be found in `data` directory. Methods used are taken from @johnston1996.
+
+<br>
+
+## MoTi
+
+In collaboration with the Ministry of Transportation and Infrastructure (MoTi), a new climate change replacement program aims to prioritize vulnerable culverts for replacement (pers. comm Sean Wong, 2022). Data will be collected in regards to culvert condition and vulnerability. These parameters will be given a priority index and ranked.
