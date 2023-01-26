@@ -18,7 +18,7 @@ utm_zone <- 11
 #' because we want to keep the backup file clean for the value maps and because
 #' we are not worried about version controling this data we turn the `backup` function to `FALSE`
 
-form_raw <- fpr::fpr_import_hab_con(backup = F) %>%
+form_raw <- fpr::fpr_import_hab_con(backup = F, row_empty_remove = T) %>%
   # pull out just the site info page for now
   pluck(4)
 
