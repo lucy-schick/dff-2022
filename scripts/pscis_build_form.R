@@ -13,7 +13,7 @@ names(form_prep1)
 unique(form_prep1$utm_zone)
 
 # name the project directory we are burning to
-dir_project <- 'bcfishpass_cown_vict'
+dir_project <- 'ufn_ldn'
 #dir_project <- 'bcfishpass_southisland_202201028'
 
 # name the form using the date and time
@@ -81,10 +81,10 @@ form_prep2 <- form_prep1 %>%
                 photo_extra2_tag = NA_character_
   ) %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
-  # !!!!!this won't work until you rename 'lon' and 'lat' so they are our x and y columns for this dataset (hint: look at the column names)
-  # don't forget to put it in the right crs too!! - google the crs id for utm zone 9
   sf::st_as_sf(coords = c("easting", "northing"),
                crs = 32600 + utm_zone, remove = F) %>%
+  # put it into albers so we can use it anywhere
+  sf::st_transform(crs = 3005) %>%
   # mutate(date = NA_POSIXct_) %>%
   # reorder the columns - more to do than this
   select(date_time_start,
@@ -107,11 +107,7 @@ glimpse(form_prep1)
 glimpse(form_prep2)
 
 
-#change it to a province wide crs for now and burn it to your project of choice
 form_prep2 %>%
-  # lets try transforming to the utm of the area we are working in
-  # for our manual utms. we need to watch for watershed groups that overlap more than one zone though
-  sf::st_transform(crs = 32600 + utm_zone) %>%
   # slice it down so it doesn't have any rows
   dplyr::slice(1) %>%
   # make this filepath whatever - this just backs out two directories and then walks into `gis`.
