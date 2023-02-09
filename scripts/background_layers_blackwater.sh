@@ -48,7 +48,9 @@ BCGW_SOURCES="whse_fish.fiss_fish_obsrvtn_pnt_sp \
 # not on api list
 # whse_forest_vegetation.pest_infest_historic_poly
 # whse_cadastre.cbm_intgd_cadastral_fabric_svw
-# whse_tantalista_park_ecores_pa_svw
+
+# this is there but we should use https://github.com/smnorris/designatedlands/blob/master/sources_designations.csv
+# whse_tantalis.ta_park_ecores_pa_svw
 
 
 # remove existing file if present
