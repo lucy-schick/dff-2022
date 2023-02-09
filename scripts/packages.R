@@ -42,14 +42,10 @@
 
 package_list <- c(
   # plotKML,  #plot kml needed to go ahead of other packages for some reason and wants to reinstall everytime.... not sure why. hash out for now
-  'raster', #load this dog before dplyr yo
   'tidyverse',
-  'readwritesqlite',
   'sf',
   'readxl',
   'janitor',
-  'leafem',
-  'leaflet',
   'kableExtra',
   'httr',
   'RPostgres',
@@ -64,24 +60,9 @@ package_list <- c(
   'lubridate',
   'forcats',
   'bookdown',
-  'fasstr',
-  'tidyhydat',
-  'elevatr',
-  'rayshader',
-  'exifr',
-  # flextable,
-  'english',
-  'leaflet.extras',
-  'ggdark',
   'geojsonio',
-  'pdftools',
   'xlsx',
-  'analogsea'
-  # rgl,
-  # geojsonsf,
-  # bit64 ##to make integer column type for pg
-  # gert  ##to track git moves
-  ##leafpop I think
+  'fpr'
 )
 lapply(package_list,
        require,
