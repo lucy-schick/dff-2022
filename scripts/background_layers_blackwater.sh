@@ -118,17 +118,16 @@ wget --trust-server-names -qN https://bcfishpass.s3.us-west-2.amazonaws.com/fres
 unzip -oq freshwater_fish_habitat_accessibility_MODEL.gpkg.zip
 
 
-# need to turn this off until the layer is actually on there
-# ogr2ogr \
-#     -f GPKG background_layers.gpkg \
-#     -update \
-#     -nln crossings \
-#     -t_srs EPSG:3005 \
-#     -dim XY \
-#     -spat $BOUNDS \
-#     -spat_srs EPSG:3005 \
-#     /vsizip//vsicurl/https://bcfishpass.s3.us-west-2.amazonaws.com/freshwater_fish_habitat_accessibility_MODEL.gpkg.zip \
-#     crossings
+ogr2ogr \
+    -f GPKG background_layers.gpkg \
+    -update \
+    -nln crossings \
+    -t_srs EPSG:3005 \
+    -dim XY \
+    -spat $BOUNDS \
+    -spat_srs EPSG:3005 \
+    /vsizip//vsicurl/https://bcfishpass.s3.us-west-2.amazonaws.com/freshwater_fish_habitat_accessibility_MODEL.gpkg.zip \
+    crossings
 
 ogr2ogr -f GPKG background_layers.gpkg \
     -update \
@@ -138,6 +137,28 @@ ogr2ogr -f GPKG background_layers.gpkg \
     -spat $BOUNDS \
     freshwater_fish_habitat_accessibility_MODEL.gpkg \
     model_access_salmon
+
+# ---------------
+# get designated land layer from BC Data Catalogue
+# ---------------
+
+echo 'designated land layer from BC Data Catalogue'
+
+# have a peek at the layers in this package
+
+## ogrinfo -so /vsizip//vsicurl/https://github.com/bcgov/designatedlands/releases/download/v0.1.0/designatedlands.gpkg.zip
+wget --trust-server-names -qN https://github.com/bcgov/designatedlands/releases/download/v0.1.0/designatedlands.gpkg.zip
+unzip -oq designatedlands.gpkg.zip
+
+ogr2ogr -f GPKG background_layers.gpkg \
+    -update \
+    -nln streams \
+    -t_srs EPSG:3005 \
+    -dim XY \
+    -spat $BOUNDS \
+    designatedlands.gpkg \
+    designatedlands
+
 
 # ---------------
 # get bcgw layers
