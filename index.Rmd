@@ -59,7 +59,7 @@ font_set <- 9
 
 ```{r}
 source('scripts/packages.R')
-source('scripts/functions.R')
+#source('scripts/functions.R')
 
 ```
 

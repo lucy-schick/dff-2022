@@ -1,3 +1,4 @@
-tab:unnamed-chunk-3
 intro
+methods
+moti
 qml-file-manipulation

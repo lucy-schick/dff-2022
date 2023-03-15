@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Digital Field Forms</title>
+  <title>2 Methods | Digital Field Forms</title>
   <meta name="description" content="My Description." />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Digital Field Forms" />
+  <meta property="og:title" content="2 Methods | Digital Field Forms" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="My Description." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Digital Field Forms" />
+  <meta name="twitter:title" content="2 Methods | Digital Field Forms" />
   
   <meta name="twitter:description" content="My Description." />
   
@@ -28,8 +28,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="qml-file-manipulation.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -212,19 +212,52 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="methods" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Methods<a href="methods.html#methods" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This repo is designed as a place for default projects as well as templates and scripts required for data extraction and application. Also included are descriptions of workflows utilising Mergin Maps in QGIS to collect data in the field for fish passage assessment, habitat assessment and stream crossing climate change/maintenance issue risk assessment.</p>
+<p><br></p>
+<p>Mergin Maps is an open source GIS integration software developped by Lutra Consulting. It uses a plugin found in QGIS and communicates with an associated mobile app to make field data collection even easier. A link to their website with helpful documentation and a place to sign up for a free account can be found <a href="https://merginmaps.com/?gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVPAtSEg0pF915dFv6b4kge16gvwTRnX75S0gEB4Xj2wRZevorN3n3EaAhSrEALw_wcB">here</a>. Note that free accounts only come with 100mb storage capacity to start. However, projects shared with you from other individuals do not take up storage space on your account. In the 2022 field season, we carried out a pilot project where we utilised mergin to collect our fish passage data through a digital interface.</p>
+<p>How to build a mergin project:</p>
+<ul>
+<li>Run bash script located <code>scripts/background_layers.sh</code> on command line. This script can be customised depending on the area of interest.</li>
+<li>Use the qml file found in the <code>data</code> directory to style project layers</li>
+<li>Qlr file in <code>data</code> directory contains background layers that can be used for styling and data integration. Clip the layers to match study area.</li>
+</ul>
+<p>Modifying data to align with provincial templates:</p>
+<ul>
+<li>Build forms for phase 1 culvert assessments using the script <code>pscis_build_form.R</code></li>
+<li>Make adjustments to form attributes and styling in QGIS to make data collection in the field simpler (helpful documentation found <a href="https://merginmaps.com/docs/layer/settingup_forms/">here</a>). Ensure you save style to a .qml file for reproducibility and backup.</li>
+<li>Extract and tidy all phase 1 data collected in the field and align with provincial template using <code>pscis_tidy.R</code>. Template found in <code>data/pscis_assessment_template_v24.xlsm</code></li>
+<li>Build forms for phase 2 habitat confirmations using the script <code>fiss_site_build_form.R</code></li>
+<li>Extract and tidy all phase 2 habitat confirmation data collected in the field and align with provincial template using <code>fiss_site_tidy.R</code>. Template found in <code>data/habitat_confirmations.xlsm</code></li>
+<li>Data is manipulated and prepared for reporting using the customised <code>fpr</code> package (repo found <a href="https://github.com/NewGraphEnvironment/fpr">here</a>)</li>
+</ul>
+<p>Field data collection:</p>
+<ul>
+<li>Mergin projects in QGIS are synchronised to the server and opened in the mobile app</li>
+<li>Maps can be viewed offline by adding layers to “map themes” in the QGIS layers tab</li>
+<li>Ensure the required photos are taken for PSCIS submission. Take lots of photos when surveying streams, using the time stamp camera app. GPS devices are run when working in the field so data from gps tracks can be used to link with time stamped photos and give an exact location of specific stream characteristics.</li>
+<li></li>
+</ul>
+<p>Next steps:</p>
+<ul>
+<li><p>Mergin integration into our workflows is still in its early stages and will undergo many changes going forward. There is still lots to test and improve.</p></li>
+<li><p>Finish <code>fhap_build.R</code> script to build form for Fish Habitat Assessment Procedures (FHAP). Template can be found in <code>data</code> directory. Methods used are taken from <span class="citation">Johnston and Slaney (1996)</span>.</p></li>
+</ul>
+<p><br></p>
+<div id="moti" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> MoTi<a href="methods.html#moti" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In collaboration with the Ministry of Transportation and Infrastructure (MoTi), a new climate change replacement program aims to prioritize vulnerable culverts for replacement (pers. comm Sean Wong, 2022). Data will be collected in regards to culvert condition and vulnerability. These parameters will be given a priority index and ranked.</p>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="qml-file-manipulation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

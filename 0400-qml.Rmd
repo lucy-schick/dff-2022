@@ -8,7 +8,7 @@ We should look to see what the qml files look like so we can manipulate them wit
 
 Let's try loading one with only the `form` exported and inspect.
 
-```{r}
+```{r eval=F}
 my_data <- read.delim("data/survey_form_only.qml")
 
 my_data %>% 
