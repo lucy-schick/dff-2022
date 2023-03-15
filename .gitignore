@@ -5,8 +5,8 @@ _publish.R
 _book
 _bookdown_files
 rsconnect
-
-
 */~$*
 *.gpkg
 *.zip
+.httr-oauth
+data/lidar/*
