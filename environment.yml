@@ -1,17 +1,4 @@
 name: dff
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - wget
-  - cmake
-  - zip
-  - unzip
-  - python
-  - pip
-  - pip:
-      - mergin-client
-      - bcdata==0.7.6
 variables:
   PGHOST: localhost
   PGUSER: postgres
@@ -19,3 +6,20 @@ variables:
   PGDATABASE: newgraph
   DATABASE_URL: postgresql://postgres@localhost:5432/bcfishpass
   MERGIN_USERNAME: newgraph_airvine
+  # below is untested
+  SQLite3_ROOT: /opt/homebrew/Cellar/sqlite/3.40.1/
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - wget
+  - zip
+  - unzip
+  - python
+  #- sqlite
+  - pip
+  - pip:
+      - mergin-client
+      - bcdata==0.7.6
+
+
