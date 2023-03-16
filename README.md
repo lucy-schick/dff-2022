@@ -19,3 +19,7 @@ QGIS project layers (with the exception of field forms) clipped to [watershed gr
 `$ ./background_layers.sh "'VICT','COWN'"`
 
 `qml` files which provide `QGIS` styling for forms are kept in the `data` directory along with `QGIS` project `qlr` file that can be used to provide styling for all project layers.
+
+## Code of Conduct
+
+Please note that the this project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
