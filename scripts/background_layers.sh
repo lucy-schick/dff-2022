@@ -187,7 +187,7 @@ rm -r -f freshwater_fish_habitat_accessibility_MODEL.gpkg
 # create directory for project and move the files in an copy in a qlr template
 # ---------------
 
-mkdir ~/Projects/gis/mergin/$DIRPROJECT
+mkdir -p ~/Projects/gis/mergin/$DIRPROJECT
 mv background_layers.gpkg ~/Projects/gis/mergin/$DIRPROJECT/
 cp ../data/bcfishpass_dff.qlr ~/Projects/gis/mergin/$DIRPROJECT/
 
