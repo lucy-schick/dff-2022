@@ -13,7 +13,7 @@ names(form_prep1)
 unique(form_prep1$utm_zone)
 
 # name the project directory we are burning to
-dir_project <- 'ufn_ldn'
+dir_project <- 'bcfishpass_20230419'
 #dir_project <- 'bcfishpass_southisland_202201028'
 
 # name the form using the date and time
@@ -41,7 +41,7 @@ form_prep2 <- form_prep1 %>%
                 gps_id = NA_character_,
                 gps_waypoint_number = NA_character_,
                 moti_chris_culvert_id = NA_integer_,
-                habitat_comment = NA_character_, #let's encourage the tinyest bit of info here
+                habitat_comment = NA_character_, #encourage info here
                 utm_corrected = NA_character_, #this should be yes/no if defaults for $x and $y not used
                 # utm_corrected_easting = NA_real_, #constraints 6digits long
                 # utm_corrected_northing = NA_real_, #constraints 7digits long
