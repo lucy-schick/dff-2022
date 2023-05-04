@@ -98,7 +98,7 @@ ogr2ogr -f GPKG background_layers.gpkg \
 # ---------------
 echo 'getting bcfishpass layers'
 wget --trust-server-names -qN https://bcfishpass.s3.us-west-2.amazonaws.com/bcfishpass.gpkg.zip
-7z e bcfishpass.gpkg.zip
+7z e -aos bcfishpass.gpkg.zip
 ogr2ogr \
     -f GPKG background_layers.gpkg \
     -update \
