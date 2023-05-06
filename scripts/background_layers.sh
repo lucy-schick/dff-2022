@@ -28,6 +28,7 @@ echo 'Preparing the study area geopackage'
 # ---------------
 # initialize the geopackage with watershed group boundary, and get the extent
 # ---------------
+echo 'Generating project area from watershed group boundaries: '$1
 bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
     --query "WATERSHED_GROUP_CODE in ($1)" | \
     ogr2ogr -f GPKG background_layers.gpkg \
@@ -35,23 +36,21 @@ bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
         -nln fwa_watershed_groups_poly \
         /vsistdin/
 
-# get bounding box of watershed groups in albers and in lat/lon
+# get bounding box of project area in BC Albers and WGS84 (lon/lat)
 BOUNDS=$(fio info background_layers.gpkg --layer fwa_watershed_groups_poly --bounds)
 BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 --dst_crs EPSG:4326 | tr -d '[] ')
 
 
-
 # ---------------
-# archived to flatgeobuf on s3 for fast retrieval, and with watershed group code included
-# (no clipping required)
+# bcfishpass releated data sources archived to flatgeobuf on s3 for fast retrieval
+# (and with watershed group code included, no spatial query for clipping required)
 # ---------------
+echo 'Getting bcfishpass and supporting layers from s3'
 FGB_SOURCES="
     transport_line \
     crossings \
     streams \
     fiss_obstacles_pnt_sp"
-
-echo 'getting bcfishpass and supporting layers from s3'
 for layer in $FGB_SOURCES; do
   ogr2ogr \
     -f GPKG background_layers.gpkg \
@@ -70,20 +69,19 @@ done
 # ---------------
 # named streams
 # ---------------
-echo 'get layers from fwapg generated database'
+echo 'Getting named streams from fwapg feature service'
 ogr2ogr -f GPKG background_layers.gpkg \
     -update \
     -t_srs EPSG:3005 \
     -nln fwa_named_streams \
-    -clipsrc background_layers.gpkg \
-    -clipsrclayer fwa_watershed_groups_poly \
+    -where "watershed_group_code in ($1)" \
     "http://www.a11s.one:9000/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
 
 
 # ---------------
 # designatedlands
 # ---------------
-echo 'getting designated land layer linked in BC Data Catalogue to github'
+echo 'Getting designated land layer (https://github.com/bcgov/designatedlands)'
 wget -qN https://github.com/bcgov/designatedlands/releases/download/v0.1.0/designatedlands.gpkg.zip -O designatedlands.gpkg.zip
 unzip -o designatedlands.gpkg.zip
 ogr2ogr -f GPKG background_layers.gpkg \
@@ -98,10 +96,11 @@ ogr2ogr -f GPKG background_layers.gpkg \
     designatedlands.gpkg \
     designatedlands
 
+
 # ---------------
-# bcgw layers
+# non-fwa bcgw layers
 # ---------------
-echo 'getting BC Data Catalouge layers - this may take a while'
+echo 'Getting BC Data Catalogue layers - this may take a while'
 BCGW_SOURCES="whse_fish.fiss_stream_sample_sites_sp\
     whse_fish.fiss_fish_obsrvtn_pnt_sp \
     whse_imagery_and_base_maps.mot_culverts_sp \
@@ -128,6 +127,24 @@ for layer in $BCGW_SOURCES; do
         -dim XY \
         -clipsrc background_layers.gpkg \
         -clipsrclayer fwa_watershed_groups_poly \
+        /vsistdin/
+done
+
+
+# ---------------
+# fwa bcgw layers
+# ---------------
+echo 'Getting FWA BC Data Catalouge layers (clipping is via attribute query)'
+FWA_BCGW_SOURCES="whse_basemapping.fwa_lakes_poly \
+    whse_basemapping.fwa_wetlands_poly"
+for layer in $FWA_BCGW_SOURCES; do
+    bcdata dump $layer --bounds "$BOUNDS" --bounds-crs EPSG:3005 | \
+    ogr2ogr -f GPKG background_layers.gpkg \
+        -update \
+        -t_srs EPSG:3005 \
+        -nln $layer \
+        -dim XY \
+        -where "watershed_group_code in ($1)" \
         /vsistdin/
 done
 
