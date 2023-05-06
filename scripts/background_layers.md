@@ -1,6 +1,6 @@
 # background layers
 
-To download and clip layers for a an area of interest defined by a list of watershed groups:
+To download and clip layers for an area of interest defined by a list of watershed groups:
 
 1. edit `bcdata.txt` as needed, listing all layers to be downloaded via bcdata/WFS
 2. download these layers to .geojson, for given study area (optionally with timer):
