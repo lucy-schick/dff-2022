@@ -20,30 +20,8 @@ if [ $# -eq 0 ]
     exit 1
 fi
 
-
-BCGW_SOURCES="whse_fish.fiss_fish_obsrvtn_pnt_sp \
-    whse_fish.fiss_obstacles_pnt_sp \
-    whse_fish.fiss_stream_sample_sites_sp \
-    whse_imagery_and_base_maps.mot_culverts_sp \
-    whse_fish.pscis_assessment_svw \
-    whse_fish.pscis_design_proposal_svw \
-    whse_fish.pscis_habitat_confirmation_svw \
-    whse_fish.pscis_remediation_svw \
-    whse_basemapping.gba_railway_tracks_sp \
-    whse_forest_tenure.ften_road_section_lines_svw \
-    whse_basemapping.gba_transmission_lines_sp \
-    whse_mineral_tenure.og_pipeline_area_permit_sp \
-    whse_mineral_tenure.og_pipeline_area_appl_sp \
-    whse_mineral_tenure.og_pipeline_segment_permit_sp \
-    whse_land_and_natural_resource.prot_historical_fire_polys_sp \
-    whse_forest_vegetation.veg_burn_severity_sp\
-    whse_admin_boundaries.clab_indian_reserves \
-    whse_land_use_planning.rmp_ogma_non_legal_current_svw"
-
-
 # remove existing file if present
 rm -f background_layers.gpkg
-
 
 echo 'Preparing the study area geopackage'
 
@@ -62,6 +40,33 @@ BOUNDS=$(fio info background_layers.gpkg --layer fwa_watershed_groups_poly --bou
 BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 --dst_crs EPSG:4326 | tr -d '[] ')
 
 
+
+# ---------------
+# archived to flatgeobuf on s3 for fast retrieval, and with watershed group code included
+# (no clipping required)
+# ---------------
+FGB_SOURCES="
+    transport_line \
+    crossings \
+    streams \
+    fiss_obstacles_pnt_sp"
+
+echo 'getting bcfishpass and supporting layers from s3'
+for layer in $FGB_SOURCES; do
+  ogr2ogr \
+    -f GPKG background_layers.gpkg \
+    -update \
+    -nln $layer \
+    -t_srs EPSG:3005 \
+    -dim XY \
+    -spat $BOUNDS \
+    -spat_srs EPSG:3005 \
+    -where "watershed_group_code in ($1)" \
+    /vsicurl/https://bcfishpass.s3.us-west-2.amazonaws.com/$layer.fgb \
+    $layer
+done
+
+
 # ---------------
 # named streams
 # ---------------
@@ -70,58 +75,10 @@ ogr2ogr -f GPKG background_layers.gpkg \
     -update \
     -t_srs EPSG:3005 \
     -nln fwa_named_streams \
+    -clipsrc background_layers.gpkg \
+    -clipsrclayer fwa_watershed_groups_poly \
     "http://www.a11s.one:9000/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
 
-# ---------------
-# DRA
-# ---------------
-echo 'getting Digital Road Atlas - transport line layer'
-# (use ftp rather than bcgw so the attributes match what is in bcfishpass)
-# should be able to read the zip file direct with /vsizip//vsicurl but seems insano slow
-wget --trust-server-names -qN ftp://ftp.geobc.gov.bc.ca/sections/outgoing/bmgs/DRA_Public/dgtl_road_atlas.gdb.zip
-unzip -o dgtl_road_atlas.gdb.zip
-ogr2ogr -f GPKG background_layers.gpkg \
-    -update \
-    -t_srs EPSG:3005 \
-    -nln transport_line \
-    -dim XY \
-    -nlt MULTILINESTRING \
-    -spat $BOUNDS \
-    -spat_srs EPSG:3005 \
-    -clipsrc background_layers.gpkg \
-    -clipsrclayer fwa_watershed_groups_poly \
-    dgtl_road_atlas.gdb \
-    TRANSPORT_LINE
-
-# ---------------
-# bcfishpass
-# ---------------
-echo 'getting bcfishpass layers'
-wget --trust-server-names -qN https://bcfishpass.s3.us-west-2.amazonaws.com/bcfishpass.gpkg.zip
-7z e -aos bcfishpass.gpkg.zip
-ogr2ogr \
-    -f GPKG background_layers.gpkg \
-    -update \
-    -nln crossings \
-    -t_srs EPSG:3005 \
-    -dim XY \
-    -spat $BOUNDS \
-    -spat_srs EPSG:3005 \
-    -clipsrc background_layers.gpkg \
-    -clipsrclayer fwa_watershed_groups_poly \
-    bcfishpass.gpkg \
-    crossings
-ogr2ogr -f GPKG background_layers.gpkg \
-    -update \
-    -nln streams \
-    -t_srs EPSG:3005 \
-    -dim XY \
-    -spat $BOUNDS \
-    -spat_srs EPSG:3005 \
-    -clipsrc background_layers.gpkg \
-    -clipsrclayer fwa_watershed_groups_poly \
-    bcfishpass.gpkg \
-    streams
 
 # ---------------
 # designatedlands
@@ -141,11 +98,27 @@ ogr2ogr -f GPKG background_layers.gpkg \
     designatedlands.gpkg \
     designatedlands
 
-
 # ---------------
 # bcgw layers
 # ---------------
 echo 'getting BC Data Catalouge layers - this may take a while'
+BCGW_SOURCES="whse_fish.fiss_stream_sample_sites_sp\
+    whse_fish.fiss_fish_obsrvtn_pnt_sp \
+    whse_imagery_and_base_maps.mot_culverts_sp \
+    whse_fish.pscis_assessment_svw \
+    whse_fish.pscis_design_proposal_svw \
+    whse_fish.pscis_habitat_confirmation_svw \
+    whse_fish.pscis_remediation_svw \
+    whse_basemapping.gba_railway_tracks_sp \
+    whse_forest_tenure.ften_road_section_lines_svw \
+    whse_basemapping.gba_transmission_lines_sp \
+    whse_mineral_tenure.og_pipeline_area_permit_sp \
+    whse_mineral_tenure.og_pipeline_area_appl_sp \
+    whse_mineral_tenure.og_pipeline_segment_permit_sp \
+    whse_land_and_natural_resource.prot_historical_fire_polys_sp \
+    whse_forest_vegetation.veg_burn_severity_sp\
+    whse_admin_boundaries.clab_indian_reserves \
+    whse_land_use_planning.rmp_ogma_non_legal_current_svw"
 for layer in $BCGW_SOURCES; do
     bcdata dump $layer --bounds "$BOUNDS" --bounds-crs EPSG:3005 | \
     ogr2ogr -f GPKG background_layers.gpkg \
