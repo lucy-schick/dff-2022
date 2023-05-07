@@ -107,7 +107,7 @@ ogr2ogr -f GPKG background_layers.gpkg \
 # ---------------
 BCGW_SOURCES=$(cat bcdata.txt)
 for layer in $BCGW_SOURCES; do
-    if [[ $layer == *".fwa"* ]]; then
+    if [[ $layer == *".fwa_"* ]]; then
         ogr2ogr -f GPKG \
             background_layers.gpkg \
             -update \
