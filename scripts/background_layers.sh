@@ -11,7 +11,7 @@ set -euxo pipefail
 # ---------------
 
 # define the name of our Q project
-DIRPROJECT='pars_sern_demo'
+DIRPROJECT='skeena_2023'
 
 # check that watershed group code is provided as argument
 if [ $# -eq 0 ]
@@ -132,6 +132,6 @@ done
 # ---------------
 # create directory for project and move the files in an copy in a qlr template
 # ---------------
-mkdir -p ~/Projects/gis/mergin/$DIRPROJECT
-mv background_layers.gpkg* ~/Projects/gis/mergin/$DIRPROJECT/
-cp ../data/bcfishpass_dff.qlr ~/Projects/gis/mergin/$DIRPROJECT/
+mkdir -p ~/Projects/gis/$DIRPROJECT
+mv background_layers.gpkg* ~/Projects/gis/$DIRPROJECT/
+cp ../data/bcfishpass_dff.qlr ~/Projects/gis/$DIRPROJECT/
