@@ -1,17 +1,6 @@
 #!/bin/bash
 set -euxo pipefail
 
-# ---------------
-# extract background info for crossing assessments digital field form projects
-
-# usage: specify watershed groups of interest as a comma separated, single quoted string
-# eg
-# test with ./background_layers.sh "'PARS'" &>log.txt
-# $ ./background_layers.sh "'ATNA', 'BELA', 'BLAR', 'CHIL', 'EUCH', 'EUCL', 'HOMA', 'KITL', 'KLIN', 'KNIG', 'LCHL', 'LCHR', 'LDEN', 'LEUT', 'LNRS', 'NAZR', 'NECL', 'OWIK', 'UCHR', 'UDEN', 'UEUT'"
-# ---------------
-
-# define the name of our Q project
-DIRPROJECT='pars_sern_demo'
 
 # check that watershed group code is provided as argument
 if [ $# -eq 0 ]
