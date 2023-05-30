@@ -11,7 +11,7 @@ set -euxo pipefail
 # ---------------
 
 # define the name of our Q project
-DIRPROJECT='skeena_2023'
+DIRPROJECT='skeena'
 
 # check that watershed group code is provided as argument
 if [ $# -eq 0 ]
@@ -135,3 +135,4 @@ done
 mkdir -p ~/Projects/gis/$DIRPROJECT
 mv background_layers.gpkg* ~/Projects/gis/$DIRPROJECT/
 cp ../data/bcfishpass_dff.qlr ~/Projects/gis/$DIRPROJECT/
+mkdir -p ~/Projects/gis/$DIRPROJECT/phone_ignore/photos
