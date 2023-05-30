@@ -11,7 +11,7 @@ set -euxo pipefail
 # ---------------
 
 # define the name of our Q project
-DIRPROJECT='skeena'
+DIRPROJECT='test_20230530a'
 
 # check that watershed group code is provided as argument
 if [ $# -eq 0 ]
@@ -82,24 +82,6 @@ ogr2ogr -f GPKG background_layers.gpkg \
     "http://www.a11s.one:9000/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
 
 
-# ---------------
-# designatedlands
-# ---------------
-echo 'Getting designated land layer (https://github.com/bcgov/designatedlands)'
-wget -qN https://github.com/bcgov/designatedlands/releases/download/v0.1.0/designatedlands.gpkg.zip -O designatedlands.gpkg.zip
-unzip -o designatedlands.gpkg.zip
-ogr2ogr -f GPKG background_layers.gpkg \
-    -update \
-    -nln designatedlands \
-    -t_srs EPSG:3005 \
-    -dim XY \
-    -spat $BOUNDS \
-    -spat_srs EPSG:3005 \
-    -clipsrc aoi.geojson \
-    -clipsrclayer aoi \
-    designatedlands.gpkg \
-    designatedlands
-
 
 # ---------------
 # other BCGW/WFS sources
@@ -130,9 +112,9 @@ for layer in $BCGW_SOURCES; do
 done
 
 # ---------------
-# create directory for project and move the files in an copy in a qlr template
+# create directory for project and move the files in and copy in a qlr template along with the directories for info ignored on phones
 # ---------------
 mkdir -p ~/Projects/gis/$DIRPROJECT
 mv background_layers.gpkg* ~/Projects/gis/$DIRPROJECT/
 cp ../data/bcfishpass_dff.qlr ~/Projects/gis/$DIRPROJECT/
-mkdir -p ~/Projects/gis/$DIRPROJECT/phone_ignore/photos
+mkdir -p ~/Projects/gis/$DIRPROJECT/ignore_mobile/photos

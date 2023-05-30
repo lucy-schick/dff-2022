@@ -15,3 +15,5 @@ whse_admin_boundaries.clab_indian_reserves
 whse_land_use_planning.rmp_ogma_non_legal_current_svw
 whse_basemapping.fwa_lakes_poly
 whse_basemapping.fwa_wetlands_poly
+whse_admin_boundaries.clab_national_parks
+whse_tantalis.ta_park_ecores_pa_svw
