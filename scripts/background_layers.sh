@@ -11,7 +11,7 @@ set -euxo pipefail
 # ---------------
 
 # define the name of our Q project
-DIRPROJECT='test_20230530a'
+DIRPROJECT='skeena_2023'
 
 # check that watershed group code is provided as argument
 if [ $# -eq 0 ]
@@ -34,6 +34,7 @@ bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
     --query "WATERSHED_GROUP_CODE in ($1)" > aoi.geojson
     ogr2ogr -f GPKG background_layers.gpkg \
         -t_srs EPSG:3005 \
+        -l \
         -nln fwa_watershed_groups_poly \
         aoi.geojson
 
@@ -116,5 +117,4 @@ done
 # ---------------
 mkdir -p ~/Projects/gis/$DIRPROJECT
 mv background_layers.gpkg* ~/Projects/gis/$DIRPROJECT/
-cp ../data/bcfishpass_dff.qlr ~/Projects/gis/$DIRPROJECT/
 mkdir -p ~/Projects/gis/$DIRPROJECT/ignore_mobile/photos

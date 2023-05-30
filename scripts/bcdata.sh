@@ -12,7 +12,7 @@ fi
 # generate aoi
 rm -f aoi.geojson
 bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
-    --query "WATERSHED_GROUP_CODE in ($1)" > aoi.geojson
+    --query "WATERSHED_GROUP_CODE in ($1)" -l > aoi.geojson
 
 # get bounding box of aoi in BC Albers and WGS84 (lon/lat)
 BOUNDS_LL=$(fio info aoi.geojson --layer aoi --bounds)
@@ -26,6 +26,6 @@ echo 'Getting BC Data Catalogue layers - this may take a while'
 BCGW_SOURCES=$(cat bcdata.txt)
 for layer in $BCGW_SOURCES; do
     if [ ! -f ./$layer.geojson ]; then
-        set -e ; bcdata dump $layer --bounds "$BOUNDS" --bounds-crs EPSG:3005 > $layer.geojson
+        set -e ; bcdata dump $layer --bounds "$BOUNDS" --bounds-crs EPSG:3005 -l > $layer.geojson
     fi
 done
