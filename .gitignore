@@ -10,3 +10,4 @@ rsconnect
 *.zip
 .httr-oauth
 data/lidar/*
+*.geojson
