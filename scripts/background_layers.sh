@@ -112,8 +112,9 @@ for layer in $BCGW_SOURCES; do
 done
 
 # ---------------
-# create directory for project and move the files in and copy in a qlr template along with the directories for info ignored on phones
+# create directory for project and move the files in and copy in a qlr template (works relative to location dragged from when we reference gpkg) along with the directories for info ignored on phones
 # ---------------
 mkdir -p ~/Projects/gis/$DIRPROJECT
 mv background_layers.gpkg* ~/Projects/gis/$DIRPROJECT/
+cp ../data/bcfishpass_dff.qlr ~/Projects/gis/$DIRPROJECT/
 mkdir -p ~/Projects/gis/$DIRPROJECT/ignore_mobile/photos
