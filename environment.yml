@@ -1,13 +1,16 @@
+# in order for this to build mergin-client - on a mac - we need to run below in the terminal first - see https://github.com/MerginMaps/mergin-py-client/issues/164
+
+    # export SQLite3_ROOT=/opt/homebrew/Cellar/sqlite/3.40.1/
+
 name: dff
 variables:
   PGHOST: localhost
   PGUSER: postgres
   PGPORT: 5432
-  PGDATABASE: newgraph
+  PGDATABASE: bcfishpass
   DATABASE_URL: postgresql://postgres@localhost:5432/bcfishpass
   MERGIN_USERNAME: newgraph_airvine
-  # below is untested
-  SQLite3_ROOT: /opt/homebrew/Cellar/sqlite/3.40.1/
+
 channels:
   - conda-forge
   - defaults
@@ -20,6 +23,6 @@ dependencies:
   - pip
   - pip:
       - mergin-client
-      - bcdata==0.7.6
+      - bcdata
 
 
