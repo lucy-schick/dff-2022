@@ -31,10 +31,9 @@ echo 'Preparing the study area geopackage'
 echo 'Generating project area from watershed group boundaries: '$1
 rm -f aoi.geojson
 bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
-    --query "WATERSHED_GROUP_CODE in ($1)" > aoi.geojson
+    --query "WATERSHED_GROUP_CODE in ($1)" -l > aoi.geojson
     ogr2ogr -f GPKG background_layers.gpkg \
         -t_srs EPSG:3005 \
-        -l \
         -nln fwa_watershed_groups_poly \
         aoi.geojson
 

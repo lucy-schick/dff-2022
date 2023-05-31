@@ -29,3 +29,4 @@ for layer in $BCGW_SOURCES; do
         set -e ; bcdata dump $layer --bounds "$BOUNDS" --bounds-crs EPSG:3005 -l > $layer.geojson
     fi
 done
+
