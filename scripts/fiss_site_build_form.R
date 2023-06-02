@@ -3,7 +3,7 @@
 source('scripts/packages.R')
 
 #' name the project directory we are burning to
-dir_project <- 'bcfishpass_elkr_20220904'
+dir_project <- 'bcfishpass_20230517'
 
 #' name the form using the date and time
 #' we should be able to name the form the same in the active project but the files can be versioned
@@ -166,6 +166,7 @@ form_prep2 <- form_prep1 %>%
 
 form_prep3 <- form_prep2 %>%
   # example - drop  columns that we don't need - there are more
+  select(-waterbody_id) %>%
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
   dplyr::mutate(date_time_start = NA_POSIXct_,
                 mergin_user = NA_character_,
@@ -194,7 +195,9 @@ form_prep3 <- form_prep2 %>%
                 feature_type_3 = NA_character_,
                 feature_height_3_m = NA_character_,
                 feature_length_3_m = NA_character_,
-                feature_time_3 = NA_POSIXct_
+                feature_time_3 = NA_POSIXct_,
+                no_visible_channel = NA_character_,
+                dewatered_dry_int_channel = NA_character_
   ) %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
   # !!!!!this won't work until you rename 'lon' and 'lat' so they are our x and y columns for this dataset (hint: look at the column names)
@@ -213,6 +216,8 @@ form_prep3 <- form_prep2 %>%
            matches('conductivity'),
            'turbidity',
            'stage',
+           'no_visible_channel',
+           'dewatered_dry_int_channel',
            matches('utm'),
            matches('width'),
            matches('gradient'),
@@ -226,7 +231,7 @@ form_prep3 <- form_prep2 %>%
   relocate(matches('photo'), .after = last_col()) %>%
   relocate(matches('method'), .after = last_col()) %>%
   relocate(matches('average|avg'), .after = last_col()) %>%
-  sf::st_write(paste0('../../gis/mergin/',
+  sf::st_write(paste0('../../gis/',
                       dir_project,
                       '/',
                       file_name,
