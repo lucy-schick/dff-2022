@@ -2,7 +2,7 @@
 set -euxo pipefail
 
 # define the name of our Q project
-DIRPROJECT='test_20230601a'
+DIRPROJECT='test_20230601b'
 # ---------------
 # extract background info for crossing assessments digital field form projects
 
@@ -118,3 +118,4 @@ mkdir -p ~/Projects/gis/$DIRPROJECT
 mv background_layers.gpkg* ~/Projects/gis/$DIRPROJECT/
 cp ../../data/qgis/bcfishpass_dff.qlr ~/Projects/gis/$DIRPROJECT/
 mkdir -p ~/Projects/gis/$DIRPROJECT/ignore_mobile/photos
+touch ~/Projects/gis/$DIRPROJECT/ignore_mobile/photos/photos.txt
