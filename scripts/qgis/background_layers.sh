@@ -1,17 +1,17 @@
 #!/bin/bash
 set -euxo pipefail
 
+# define the name of our Q project
+DIRPROJECT='test_20230601a'
 # ---------------
 # extract background info for crossing assessments digital field form projects
 
 # usage: specify watershed groups of interest as a comma separated, single quoted string
 # eg
 # test with ./background_layers.sh "'PARS'" &>log.txt
-# $ ./background_layers.sh "'ATNA', 'BELA', 'BLAR', 'CHIL', 'EUCH', 'EUCL', 'HOMA', 'KITL', 'KLIN', 'KNIG', 'LCHL', 'LCHR', 'LDEN', 'LEUT', 'LNRS', 'NAZR', 'NECL', 'OWIK', 'UCHR', 'UDEN', 'UEUT'"
 # ---------------
 
-# define the name of our Q project
-DIRPROJECT='test_20230531a'
+
 
 # check that watershed group code is provided as argument
 if [ $# -eq 0 ]
@@ -116,5 +116,5 @@ done
 # ---------------
 mkdir -p ~/Projects/gis/$DIRPROJECT
 mv background_layers.gpkg* ~/Projects/gis/$DIRPROJECT/
-cp ../data/bcfishpass_dff.qlr ~/Projects/gis/$DIRPROJECT/
+cp ../../data/qgis/bcfishpass_dff.qlr ~/Projects/gis/$DIRPROJECT/
 mkdir -p ~/Projects/gis/$DIRPROJECT/ignore_mobile/photos
