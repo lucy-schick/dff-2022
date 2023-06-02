@@ -11,7 +11,7 @@ set -euxo pipefail
 # ---------------
 
 # define the name of our Q project
-DIRPROJECT='skeena_2023'
+DIRPROJECT='test_20230531a'
 
 # check that watershed group code is provided as argument
 if [ $# -eq 0 ]
