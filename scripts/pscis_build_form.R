@@ -1,29 +1,31 @@
 # build a raw field form template using the excel file as the template for our template
 
 source('scripts/packages.R')
+source('scripts/functions.R')
 
 
 # import the pscis template
-form_prep1 <- fpr::fpr_import_pscis()
-
+form_prep1 <- tfpr_import_pscis_all() %>% bind_rows()
 # see the names of the columns
 names(form_prep1)
 
 # which utm zone do all the coordinates fall into?
 unique(form_prep1$utm_zone)
 
-# name the project directory we are burning to
-dir_project <- 'bcfishpass_20230517'
-#dir_project <- 'bcfishpass_southisland_202201028'
+#------------------------------name the project directory we are burning to-----------------------------
+dir_project <- 'clay_2023'
+#-------------------------------------------------------------------------------------------------------
+
+
+#---------------------------------------define your utm zone ------------------------------------------
+# !!!!!!!!!!!!!!!!!!!!!!!!This can cause errors if you use the form in more than
+utm_zone <- 10
+#------------------------------------------------------------------------------------------------------
+
 
 # name the form using the date and time
-# we should be able to name the form the same in the active project but the files can be versioned
-# seems safer...
+# once stable we can name the form the same in all projects but this allows tables to be versioned in case there are changes required to the form
 file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d"))
-
-#' define your utm zone.  This can cause errors if you use the form in more than
-#' one zone!!!!! beware
-utm_zone <- 11
 
 form_prep2 <- form_prep1 %>%
   # example - drop  columns that we don't need - there are more
@@ -80,6 +82,8 @@ form_prep2 <- form_prep1 %>%
                 photo_extra1_tag = NA_character_,
                 photo_extra2_tag = NA_character_
   ) %>%
+  # slice it down so it has only 1 row
+  dplyr::slice(1) %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
   sf::st_as_sf(coords = c("easting", "northing"),
                crs = 32600 + utm_zone, remove = F) %>%
@@ -108,9 +112,7 @@ glimpse(form_prep2)
 
 
 form_prep2 %>%
-  # slice it down so it doesn't have any rows
-  dplyr::slice(1) %>%
-  # make this filepath whatever - this just backs out two directories and then walks into `gis`.
+   # make this filepath whatever - this just backs out two directories and then walks into `gis`.
   sf::st_write(paste0('../../gis/',
                       dir_project,
                       '/',
