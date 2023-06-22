@@ -120,3 +120,5 @@ cp ../../data/qgis/bcfishpass_mobile.qgs ~/Projects/gis/$DIRPROJECT/
 cp ../../data/form_pscis.qml ~/Projects/gis/$DIRPROJECT/
 mkdir -p ~/Projects/gis/$DIRPROJECT/ignore_mobile/photos
 touch ~/Projects/gis/$DIRPROJECT/ignore_mobile/photos/photos.txt
+cp -R ../../data/methods ~/Projects/gis/$DIRPROJECT/ignore_mobile/methods
+cp -R ../../data/templates ~/Projects/gis/$DIRPROJECT/ignore_mobile/templates
