@@ -13,7 +13,7 @@ names(form_prep1)
 unique(form_prep1$utm_zone)
 
 #------------------------------name the project directory we are burning to-----------------------------
-dir_project <- 'clay_2023'
+# dir_project <- 'clay_2023'
 #-------------------------------------------------------------------------------------------------------
 
 
@@ -25,7 +25,8 @@ utm_zone <- 10
 
 # name the form using the date and time
 # once stable we can name the form the same in all projects but this allows tables to be versioned in case there are changes required to the form
-file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d"))
+# file_name <- paste0('form_pscis_', format(lubridate::now(), "%Y%m%d"))
+
 
 form_prep2 <- form_prep1 %>%
   # example - drop  columns that we don't need - there are more
@@ -80,7 +81,8 @@ form_prep2 <- form_prep1 %>%
                 photo_extra1 = NA_character_,
                 photo_extra2 = NA_character_,
                 photo_extra1_tag = NA_character_,
-                photo_extra2_tag = NA_character_
+                photo_extra2_tag = NA_character_,
+                link_method_phase1 = NA_character_
   ) %>%
   # slice it down so it has only 1 row
   dplyr::slice(1) %>%
@@ -113,10 +115,5 @@ glimpse(form_prep2)
 
 form_prep2 %>%
    # make this filepath whatever - this just backs out two directories and then walks into `gis`.
-  sf::st_write(paste0('../../gis/',
-                      dir_project,
-                      '/',
-                      file_name,
-                      '.gpkg'),
-                      # turned this T now that we have time in name
-               delete_layer = T)
+  sf::st_write('data/qgis/form_pscis.gpkg', delete_layer = T)
+
