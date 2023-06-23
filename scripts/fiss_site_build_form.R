@@ -3,16 +3,16 @@
 source('scripts/packages.R')
 
 #' name the project directory we are burning to
-dir_project <- 'bcfishpass_20230517'
+# dir_project <- 'bcfishpass_20230517'
 
 #' name the form using the date and time
 #' we should be able to name the form the same in the active project but the files can be versioned
 #' seems safer...
-file_name <- paste0('form_fiss_site_', format(lubridate::now(), "%Y%m%d"))
+# file_name <- paste0('form_fiss_site_', format(lubridate::now(), "%Y%m%d"))
 
 #' define your utm zone.  This can cause errors if you use the form in more than
 #' one zone!!!!! beware
-utm_zone <- 11
+utm_zone <- 9
 
 #' import the fish data submission template (needs to be in the data directory)
 #' because we want to keep the backup file clean for the value maps and because
@@ -197,7 +197,8 @@ form_prep3 <- form_prep2 %>%
                 feature_length_3_m = NA_character_,
                 feature_time_3 = NA_POSIXct_,
                 no_visible_channel = NA_character_,
-                dewatered_dry_int_channel = NA_character_
+                dewatered_dry_int_channel = NA_character_,
+                link_method_site_card = NA_character_
   ) %>%
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
   # !!!!!this won't work until you rename 'lon' and 'lat' so they are our x and y columns for this dataset (hint: look at the column names)
@@ -206,6 +207,8 @@ form_prep3 <- form_prep2 %>%
   slice(1) %>%
   sf::st_as_sf(coords = c("utm_easting", "utm_northing"),
                crs = 32600 + utm_zone, remove = F) %>%
+  # put it into albers so we can use it anywhere
+  sf::st_transform(crs = 3005) %>%
   relocate(date_time_start,
            mergin_user,
            contains('surveyor'),
@@ -231,13 +234,8 @@ form_prep3 <- form_prep2 %>%
   relocate(matches('photo'), .after = last_col()) %>%
   relocate(matches('method'), .after = last_col()) %>%
   relocate(matches('average|avg'), .after = last_col()) %>%
-  sf::st_write(paste0('../../gis/',
-                      dir_project,
-                      '/',
-                      file_name,
-                      '.gpkg'),
-               # turned this T now that we have time in name
-               delete_layer = T)
+  relocate(matches('link_method_site_card'), .after = last_col()) %>%
+  sf::st_write('data/qgis/form_fiss_site.gpkg', delete_layer = T)
 
 
 
