@@ -4,7 +4,7 @@ source('scripts/packages.R')
 source('scripts/functions.R')
 
 
-# import the pscis template
+# import the pscis template with custom test function
 form_prep1 <- tfpr_import_pscis_all() %>% bind_rows()
 # see the names of the columns
 names(form_prep1)
@@ -37,18 +37,10 @@ form_prep2 <- form_prep1 %>%
   dplyr::mutate(-rowid,
                 date_time_start = NA_POSIXct_,
                 mergin_user = NA_character_,
-                surveyor_1 = NA_character_,
-                surveyor_2 = NA_character_,
-                surveyor_3 = NA_character_,
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_number = NA_character_,
                 moti_chris_culvert_id = NA_integer_,
-                habitat_comment = NA_character_, #encourage info here
-                utm_corrected = NA_character_, #this should be yes/no if defaults for $x and $y not used
-                # utm_corrected_easting = NA_real_, #constraints 6digits long
-                # utm_corrected_northing = NA_real_, #constraints 7digits long
-                # condition = NA_integer_,
                 erosion_issues = NA_integer_,
                 embankment_fill_issues = NA_integer_,
                 blockage_issues = NA_integer_,
@@ -78,6 +70,7 @@ form_prep2 <- form_prep1 %>%
                 photo_condition = NA_character_,
                 photo_embankment_fill = NA_character_,
                 photo_blockage = NA_character_,
+                photo_paper_card = NA_character_,
                 photo_extra1 = NA_character_,
                 photo_extra2 = NA_character_,
                 photo_extra1_tag = NA_character_,
@@ -106,7 +99,6 @@ form_prep2 <- form_prep1 %>%
          diameter_or_span_meters,
          length_or_width_meters,
          assessment_comment,
-         habitat_comment,
          everything())
 
 glimpse(form_prep1)
