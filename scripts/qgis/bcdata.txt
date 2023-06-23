@@ -22,4 +22,5 @@ whse_tantalis.ta_conservancy_areas_svw
 whse_legal_admin_boundaries.abms_municipalities_sp
 whse_environmental_monitoring.envcan_hydrometric_stn_sp
 whse_basemapping.utmg_utm_zones_sp
+whse_imagery_and_base_maps.mot_road_structure_sp
 
