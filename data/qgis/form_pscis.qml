@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis hasScaleBasedVisibilityFlag="0" minScale="100000000" labelsEnabled="1" version="3.30.1-'s-Hertogenbosch" simplifyDrawingHints="0" simplifyDrawingTol="1" symbologyReferenceScale="-1" readOnly="0" simplifyMaxScale="1" simplifyLocal="1" maxScale="0" simplifyAlgorithm="0" styleCategories="AllStyleCategories">
+<qgis hasScaleBasedVisibilityFlag="0" minScale="100000000" simplifyDrawingTol="1" maxScale="0" symbologyReferenceScale="-1" simplifyMaxScale="1" labelsEnabled="1" simplifyDrawingHints="0" version="3.30.0-'s-Hertogenbosch" simplifyAlgorithm="0" readOnly="0" styleCategories="AllStyleCategories" simplifyLocal="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal endField="" startExpression="" durationUnit="min" enabled="0" durationField="fid" limitMode="0" fixedDuration="0" endExpression="" startField="date_time_start" accumulate="0" mode="1">
+  <temporal accumulate="0" startField="date_time_start" enabled="0" durationField="fid" startExpression="" fixedDuration="0" durationUnit="min" limitMode="0" mode="1" endField="" endExpression="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation extrusion="0" extrusionEnabled="0" respectLayerSymbol="1" clamping="Terrain" type="IndividualFeatures" binding="Centroid" zscale="1" showMarkerSymbolInSurfacePlots="0" zoffset="0" symbology="Line">
+  <elevation extrusionEnabled="0" binding="Centroid" clamping="Terrain" extrusion="0" showMarkerSymbolInSurfacePlots="0" symbology="Line" zscale="1" type="IndividualFeatures" respectLayerSymbol="1" zoffset="0">
     <data-defined-properties>
       <Option type="Map">
         <Option name="name" type="QString" value=""/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol name="" is_animated="0" type="line" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1">
+      <symbol name="" force_rhr="0" frame_rate="10" clip_to_extent="1" type="line" is_animated="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -29,7 +29,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleLine" enabled="1" locked="0" id="{a9e0b0fd-c0fb-4f9c-800d-664d1c4c7dee}">
+        <layer locked="0" pass="0" id="{a9e0b0fd-c0fb-4f9c-800d-664d1c4c7dee}" enabled="1" class="SimpleLine">
           <Option type="Map">
             <Option name="align_dash_pattern" type="QString" value="0"/>
             <Option name="capstyle" type="QString" value="square"/>
@@ -70,7 +70,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol name="" is_animated="0" type="fill" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1">
+      <symbol name="" force_rhr="0" frame_rate="10" clip_to_extent="1" type="fill" is_animated="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -78,7 +78,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleFill" enabled="1" locked="0" id="{2c3c44ba-aa42-464b-970d-cdc8bea66937}">
+        <layer locked="0" pass="0" id="{2c3c44ba-aa42-464b-970d-cdc8bea66937}" enabled="1" class="SimpleFill">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="color" type="QString" value="114,155,111,255"/>
@@ -103,7 +103,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol name="" is_animated="0" type="marker" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1">
+      <symbol name="" force_rhr="0" frame_rate="10" clip_to_extent="1" type="marker" is_animated="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -111,7 +111,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0" id="{191a0fba-32a0-4a64-bcf1-c9ed36ac8815}">
+        <layer locked="0" pass="0" id="{191a0fba-32a0-4a64-bcf1-c9ed36ac8815}" enabled="1" class="SimpleMarker">
           <Option type="Map">
             <Option name="angle" type="QString" value="0"/>
             <Option name="cap_style" type="QString" value="square"/>
@@ -144,9 +144,9 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0" referencescale="-1">
+  <renderer-v2 enableorderby="0" symbollevels="0" forceraster="0" referencescale="-1" type="singleSymbol">
     <symbols>
-      <symbol name="0" is_animated="0" type="marker" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1">
+      <symbol name="0" force_rhr="0" frame_rate="10" clip_to_extent="1" type="marker" is_animated="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -154,7 +154,7 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0" id="{68f7a329-a15f-4c17-b467-22961a87fe28}">
+        <layer locked="0" pass="0" id="{68f7a329-a15f-4c17-b467-22961a87fe28}" enabled="1" class="SimpleMarker">
           <Option type="Map">
             <Option name="angle" type="QString" value="0"/>
             <Option name="cap_style" type="QString" value="square"/>
@@ -176,7 +176,7 @@
             <Option name="size_unit" type="QString" value="MM"/>
             <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
-          <effect type="effectStack" enabled="1">
+          <effect enabled="1" type="effectStack">
             <effect type="dropShadow">
               <Option type="Map">
                 <Option name="blend_mode" type="QString" value="0"/>
@@ -210,7 +210,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="0" class="SimpleMarker" enabled="1" locked="0" id="{e0c3e01c-7042-444e-9c37-d0c2a4a00333}">
+        <layer locked="0" pass="0" id="{e0c3e01c-7042-444e-9c37-d0c2a4a00333}" enabled="1" class="SimpleMarker">
           <Option type="Map">
             <Option name="angle" type="QString" value="34"/>
             <Option name="cap_style" type="QString" value="square"/>
@@ -232,7 +232,7 @@
             <Option name="size_unit" type="QString" value="MM"/>
             <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
-          <effect type="effectStack" enabled="0">
+          <effect enabled="0" type="effectStack">
             <effect type="drawSource">
               <Option type="Map">
                 <Option name="blend_mode" type="QString" value="0"/>
@@ -257,12 +257,12 @@
   </renderer-v2>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style useSubstitutions="0" fontLetterSpacing="0" fontWeight="50" multilineHeightUnit="Percentage" forcedItalic="0" fontUnderline="0" forcedBold="0" fontStrikeout="0" fontWordSpacing="0" fontSizeUnit="Point" previewBkgrdColor="255,255,255,255" fontSize="10" textColor="50,50,50,255" allowHtml="0" fontFamily="Tahoma" namedStyle="Regular" legendString="Aa" fontItalic="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontKerning="1" multilineHeight="1" capitalization="0" blendMode="0" fieldName=" concat(  &quot;pscis_crossing_id&quot; , '_',  &quot;my_crossing_reference&quot; , '_risk - ',   &quot;overall_rank&quot; )" textOrientation="horizontal" isExpression="1">
+      <text-style textColor="50,50,50,255" multilineHeight="1" fieldName=" concat(  &quot;pscis_crossing_id&quot; , '_',  &quot;my_crossing_reference&quot; , '_risk - ',   &quot;overall_rank&quot; )" isExpression="1" fontLetterSpacing="0" fontItalic="0" fontWeight="50" fontSize="10" blendMode="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontStrikeout="0" namedStyle="Regular" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" multilineHeightUnit="Percentage" capitalization="0" useSubstitutions="0" fontWordSpacing="0" fontUnderline="0" fontSizeUnit="Point" forcedBold="0" allowHtml="0" legendString="Aa" forcedItalic="0" fontKerning="1" fontFamily="Tahoma">
         <families/>
-        <text-buffer bufferJoinStyle="128" bufferColor="250,250,250,255" bufferSizeUnits="MM" bufferBlendMode="0" bufferDraw="1" bufferOpacity="1" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferNoFill="1"/>
-        <text-mask maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskedSymbolLayers="" maskJoinStyle="128" maskEnabled="0" maskSizeUnits="MM" maskSize="0" maskType="0" maskOpacity="1"/>
-        <background shapeRadiiX="0" shapeJoinStyle="64" shapeBorderWidth="0" shapeOpacity="1" shapeDraw="0" shapeOffsetY="0" shapeRotationType="0" shapeFillColor="255,255,255,255" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="Point" shapeOffsetUnit="Point" shapeSizeType="0" shapeSizeY="0" shapeSizeX="0" shapeSVGFile="" shapeOffsetX="0" shapeBlendMode="0" shapeSizeUnit="Point" shapeRotation="0" shapeRadiiUnit="Point" shapeBorderColor="128,128,128,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeRadiiY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0">
-          <symbol name="markerSymbol" is_animated="0" type="marker" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1">
+        <text-buffer bufferNoFill="1" bufferOpacity="1" bufferColor="250,250,250,255" bufferDraw="1" bufferJoinStyle="128" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferSize="1" bufferSizeUnits="MM"/>
+        <text-mask maskedSymbolLayers="" maskEnabled="0" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskJoinStyle="128" maskType="0" maskSize="0" maskSizeUnits="MM"/>
+        <background shapeRotation="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSVGFile="" shapeSizeType="0" shapeType="0" shapeRotationType="0" shapeSizeX="0" shapeBlendMode="0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeBorderWidth="0" shapeSizeY="0" shapeBorderWidthUnit="Point" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="Point" shapeJoinStyle="64" shapeSizeUnit="Point" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="Point" shapeDraw="0" shapeFillColor="255,255,255,255" shapeOffsetY="0" shapeOpacity="1" shapeBorderColor="128,128,128,255">
+          <symbol name="markerSymbol" force_rhr="0" frame_rate="10" clip_to_extent="1" type="marker" is_animated="0" alpha="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value=""/>
@@ -270,7 +270,7 @@
                 <Option name="type" type="QString" value="collection"/>
               </Option>
             </data_defined_properties>
-            <layer pass="0" class="SimpleMarker" enabled="1" locked="0" id="">
+            <layer locked="0" pass="0" id="" enabled="1" class="SimpleMarker">
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
@@ -301,7 +301,7 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="fillSymbol" is_animated="0" type="fill" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1">
+          <symbol name="fillSymbol" force_rhr="0" frame_rate="10" clip_to_extent="1" type="fill" is_animated="0" alpha="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option name="name" type="QString" value=""/>
@@ -309,7 +309,7 @@
                 <Option name="type" type="QString" value="collection"/>
               </Option>
             </data_defined_properties>
-            <layer pass="0" class="SimpleFill" enabled="1" locked="0" id="">
+            <layer locked="0" pass="0" id="" enabled="1" class="SimpleFill">
               <Option type="Map">
                 <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="color" type="QString" value="255,255,255,255"/>
@@ -333,7 +333,7 @@
             </layer>
           </symbol>
         </background>
-        <shadow shadowDraw="0" shadowOffsetGlobal="1" shadowOpacity="0.69999999999999996" shadowOffsetAngle="135" shadowUnder="0" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowBlendMode="6" shadowOffsetDist="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowScale="100" shadowColor="0,0,0,255" shadowRadiusUnit="MM" shadowOffsetUnit="MM"/>
+        <shadow shadowUnder="0" shadowOffsetUnit="MM" shadowOffsetGlobal="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetDist="1" shadowOpacity="0.69999999999999996" shadowRadiusAlphaOnly="0" shadowDraw="0" shadowRadiusUnit="MM" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowBlendMode="6" shadowRadius="1.5" shadowScale="100"/>
         <dd_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -343,9 +343,9 @@
         </dd_properties>
         <substitutions/>
       </text-style>
-      <text-format plussign="0" leftDirectionSymbol="&lt;" placeDirectionSymbol="0" addDirectionSymbol="0" multilineAlign="3" reverseDirectionSymbol="0" rightDirectionSymbol=">" useMaxLineLengthForAutoWrap="1" decimals="3" autoWrapLength="0" formatNumbers="0" wrapChar=""/>
-      <placement repeatDistance="0" yOffset="0" quadOffset="4" lineAnchorTextPoint="CenterOfText" maxCurvedCharAngleOut="-25" distUnits="MM" geometryGeneratorType="PointGeometry" offsetUnits="MM" repeatDistanceUnits="MM" placement="6" rotationUnit="AngleDegrees" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" dist="0" overrunDistanceUnit="MM" lineAnchorClipping="0" rotationAngle="0" placementFlags="10" lineAnchorPercent="0.5" maxCurvedCharAngleIn="25" xOffset="0" geometryGenerator="" fitInPolygonOnly="0" overlapHandling="PreventOverlap" offsetType="1" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" centroidWhole="0" distMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" allowDegraded="0" layerType="PointGeometry" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" lineAnchorType="0" polygonPlacementFlags="2" priority="5" overrunDistance="0"/>
-      <rendering limitNumLabels="0" scaleVisibility="0" obstacleFactor="1" labelPerPart="0" obstacleType="1" unplacedVisibility="0" fontMaxPixelSize="10000" fontMinPixelSize="3" zIndex="0" fontLimitPixelSize="0" obstacle="1" scaleMin="0" minFeatureSize="0" mergeLines="0" scaleMax="0" maxNumLabels="2000" drawLabels="1" upsidedownLabels="0"/>
+      <text-format decimals="3" useMaxLineLengthForAutoWrap="1" rightDirectionSymbol=">" reverseDirectionSymbol="0" leftDirectionSymbol="&lt;" plussign="0" formatNumbers="0" wrapChar="" addDirectionSymbol="0" placeDirectionSymbol="0" multilineAlign="3" autoWrapLength="0"/>
+      <placement priority="5" lineAnchorPercent="0.5" dist="0" lineAnchorType="0" yOffset="0" lineAnchorClipping="0" fitInPolygonOnly="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4" lineAnchorTextPoint="CenterOfText" overrunDistanceUnit="MM" rotationUnit="AngleDegrees" allowDegraded="0" placementFlags="10" geometryGeneratorType="PointGeometry" overrunDistance="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" layerType="PointGeometry" offsetUnits="MM" xOffset="0" rotationAngle="0" repeatDistance="0" geometryGenerator="" distMapUnitScale="3x:0,0,0,0,0,0" overlapHandling="PreventOverlap" geometryGeneratorEnabled="0" maxCurvedCharAngleIn="25" centroidWhole="0" placement="6" offsetType="1" maxCurvedCharAngleOut="-25" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" polygonPlacementFlags="2" distUnits="MM" preserveRotation="1"/>
+      <rendering scaleMax="0" minFeatureSize="0" obstacleFactor="1" fontMinPixelSize="3" scaleMin="0" labelPerPart="0" obstacleType="1" upsidedownLabels="0" obstacle="1" mergeLines="0" limitNumLabels="0" scaleVisibility="0" unplacedVisibility="0" fontMaxPixelSize="10000" maxNumLabels="2000" drawLabels="1" zIndex="0" fontLimitPixelSize="0"/>
       <dd_properties>
         <Option type="Map">
           <Option name="name" type="QString" value=""/>
@@ -365,7 +365,7 @@
           <Option name="drawToAllParts" type="bool" value="false"/>
           <Option name="enabled" type="QString" value="0"/>
           <Option name="labelAnchorPoint" type="QString" value="point_on_exterior"/>
-          <Option name="lineSymbol" type="QString" value="&lt;symbol name=&quot;symbol&quot; is_animated=&quot;0&quot; type=&quot;line&quot; clip_to_extent=&quot;1&quot; force_rhr=&quot;0&quot; frame_rate=&quot;10&quot; alpha=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; class=&quot;SimpleLine&quot; enabled=&quot;1&quot; locked=&quot;0&quot; id=&quot;{8435ecc5-75a6-4d71-a464-00ad1f0d0f74}&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;capstyle&quot; type=&quot;QString&quot; value=&quot;square&quot;/>&lt;Option name=&quot;customdash&quot; type=&quot;QString&quot; value=&quot;5;2&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;customdash_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;joinstyle&quot; type=&quot;QString&quot; value=&quot;bevel&quot;/>&lt;Option name=&quot;line_color&quot; type=&quot;QString&quot; value=&quot;60,60,60,255&quot;/>&lt;Option name=&quot;line_style&quot; type=&quot;QString&quot; value=&quot;solid&quot;/>&lt;Option name=&quot;line_width&quot; type=&quot;QString&quot; value=&quot;0.3&quot;/>&lt;Option name=&quot;line_width_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;ring_filter&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;trim_distance_start&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;use_custom_dash&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
+          <Option name="lineSymbol" type="QString" value="&lt;symbol name=&quot;symbol&quot; force_rhr=&quot;0&quot; frame_rate=&quot;10&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot; is_animated=&quot;0&quot; alpha=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer locked=&quot;0&quot; pass=&quot;0&quot; id=&quot;{8435ecc5-75a6-4d71-a464-00ad1f0d0f74}&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;capstyle&quot; type=&quot;QString&quot; value=&quot;square&quot;/>&lt;Option name=&quot;customdash&quot; type=&quot;QString&quot; value=&quot;5;2&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;customdash_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;joinstyle&quot; type=&quot;QString&quot; value=&quot;bevel&quot;/>&lt;Option name=&quot;line_color&quot; type=&quot;QString&quot; value=&quot;60,60,60,255&quot;/>&lt;Option name=&quot;line_style&quot; type=&quot;QString&quot; value=&quot;solid&quot;/>&lt;Option name=&quot;line_width&quot; type=&quot;QString&quot; value=&quot;0.3&quot;/>&lt;Option name=&quot;line_width_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;ring_filter&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;trim_distance_start&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;use_custom_dash&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
           <Option name="minLength" type="double" value="0"/>
           <Option name="minLengthMapUnitScale" type="QString" value="3x:0,0,0,0,0,0"/>
           <Option name="minLengthUnit" type="QString" value="MM"/>
@@ -382,7 +382,9 @@
   <customproperties>
     <Option type="Map">
       <Option name="dualview/previewExpressions" type="List">
+        <Option type="QString" value="'Final score: ' || to_string(case when &quot;length_or_width_meters&quot; &lt; 0 then 0&#xd;&#xa;&#x9;when &quot;length_or_width_meters&quot; >= 15 and &quot;length_or_width_meters&quot; &lt; 30 then 3&#xd;&#xa;&#x9;when &quot;length_or_width_meters&quot; >= 30 then 6&#xd;&#xa;&#x9;else 0&#xd;&#xa;  end &#xd;&#xa;&#xd;&#xa;+&#xd;&#xa;&#xd;&#xa;&#x9; case &#xd;&#xa;&#x9;when  &quot;continuous_embeddedment_yes_no&quot; = 'No' then 10&#xd;&#xa;&#x9;when &quot;diameter_or_span_meters&quot; is null then 0&#xd;&#xa;&#x9;when &quot;average_depth_embededdment_meters&quot; is null then 0&#xd;&#xa;&#x9;when &quot;average_depth_embededdment_meters&quot; / &quot;diameter_or_span_meters&quot; &lt;= .2 OR &quot;average_depth_embededdment_meters&quot; &lt; .3 then 5&#xd;&#xa;&#x9;when &quot;average_depth_embededdment_meters&quot; / &quot;diameter_or_span_meters&quot; > .2 or &quot;average_depth_embededdment_meters&quot; >= .3 then 0 &#xd;&#xa;  else 0&#xd;&#xa;  end&#xd;&#xa;&#xd;&#xa;+ &#xd;&#xa;&#xd;&#xa;case &#xd;&#xa;  when &quot;outlet_drop_meters&quot; &lt; .15  &#xd;&#xa;  then 0&#xd;&#xa;  when &quot;outlet_drop_meters&quot; >= .15 and &quot;outlet_drop_meters&quot; &lt; .3 &#xd;&#xa;  then 5&#xd;&#xa;  when &quot;outlet_drop_score&quot; >= .3&#xd;&#xa;  then 10&#xd;&#xa;  else 0&#xd;&#xa;end&#xd;&#xa; &#xd;&#xa;+&#xd;&#xa;&#xd;&#xa;case &#xd;&#xa;  when &quot;culvert_slope_percent&quot; &lt; 1&#xd;&#xa;  then 0&#xd;&#xa;  when &quot;culvert_slope_percent&quot; >= 1 and &quot;culvert_slope_percent&quot; &lt; 3&#xd;&#xa;  then 5&#xd;&#xa;  when &quot;culvert_slope_percent&quot; >= 3 &#xd;&#xa;  then 10&#xd;&#xa;  else 0&#xd;&#xa;end&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;+&#xd;&#xa;&#xd;&#xa;case&#xd;&#xa;  when &quot;downstream_channel_width_meters&quot; is null then 0&#xd;&#xa;  when &quot;diameter_or_span_meters&quot; is null then 0&#xd;&#xa;  when  &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; &lt; 1 then 0&#xd;&#xa;  when  &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; >= 1 and &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; &lt; 1.3 &#xd;&#xa;  then 3&#xd;&#xa;  when  &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; >= 1.3 &#xd;&#xa;  then 6&#xd;&#xa;  else 0&#xd;&#xa;end&#xd;&#xa;)"/>
         <Option type="QString" value="'Final score: ' || to_string(case when &quot;length_or_width_meters&quot; &lt; 0 then 0&#xa;&#x9;when &quot;length_or_width_meters&quot; >= 15 and &quot;length_or_width_meters&quot; &lt; 30 then 3&#xa;&#x9;when &quot;length_or_width_meters&quot; >= 30 then 6&#xa;&#x9;else 0&#xa;  end &#xa;&#xa;+&#xa;&#xa;&#x9; case &#xa;&#x9;when  &quot;continuous_embeddedment_yes_no&quot; = 'No' then 10&#xa;&#x9;when &quot;diameter_or_span_meters&quot; is null then 0&#xa;&#x9;when &quot;average_depth_embededdment_meters&quot; is null then 0&#xa;&#x9;when &quot;average_depth_embededdment_meters&quot; / &quot;diameter_or_span_meters&quot; &lt;= .2 OR &quot;average_depth_embededdment_meters&quot; &lt; .3 then 5&#xa;&#x9;when &quot;average_depth_embededdment_meters&quot; / &quot;diameter_or_span_meters&quot; > .2 or &quot;average_depth_embededdment_meters&quot; >= .3 then 0 &#xa;  else 0&#xa;  end&#xa;&#xa;+ &#xa;&#xa;case &#xa;  when &quot;outlet_drop_meters&quot; &lt; .15  &#xa;  then 0&#xa;  when &quot;outlet_drop_meters&quot; >= .15 and &quot;outlet_drop_meters&quot; &lt; .3 &#xa;  then 5&#xa;  when &quot;outlet_drop_score&quot; >= .3&#xa;  then 10&#xa;  else 0&#xa;end&#xa; &#xa;+&#xa;&#xa;case &#xa;  when &quot;culvert_slope_percent&quot; &lt; 1&#xa;  then 0&#xa;  when &quot;culvert_slope_percent&quot; >= 1 and &quot;culvert_slope_percent&quot; &lt; 3&#xa;  then 5&#xa;  when &quot;culvert_slope_percent&quot; >= 3 &#xa;  then 10&#xa;  else 0&#xa;end&#xa;&#xa;&#xa;+&#xa;&#xa;case&#xa;  when &quot;downstream_channel_width_meters&quot; is null then 0&#xa;  when &quot;diameter_or_span_meters&quot; is null then 0&#xa;  when  &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; &lt; 1 then 0&#xa;  when  &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; >= 1 and &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; &lt; 1.3 &#xa;  then 3&#xa;  when  &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; >= 1.3 &#xa;  then 6&#xa;  else 0&#xa;end&#xa;)"/>
+        <Option type="QString" value="'Final score: ' || to_string(case when &quot;length_or_width_meters&quot; &lt; 0 then 0&#xd;&#xa;&#x9;when &quot;length_or_width_meters&quot; >= 15 and &quot;length_or_width_meters&quot; &lt; 30 then 3&#xd;&#xa;&#x9;when &quot;length_or_width_meters&quot; >= 30 then 6&#xd;&#xa;&#x9;else 0&#xd;&#xa;  end &#xd;&#xa;&#xd;&#xa;+&#xd;&#xa;&#xd;&#xa;&#x9; case &#xd;&#xa;&#x9;when  &quot;continuous_embeddedment_yes_no&quot; = 'No' then 10&#xd;&#xa;&#x9;when &quot;diameter_or_span_meters&quot; is null then 0&#xd;&#xa;&#x9;when &quot;average_depth_embededdment_meters&quot; is null then 0&#xd;&#xa;&#x9;when &quot;average_depth_embededdment_meters&quot; / &quot;diameter_or_span_meters&quot; &lt;= .2 OR &quot;average_depth_embededdment_meters&quot; &lt; .3 then 5&#xd;&#xa;&#x9;when &quot;average_depth_embededdment_meters&quot; / &quot;diameter_or_span_meters&quot; > .2 or &quot;average_depth_embededdment_meters&quot; >= .3 then 0 &#xd;&#xa;  else 0&#xd;&#xa;  end&#xd;&#xa;&#xd;&#xa;+ &#xd;&#xa;&#xd;&#xa;case &#xd;&#xa;  when &quot;outlet_drop_meters&quot; &lt; .15  &#xd;&#xa;  then 0&#xd;&#xa;  when &quot;outlet_drop_meters&quot; >= .15 and &quot;outlet_drop_meters&quot; &lt; .3 &#xd;&#xa;  then 5&#xd;&#xa;  when &quot;outlet_drop_score&quot; >= .3&#xd;&#xa;  then 10&#xd;&#xa;  else 0&#xd;&#xa;end&#xd;&#xa; &#xd;&#xa;+&#xd;&#xa;&#xd;&#xa;case &#xd;&#xa;  when &quot;culvert_slope_percent&quot; &lt; 1&#xd;&#xa;  then 0&#xd;&#xa;  when &quot;culvert_slope_percent&quot; >= 1 and &quot;culvert_slope_percent&quot; &lt; 3&#xd;&#xa;  then 5&#xd;&#xa;  when &quot;culvert_slope_percent&quot; >= 3 &#xd;&#xa;  then 10&#xd;&#xa;  else 0&#xd;&#xa;end&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;+&#xd;&#xa;&#xd;&#xa;case&#xd;&#xa;  when &quot;downstream_channel_width_meters&quot; is null then 0&#xd;&#xa;  when &quot;diameter_or_span_meters&quot; is null then 0&#xd;&#xa;  when  &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; &lt; 1 then 0&#xd;&#xa;  when  &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; >= 1 and &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; &lt; 1.3 &#xd;&#xa;  then 3&#xd;&#xa;  when  &quot;downstream_channel_width_meters&quot; / &quot;diameter_or_span_meters&quot; >= 1.3 &#xd;&#xa;  then 6&#xd;&#xa;  else 0&#xd;&#xa;end&#xd;&#xa;)"/>
       </Option>
       <Option name="embeddedWidgets/count" type="int" value="0"/>
       <Option name="variableNames"/>
@@ -392,12 +394,12 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory penColor="#000000" scaleBasedVisibility="0" penWidth="0" labelPlacementMethod="XHeight" penAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" sizeScale="3x:0,0,0,0,0,0" enabled="0" backgroundAlpha="255" spacing="5" width="15" rotationOffset="270" spacingUnit="MM" minScaleDenominator="0" diagramOrientation="Up" scaleDependency="Area" showAxis="1" minimumSize="0" backgroundColor="#ffffff" sizeType="MM" barWidth="5" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" height="15" maxScaleDenominator="1e+08" direction="0" opacity="1">
-      <fontProperties bold="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
-      <attribute field="" colorOpacity="1" label="" color="#000000"/>
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+    <DiagramCategory penColor="#000000" penWidth="0" scaleDependency="Area" minimumSize="0" scaleBasedVisibility="0" lineSizeType="MM" spacing="5" height="15" spacingUnitScale="3x:0,0,0,0,0,0" backgroundAlpha="255" enabled="0" labelPlacementMethod="XHeight" maxScaleDenominator="1e+08" sizeScale="3x:0,0,0,0,0,0" barWidth="5" showAxis="1" sizeType="MM" direction="0" spacingUnit="MM" backgroundColor="#ffffff" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" rotationOffset="270" width="15" diagramOrientation="Up" penAlpha="255" opacity="1">
+      <fontProperties style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+      <attribute color="#000000" field="" label="" colorOpacity="1"/>
       <axisSymbol>
-        <symbol name="" is_animated="0" type="line" clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1">
+        <symbol name="" force_rhr="0" frame_rate="10" clip_to_extent="1" type="line" is_animated="0" alpha="1">
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -405,7 +407,7 @@
               <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <layer pass="0" class="SimpleLine" enabled="1" locked="0" id="{0812fd2f-d286-41cb-bf6e-b69b06317efb}">
+          <layer locked="0" pass="0" id="{0812fd2f-d286-41cb-bf6e-b69b06317efb}" enabled="1" class="SimpleLine">
             <Option type="Map">
               <Option name="align_dash_pattern" type="QString" value="0"/>
               <Option name="capstyle" type="QString" value="square"/>
@@ -447,7 +449,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings dist="0" showAll="1" placement="0" priority="0" linePlacementFlags="18" zIndex="0" obstacle="0">
+  <DiagramLayerSettings obstacle="0" showAll="1" zIndex="0" dist="0" priority="0" placement="0" linePlacementFlags="18">
     <properties>
       <Option type="Map">
         <Option name="name" type="QString" value=""/>
@@ -460,7 +462,7 @@
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
-  <legend showLabelLegend="0" type="default-vector"/>
+  <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers/>
   <fieldConfiguration>
     <field name="fid" configurationFlags="None">
@@ -1557,11 +1559,30 @@
       </editWidget>
     </field>
     <field name="photo_paper_card" configurationFlags="None">
-      <editWidget type="TextEdit">
+      <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" type="bool" value="false"/>
-            <Option name="UseHtml" type="bool" value="false"/>
+            <Option name="DocumentViewer" type="int" value="1"/>
+            <Option name="DocumentViewerHeight" type="int" value="0"/>
+            <Option name="DocumentViewerWidth" type="int" value="0"/>
+            <Option name="FileWidget" type="bool" value="true"/>
+            <Option name="FileWidgetButton" type="bool" value="true"/>
+            <Option name="FileWidgetFilter" type="QString" value=""/>
+            <Option name="PropertyCollection" type="Map">
+              <Option name="name" type="QString" value=""/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option name="active" type="bool" value="true"/>
+                  <Option name="expression" type="QString" value="@project_home + '/ignore_mobile/photos'"/>
+                  <Option name="type" type="int" value="3"/>
+                </Option>
+              </Option>
+              <Option name="type" type="QString" value="collection"/>
+            </Option>
+            <Option name="RelativeStorage" type="int" value="1"/>
+            <Option name="StorageAuthConfigId" type="QString" value=""/>
+            <Option name="StorageMode" type="int" value="0"/>
+            <Option name="StorageType" type="QString" value=""/>
           </Option>
         </config>
       </editWidget>
@@ -1747,465 +1768,465 @@
     <alias name="" field="link_method_phase1" index="88"/>
   </aliases>
   <splitPolicies>
-    <policy policy="Duplicate" field="fid"/>
-    <policy policy="Duplicate" field="date_time_start"/>
-    <policy policy="Duplicate" field="pscis_crossing_id"/>
-    <policy policy="Duplicate" field="my_crossing_reference"/>
-    <policy policy="Duplicate" field="crew_members"/>
-    <policy policy="Duplicate" field="aggregated_crossings_id"/>
-    <policy policy="Duplicate" field="camera_id"/>
-    <policy policy="Duplicate" field="site_id"/>
-    <policy policy="Duplicate" field="gps_id"/>
-    <policy policy="Duplicate" field="moti_chris_culvert_id"/>
-    <policy policy="Duplicate" field="gps_waypoint_number"/>
-    <policy policy="Duplicate" field="stream_name"/>
-    <policy policy="Duplicate" field="road_name"/>
-    <policy policy="Duplicate" field="road_km_mark"/>
-    <policy policy="Duplicate" field="road_tenure"/>
-    <policy policy="Duplicate" field="crossing_type"/>
-    <policy policy="Duplicate" field="crossing_subtype"/>
-    <policy policy="Duplicate" field="crossing_fix"/>
-    <policy policy="Duplicate" field="diameter_or_span_meters"/>
-    <policy policy="Duplicate" field="length_or_width_meters"/>
-    <policy policy="Duplicate" field="assessment_comment"/>
-    <policy policy="Duplicate" field="rowid"/>
-    <policy policy="Duplicate" field="date"/>
-    <policy policy="Duplicate" field="utm_zone"/>
-    <policy policy="Duplicate" field="easting"/>
-    <policy policy="Duplicate" field="northing"/>
-    <policy policy="Duplicate" field="continuous_embeddedment_yes_no"/>
-    <policy policy="Duplicate" field="average_depth_embededdment_meters"/>
-    <policy policy="Duplicate" field="resemble_channel_yes_no"/>
-    <policy policy="Duplicate" field="backwatered_yes_no"/>
-    <policy policy="Duplicate" field="percentage_backwatered"/>
-    <policy policy="Duplicate" field="fill_depth_meters"/>
-    <policy policy="Duplicate" field="outlet_drop_meters"/>
-    <policy policy="Duplicate" field="outlet_pool_depth_0_01m"/>
-    <policy policy="Duplicate" field="inlet_drop_yes_no"/>
-    <policy policy="Duplicate" field="culvert_slope_percent"/>
-    <policy policy="Duplicate" field="downstream_channel_width_meters"/>
-    <policy policy="Duplicate" field="stream_slope"/>
-    <policy policy="Duplicate" field="beaver_activity_yes_no"/>
-    <policy policy="Duplicate" field="fish_observed_yes_no"/>
-    <policy policy="Duplicate" field="valley_fill"/>
-    <policy policy="Duplicate" field="habitat_value"/>
-    <policy policy="Duplicate" field="stream_width_ratio"/>
-    <policy policy="Duplicate" field="culvert_length_score"/>
-    <policy policy="Duplicate" field="embed_score"/>
-    <policy policy="Duplicate" field="outlet_drop_score"/>
-    <policy policy="Duplicate" field="culvert_slope_score"/>
-    <policy policy="Duplicate" field="stream_width_ratio_score"/>
-    <policy policy="Duplicate" field="final_score"/>
-    <policy policy="Duplicate" field="barrier_result"/>
-    <policy policy="Duplicate" field="recommended_diameter_or_span_meters"/>
-    <policy policy="Duplicate" field="source"/>
-    <policy policy="Duplicate" field="time_start"/>
-    <policy policy="Duplicate" field="-rowid"/>
-    <policy policy="Duplicate" field="mergin_user"/>
-    <policy policy="Duplicate" field="erosion_issues"/>
-    <policy policy="Duplicate" field="embankment_fill_issues"/>
-    <policy policy="Duplicate" field="blockage_issues"/>
-    <policy policy="Duplicate" field="condition_rank"/>
-    <policy policy="Duplicate" field="condition_notes"/>
-    <policy policy="Duplicate" field="likelihood_flood_event_affecting_culvert"/>
-    <policy policy="Duplicate" field="consequence_flood_event_affecting_culvert"/>
-    <policy policy="Duplicate" field="climate_change_flood_risk"/>
-    <policy policy="Duplicate" field="vulnerability_rank"/>
-    <policy policy="Duplicate" field="climate_notes"/>
-    <policy policy="Duplicate" field="traffic_volume"/>
-    <policy policy="Duplicate" field="community_access"/>
-    <policy policy="Duplicate" field="cost"/>
-    <policy policy="Duplicate" field="constructability"/>
-    <policy policy="Duplicate" field="fish_bearing"/>
-    <policy policy="Duplicate" field="environmental_impacts"/>
-    <policy policy="Duplicate" field="priority_rank"/>
-    <policy policy="Duplicate" field="overall_rank"/>
-    <policy policy="Duplicate" field="priority_notes"/>
-    <policy policy="Duplicate" field="photo_road"/>
-    <policy policy="Duplicate" field="photo_upstream"/>
-    <policy policy="Duplicate" field="photo_downstream"/>
-    <policy policy="Duplicate" field="photo_inlet"/>
-    <policy policy="Duplicate" field="photo_barrel"/>
-    <policy policy="Duplicate" field="photo_outlet"/>
-    <policy policy="Duplicate" field="photo_condition"/>
-    <policy policy="Duplicate" field="photo_embankment_fill"/>
-    <policy policy="Duplicate" field="photo_blockage"/>
-    <policy policy="Duplicate" field="photo_paper_card"/>
-    <policy policy="Duplicate" field="photo_extra1"/>
-    <policy policy="Duplicate" field="photo_extra2"/>
-    <policy policy="Duplicate" field="photo_extra1_tag"/>
-    <policy policy="Duplicate" field="photo_extra2_tag"/>
-    <policy policy="Duplicate" field="link_method_phase1"/>
+    <policy field="fid" policy="Duplicate"/>
+    <policy field="date_time_start" policy="Duplicate"/>
+    <policy field="pscis_crossing_id" policy="Duplicate"/>
+    <policy field="my_crossing_reference" policy="Duplicate"/>
+    <policy field="crew_members" policy="Duplicate"/>
+    <policy field="aggregated_crossings_id" policy="Duplicate"/>
+    <policy field="camera_id" policy="Duplicate"/>
+    <policy field="site_id" policy="Duplicate"/>
+    <policy field="gps_id" policy="Duplicate"/>
+    <policy field="moti_chris_culvert_id" policy="Duplicate"/>
+    <policy field="gps_waypoint_number" policy="Duplicate"/>
+    <policy field="stream_name" policy="Duplicate"/>
+    <policy field="road_name" policy="Duplicate"/>
+    <policy field="road_km_mark" policy="Duplicate"/>
+    <policy field="road_tenure" policy="Duplicate"/>
+    <policy field="crossing_type" policy="Duplicate"/>
+    <policy field="crossing_subtype" policy="Duplicate"/>
+    <policy field="crossing_fix" policy="Duplicate"/>
+    <policy field="diameter_or_span_meters" policy="Duplicate"/>
+    <policy field="length_or_width_meters" policy="Duplicate"/>
+    <policy field="assessment_comment" policy="Duplicate"/>
+    <policy field="rowid" policy="Duplicate"/>
+    <policy field="date" policy="Duplicate"/>
+    <policy field="utm_zone" policy="Duplicate"/>
+    <policy field="easting" policy="Duplicate"/>
+    <policy field="northing" policy="Duplicate"/>
+    <policy field="continuous_embeddedment_yes_no" policy="Duplicate"/>
+    <policy field="average_depth_embededdment_meters" policy="Duplicate"/>
+    <policy field="resemble_channel_yes_no" policy="Duplicate"/>
+    <policy field="backwatered_yes_no" policy="Duplicate"/>
+    <policy field="percentage_backwatered" policy="Duplicate"/>
+    <policy field="fill_depth_meters" policy="Duplicate"/>
+    <policy field="outlet_drop_meters" policy="Duplicate"/>
+    <policy field="outlet_pool_depth_0_01m" policy="Duplicate"/>
+    <policy field="inlet_drop_yes_no" policy="Duplicate"/>
+    <policy field="culvert_slope_percent" policy="Duplicate"/>
+    <policy field="downstream_channel_width_meters" policy="Duplicate"/>
+    <policy field="stream_slope" policy="Duplicate"/>
+    <policy field="beaver_activity_yes_no" policy="Duplicate"/>
+    <policy field="fish_observed_yes_no" policy="Duplicate"/>
+    <policy field="valley_fill" policy="Duplicate"/>
+    <policy field="habitat_value" policy="Duplicate"/>
+    <policy field="stream_width_ratio" policy="Duplicate"/>
+    <policy field="culvert_length_score" policy="Duplicate"/>
+    <policy field="embed_score" policy="Duplicate"/>
+    <policy field="outlet_drop_score" policy="Duplicate"/>
+    <policy field="culvert_slope_score" policy="Duplicate"/>
+    <policy field="stream_width_ratio_score" policy="Duplicate"/>
+    <policy field="final_score" policy="Duplicate"/>
+    <policy field="barrier_result" policy="Duplicate"/>
+    <policy field="recommended_diameter_or_span_meters" policy="Duplicate"/>
+    <policy field="source" policy="Duplicate"/>
+    <policy field="time_start" policy="Duplicate"/>
+    <policy field="-rowid" policy="Duplicate"/>
+    <policy field="mergin_user" policy="Duplicate"/>
+    <policy field="erosion_issues" policy="Duplicate"/>
+    <policy field="embankment_fill_issues" policy="Duplicate"/>
+    <policy field="blockage_issues" policy="Duplicate"/>
+    <policy field="condition_rank" policy="Duplicate"/>
+    <policy field="condition_notes" policy="Duplicate"/>
+    <policy field="likelihood_flood_event_affecting_culvert" policy="Duplicate"/>
+    <policy field="consequence_flood_event_affecting_culvert" policy="Duplicate"/>
+    <policy field="climate_change_flood_risk" policy="Duplicate"/>
+    <policy field="vulnerability_rank" policy="Duplicate"/>
+    <policy field="climate_notes" policy="Duplicate"/>
+    <policy field="traffic_volume" policy="Duplicate"/>
+    <policy field="community_access" policy="Duplicate"/>
+    <policy field="cost" policy="Duplicate"/>
+    <policy field="constructability" policy="Duplicate"/>
+    <policy field="fish_bearing" policy="Duplicate"/>
+    <policy field="environmental_impacts" policy="Duplicate"/>
+    <policy field="priority_rank" policy="Duplicate"/>
+    <policy field="overall_rank" policy="Duplicate"/>
+    <policy field="priority_notes" policy="Duplicate"/>
+    <policy field="photo_road" policy="Duplicate"/>
+    <policy field="photo_upstream" policy="Duplicate"/>
+    <policy field="photo_downstream" policy="Duplicate"/>
+    <policy field="photo_inlet" policy="Duplicate"/>
+    <policy field="photo_barrel" policy="Duplicate"/>
+    <policy field="photo_outlet" policy="Duplicate"/>
+    <policy field="photo_condition" policy="Duplicate"/>
+    <policy field="photo_embankment_fill" policy="Duplicate"/>
+    <policy field="photo_blockage" policy="Duplicate"/>
+    <policy field="photo_paper_card" policy="Duplicate"/>
+    <policy field="photo_extra1" policy="Duplicate"/>
+    <policy field="photo_extra2" policy="Duplicate"/>
+    <policy field="photo_extra1_tag" policy="Duplicate"/>
+    <policy field="photo_extra2_tag" policy="Duplicate"/>
+    <policy field="link_method_phase1" policy="Duplicate"/>
   </splitPolicies>
   <defaults>
-    <default expression="" field="fid" applyOnUpdate="0"/>
-    <default expression="now()" field="date_time_start" applyOnUpdate="0"/>
-    <default expression="" field="pscis_crossing_id" applyOnUpdate="0"/>
-    <default expression="" field="my_crossing_reference" applyOnUpdate="0"/>
-    <default expression="" field="crew_members" applyOnUpdate="0"/>
-    <default expression="" field="aggregated_crossings_id" applyOnUpdate="0"/>
-    <default expression="@mergin_username" field="camera_id" applyOnUpdate="0"/>
-    <default expression="" field="site_id" applyOnUpdate="0"/>
-    <default expression="@mergin_username" field="gps_id" applyOnUpdate="0"/>
-    <default expression="" field="moti_chris_culvert_id" applyOnUpdate="0"/>
-    <default expression="" field="gps_waypoint_number" applyOnUpdate="0"/>
-    <default expression="" field="stream_name" applyOnUpdate="0"/>
-    <default expression="" field="road_name" applyOnUpdate="0"/>
-    <default expression="" field="road_km_mark" applyOnUpdate="0"/>
-    <default expression="" field="road_tenure" applyOnUpdate="0"/>
-    <default expression="" field="crossing_type" applyOnUpdate="0"/>
-    <default expression="" field="crossing_subtype" applyOnUpdate="0"/>
-    <default expression="" field="crossing_fix" applyOnUpdate="0"/>
-    <default expression="" field="diameter_or_span_meters" applyOnUpdate="0"/>
-    <default expression="" field="length_or_width_meters" applyOnUpdate="0"/>
-    <default expression="" field="assessment_comment" applyOnUpdate="0"/>
-    <default expression="" field="rowid" applyOnUpdate="0"/>
-    <default expression="now()" field="date" applyOnUpdate="0"/>
-    <default expression="" field="utm_zone" applyOnUpdate="0"/>
-    <default expression="" field="easting" applyOnUpdate="0"/>
-    <default expression="" field="northing" applyOnUpdate="0"/>
-    <default expression="" field="continuous_embeddedment_yes_no" applyOnUpdate="0"/>
-    <default expression="" field="average_depth_embededdment_meters" applyOnUpdate="0"/>
-    <default expression="" field="resemble_channel_yes_no" applyOnUpdate="0"/>
-    <default expression="" field="backwatered_yes_no" applyOnUpdate="0"/>
-    <default expression="" field="percentage_backwatered" applyOnUpdate="0"/>
-    <default expression="" field="fill_depth_meters" applyOnUpdate="0"/>
-    <default expression="" field="outlet_drop_meters" applyOnUpdate="0"/>
-    <default expression="" field="outlet_pool_depth_0_01m" applyOnUpdate="0"/>
-    <default expression="" field="inlet_drop_yes_no" applyOnUpdate="0"/>
-    <default expression="" field="culvert_slope_percent" applyOnUpdate="0"/>
-    <default expression="" field="downstream_channel_width_meters" applyOnUpdate="0"/>
-    <default expression="" field="stream_slope" applyOnUpdate="0"/>
-    <default expression="" field="beaver_activity_yes_no" applyOnUpdate="0"/>
-    <default expression="" field="fish_observed_yes_no" applyOnUpdate="0"/>
-    <default expression="" field="valley_fill" applyOnUpdate="0"/>
-    <default expression="" field="habitat_value" applyOnUpdate="0"/>
-    <default expression=" &quot;downstream_channel_width_meters&quot;  /  &quot;diameter_or_span_meters&quot; " field="stream_width_ratio" applyOnUpdate="0"/>
-    <default expression="CASE WHEN  &quot;length_or_width_meters&quot; &lt; 15 THEN 0 ELSE '' END&#xa;|| CASE WHEN &quot;length_or_width_meters&quot; >= 15 AND &quot;length_or_width_meters&quot; &lt;= 30 THEN 3 ELSE '' END&#xa;|| CASE WHEN &quot;length_or_width_meters&quot; > 30 THEN 6 ELSE '' END" field="culvert_length_score" applyOnUpdate="0"/>
-    <default expression="CASE WHEN   &quot;continuous_embeddedment_yes_no&quot;  = 'No' THEN 10 ELSE '' END&#xa;|| CASE WHEN &quot;continuous_embeddedment_yes_no&quot; = 'Yes' AND  &quot;average_depth_embededdment_meters&quot; &lt; 0.30 THEN 5 ELSE '' END&#xa;|| CASE WHEN &quot;continuous_embeddedment_yes_no&quot; = 'Yes' AND  &quot;average_depth_embededdment_meters&quot; >= 0.30 THEN 0 ELSE '' END" field="embed_score" applyOnUpdate="0"/>
-    <default expression="CASE WHEN   &quot;outlet_drop_meters&quot; &lt; 0.15 THEN 0 ELSE '' END&#xa;|| CASE WHEN &quot;outlet_drop_meters&quot; >= 0.15 AND &quot;outlet_drop_meters&quot; &lt;= 0.30 THEN 5 ELSE '' END&#xa;|| CASE WHEN &quot;outlet_drop_meters&quot; > 0.30 THEN 10 ELSE '' END" field="outlet_drop_score" applyOnUpdate="0"/>
-    <default expression="CASE WHEN   &quot;culvert_slope_percent&quot; &lt; 1 THEN 0 ELSE '' END&#xa;|| CASE WHEN &quot;culvert_slope_percent&quot; >= 1 AND &quot;culvert_slope_percent&quot; &lt;= 3 THEN 5 ELSE '' END&#xa;|| CASE WHEN &quot;culvert_slope_percent&quot; > 3 THEN 10 ELSE '' END" field="culvert_slope_score" applyOnUpdate="0"/>
-    <default expression="CASE WHEN    &quot;stream_width_ratio&quot;  &lt; 1 THEN 0 ELSE '' END&#xa;|| CASE WHEN &quot;stream_width_ratio&quot;  >= 1 AND &quot;stream_width_ratio&quot;  &lt;= 1.3 THEN 3 ELSE '' END&#xa;|| CASE WHEN &quot;stream_width_ratio&quot;  > 1.3 THEN 6 ELSE '' END" field="stream_width_ratio_score" applyOnUpdate="0"/>
-    <default expression="to_int( &quot;culvert_length_score&quot; )  +  &#xa;to_int( &quot;embed_score&quot; )  +  &#xa;to_int( &quot;outlet_drop_score&quot; )  + &#xa;to_int( &quot;culvert_slope_score&quot; )  + &#xa;to_int(  &quot;stream_width_ratio_score&quot; ) " field="final_score" applyOnUpdate="0"/>
-    <default expression="" field="barrier_result" applyOnUpdate="0"/>
-    <default expression="" field="recommended_diameter_or_span_meters" applyOnUpdate="0"/>
-    <default expression="" field="source" applyOnUpdate="0"/>
-    <default expression="" field="time_start" applyOnUpdate="0"/>
-    <default expression="" field="-rowid" applyOnUpdate="0"/>
-    <default expression="@mergin_username" field="mergin_user" applyOnUpdate="0"/>
-    <default expression="" field="erosion_issues" applyOnUpdate="0"/>
-    <default expression="" field="embankment_fill_issues" applyOnUpdate="0"/>
-    <default expression="" field="blockage_issues" applyOnUpdate="0"/>
-    <default expression=" to_int(&quot;embankment_fill_issues&quot;)  +  to_int(&quot;blockage_issues&quot;) " field="condition_rank" applyOnUpdate="1"/>
-    <default expression="" field="condition_notes" applyOnUpdate="0"/>
-    <default expression="" field="likelihood_flood_event_affecting_culvert" applyOnUpdate="0"/>
-    <default expression="" field="consequence_flood_event_affecting_culvert" applyOnUpdate="0"/>
-    <default expression="to_int(&quot;likelihood_flood_event_affecting_culvert&quot;)  *  to_int(&quot;consequence_flood_event_affecting_culvert&quot;) " field="climate_change_flood_risk" applyOnUpdate="1"/>
-    <default expression="to_int( &quot;condition_rank&quot;)  +  to_int(&quot;climate_change_flood_risk&quot;) " field="vulnerability_rank" applyOnUpdate="1"/>
-    <default expression="" field="climate_notes" applyOnUpdate="0"/>
-    <default expression="" field="traffic_volume" applyOnUpdate="0"/>
-    <default expression="" field="community_access" applyOnUpdate="0"/>
-    <default expression="" field="cost" applyOnUpdate="0"/>
-    <default expression="" field="constructability" applyOnUpdate="0"/>
-    <default expression="" field="fish_bearing" applyOnUpdate="0"/>
-    <default expression="" field="environmental_impacts" applyOnUpdate="0"/>
-    <default expression="to_int(&quot;traffic_volume&quot;)  +  to_int(&quot;community_access&quot;)  +  to_int(&quot;cost&quot;)  + to_int(&quot;constructability&quot;)  + to_int( &quot;fish_bearing&quot;)  + to_int( &quot;environmental_impacts&quot;) " field="priority_rank" applyOnUpdate="1"/>
-    <default expression=" &quot;vulnerability_rank&quot;  +  &quot;priority_rank&quot; " field="overall_rank" applyOnUpdate="1"/>
-    <default expression="" field="priority_notes" applyOnUpdate="0"/>
-    <default expression="" field="photo_road" applyOnUpdate="0"/>
-    <default expression="" field="photo_upstream" applyOnUpdate="0"/>
-    <default expression="" field="photo_downstream" applyOnUpdate="0"/>
-    <default expression="" field="photo_inlet" applyOnUpdate="0"/>
-    <default expression="" field="photo_barrel" applyOnUpdate="0"/>
-    <default expression="" field="photo_outlet" applyOnUpdate="0"/>
-    <default expression="" field="photo_condition" applyOnUpdate="0"/>
-    <default expression="" field="photo_embankment_fill" applyOnUpdate="0"/>
-    <default expression="" field="photo_blockage" applyOnUpdate="0"/>
-    <default expression="" field="photo_paper_card" applyOnUpdate="0"/>
-    <default expression="" field="photo_extra1" applyOnUpdate="0"/>
-    <default expression="" field="photo_extra2" applyOnUpdate="0"/>
-    <default expression="" field="photo_extra1_tag" applyOnUpdate="0"/>
-    <default expression="" field="photo_extra2_tag" applyOnUpdate="0"/>
-    <default expression="'&lt;a href=&quot;https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/land-based-investment/forests-for-tomorrow/field-assessment-for-determining-fish-passage-status-of-cbs.pdf/&quot;>Link to Methods for Fish Passage Assessment&lt;/a>'" field="link_method_phase1" applyOnUpdate="0"/>
+    <default field="fid" expression="" applyOnUpdate="0"/>
+    <default field="date_time_start" expression="now()" applyOnUpdate="0"/>
+    <default field="pscis_crossing_id" expression="" applyOnUpdate="0"/>
+    <default field="my_crossing_reference" expression="" applyOnUpdate="0"/>
+    <default field="crew_members" expression="" applyOnUpdate="0"/>
+    <default field="aggregated_crossings_id" expression="" applyOnUpdate="0"/>
+    <default field="camera_id" expression="@mergin_username" applyOnUpdate="0"/>
+    <default field="site_id" expression="" applyOnUpdate="0"/>
+    <default field="gps_id" expression="@mergin_username" applyOnUpdate="0"/>
+    <default field="moti_chris_culvert_id" expression="" applyOnUpdate="0"/>
+    <default field="gps_waypoint_number" expression="" applyOnUpdate="0"/>
+    <default field="stream_name" expression="" applyOnUpdate="0"/>
+    <default field="road_name" expression="" applyOnUpdate="0"/>
+    <default field="road_km_mark" expression="" applyOnUpdate="0"/>
+    <default field="road_tenure" expression="" applyOnUpdate="0"/>
+    <default field="crossing_type" expression="" applyOnUpdate="0"/>
+    <default field="crossing_subtype" expression="" applyOnUpdate="0"/>
+    <default field="crossing_fix" expression="" applyOnUpdate="0"/>
+    <default field="diameter_or_span_meters" expression="" applyOnUpdate="0"/>
+    <default field="length_or_width_meters" expression="" applyOnUpdate="0"/>
+    <default field="assessment_comment" expression="" applyOnUpdate="0"/>
+    <default field="rowid" expression="" applyOnUpdate="0"/>
+    <default field="date" expression="now()" applyOnUpdate="0"/>
+    <default field="utm_zone" expression="" applyOnUpdate="0"/>
+    <default field="easting" expression="" applyOnUpdate="0"/>
+    <default field="northing" expression="" applyOnUpdate="0"/>
+    <default field="continuous_embeddedment_yes_no" expression="" applyOnUpdate="0"/>
+    <default field="average_depth_embededdment_meters" expression="" applyOnUpdate="0"/>
+    <default field="resemble_channel_yes_no" expression="" applyOnUpdate="0"/>
+    <default field="backwatered_yes_no" expression="" applyOnUpdate="0"/>
+    <default field="percentage_backwatered" expression="" applyOnUpdate="0"/>
+    <default field="fill_depth_meters" expression="" applyOnUpdate="0"/>
+    <default field="outlet_drop_meters" expression="" applyOnUpdate="0"/>
+    <default field="outlet_pool_depth_0_01m" expression="" applyOnUpdate="0"/>
+    <default field="inlet_drop_yes_no" expression="" applyOnUpdate="0"/>
+    <default field="culvert_slope_percent" expression="" applyOnUpdate="0"/>
+    <default field="downstream_channel_width_meters" expression="" applyOnUpdate="0"/>
+    <default field="stream_slope" expression="" applyOnUpdate="0"/>
+    <default field="beaver_activity_yes_no" expression="" applyOnUpdate="0"/>
+    <default field="fish_observed_yes_no" expression="" applyOnUpdate="0"/>
+    <default field="valley_fill" expression="" applyOnUpdate="0"/>
+    <default field="habitat_value" expression="" applyOnUpdate="0"/>
+    <default field="stream_width_ratio" expression=" &quot;downstream_channel_width_meters&quot;  /  &quot;diameter_or_span_meters&quot; " applyOnUpdate="0"/>
+    <default field="culvert_length_score" expression="CASE WHEN  &quot;length_or_width_meters&quot; &lt; 15 THEN 0 ELSE '' END&#xa;|| CASE WHEN &quot;length_or_width_meters&quot; >= 15 AND &quot;length_or_width_meters&quot; &lt;= 30 THEN 3 ELSE '' END&#xa;|| CASE WHEN &quot;length_or_width_meters&quot; > 30 THEN 6 ELSE '' END" applyOnUpdate="0"/>
+    <default field="embed_score" expression="CASE WHEN   &quot;continuous_embeddedment_yes_no&quot;  = 'No' THEN 10 ELSE '' END&#xa;|| CASE WHEN &quot;continuous_embeddedment_yes_no&quot; = 'Yes' AND  &quot;average_depth_embededdment_meters&quot; &lt; 0.30 THEN 5 ELSE '' END&#xa;|| CASE WHEN &quot;continuous_embeddedment_yes_no&quot; = 'Yes' AND  &quot;average_depth_embededdment_meters&quot; >= 0.30 THEN 0 ELSE '' END" applyOnUpdate="0"/>
+    <default field="outlet_drop_score" expression="CASE WHEN   &quot;outlet_drop_meters&quot; &lt; 0.15 THEN 0 ELSE '' END&#xa;|| CASE WHEN &quot;outlet_drop_meters&quot; >= 0.15 AND &quot;outlet_drop_meters&quot; &lt;= 0.30 THEN 5 ELSE '' END&#xa;|| CASE WHEN &quot;outlet_drop_meters&quot; > 0.30 THEN 10 ELSE '' END" applyOnUpdate="0"/>
+    <default field="culvert_slope_score" expression="CASE WHEN   &quot;culvert_slope_percent&quot; &lt; 1 THEN 0 ELSE '' END&#xa;|| CASE WHEN &quot;culvert_slope_percent&quot; >= 1 AND &quot;culvert_slope_percent&quot; &lt;= 3 THEN 5 ELSE '' END&#xa;|| CASE WHEN &quot;culvert_slope_percent&quot; > 3 THEN 10 ELSE '' END" applyOnUpdate="0"/>
+    <default field="stream_width_ratio_score" expression="CASE WHEN    &quot;stream_width_ratio&quot;  &lt; 1 THEN 0 ELSE '' END&#xa;|| CASE WHEN &quot;stream_width_ratio&quot;  >= 1 AND &quot;stream_width_ratio&quot;  &lt;= 1.3 THEN 3 ELSE '' END&#xa;|| CASE WHEN &quot;stream_width_ratio&quot;  > 1.3 THEN 6 ELSE '' END" applyOnUpdate="0"/>
+    <default field="final_score" expression="to_int( &quot;culvert_length_score&quot; )  +  &#xa;to_int( &quot;embed_score&quot; )  +  &#xa;to_int( &quot;outlet_drop_score&quot; )  + &#xa;to_int( &quot;culvert_slope_score&quot; )  + &#xa;to_int(  &quot;stream_width_ratio_score&quot; ) " applyOnUpdate="0"/>
+    <default field="barrier_result" expression="" applyOnUpdate="0"/>
+    <default field="recommended_diameter_or_span_meters" expression="" applyOnUpdate="0"/>
+    <default field="source" expression="" applyOnUpdate="0"/>
+    <default field="time_start" expression="" applyOnUpdate="0"/>
+    <default field="-rowid" expression="" applyOnUpdate="0"/>
+    <default field="mergin_user" expression="@mergin_username" applyOnUpdate="0"/>
+    <default field="erosion_issues" expression="" applyOnUpdate="0"/>
+    <default field="embankment_fill_issues" expression="" applyOnUpdate="0"/>
+    <default field="blockage_issues" expression="" applyOnUpdate="0"/>
+    <default field="condition_rank" expression=" to_int(&quot;embankment_fill_issues&quot;)  +  to_int(&quot;blockage_issues&quot;) +  to_int(&quot;erosion_issues&quot;) " applyOnUpdate="1"/>
+    <default field="condition_notes" expression="" applyOnUpdate="0"/>
+    <default field="likelihood_flood_event_affecting_culvert" expression="" applyOnUpdate="0"/>
+    <default field="consequence_flood_event_affecting_culvert" expression="" applyOnUpdate="0"/>
+    <default field="climate_change_flood_risk" expression="to_int(&quot;likelihood_flood_event_affecting_culvert&quot;)  *  to_int(&quot;consequence_flood_event_affecting_culvert&quot;) " applyOnUpdate="1"/>
+    <default field="vulnerability_rank" expression="to_int( &quot;condition_rank&quot;)  +  to_int(&quot;climate_change_flood_risk&quot;) " applyOnUpdate="1"/>
+    <default field="climate_notes" expression="" applyOnUpdate="0"/>
+    <default field="traffic_volume" expression="" applyOnUpdate="0"/>
+    <default field="community_access" expression="" applyOnUpdate="0"/>
+    <default field="cost" expression="" applyOnUpdate="0"/>
+    <default field="constructability" expression="" applyOnUpdate="0"/>
+    <default field="fish_bearing" expression="" applyOnUpdate="0"/>
+    <default field="environmental_impacts" expression="" applyOnUpdate="0"/>
+    <default field="priority_rank" expression="to_int(&quot;traffic_volume&quot;)  +  to_int(&quot;community_access&quot;)  +  to_int(&quot;cost&quot;)  + to_int(&quot;constructability&quot;)  + to_int( &quot;fish_bearing&quot;)  + to_int( &quot;environmental_impacts&quot;) " applyOnUpdate="1"/>
+    <default field="overall_rank" expression=" &quot;vulnerability_rank&quot;  +  &quot;priority_rank&quot; " applyOnUpdate="1"/>
+    <default field="priority_notes" expression="" applyOnUpdate="0"/>
+    <default field="photo_road" expression="" applyOnUpdate="0"/>
+    <default field="photo_upstream" expression="" applyOnUpdate="0"/>
+    <default field="photo_downstream" expression="" applyOnUpdate="0"/>
+    <default field="photo_inlet" expression="" applyOnUpdate="0"/>
+    <default field="photo_barrel" expression="" applyOnUpdate="0"/>
+    <default field="photo_outlet" expression="" applyOnUpdate="0"/>
+    <default field="photo_condition" expression="" applyOnUpdate="0"/>
+    <default field="photo_embankment_fill" expression="" applyOnUpdate="0"/>
+    <default field="photo_blockage" expression="" applyOnUpdate="0"/>
+    <default field="photo_paper_card" expression="" applyOnUpdate="0"/>
+    <default field="photo_extra1" expression="" applyOnUpdate="0"/>
+    <default field="photo_extra2" expression="" applyOnUpdate="0"/>
+    <default field="photo_extra1_tag" expression="" applyOnUpdate="0"/>
+    <default field="photo_extra2_tag" expression="" applyOnUpdate="0"/>
+    <default field="link_method_phase1" expression="'&lt;a href=&quot;https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/land-based-investment/forests-for-tomorrow/field-assessment-for-determining-fish-passage-status-of-cbs.pdf/&quot;>Link to Methods for Fish Passage Assessment&lt;/a>'" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint unique_strength="1" notnull_strength="1" exp_strength="0" field="fid" constraints="3"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="date_time_start" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="pscis_crossing_id" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="my_crossing_reference" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="crew_members" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="aggregated_crossings_id" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="camera_id" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="site_id" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="gps_id" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="moti_chris_culvert_id" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="gps_waypoint_number" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="stream_name" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="road_name" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="road_km_mark" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="road_tenure" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="crossing_type" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="crossing_subtype" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="crossing_fix" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="diameter_or_span_meters" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="length_or_width_meters" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="assessment_comment" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="rowid" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="date" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="utm_zone" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="easting" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="northing" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="continuous_embeddedment_yes_no" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="average_depth_embededdment_meters" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="resemble_channel_yes_no" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="backwatered_yes_no" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="2" field="percentage_backwatered" constraints="4"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="fill_depth_meters" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="outlet_drop_meters" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="outlet_pool_depth_0_01m" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="inlet_drop_yes_no" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="culvert_slope_percent" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="downstream_channel_width_meters" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="stream_slope" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="beaver_activity_yes_no" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="fish_observed_yes_no" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="valley_fill" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="habitat_value" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="stream_width_ratio" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="culvert_length_score" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="embed_score" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="outlet_drop_score" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="culvert_slope_score" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="stream_width_ratio_score" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="final_score" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="barrier_result" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="recommended_diameter_or_span_meters" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="source" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="time_start" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="-rowid" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="mergin_user" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="erosion_issues" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="embankment_fill_issues" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="blockage_issues" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="condition_rank" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="condition_notes" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="likelihood_flood_event_affecting_culvert" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="consequence_flood_event_affecting_culvert" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="climate_change_flood_risk" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="vulnerability_rank" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="climate_notes" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="traffic_volume" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="community_access" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="cost" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="constructability" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="fish_bearing" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="environmental_impacts" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="priority_rank" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="overall_rank" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="priority_notes" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_road" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_upstream" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_downstream" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_inlet" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_barrel" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_outlet" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_condition" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_embankment_fill" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_blockage" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_paper_card" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_extra1" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_extra2" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_extra1_tag" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="photo_extra2_tag" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" field="link_method_phase1" constraints="0"/>
+    <constraint notnull_strength="1" unique_strength="1" field="fid" constraints="3" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="date_time_start" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="pscis_crossing_id" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="my_crossing_reference" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="crew_members" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="aggregated_crossings_id" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="camera_id" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="site_id" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="gps_id" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="moti_chris_culvert_id" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="gps_waypoint_number" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="stream_name" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="road_name" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="road_km_mark" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="road_tenure" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="crossing_type" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="crossing_subtype" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="crossing_fix" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="diameter_or_span_meters" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="length_or_width_meters" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="assessment_comment" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="rowid" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="date" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="utm_zone" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="easting" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="northing" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="continuous_embeddedment_yes_no" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="average_depth_embededdment_meters" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="resemble_channel_yes_no" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="backwatered_yes_no" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="percentage_backwatered" constraints="4" exp_strength="2"/>
+    <constraint notnull_strength="0" unique_strength="0" field="fill_depth_meters" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="outlet_drop_meters" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="outlet_pool_depth_0_01m" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="inlet_drop_yes_no" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="culvert_slope_percent" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="downstream_channel_width_meters" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="stream_slope" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="beaver_activity_yes_no" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="fish_observed_yes_no" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="valley_fill" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="habitat_value" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="stream_width_ratio" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="culvert_length_score" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="embed_score" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="outlet_drop_score" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="culvert_slope_score" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="stream_width_ratio_score" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="final_score" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="barrier_result" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="recommended_diameter_or_span_meters" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="source" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="time_start" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="-rowid" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="mergin_user" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="erosion_issues" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="embankment_fill_issues" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="blockage_issues" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="condition_rank" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="condition_notes" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="likelihood_flood_event_affecting_culvert" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="consequence_flood_event_affecting_culvert" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="climate_change_flood_risk" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="vulnerability_rank" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="climate_notes" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="traffic_volume" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="community_access" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="cost" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="constructability" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="fish_bearing" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="environmental_impacts" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="priority_rank" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="overall_rank" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="priority_notes" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_road" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_upstream" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_downstream" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_inlet" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_barrel" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_outlet" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_condition" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_embankment_fill" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_blockage" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_paper_card" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_extra1" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_extra2" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_extra1_tag" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="photo_extra2_tag" constraints="0" exp_strength="0"/>
+    <constraint notnull_strength="0" unique_strength="0" field="link_method_phase1" constraints="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint exp="" field="fid" desc=""/>
-    <constraint exp="" field="date_time_start" desc=""/>
-    <constraint exp="" field="pscis_crossing_id" desc=""/>
-    <constraint exp="" field="my_crossing_reference" desc=""/>
-    <constraint exp="" field="crew_members" desc=""/>
-    <constraint exp="" field="aggregated_crossings_id" desc=""/>
-    <constraint exp="" field="camera_id" desc=""/>
-    <constraint exp="" field="site_id" desc=""/>
-    <constraint exp="" field="gps_id" desc=""/>
-    <constraint exp="" field="moti_chris_culvert_id" desc=""/>
-    <constraint exp="" field="gps_waypoint_number" desc=""/>
-    <constraint exp="" field="stream_name" desc=""/>
-    <constraint exp="" field="road_name" desc=""/>
-    <constraint exp="" field="road_km_mark" desc=""/>
-    <constraint exp="" field="road_tenure" desc=""/>
-    <constraint exp="" field="crossing_type" desc=""/>
-    <constraint exp="" field="crossing_subtype" desc=""/>
-    <constraint exp="" field="crossing_fix" desc=""/>
-    <constraint exp="" field="diameter_or_span_meters" desc=""/>
-    <constraint exp="" field="length_or_width_meters" desc=""/>
-    <constraint exp="" field="assessment_comment" desc=""/>
-    <constraint exp="" field="rowid" desc=""/>
-    <constraint exp="" field="date" desc=""/>
-    <constraint exp="" field="utm_zone" desc=""/>
-    <constraint exp="" field="easting" desc=""/>
-    <constraint exp="" field="northing" desc=""/>
-    <constraint exp="" field="continuous_embeddedment_yes_no" desc=""/>
-    <constraint exp="" field="average_depth_embededdment_meters" desc=""/>
-    <constraint exp="" field="resemble_channel_yes_no" desc=""/>
-    <constraint exp="" field="backwatered_yes_no" desc=""/>
-    <constraint exp=" &quot;percentage_backwatered&quot; > 0 AND  &quot;percentage_backwatered&quot; &lt;= 100" field="percentage_backwatered" desc="Must be > 0 and &lt;= 100"/>
-    <constraint exp="" field="fill_depth_meters" desc=""/>
-    <constraint exp="" field="outlet_drop_meters" desc=""/>
-    <constraint exp="" field="outlet_pool_depth_0_01m" desc=""/>
-    <constraint exp="" field="inlet_drop_yes_no" desc=""/>
-    <constraint exp="" field="culvert_slope_percent" desc=""/>
-    <constraint exp="" field="downstream_channel_width_meters" desc=""/>
-    <constraint exp="" field="stream_slope" desc=""/>
-    <constraint exp="" field="beaver_activity_yes_no" desc=""/>
-    <constraint exp="" field="fish_observed_yes_no" desc=""/>
-    <constraint exp="" field="valley_fill" desc=""/>
-    <constraint exp="" field="habitat_value" desc=""/>
-    <constraint exp="" field="stream_width_ratio" desc=""/>
-    <constraint exp="" field="culvert_length_score" desc=""/>
-    <constraint exp="" field="embed_score" desc=""/>
-    <constraint exp="" field="outlet_drop_score" desc=""/>
-    <constraint exp="" field="culvert_slope_score" desc=""/>
-    <constraint exp="" field="stream_width_ratio_score" desc=""/>
-    <constraint exp="" field="final_score" desc=""/>
-    <constraint exp="" field="barrier_result" desc=""/>
-    <constraint exp="" field="recommended_diameter_or_span_meters" desc=""/>
-    <constraint exp="" field="source" desc=""/>
-    <constraint exp="" field="time_start" desc=""/>
-    <constraint exp="" field="-rowid" desc=""/>
-    <constraint exp="" field="mergin_user" desc=""/>
-    <constraint exp="" field="erosion_issues" desc=""/>
-    <constraint exp="" field="embankment_fill_issues" desc=""/>
-    <constraint exp="" field="blockage_issues" desc=""/>
-    <constraint exp="" field="condition_rank" desc=""/>
-    <constraint exp="" field="condition_notes" desc=""/>
-    <constraint exp="" field="likelihood_flood_event_affecting_culvert" desc=""/>
-    <constraint exp="" field="consequence_flood_event_affecting_culvert" desc=""/>
-    <constraint exp="" field="climate_change_flood_risk" desc=""/>
-    <constraint exp="" field="vulnerability_rank" desc=""/>
-    <constraint exp="" field="climate_notes" desc=""/>
-    <constraint exp="" field="traffic_volume" desc=""/>
-    <constraint exp="" field="community_access" desc=""/>
-    <constraint exp="" field="cost" desc=""/>
-    <constraint exp="" field="constructability" desc=""/>
-    <constraint exp="" field="fish_bearing" desc=""/>
-    <constraint exp="" field="environmental_impacts" desc=""/>
-    <constraint exp="" field="priority_rank" desc=""/>
-    <constraint exp="" field="overall_rank" desc=""/>
-    <constraint exp="" field="priority_notes" desc=""/>
-    <constraint exp="" field="photo_road" desc=""/>
-    <constraint exp="" field="photo_upstream" desc=""/>
-    <constraint exp="" field="photo_downstream" desc=""/>
-    <constraint exp="" field="photo_inlet" desc=""/>
-    <constraint exp="" field="photo_barrel" desc=""/>
-    <constraint exp="" field="photo_outlet" desc=""/>
-    <constraint exp="" field="photo_condition" desc=""/>
-    <constraint exp="" field="photo_embankment_fill" desc=""/>
-    <constraint exp="" field="photo_blockage" desc=""/>
-    <constraint exp="" field="photo_paper_card" desc=""/>
-    <constraint exp="" field="photo_extra1" desc=""/>
-    <constraint exp="" field="photo_extra2" desc=""/>
-    <constraint exp="" field="photo_extra1_tag" desc=""/>
-    <constraint exp="" field="photo_extra2_tag" desc=""/>
-    <constraint exp="" field="link_method_phase1" desc=""/>
+    <constraint exp="" desc="" field="fid"/>
+    <constraint exp="" desc="" field="date_time_start"/>
+    <constraint exp="" desc="" field="pscis_crossing_id"/>
+    <constraint exp="" desc="" field="my_crossing_reference"/>
+    <constraint exp="" desc="" field="crew_members"/>
+    <constraint exp="" desc="" field="aggregated_crossings_id"/>
+    <constraint exp="" desc="" field="camera_id"/>
+    <constraint exp="" desc="" field="site_id"/>
+    <constraint exp="" desc="" field="gps_id"/>
+    <constraint exp="" desc="" field="moti_chris_culvert_id"/>
+    <constraint exp="" desc="" field="gps_waypoint_number"/>
+    <constraint exp="" desc="" field="stream_name"/>
+    <constraint exp="" desc="" field="road_name"/>
+    <constraint exp="" desc="" field="road_km_mark"/>
+    <constraint exp="" desc="" field="road_tenure"/>
+    <constraint exp="" desc="" field="crossing_type"/>
+    <constraint exp="" desc="" field="crossing_subtype"/>
+    <constraint exp="" desc="" field="crossing_fix"/>
+    <constraint exp="" desc="" field="diameter_or_span_meters"/>
+    <constraint exp="" desc="" field="length_or_width_meters"/>
+    <constraint exp="" desc="" field="assessment_comment"/>
+    <constraint exp="" desc="" field="rowid"/>
+    <constraint exp="" desc="" field="date"/>
+    <constraint exp="" desc="" field="utm_zone"/>
+    <constraint exp="" desc="" field="easting"/>
+    <constraint exp="" desc="" field="northing"/>
+    <constraint exp="" desc="" field="continuous_embeddedment_yes_no"/>
+    <constraint exp="" desc="" field="average_depth_embededdment_meters"/>
+    <constraint exp="" desc="" field="resemble_channel_yes_no"/>
+    <constraint exp="" desc="" field="backwatered_yes_no"/>
+    <constraint exp=" &quot;percentage_backwatered&quot; > 0 AND  &quot;percentage_backwatered&quot; &lt;= 100" desc="Must be > 0 and &lt;= 100" field="percentage_backwatered"/>
+    <constraint exp="" desc="" field="fill_depth_meters"/>
+    <constraint exp="" desc="" field="outlet_drop_meters"/>
+    <constraint exp="" desc="" field="outlet_pool_depth_0_01m"/>
+    <constraint exp="" desc="" field="inlet_drop_yes_no"/>
+    <constraint exp="" desc="" field="culvert_slope_percent"/>
+    <constraint exp="" desc="" field="downstream_channel_width_meters"/>
+    <constraint exp="" desc="" field="stream_slope"/>
+    <constraint exp="" desc="" field="beaver_activity_yes_no"/>
+    <constraint exp="" desc="" field="fish_observed_yes_no"/>
+    <constraint exp="" desc="" field="valley_fill"/>
+    <constraint exp="" desc="" field="habitat_value"/>
+    <constraint exp="" desc="" field="stream_width_ratio"/>
+    <constraint exp="" desc="" field="culvert_length_score"/>
+    <constraint exp="" desc="" field="embed_score"/>
+    <constraint exp="" desc="" field="outlet_drop_score"/>
+    <constraint exp="" desc="" field="culvert_slope_score"/>
+    <constraint exp="" desc="" field="stream_width_ratio_score"/>
+    <constraint exp="" desc="" field="final_score"/>
+    <constraint exp="" desc="" field="barrier_result"/>
+    <constraint exp="" desc="" field="recommended_diameter_or_span_meters"/>
+    <constraint exp="" desc="" field="source"/>
+    <constraint exp="" desc="" field="time_start"/>
+    <constraint exp="" desc="" field="-rowid"/>
+    <constraint exp="" desc="" field="mergin_user"/>
+    <constraint exp="" desc="" field="erosion_issues"/>
+    <constraint exp="" desc="" field="embankment_fill_issues"/>
+    <constraint exp="" desc="" field="blockage_issues"/>
+    <constraint exp="" desc="" field="condition_rank"/>
+    <constraint exp="" desc="" field="condition_notes"/>
+    <constraint exp="" desc="" field="likelihood_flood_event_affecting_culvert"/>
+    <constraint exp="" desc="" field="consequence_flood_event_affecting_culvert"/>
+    <constraint exp="" desc="" field="climate_change_flood_risk"/>
+    <constraint exp="" desc="" field="vulnerability_rank"/>
+    <constraint exp="" desc="" field="climate_notes"/>
+    <constraint exp="" desc="" field="traffic_volume"/>
+    <constraint exp="" desc="" field="community_access"/>
+    <constraint exp="" desc="" field="cost"/>
+    <constraint exp="" desc="" field="constructability"/>
+    <constraint exp="" desc="" field="fish_bearing"/>
+    <constraint exp="" desc="" field="environmental_impacts"/>
+    <constraint exp="" desc="" field="priority_rank"/>
+    <constraint exp="" desc="" field="overall_rank"/>
+    <constraint exp="" desc="" field="priority_notes"/>
+    <constraint exp="" desc="" field="photo_road"/>
+    <constraint exp="" desc="" field="photo_upstream"/>
+    <constraint exp="" desc="" field="photo_downstream"/>
+    <constraint exp="" desc="" field="photo_inlet"/>
+    <constraint exp="" desc="" field="photo_barrel"/>
+    <constraint exp="" desc="" field="photo_outlet"/>
+    <constraint exp="" desc="" field="photo_condition"/>
+    <constraint exp="" desc="" field="photo_embankment_fill"/>
+    <constraint exp="" desc="" field="photo_blockage"/>
+    <constraint exp="" desc="" field="photo_paper_card"/>
+    <constraint exp="" desc="" field="photo_extra1"/>
+    <constraint exp="" desc="" field="photo_extra2"/>
+    <constraint exp="" desc="" field="photo_extra1_tag"/>
+    <constraint exp="" desc="" field="photo_extra2_tag"/>
+    <constraint exp="" desc="" field="link_method_phase1"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" sortExpression="&quot;pscis_crossing_id&quot;" actionWidgetStyle="dropDown">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;pscis_crossing_id&quot;" sortOrder="0">
     <columns>
-      <column name="fid" type="field" hidden="0" width="-1"/>
-      <column name="date" type="field" hidden="0" width="458"/>
-      <column name="camera_id" type="field" hidden="0" width="218"/>
-      <column name="pscis_crossing_id" type="field" hidden="0" width="214"/>
-      <column name="my_crossing_reference" type="field" hidden="0" width="349"/>
-      <column name="crew_members" type="field" hidden="0" width="-1"/>
-      <column name="utm_zone" type="field" hidden="0" width="-1"/>
-      <column name="easting" type="field" hidden="0" width="-1"/>
-      <column name="northing" type="field" hidden="0" width="-1"/>
-      <column name="stream_name" type="field" hidden="0" width="186"/>
-      <column name="road_name" type="field" hidden="0" width="-1"/>
-      <column name="road_km_mark" type="field" hidden="0" width="-1"/>
-      <column name="road_tenure" type="field" hidden="0" width="-1"/>
-      <column name="crossing_type" type="field" hidden="0" width="-1"/>
-      <column name="crossing_subtype" type="field" hidden="0" width="-1"/>
-      <column name="diameter_or_span_meters" type="field" hidden="0" width="-1"/>
-      <column name="length_or_width_meters" type="field" hidden="0" width="-1"/>
-      <column name="continuous_embeddedment_yes_no" type="field" hidden="0" width="-1"/>
-      <column name="average_depth_embededdment_meters" type="field" hidden="0" width="-1"/>
-      <column name="resemble_channel_yes_no" type="field" hidden="0" width="-1"/>
-      <column name="backwatered_yes_no" type="field" hidden="0" width="-1"/>
-      <column name="percentage_backwatered" type="field" hidden="0" width="-1"/>
-      <column name="fill_depth_meters" type="field" hidden="0" width="-1"/>
-      <column name="outlet_drop_meters" type="field" hidden="0" width="-1"/>
-      <column name="outlet_pool_depth_0_01m" type="field" hidden="0" width="-1"/>
-      <column name="inlet_drop_yes_no" type="field" hidden="0" width="-1"/>
-      <column name="culvert_slope_percent" type="field" hidden="0" width="-1"/>
-      <column name="downstream_channel_width_meters" type="field" hidden="0" width="-1"/>
-      <column name="stream_slope" type="field" hidden="0" width="-1"/>
-      <column name="beaver_activity_yes_no" type="field" hidden="0" width="-1"/>
-      <column name="fish_observed_yes_no" type="field" hidden="0" width="-1"/>
-      <column name="valley_fill" type="field" hidden="0" width="-1"/>
-      <column name="habitat_value" type="field" hidden="0" width="-1"/>
-      <column name="stream_width_ratio" type="field" hidden="0" width="-1"/>
-      <column name="assessment_comment" type="field" hidden="0" width="-1"/>
-      <column name="aggregated_crossings_id" type="field" hidden="0" width="-1"/>
-      <column name="date_time_start" type="field" hidden="0" width="-1"/>
-      <column name="gps_id" type="field" hidden="0" width="-1"/>
-      <column name="mergin_user" type="field" hidden="0" width="-1"/>
-      <column name="barrier_result" type="field" hidden="0" width="-1"/>
-      <column name="crossing_fix" type="field" hidden="0" width="-1"/>
-      <column name="recommended_diameter_or_span_meters" type="field" hidden="0" width="-1"/>
-      <column name="source" type="field" hidden="0" width="-1"/>
-      <column name="time_start" type="field" hidden="0" width="-1"/>
-      <column name="photo_road" type="field" hidden="0" width="-1"/>
-      <column name="photo_upstream" type="field" hidden="0" width="-1"/>
-      <column name="photo_inlet" type="field" hidden="0" width="-1"/>
-      <column name="photo_downstream" type="field" hidden="0" width="-1"/>
-      <column name="photo_outlet" type="field" hidden="0" width="-1"/>
-      <column name="photo_barrel" type="field" hidden="0" width="-1"/>
-      <column name="blockage_issues" type="field" hidden="0" width="-1"/>
-      <column name="condition_rank" type="field" hidden="0" width="-1"/>
-      <column name="likelihood_flood_event_affecting_culvert" type="field" hidden="0" width="-1"/>
-      <column name="consequence_flood_event_affecting_culvert" type="field" hidden="0" width="-1"/>
-      <column name="climate_change_flood_risk" type="field" hidden="0" width="-1"/>
-      <column name="vulnerability_rank" type="field" hidden="0" width="-1"/>
-      <column name="traffic_volume" type="field" hidden="0" width="-1"/>
-      <column name="community_access" type="field" hidden="0" width="-1"/>
-      <column name="cost" type="field" hidden="0" width="-1"/>
-      <column name="constructability" type="field" hidden="0" width="-1"/>
-      <column name="fish_bearing" type="field" hidden="0" width="-1"/>
-      <column name="environmental_impacts" type="field" hidden="0" width="-1"/>
-      <column name="priority_rank" type="field" hidden="0" width="-1"/>
-      <column name="overall_rank" type="field" hidden="0" width="-1"/>
-      <column name="photo_condition" type="field" hidden="0" width="-1"/>
-      <column name="photo_blockage" type="field" hidden="0" width="-1"/>
-      <column name="photo_extra1" type="field" hidden="0" width="-1"/>
-      <column name="photo_extra2" type="field" hidden="0" width="-1"/>
-      <column name="photo_extra1_tag" type="field" hidden="0" width="-1"/>
-      <column name="photo_extra2_tag" type="field" hidden="0" width="-1"/>
-      <column name="condition_notes" type="field" hidden="0" width="-1"/>
-      <column name="climate_notes" type="field" hidden="0" width="1659"/>
-      <column name="priority_notes" type="field" hidden="0" width="588"/>
-      <column name="site_id" type="field" hidden="0" width="-1"/>
-      <column name="gps_waypoint_number" type="field" hidden="0" width="-1"/>
-      <column name="rowid" type="field" hidden="0" width="-1"/>
-      <column name="culvert_length_score" type="field" hidden="0" width="-1"/>
-      <column name="embed_score" type="field" hidden="0" width="-1"/>
-      <column name="outlet_drop_score" type="field" hidden="0" width="-1"/>
-      <column name="culvert_slope_score" type="field" hidden="0" width="-1"/>
-      <column name="stream_width_ratio_score" type="field" hidden="0" width="-1"/>
-      <column name="final_score" type="field" hidden="0" width="-1"/>
-      <column name="erosion_issues" type="field" hidden="0" width="-1"/>
-      <column name="embankment_fill_issues" type="field" hidden="0" width="-1"/>
-      <column name="photo_embankment_fill" type="field" hidden="0" width="-1"/>
-      <column name="moti_chris_culvert_id" type="field" hidden="0" width="224"/>
-      <column name="-rowid" type="field" hidden="0" width="-1"/>
-      <column name="link_method_phase1" type="field" hidden="0" width="-1"/>
-      <column name="photo_paper_card" type="field" hidden="0" width="-1"/>
-      <column type="actions" hidden="1" width="-1"/>
+      <column hidden="0" name="fid" width="-1" type="field"/>
+      <column hidden="0" name="date" width="458" type="field"/>
+      <column hidden="0" name="camera_id" width="218" type="field"/>
+      <column hidden="0" name="pscis_crossing_id" width="214" type="field"/>
+      <column hidden="0" name="my_crossing_reference" width="349" type="field"/>
+      <column hidden="0" name="crew_members" width="-1" type="field"/>
+      <column hidden="0" name="utm_zone" width="-1" type="field"/>
+      <column hidden="0" name="easting" width="-1" type="field"/>
+      <column hidden="0" name="northing" width="-1" type="field"/>
+      <column hidden="0" name="stream_name" width="186" type="field"/>
+      <column hidden="0" name="road_name" width="-1" type="field"/>
+      <column hidden="0" name="road_km_mark" width="-1" type="field"/>
+      <column hidden="0" name="road_tenure" width="-1" type="field"/>
+      <column hidden="0" name="crossing_type" width="-1" type="field"/>
+      <column hidden="0" name="crossing_subtype" width="-1" type="field"/>
+      <column hidden="0" name="diameter_or_span_meters" width="-1" type="field"/>
+      <column hidden="0" name="length_or_width_meters" width="-1" type="field"/>
+      <column hidden="0" name="continuous_embeddedment_yes_no" width="-1" type="field"/>
+      <column hidden="0" name="average_depth_embededdment_meters" width="-1" type="field"/>
+      <column hidden="0" name="resemble_channel_yes_no" width="-1" type="field"/>
+      <column hidden="0" name="backwatered_yes_no" width="-1" type="field"/>
+      <column hidden="0" name="percentage_backwatered" width="-1" type="field"/>
+      <column hidden="0" name="fill_depth_meters" width="-1" type="field"/>
+      <column hidden="0" name="outlet_drop_meters" width="-1" type="field"/>
+      <column hidden="0" name="outlet_pool_depth_0_01m" width="-1" type="field"/>
+      <column hidden="0" name="inlet_drop_yes_no" width="-1" type="field"/>
+      <column hidden="0" name="culvert_slope_percent" width="-1" type="field"/>
+      <column hidden="0" name="downstream_channel_width_meters" width="-1" type="field"/>
+      <column hidden="0" name="stream_slope" width="-1" type="field"/>
+      <column hidden="0" name="beaver_activity_yes_no" width="-1" type="field"/>
+      <column hidden="0" name="fish_observed_yes_no" width="-1" type="field"/>
+      <column hidden="0" name="valley_fill" width="-1" type="field"/>
+      <column hidden="0" name="habitat_value" width="-1" type="field"/>
+      <column hidden="0" name="stream_width_ratio" width="-1" type="field"/>
+      <column hidden="0" name="assessment_comment" width="-1" type="field"/>
+      <column hidden="0" name="aggregated_crossings_id" width="-1" type="field"/>
+      <column hidden="0" name="date_time_start" width="-1" type="field"/>
+      <column hidden="0" name="gps_id" width="-1" type="field"/>
+      <column hidden="0" name="mergin_user" width="-1" type="field"/>
+      <column hidden="0" name="barrier_result" width="-1" type="field"/>
+      <column hidden="0" name="crossing_fix" width="-1" type="field"/>
+      <column hidden="0" name="recommended_diameter_or_span_meters" width="-1" type="field"/>
+      <column hidden="0" name="source" width="-1" type="field"/>
+      <column hidden="0" name="time_start" width="-1" type="field"/>
+      <column hidden="0" name="photo_road" width="-1" type="field"/>
+      <column hidden="0" name="photo_upstream" width="-1" type="field"/>
+      <column hidden="0" name="photo_inlet" width="-1" type="field"/>
+      <column hidden="0" name="photo_downstream" width="-1" type="field"/>
+      <column hidden="0" name="photo_outlet" width="-1" type="field"/>
+      <column hidden="0" name="photo_barrel" width="-1" type="field"/>
+      <column hidden="0" name="blockage_issues" width="-1" type="field"/>
+      <column hidden="0" name="condition_rank" width="-1" type="field"/>
+      <column hidden="0" name="likelihood_flood_event_affecting_culvert" width="-1" type="field"/>
+      <column hidden="0" name="consequence_flood_event_affecting_culvert" width="-1" type="field"/>
+      <column hidden="0" name="climate_change_flood_risk" width="-1" type="field"/>
+      <column hidden="0" name="vulnerability_rank" width="-1" type="field"/>
+      <column hidden="0" name="traffic_volume" width="-1" type="field"/>
+      <column hidden="0" name="community_access" width="-1" type="field"/>
+      <column hidden="0" name="cost" width="-1" type="field"/>
+      <column hidden="0" name="constructability" width="-1" type="field"/>
+      <column hidden="0" name="fish_bearing" width="-1" type="field"/>
+      <column hidden="0" name="environmental_impacts" width="-1" type="field"/>
+      <column hidden="0" name="priority_rank" width="-1" type="field"/>
+      <column hidden="0" name="overall_rank" width="-1" type="field"/>
+      <column hidden="0" name="photo_condition" width="-1" type="field"/>
+      <column hidden="0" name="photo_blockage" width="-1" type="field"/>
+      <column hidden="0" name="photo_extra1" width="-1" type="field"/>
+      <column hidden="0" name="photo_extra2" width="-1" type="field"/>
+      <column hidden="0" name="photo_extra1_tag" width="-1" type="field"/>
+      <column hidden="0" name="photo_extra2_tag" width="-1" type="field"/>
+      <column hidden="0" name="condition_notes" width="-1" type="field"/>
+      <column hidden="0" name="climate_notes" width="1659" type="field"/>
+      <column hidden="0" name="priority_notes" width="588" type="field"/>
+      <column hidden="0" name="site_id" width="-1" type="field"/>
+      <column hidden="0" name="gps_waypoint_number" width="-1" type="field"/>
+      <column hidden="0" name="rowid" width="-1" type="field"/>
+      <column hidden="0" name="culvert_length_score" width="-1" type="field"/>
+      <column hidden="0" name="embed_score" width="-1" type="field"/>
+      <column hidden="0" name="outlet_drop_score" width="-1" type="field"/>
+      <column hidden="0" name="culvert_slope_score" width="-1" type="field"/>
+      <column hidden="0" name="stream_width_ratio_score" width="-1" type="field"/>
+      <column hidden="0" name="final_score" width="-1" type="field"/>
+      <column hidden="0" name="erosion_issues" width="-1" type="field"/>
+      <column hidden="0" name="embankment_fill_issues" width="-1" type="field"/>
+      <column hidden="0" name="photo_embankment_fill" width="-1" type="field"/>
+      <column hidden="0" name="moti_chris_culvert_id" width="224" type="field"/>
+      <column hidden="0" name="-rowid" width="-1" type="field"/>
+      <column hidden="0" name="link_method_phase1" width="-1" type="field"/>
+      <column hidden="0" name="photo_paper_card" width="-1" type="field"/>
+      <column hidden="1" width="-1" type="actions"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -2237,406 +2258,411 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>2</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-      <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+    <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+      <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
     </labelStyle>
-    <attributeEditorContainer showLabel="0" name="Overview" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsed="0" groupBox="0" collapsedExpressionEnabled="0" collapsedExpression="">
-      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-        <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+    <attributeEditorContainer collapsed="0" showLabel="0" name="Overview" collapsedExpression="" groupBox="0" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsedExpressionEnabled="0">
+      <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+        <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="date" index="22">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+      <attributeEditorField showLabel="1" name="date_time_start" index="1">
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="pscis_crossing_id" index="2">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="my_crossing_reference" index="3">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="moti_chris_culvert_id" index="9">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField showLabel="1" name="crew_members" index="4">
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="gps_id" index="8">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="camera_id" index="6">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="gps_waypoint_number" index="10">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="utm_zone" index="23">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="easting" index="24">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="northing" index="25">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="stream_name" index="11">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="road_name" index="12">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="road_km_mark" index="13">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="road_tenure" index="14">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="0" name="Crossing" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsed="0" groupBox="0" collapsedExpressionEnabled="0" collapsedExpression="">
-      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-        <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+    <attributeEditorContainer collapsed="0" showLabel="0" name="Crossing" collapsedExpression="" groupBox="0" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsedExpressionEnabled="0">
+      <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+        <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
       </labelStyle>
       <attributeEditorField showLabel="1" name="crossing_type" index="15">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="crossing_subtype" index="16">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="diameter_or_span_meters" index="18">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="length_or_width_meters" index="19">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="assessment_comment" index="20">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="0" name="Stream" visibilityExpressionEnabled="1" visibilityExpression=" &quot;crossing_type&quot;  =  'Closed Bottom Structure' " columnCount="1" collapsed="0" groupBox="0" collapsedExpressionEnabled="0" collapsedExpression="">
-      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-        <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+    <attributeEditorContainer collapsed="0" showLabel="0" name="Stream" collapsedExpression="" groupBox="0" visibilityExpressionEnabled="1" visibilityExpression=" &quot;crossing_type&quot;  =  'Closed Bottom Structure' " columnCount="1" collapsedExpressionEnabled="0">
+      <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+        <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
       </labelStyle>
       <attributeEditorField showLabel="1" name="continuous_embeddedment_yes_no" index="26">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorContainer showLabel="0" name="Embeddedment" visibilityExpressionEnabled="1" visibilityExpression="&quot;continuous_embeddedment_yes_no&quot;  = 'Yes'" columnCount="1" collapsed="0" groupBox="1" collapsedExpressionEnabled="0" collapsedExpression="">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+      <attributeEditorContainer collapsed="0" showLabel="0" name="Embeddedment" collapsedExpression="" groupBox="1" visibilityExpressionEnabled="1" visibilityExpression="&quot;continuous_embeddedment_yes_no&quot;  = 'Yes'" columnCount="1" collapsedExpressionEnabled="0">
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
         <attributeEditorField showLabel="1" name="average_depth_embededdment_meters" index="27">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="resemble_channel_yes_no" index="28">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
       </attributeEditorContainer>
       <attributeEditorField showLabel="1" name="backwatered_yes_no" index="29">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorContainer showLabel="0" name="Backwatered" visibilityExpressionEnabled="1" visibilityExpression=" &quot;backwatered_yes_no&quot;  = 'Yes'" columnCount="1" collapsed="0" groupBox="1" collapsedExpressionEnabled="0" collapsedExpression="">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+      <attributeEditorContainer collapsed="0" showLabel="0" name="Backwatered" collapsedExpression="" groupBox="1" visibilityExpressionEnabled="1" visibilityExpression=" &quot;backwatered_yes_no&quot;  = 'Yes'" columnCount="1" collapsedExpressionEnabled="0">
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
         <attributeEditorField showLabel="1" name="percentage_backwatered" index="30">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
       </attributeEditorContainer>
       <attributeEditorField showLabel="1" name="fill_depth_meters" index="31">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="outlet_drop_meters" index="32">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="outlet_pool_depth_0_01m" index="33">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="inlet_drop_yes_no" index="34">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="culvert_slope_percent" index="35">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="downstream_channel_width_meters" index="36">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="stream_slope" index="37">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="fish_observed_yes_no" index="39">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="beaver_activity_yes_no" index="38">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="valley_fill" index="40">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="habitat_value" index="41">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="0" name="Climate" visibilityExpressionEnabled="1" visibilityExpression=" &quot;crossing_type&quot;  =  'Closed Bottom Structure' " columnCount="1" collapsed="0" groupBox="0" collapsedExpressionEnabled="0" collapsedExpression="">
-      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-        <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+    <attributeEditorContainer collapsed="0" showLabel="0" name="Climate" collapsedExpression="" groupBox="0" visibilityExpressionEnabled="1" visibilityExpression=" &quot;crossing_type&quot;  =  'Closed Bottom Structure' " columnCount="1" collapsedExpressionEnabled="0">
+      <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+        <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
       </labelStyle>
-      <attributeEditorContainer showLabel="1" name="Condition Risk" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsed="0" groupBox="1" collapsedExpressionEnabled="0" collapsedExpression="">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+      <attributeEditorContainer collapsed="0" showLabel="1" name="Condition Risk" collapsedExpression="" groupBox="1" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsedExpressionEnabled="0">
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
         <attributeEditorField showLabel="1" name="erosion_issues" index="55">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="embankment_fill_issues" index="56">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="blockage_issues" index="57">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="condition_notes" index="59">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="condition_rank" index="58">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
       </attributeEditorContainer>
-      <attributeEditorContainer showLabel="1" name="Climate Risk" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsed="0" groupBox="1" collapsedExpressionEnabled="0" collapsedExpression="">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+      <attributeEditorContainer collapsed="0" showLabel="1" name="Climate Risk" collapsedExpression="" groupBox="1" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsedExpressionEnabled="0">
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
         <attributeEditorField showLabel="1" name="likelihood_flood_event_affecting_culvert" index="60">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="consequence_flood_event_affecting_culvert" index="61">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="climate_notes" index="64">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="climate_change_flood_risk" index="62">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="vulnerability_rank" index="63">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
       </attributeEditorContainer>
-      <attributeEditorContainer showLabel="1" name="Priority" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsed="0" groupBox="1" collapsedExpressionEnabled="0" collapsedExpression="">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+      <attributeEditorContainer collapsed="0" showLabel="1" name="Priority" collapsedExpression="" groupBox="1" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsedExpressionEnabled="0">
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
         <attributeEditorField showLabel="1" name="traffic_volume" index="65">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="community_access" index="66">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="cost" index="67">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="constructability" index="68">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="fish_bearing" index="69">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="environmental_impacts" index="70">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="priority_notes" index="73">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="priority_rank" index="71">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
         <attributeEditorField showLabel="1" name="overall_rank" index="72">
-          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-            <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+          <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+            <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
           </labelStyle>
         </attributeEditorField>
       </attributeEditorContainer>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="0" name="Photos" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsed="0" groupBox="0" collapsedExpressionEnabled="0" collapsedExpression="">
-      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-        <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+    <attributeEditorContainer collapsed="0" showLabel="0" name="Photos" collapsedExpression="" groupBox="0" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsedExpressionEnabled="0">
+      <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+        <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
       </labelStyle>
       <attributeEditorField showLabel="1" name="photo_road" index="74">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_barrel" index="78">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_upstream" index="75">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_inlet" index="77">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_outlet" index="79">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_downstream" index="76">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_condition" index="80">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_embankment_fill" index="81">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_blockage" index="82">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_extra1" index="84">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_extra1_tag" index="86">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_extra2" index="85">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_extra2_tag" index="87">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField showLabel="1" name="photo_paper_card" index="83">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer showLabel="1" name="Methods" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsed="0" groupBox="0" collapsedExpressionEnabled="0" collapsedExpression="">
-      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-        <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+    <attributeEditorContainer collapsed="0" showLabel="1" name="Methods" collapsedExpression="" groupBox="0" visibilityExpressionEnabled="0" visibilityExpression="" columnCount="1" collapsedExpressionEnabled="0">
+      <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+        <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
       </labelStyle>
       <attributeEditorField showLabel="1" name="link_method_phase1" index="88">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont bold="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0" style="" italic="0"/>
+        <labelStyle overrideLabelColor="0" overrideLabelFont="0" labelColor="0,0,0,255">
+          <labelFont style="" strikethrough="0" bold="0" italic="0" underline="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
@@ -3141,122 +3167,122 @@ def my_form_open(dialog, layer, feature):
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
-  <previewExpression>'Final score: ' || to_string(case when "length_or_width_meters" &lt; 0 then 0
-	when "length_or_width_meters" >= 15 and "length_or_width_meters" &lt; 30 then 3
-	when "length_or_width_meters" >= 30 then 6
-	else 0
-  end 
-
-+
-
-	 case 
-	when  "continuous_embeddedment_yes_no" = 'No' then 10
-	when "diameter_or_span_meters" is null then 0
-	when "average_depth_embededdment_meters" is null then 0
-	when "average_depth_embededdment_meters" / "diameter_or_span_meters" &lt;= .2 OR "average_depth_embededdment_meters" &lt; .3 then 5
-	when "average_depth_embededdment_meters" / "diameter_or_span_meters" > .2 or "average_depth_embededdment_meters" >= .3 then 0 
-  else 0
-  end
-
-+ 
-
-case 
-  when "outlet_drop_meters" &lt; .15  
-  then 0
-  when "outlet_drop_meters" >= .15 and "outlet_drop_meters" &lt; .3 
-  then 5
-  when "outlet_drop_score" >= .3
-  then 10
-  else 0
-end
- 
-+
-
-case 
-  when "culvert_slope_percent" &lt; 1
-  then 0
-  when "culvert_slope_percent" >= 1 and "culvert_slope_percent" &lt; 3
-  then 5
-  when "culvert_slope_percent" >= 3 
-  then 10
-  else 0
-end
-
-
-+
-
-case
-  when "downstream_channel_width_meters" is null then 0
-  when "diameter_or_span_meters" is null then 0
-  when  "downstream_channel_width_meters" / "diameter_or_span_meters" &lt; 1 then 0
-  when  "downstream_channel_width_meters" / "diameter_or_span_meters" >= 1 and "downstream_channel_width_meters" / "diameter_or_span_meters" &lt; 1.3 
-  then 3
-  when  "downstream_channel_width_meters" / "diameter_or_span_meters" >= 1.3 
-  then 6
-  else 0
-end
+  <previewExpression>'Final score: ' || to_string(case when "length_or_width_meters" &lt; 0 then 0&#xd;
+	when "length_or_width_meters" >= 15 and "length_or_width_meters" &lt; 30 then 3&#xd;
+	when "length_or_width_meters" >= 30 then 6&#xd;
+	else 0&#xd;
+  end &#xd;
+&#xd;
++&#xd;
+&#xd;
+	 case &#xd;
+	when  "continuous_embeddedment_yes_no" = 'No' then 10&#xd;
+	when "diameter_or_span_meters" is null then 0&#xd;
+	when "average_depth_embededdment_meters" is null then 0&#xd;
+	when "average_depth_embededdment_meters" / "diameter_or_span_meters" &lt;= .2 OR "average_depth_embededdment_meters" &lt; .3 then 5&#xd;
+	when "average_depth_embededdment_meters" / "diameter_or_span_meters" > .2 or "average_depth_embededdment_meters" >= .3 then 0 &#xd;
+  else 0&#xd;
+  end&#xd;
+&#xd;
++ &#xd;
+&#xd;
+case &#xd;
+  when "outlet_drop_meters" &lt; .15  &#xd;
+  then 0&#xd;
+  when "outlet_drop_meters" >= .15 and "outlet_drop_meters" &lt; .3 &#xd;
+  then 5&#xd;
+  when "outlet_drop_score" >= .3&#xd;
+  then 10&#xd;
+  else 0&#xd;
+end&#xd;
+ &#xd;
++&#xd;
+&#xd;
+case &#xd;
+  when "culvert_slope_percent" &lt; 1&#xd;
+  then 0&#xd;
+  when "culvert_slope_percent" >= 1 and "culvert_slope_percent" &lt; 3&#xd;
+  then 5&#xd;
+  when "culvert_slope_percent" >= 3 &#xd;
+  then 10&#xd;
+  else 0&#xd;
+end&#xd;
+&#xd;
+&#xd;
++&#xd;
+&#xd;
+case&#xd;
+  when "downstream_channel_width_meters" is null then 0&#xd;
+  when "diameter_or_span_meters" is null then 0&#xd;
+  when  "downstream_channel_width_meters" / "diameter_or_span_meters" &lt; 1 then 0&#xd;
+  when  "downstream_channel_width_meters" / "diameter_or_span_meters" >= 1 and "downstream_channel_width_meters" / "diameter_or_span_meters" &lt; 1.3 &#xd;
+  then 3&#xd;
+  when  "downstream_channel_width_meters" / "diameter_or_span_meters" >= 1.3 &#xd;
+  then 6&#xd;
+  else 0&#xd;
+end&#xd;
 )</previewExpression>
-  <mapTip>&lt;p>
-&lt;strong>Culvert length score: &lt;/strong>
-
-  [% case when "length_or_width_meters" &lt; 0 then 0
-  when "length_or_width_meters" >= 15 and "length_or_width_meters" &lt; 30 then 3
-  when "length_or_width_meters" >= 30 then 6
-  end %]
-
-&lt;strong>Embed score: &lt;/strong>
-
-  [% case 
-  when  "continuous_embeddedment_yes_no" = 'No' then 10
-  when "diameter_or_span_meters" is null then 0
-  when "average_depth_embededdment_meters" is null then 0
-  when "average_depth_embededdment_meters" / "diameter_or_span_meters" &lt;= .2 OR "average_depth_embededdment_meters" &lt; .3 then 5
-  when "average_depth_embededdment_meters" / "diameter_or_span_meters" > .2 or "average_depth_embededdment_meters" >= .3 then 0 end %]
-&lt;/p>
-
-&lt;p>
-&lt;strong>Culvert drop score: &lt;/strong>
-
-[% case 
-  when "outlet_drop_meters" &lt; .15  
-  then 0
-  when "outlet_drop_meters" >= .15 and "outlet_drop_meters" &lt; .3 
-  then 5
-  when "outlet_drop_score" >= .3
-  then 10
-  else 0
-end
- %]
- 
-&lt;strong>Culvert slope score: &lt;/strong>
-
-  [% case 
-  when "culvert_slope_percent" &lt; 1
-  then 0
-  when "culvert_slope_percent" >= 1 and "culvert_slope_percent" &lt; 3
-  then 5
-  when "culvert_slope_percent" >= 3 
-  then 10
-end
- %]
-&lt;/p>
-
-&lt;p>
-&lt;strong>Stream width ratio score: &lt;/strong>
-[%
-case
-  when "downstream_channel_width_meters" is null then 0
-  when "diameter_or_span_meters" is null then 0
-  when  "downstream_channel_width_meters" / "diameter_or_span_meters" &lt; 1 then 0
-  when  "downstream_channel_width_meters" / "diameter_or_span_meters" >= 1 and "downstream_channel_width_meters" / "diameter_or_span_meters" &lt; 1.3 
-  then 3
-  
-  when  "downstream_channel_width_meters" / "diameter_or_span_meters" >= 1.3 
-  then 6
-  
-  end %]
-&lt;/p>
-
+  <mapTip>&lt;p>&#xd;
+&lt;strong>Culvert length score: &lt;/strong>&#xd;
+&#xd;
+  [% case when "length_or_width_meters" &lt; 0 then 0&#xd;
+  when "length_or_width_meters" >= 15 and "length_or_width_meters" &lt; 30 then 3&#xd;
+  when "length_or_width_meters" >= 30 then 6&#xd;
+  end %]&#xd;
+&#xd;
+&lt;strong>Embed score: &lt;/strong>&#xd;
+&#xd;
+  [% case &#xd;
+  when  "continuous_embeddedment_yes_no" = 'No' then 10&#xd;
+  when "diameter_or_span_meters" is null then 0&#xd;
+  when "average_depth_embededdment_meters" is null then 0&#xd;
+  when "average_depth_embededdment_meters" / "diameter_or_span_meters" &lt;= .2 OR "average_depth_embededdment_meters" &lt; .3 then 5&#xd;
+  when "average_depth_embededdment_meters" / "diameter_or_span_meters" > .2 or "average_depth_embededdment_meters" >= .3 then 0 end %]&#xd;
+&lt;/p>&#xd;
+&#xd;
+&lt;p>&#xd;
+&lt;strong>Culvert drop score: &lt;/strong>&#xd;
+&#xd;
+[% case &#xd;
+  when "outlet_drop_meters" &lt; .15  &#xd;
+  then 0&#xd;
+  when "outlet_drop_meters" >= .15 and "outlet_drop_meters" &lt; .3 &#xd;
+  then 5&#xd;
+  when "outlet_drop_score" >= .3&#xd;
+  then 10&#xd;
+  else 0&#xd;
+end&#xd;
+ %]&#xd;
+ &#xd;
+&lt;strong>Culvert slope score: &lt;/strong>&#xd;
+&#xd;
+  [% case &#xd;
+  when "culvert_slope_percent" &lt; 1&#xd;
+  then 0&#xd;
+  when "culvert_slope_percent" >= 1 and "culvert_slope_percent" &lt; 3&#xd;
+  then 5&#xd;
+  when "culvert_slope_percent" >= 3 &#xd;
+  then 10&#xd;
+end&#xd;
+ %]&#xd;
+&lt;/p>&#xd;
+&#xd;
+&lt;p>&#xd;
+&lt;strong>Stream width ratio score: &lt;/strong>&#xd;
+[%&#xd;
+case&#xd;
+  when "downstream_channel_width_meters" is null then 0&#xd;
+  when "diameter_or_span_meters" is null then 0&#xd;
+  when  "downstream_channel_width_meters" / "diameter_or_span_meters" &lt; 1 then 0&#xd;
+  when  "downstream_channel_width_meters" / "diameter_or_span_meters" >= 1 and "downstream_channel_width_meters" / "diameter_or_span_meters" &lt; 1.3 &#xd;
+  then 3&#xd;
+  &#xd;
+  when  "downstream_channel_width_meters" / "diameter_or_span_meters" >= 1.3 &#xd;
+  then 6&#xd;
+  &#xd;
+  end %]&#xd;
+&lt;/p>&#xd;
+&#xd;
 </mapTip>
   <layerGeometryType>0</layerGeometryType>
 </qgis>
