@@ -170,9 +170,7 @@ form_prep3 <- form_prep2 %>%
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
   dplyr::mutate(date_time_start = NA_POSIXct_,
                 mergin_user = NA_character_,
-                surveyor_1 = NA_character_,
-                surveyor_2 = NA_character_,
-                surveyor_3 = NA_character_,
+                crew_members = NA_character_,
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_number = NA_character_,
