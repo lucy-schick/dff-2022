@@ -43,6 +43,20 @@ BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 -
 
 
 # ---------------
+# lateral habitat
+# ---------------
+# should be able to pipe $(fio cat aoi.geojson --dst_crs EPSG:3005) to rio mask for a one liner,
+# but this works fine
+ogr2ogr -f GeoJSON aoi_alb.geojson -t_srs EPSG:3005 aoi.geojson
+
+rio mask /vsicurl/https://bcfishpass.s3.us-west-2.amazonaws.com/habitat_lateral.tif \
+  habitat_lateral.tif \
+  --crop \
+  --geojson-mask aoi_alb.geojson
+
+rm aoi_alb.geojson
+
+# ---------------
 # bcfishpass releated data sources archived to flatgeobuf on s3 for fast retrieval
 # (and with watershed group code included, no spatial query for clipping required)
 # ---------------
@@ -116,6 +130,7 @@ done
 # ---------------
 mkdir -p ~/Projects/gis/$DIRPROJECT
 mv background_layers.gpkg* ~/Projects/gis/$DIRPROJECT/
+mv habitat_lateral.tif ~/Projects/gis/$DIRPROJECT/
 cp ../../data/qgis/bcfishpass_mobile.qgs ~/Projects/gis/$DIRPROJECT/$DIRPROJECT.qgs
 cp ../../data/qgis/form_pscis.gpkg ~/Projects/gis/$DIRPROJECT/
 cp ../../data/qgis/form_fiss_site.gpkg ~/Projects/gis/$DIRPROJECT/
