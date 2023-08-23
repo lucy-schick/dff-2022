@@ -11,5 +11,5 @@ rsconnect
 .httr-oauth
 data/lidar/*
 *.geojson
-*.tiff
+*.tif
 !data/qgis/*.gpkg
