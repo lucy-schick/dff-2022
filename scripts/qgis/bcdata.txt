@@ -17,7 +17,6 @@ whse_basemapping.fwa_lakes_poly
 whse_basemapping.fwa_manmade_waterbodies_poly
 whse_basemapping.fwa_wetlands_poly
 whse_basemapping.fwa_glaciers_poly
-whse_basemapping.fwa_named_streams
 whse_admin_boundaries.clab_national_parks
 whse_tantalis.ta_park_ecores_pa_svw
 whse_tantalis.ta_conservancy_areas_svw

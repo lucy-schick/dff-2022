@@ -2,7 +2,7 @@
 set -euxo pipefail
 
 # define the name of our Q project
-DIRPROJECT='test_necr_2023'
+DIRPROJECT='test_20230907a'
 # ---------------
 # extract background info for crossing assessments digital field form projects
 
@@ -86,14 +86,15 @@ done
 # ---------------
 # named streams
 # ---------------
-# echo 'Getting named streams from fwapg feature service'
-# ogr2ogr -f GPKG background_layers.gpkg \
-#     -update \
-#     -t_srs EPSG:3005 \
-#     -nln fwa_named_streams \
-#     -clipsrc aoi.geojson \
-#     -clipsrclayer aoi \
-#     "http://www.a11s.one:9000/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
+echo 'Getting named streams from fwapg feature service'
+ogr2ogr -f GPKG background_layers.gpkg \
+    -update \
+    -t_srs EPSG:3005 \
+    -nln fwa_named_streams \
+    -clipsrc aoi.geojson \
+    -clipsrclayer aoi \
+    "https://features.hillcrestgeo.ca/fwa/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
+    # "http://www.a11s.one:9000/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
 
 
 
