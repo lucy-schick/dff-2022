@@ -184,6 +184,7 @@ form_prep3 <- form_prep2 %>%
                 photo_extra_1_tag = NA_character_,
                 photo_extra_2 = NA_character_,
                 photo_extra_2_tag = NA_character_,
+                photo_card = NA_character_,
                 comments_2 = NA_character_,
                 feature_time = NA_POSIXct_,
                 feature_type_2 = NA_character_,
