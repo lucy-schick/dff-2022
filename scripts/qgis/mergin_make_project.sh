@@ -5,7 +5,7 @@ set -euxo pipefail
 # create project
 # ---------------
 # with Mergin Maps authentication token string set as --auth-token env variable run
-mergin create newgraph/test_clay_2023 --from-dir ~/Projects/gis/test_clay_2023
+mergin create newgraph/test_cano_2023 --from-dir ~/Projects/gis/test_cano_2023
 
 # ---------------
 # invite collaborators
