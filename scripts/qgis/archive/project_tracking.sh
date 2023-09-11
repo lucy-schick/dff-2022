@@ -2,19 +2,8 @@ time ./bcdata.sh "'CRKD', 'CARP', 'PARS'" && time ./background_layers.sh "'CRKD'
 
 time ./bcdata.sh "'LARL', 'SLOC', 'KOTL'" && time ./background_layers.sh  "'LARL', 'SLOC', 'KOTL'"
 
-time ./bcdata.sh "'KOTL'" && time ./background_layers.sh  "'KOTL'"
-
-time ./bcdata.sh "'UFRA'" && time ./background_layers.sh  "'UFRA'"
-
-time ./bcdata.sh "'MCGR'" && time ./background_layers.sh  "'MCGR'"
-
 # sern_simpcw_2023
-time ./bcdata.sh "'MORK', 'UFRA', 'CANO', 'UNTH', 'MURT', 'CLWR', 'CLRH', 'REVL'" && time ./background_layers.sh  "'MORK', 'UFRA', 'CANO', 'UNTH', 'MURT', 'CLWR', 'CLRH', 'REVL'"
-
-time ./bcdata.sh "'UFRA', 'CANO', 'CLWR'" && time ./background_layers.sh  "'UFRA', 'CANO', 'CLWR'"
-
-time ./background_layers_update.sh  "'MORK', 'UFRA', 'CANO'"
-
+time ./bcdata.sh "'ADMS', 'MORK', 'UFRA', 'CANO', 'LNTH', 'UNTH', 'MURT', 'CLWR', 'CLRH', 'REVL'" && time ./background_layers.sh  "'ADMS', 'MORK', 'UFRA', 'CANO', 'LNTH', 'UNTH', 'MURT', 'CLWR', 'CLRH', 'REVL'"
 
 # sern_lchl_necr_fran_2023
 time ./bcdata.sh "'LCHL', 'NECR', 'FRAN'" && time ./background_layers.sh  "'LCHL', 'NECR', 'FRAN'"
