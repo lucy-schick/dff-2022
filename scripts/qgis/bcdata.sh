@@ -9,6 +9,12 @@ if [ $# -eq 0 ]
     exit 1
 fi
 
+# remove existing files if present
+rm -f background_layers.gpkg
+rm -f *.geojson
+rm -f *.tif
+
+
 # generate aoi
 rm -f aoi.geojson
 bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
