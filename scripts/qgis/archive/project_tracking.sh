@@ -11,5 +11,13 @@ time ./bcdata.sh "'LCHL', 'NECR', 'FRAN'" && time ./background_layers.sh  "'LCHL
 # test_revl_clrh_2023
 time ./bcdata.sh "'REVL', 'CLRH'" && time ./background_layers.sh  "'REVL', 'CLRH'"
 
-# test_MORK_2023
-time ./bcdata.sh "'MORK'" && time ./background_layers.sh  "'MORK'"
+# test_larl_adms
+time ./bcdata.sh "'LARL', 'ADMS'" && time ./background_layers.sh  "'LARL', 'ADMS'"
+
+# test_adms
+time ./bcdata.sh "'ADMS'" && time ./background_layers.sh  "'ADMS'"
+
+time ./bcdata.sh "'BABL'" && time ./background_layers.sh  "'BABL'"
+
+# sern_pg_2023
+time ./bcdata.sh "'TABR', 'WILL', 'BOWR', 'MORK', 'LCHL', 'LSAL'" && time ./background_layers.sh  "'TABR', 'WILL', 'BOWR', 'MORK', 'LCHL', 'LSAL'"
