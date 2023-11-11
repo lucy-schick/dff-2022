@@ -17,7 +17,17 @@ time ./bcdata.sh "'LARL', 'ADMS'" && time ./background_layers.sh  "'LARL', 'ADMS
 # test_adms
 time ./bcdata.sh "'ADMS'" && time ./background_layers.sh  "'ADMS'"
 
+# test_larl_2023
+time ./bcdata.sh "'LARL'" && time ./background_layers.sh  "'LARL'"
+
 time ./bcdata.sh "'BABL'" && time ./background_layers.sh  "'BABL'"
 
 # sern_pg_2023
 time ./bcdata.sh "'TABR', 'WILL', 'BOWR', 'MORK', 'LCHL', 'LSAL'" && time ./background_layers.sh  "'TABR', 'WILL', 'BOWR', 'MORK', 'LCHL', 'LSAL'"
+
+# sern_skeena_2023
+time ./bcdata.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'" && ./background_layers.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
+
+
+# update select bcdata layers
+time ./bcdata_update.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
