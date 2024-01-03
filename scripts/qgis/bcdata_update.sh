@@ -1,9 +1,6 @@
 #!/bin/bash
 set -euxo pipefail
 
-# this script assumes the background_layers.gpkg is in the scripts/qgis directory... maybe a bit dangerous
-
-
 # check that watershed group code is provided as argument
 if [ $# -eq 0 ]
   then
@@ -32,9 +29,17 @@ for layer in $BCGW_SOURCES; do
     fi
 done
 
+# remove empty fwa tables created by bcdata because sql query will fail later
+find . -maxdepth 1 -type f -name "*.fwa_*" -size -50c -delete
+
+
 # load to gpkg
 # ---------------
-BCGW_SOURCES=$(cat bcdata_update.txt)
+# BCGW_SOURCES=$(cat bcdata_update.txt)
+
+# get the name of the files (except aoi.geojson) that are left after tiny ones are removed
+BCGW_SOURCES=$(find . -maxdepth 1 -type f -name "*.geojson" -a '!' -name "aoi.geojson" -exec basename {} .geojson \;)
+
 for layer in $BCGW_SOURCES; do
     if [[ $layer == *".fwa_"* ]]; then
         ogr2ogr -f GPKG \
