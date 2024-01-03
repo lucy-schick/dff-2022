@@ -36,3 +36,6 @@ for layer in $BCGW_SOURCES; do
     fi
 done
 
+# remove empty fwa tables created by bcdata because sql query will fail later
+find . -maxdepth 1 -type f -name "*.fwa_*" -size -50c -delete
+# find . -maxdepth 1 -type f -name "*.fwa_*" -size 0c -delete
