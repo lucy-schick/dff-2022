@@ -64,4 +64,3 @@ for layer in $FGB_SOURCES; do
     /vsicurl/https://newgraph.s3.us-west-2.amazonaws.com/$layer.fgb \
     $layer
 done
-
