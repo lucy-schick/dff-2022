@@ -7,13 +7,14 @@ To download and clip layers for an area of interest defined by a list of watersh
   2. download these layers to `.geojson`, for given study area (optionally with timer - `time `):
   
   
-  		`time ./bcdata.sh "'BULK', 'KLUM'"`
+    time ./bcdata.sh "'BULK', 'KLUM'"
   
 
   
   3. download data from file sources and load all sources (including bcdata layers) to `background_layers.gpkg` with clip from watershed group polygons when necessary (`bcdata` layers):
+  
   		
-  		`time ./background_layers.sh "'BULK', 'KLUM'"`
+    time ./background_layers.sh "'BULK', 'KLUM'"
   		
   		
 
@@ -23,15 +24,14 @@ If downloads in #2 fail, re-run `bcdata.sh` until downloads are complete (Only f
   4. `qgis_create.sh` script will create the directory where the spatial layers, digital field forms (fiss site and pscis assessment) will be burned and styled as part of a QGIS project.  This project can subsequently be turned into a mergin project on the cloud for collaboration. Define the name of the directory to be created for the project by including it in quotes as part of the argument to run the script:
   
         
-    `time ./qgis_create.sh "new_project_directory"`
+    time ./qgis_create.sh "new_project_directory"
     
 
     
 **Or run everything at the same time**
   		
 
-    `time ./bcdata.sh "'CRKD', 'PARS'" && time ./background_layers.sh "'CRKD','PARS'" && time ./qgis_create.sh "new_project_directory"`
-    `time ./bcdata.sh "'BULK'" && time ./background_layers.sh "'BULK'" && time ./qgis_create.sh "new_project_directory"`
+    time ./bcdata.sh "'CRKD', 'PARS'" && time ./background_layers.sh "'CRKD','PARS'" && time ./qgis_create.sh "new_project_directory"
 
 # bcdata_update.sh
 
@@ -43,17 +43,19 @@ Update existing `background_layers.sh` geopackage with select `bcdata` layers sp
 
 <br>
 
-To copy to and from the repo before and after updates - cmd line examples are below.
+Copy the `gpkg` to the repo:
 
     cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
   
   <br>
   
+  Run the update:
+  
     time ./bcdata_update.sh "'CRKD', 'CARP', 'PARS'"
 
 <br>
 
-After the gpkg is updated.
+Move the `gpkg` back to its directory:
 
     mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg
 
@@ -69,16 +71,16 @@ For updating existing `background_layers.sh` geopackage with watershed group opt
 
 Copy the `gpkg` to the repo:
   
-    `cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg`
+    cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
   
   <br>
   
 Run the update:
   
-    `time ./aws_update.sh "'CRKD', 'CARP', 'PARS'"`
+    time ./aws_update.sh "'CRKD', 'CARP', 'PARS'"
   
   <br>
   
 Move the `gpkg` back to its directory:
   
-    `mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg` 
+    mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg 
