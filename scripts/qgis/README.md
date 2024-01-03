@@ -45,17 +45,17 @@ Update existing `background_layers.sh` geopackage with select `bcdata` layers sp
 
 To copy to and from the repo before and after updates - cmd line examples are below.
 
-    `cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg`
+    cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
   
   <br>
   
-    `time ./bcdata_update.sh "'CRKD', 'CARP', 'PARS'"`
+    time ./bcdata_update.sh "'CRKD', 'CARP', 'PARS'"
 
 <br>
 
 After the gpkg is updated.
 
-    `mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg`
+    mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg
 
 # aws_update.sh
 
