@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euxo pipefail
 
-#  updates only the crossings and streams layer from aws fdb files
-# run from project directory
+#  updates only the layers from aws fdb files
+#  see readme for instructions
 # ex. time ./background_layers_update_bcfishpass.sh "'PARS'"
 
 
@@ -42,7 +42,14 @@ BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 -
 echo 'Getting bcfishpass and supporting layers from s3'
 FGB_SOURCES="
     crossings \
-    streams"
+    fiss_fish_obsrvtn_events_vw \
+    fiss_obstacles_pnt_sp \
+    ften_range_poly_carto_vw \
+    ften_road_section_lines_svw \
+    pmbc_parcel_fabric_poly_svw \
+    streams \
+    transport_line \
+    veg_comp_lyr_r1_poly"
 for layer in $FGB_SOURCES; do
   ogr2ogr \
     -f GPKG background_layers.gpkg \
