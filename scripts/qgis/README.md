@@ -64,15 +64,21 @@ For updating existing `background_layers.sh` geopackage with watershed group opt
 <br>
 
 **WARNING:** This script assumes the `background_layers.gpkg` is in the `scripts/qgis` directory of this repo when this is run so lives a bit dangerously because `background_layers.gpkg` will be removed from the directory if `background_layers.sh` is run. For this reason we must be sure to `mv` it back to its home after the update.
+
+<br>
+
+Copy the `gpkg` to the repo:
   
     `cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg`
   
   <br>
   
+Run the update:
+  
     `time ./aws_update.sh "'CRKD', 'CARP', 'PARS'"`
   
   <br>
   
-After the gpkg is updated.
+Move the `gpkg` back to its directory:
   
     `mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg` 
