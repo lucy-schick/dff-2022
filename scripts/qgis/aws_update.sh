@@ -3,14 +3,27 @@ set -euxo pipefail
 
 #  updates only the layers from aws fdb files
 #  see readme for instructions
-# ex. time ./background_layers_update_bcfishpass.sh "'PARS'"
-
+# ex. time ./aws_update.sh "'PARS'"
 
 # check that watershed group code is provided as argument
 if [ $# -eq 0 ]
   then
     echo "No arguments supplied - provide list of watershed_group_code values for watersheds of interest"
     exit 1
+fi
+
+
+# Ask the user if they wish to remove the file
+read -p "Do you wish to remove background_layers.gpkg? (y/n) " answer
+
+# Check the user's answer
+if [[ $answer == "y" ]]; then
+  # If the answer is 'y', remove the file
+  echo "Removing background_layers.gpkg..."
+  rm -f background_layers.gpkg
+else
+  # If the answer is not 'y', skip the file removal
+  echo "Skipping background_layers.gpkg..."
 fi
 
 echo 'Preparing the study area geopackage'
@@ -34,22 +47,17 @@ bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
 BOUNDS=$(fio info background_layers.gpkg --layer fwa_watershed_groups_poly --bounds)
 BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 --dst_crs EPSG:4326 | tr -d '[] ')
 
-
 # ---------------
 # bcfishpass releated data sources archived to flatgeobuf on s3 for fast retrieval
 # (and with watershed group code included, no spatial query for clipping required)
 # ---------------
+
+
+# get a list of the aws layers to update
+FGB_SOURCES=$(cat aws_update.txt)
+
 echo 'Getting bcfishpass and supporting layers from s3'
-FGB_SOURCES="
-    crossings \
-    fiss_fish_obsrvtn_events_vw \
-    fiss_obstacles_pnt_sp \
-    ften_range_poly_carto_vw \
-    ften_road_section_lines_svw \
-    pmbc_parcel_fabric_poly_svw \
-    streams \
-    transport_line \
-    veg_comp_lyr_r1_poly"
+
 for layer in $FGB_SOURCES; do
   ogr2ogr \
     -f GPKG background_layers.gpkg \
@@ -64,3 +72,16 @@ for layer in $FGB_SOURCES; do
     /vsicurl/https://newgraph.s3.us-west-2.amazonaws.com/$layer.fgb \
     $layer
 done
+
+# update the model used to create the crossings and streams layers
+CSVS=("parameters_habitat_method" "parameters_habitat_thresholds")
+
+for layer in "${CSVS[@]}"; do
+  ogr2ogr \
+    -f GPKG background_layers.gpkg \
+    -update \
+    -overwrite \
+    -nln $layer \
+    /vsicurl/https://newgraph.s3.us-west-2.amazonaws.com/$layer.csv
+done
+
