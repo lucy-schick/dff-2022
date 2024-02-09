@@ -12,9 +12,6 @@ fi
 echo 'Generating QGIS project in Projects/gis/: '$1
 
 
-# define the name of our Q project
-# DIRPROJECT='test_peace'
-
 # ---------------
 # create directory for project and move the files in and copy in a qlr template (works relative to location dragged from when we reference gpkg) along with the directories for info ignored on phones
 
