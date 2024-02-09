@@ -71,7 +71,6 @@ for layer in $BCGW_SOURCES; do
     fi
 done
 
-
 # ---------------
 # lateral habitat
 # ---------------
@@ -115,6 +114,22 @@ for layer in $FGB_SOURCES; do
     $layer
 done
 
+# ---------------
+# model parameters
+# ---------------
+echo 'Getting model parameter info from aws'
+
+# update the model info used to create the crossings and streams layers
+CSVS=("parameters_habitat_method" "parameters_habitat_thresholds")
+
+for layer in "${CSVS[@]}"; do
+  ogr2ogr \
+    -f GPKG background_layers.gpkg \
+    -update \
+    -overwrite \
+    -nln $layer \
+    /vsicurl/https://newgraph.s3.us-west-2.amazonaws.com/$layer.csv
+done
 
 # ---------------
 # named streams
@@ -128,6 +143,7 @@ ogr2ogr -f GPKG background_layers.gpkg \
     -clipsrclayer aoi \
     "https://features.hillcrestgeo.ca/fwa/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
     # "http://www.a11s.one:9000/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
+
 
 
 
