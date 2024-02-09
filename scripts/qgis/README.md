@@ -1,6 +1,13 @@
 # `dfp_source_bcdata.sh`, `dfp_source_aws.sh` and `dfp_qgis_create_bcfishpass.sh`
-These are the scripts for creating projects ready for upload to mergin server.  Project directory defined in call to 
-`qgis_create.sh` must not be present at ~Projects/gis/{project_directory} or it will not be created.
+These are the scripts for creating projects ready for upload to mergin server.  
+
+Requires virtual environment built with:
+    
+    conda env create -f environment.yml
+    conda activate dff
+
+**Note: Project directory defined in call to 
+`qgis_create.sh` must not be present at ~Projects/gis/{project_directory} or it will not be created.**
 
 To download and clip layers for an area of interest defined by a list of watershed groups and load to a geopackage:
 
@@ -27,9 +34,6 @@ If downloads in `dfp_source_bcdata.sh` fail, re-run `dfp_source_bcdata.sh` until
     time ./dfp_source_aws.sh "'BULK', 'KLUM'"
   		
   		
-
-
-
 
 ## `dfp_qgis_create_bcfishpass.sh` 
 
