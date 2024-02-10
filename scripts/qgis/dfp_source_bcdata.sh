@@ -14,6 +14,7 @@ rm -f *.tif
 # Name of the geopackage
 GPKG="background_layers.gpkg"
 
+
 update_geopackage() {
   echo 'Updateing project area from watershed group boundaries: ' "$1"
   bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
@@ -36,6 +37,8 @@ new_geopackage() {
           aoi.geojson
 }
 
+
+
 # Check if the GPKG exists
 if [[ -f $GPKG ]]; then
   # If the file exists, ask the user if they wish to remove it
@@ -57,9 +60,6 @@ fi
 
 
 
-
-
-
 # get bounding box of aoi in BC Albers and WGS84 (lon/lat)
 BOUNDS_LL=$(fio info aoi.geojson --layer aoi --bounds)
 BOUNDS=$(echo "[$BOUNDS_LL]" | tr ' ', ',' | rio transform --src_crs EPSG:4326 --dst_crs EPSG:3005 | tr -d '[] ')
@@ -69,7 +69,7 @@ BOUNDS=$(echo "[$BOUNDS_LL]" | tr ' ', ',' | rio transform --src_crs EPSG:4326 -
 # non-fwa bcgw layers
 # ---------------
 echo 'Getting BC Data Catalogue layers - this may take a while'
-BCGW_SOURCES=$(cat dfp_sources_bcdata.txt)
+BCGW_SOURCES=$(cat dfp_source_bcdata.txt)
 for layer in $BCGW_SOURCES; do
     if [ ! -f ./$layer.geojson ]; then
         set -e ; bcdata dump $layer --bounds "$BOUNDS" --bounds-crs EPSG:3005 -l > $layer.geojson

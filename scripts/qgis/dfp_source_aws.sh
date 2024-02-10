@@ -66,7 +66,7 @@ rm aoi_alb.geojson
 echo 'Getting bcfishpass and supporting layers from s3'
 
 # get a list of the aws layers to update
-FGB_SOURCES=$(cat dfp_sources_aws.txt)
+FGB_SOURCES=$(cat dfp_source_aws.txt)
 
 for layer in $FGB_SOURCES; do
   ogr2ogr \
