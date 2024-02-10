@@ -62,7 +62,7 @@ BOUNDS=$(echo "[$BOUNDS_LL]" | tr ' ', ',' | rio transform --src_crs EPSG:4326 -
 # non-fwa bcgw layers
 # ---------------
 echo 'Getting BC Data Catalogue layers - this may take a while'
-BCGW_SOURCES=$(cat dfp_source_bcdata.txt)
+BCGW_SOURCES=$(grep -v '^#' dfp_source_bcdata.txt)
 for layer in $BCGW_SOURCES; do
     if [ ! -f ./$layer.geojson ]; then
         set -e ; bcdata dump $layer --bounds "$BOUNDS" --bounds-crs EPSG:3005 -l > $layer.geojson
