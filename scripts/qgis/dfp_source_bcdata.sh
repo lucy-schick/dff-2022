@@ -7,56 +7,49 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-# clean up the files from previous runs
-rm -f *.geojson
-rm -f *.tif
+# Name of the file
+FILE_REMOVE="background_layers.gpkg"
 
-# Name of the geopackage
-GPKG="background_layers.gpkg"
-
-
-update_geopackage() {
-  echo 'Updateing project area from watershed group boundaries: ' "$1"
-  bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
-      --query "WATERSHED_GROUP_CODE in ($1)" -l > aoi.geojson
-  ogr2ogr -f GPKG $GPKG \
-          -overwrite \
-          -t_srs EPSG:3005 \
-          -nln fwa_watershed_groups_poly \
-          aoi.geojson
-}
-
-new_geopackage() {
-  echo 'Initializing $GPKG and generating project area from watershed group boundaries: ' "$1"
+process_geopackage() {
+  echo "Generating project area from watershed group boundaries: $1"
   rm -f aoi.geojson
   bcdata dump WHSE_BASEMAPPING.FWA_WATERSHED_GROUPS_POLY \
       --query "WATERSHED_GROUP_CODE in ($1)" -l > aoi.geojson
-  ogr2ogr -f GPKG $GPKG \
+
+  # Check if $2 is provided, defaulting to an empty string if not
+  local update_option=""
+  if [[ "${2-}" == "update" || "${2-}" == "'update'" ]]; then
+    update_option="-update"
+  fi
+
+  ogr2ogr -f GPKG "$FILE_REMOVE" \
+          $update_option \
           -t_srs EPSG:3005 \
           -nln fwa_watershed_groups_poly \
           aoi.geojson
 }
 
-
-
-# Check if the GPKG exists
-if [[ -f $GPKG ]]; then
+# Check if the FILE_REMOVE exists
+if [[ -f $FILE_REMOVE ]]; then
   # If the file exists, ask the user if they wish to remove it
-  read -p "Do you wish to start over with a new $GPKG? If you are updating existing project info say NO (y/n): " answer
+  read -p "Do you wish to start over with a new $FILE_REMOVE? If you are updating existing project info say NO (y/n): " answer
 
   if [[ $answer == "y" ]]; then
     # If the answer is 'y', remove the file and start from scratch
-    new_geopackage "$1"
+    echo "Removing $FILE_REMOVE..."
+    rm -f $FILE_REMOVE
+    process_geopackage "$1"
   else
-    # If the answer is not 'y', update the existing geopackage
-    echo "Updating existing $GPKG with area of interest..."
-    update_geopackage "$1"
+    # If the answer is not 'y', indicate that we are updating the existing geopackage
+    echo "Updating existing $FILE_REMOVE with area of interest..."
+    process_geopackage "$1" "update"
   fi
 else
   # If the file does not exist, generate a new one from scratch
-  echo "$GPKG does not exist. Generating a new one..."
-  new_geopackage "$1"
+  echo "$FILE_REMOVE does not exist. Generating a new one..."
+  process_geopackage "$1"
 fi
+
 
 
 

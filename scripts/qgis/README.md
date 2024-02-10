@@ -50,28 +50,32 @@ the argument to run the script:
 **Or run everything at the same time**
   		
 
-    time ./dfp_source_bcdata.sh "'CRKD', 'PARS'" && time ./dfp_source_aws.sh "'CRKD','PARS'" && 
-    time ./dfp_qgis_create_bcfishpass.sh "new_project_directory"
+    time ./dfp_source_bcdata.sh "'BULK', 'KLUM'" && time ./dfp_source_aws.sh "'BULK', 'KLUM'" && 
+    time ./dfp_qgis_create_bcfishpass.sh "dfp_test"
 
 
 **For updates to existing projects we copy the `background_layers.gpkg` from an existing project to the repo then run one or both of 
 `dfp_source_bcdata.sh` and `dfp_source_aws.sh`.  This will update the `background_layers.gpkg` with new data and in the
 case of `dfp_source_aws.sh` will produce a new `habitat_lateral.tif` file**.  Here is an example of how to do this:
   
-    cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
+    cp ~/Projects/gis/dfp_test/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
   
   <br>
   
 Run the update:
   
-    time ./dfp_source_bcdata.sh "'CRKD', 'PARS'" && time ./dfp_source_aws.sh "'CRKD','PARS'"
+    time ./dfp_source_bcdata.sh "'BULK', 'KLUM'" "update" && time ./dfp_source_aws.sh "'BULK', 'KLUM'"
+    
+    time ./dfp_source_bcdata.sh "'ADMS'" "update" && time ./dfp_source_aws.sh "'BULK'"
+
   
   <br>
   
 Move the `gpkg` and the `tiff` back to its directory:
   
-    mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg
-    mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/sern_peace_fwcp_2023/habitat_lateral.tif
+    mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/dfp_test/background_layers.gpkg
+    
+    mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/dfp_test/habitat_lateral.tif
     
 
 
