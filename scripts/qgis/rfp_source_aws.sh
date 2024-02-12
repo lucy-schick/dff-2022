@@ -19,12 +19,15 @@ fi
 
 
 # Name of the file
-FILE_REMOVE="background_layers.gpkg"
+GPKG="background_layers.gpkg"
 
-# Check if the FILE_REMOVE IS NOT there
-if [[ ! -f $FILE_REMOVE ]]; then
+# name the sources file
+SOURCES="rfp_source_aws.txt"
+
+# Check if the GPKG IS NOT there
+if [[ ! -f $GPKG ]]; then
   # If the file exists, ask the user if they wish to remove it
-  echo "There should already be a file called $FILE_REMOVE. Please provide."
+  echo "There should already be a file called $GPKG. Please provide."
   exit 1
 else
 echo 'Updateing project area from watershed group boundaries: '$1
@@ -66,7 +69,7 @@ rm aoi_alb.geojson
 echo 'Getting bcfishpass and supporting layers from s3'
 
 # get a list of the aws layers to update
-FGB_SOURCES=$(grep -v '^#' rfp_source_aws.txt)
+FGB_SOURCES=$(grep -v '^#' $SOURCES)
 
 for layer in $FGB_SOURCES; do
   ogr2ogr \
@@ -115,7 +118,22 @@ ogr2ogr -f GPKG background_layers.gpkg \
     # "http://www.a11s.one:9000/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
 
 
+echo 'Creating a record of the layers that were loaded'
+# create a record of the layers that were loaded
+# Get the current date and time
+TIMESTAMP=$(date '+%Y-%m-%d %H:%M')
 
+# Header for the CSV file
+echo "timestamp,content,watershed_groups,source" > temp.csv
+
+# Use awk to process the text file line by line
+awk -v timestamp="$TIMESTAMP" -v watershed_groups="$1" -v source="$SOURCES" '!/^#/ && NF > 0 {print timestamp "," $0 "," watershed_groups "," source}' $SOURCES >> temp.csv
+
+# Append the temporary CSV file to the GeoPackage
+ogr2ogr -append -f "GPKG" $GPKG temp.csv -nln rfp_tracking
+
+# Remove the temporary CSV file
+rm temp.csv
 
 
 
