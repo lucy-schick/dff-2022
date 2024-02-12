@@ -1,4 +1,4 @@
-# `dfp_source_bcdata.sh`, `dfp_source_aws.sh` and `dfp_qgis_create_bcfishpass.sh`
+# `rfp_source_bcdata.sh`, `rfp_source_aws.sh` and `rfp_qgis_create_bcfishpass.sh`
 These are the scripts for creating projects ready for upload to mergin server.  
 
 Requires virtual environment built with:
@@ -12,9 +12,9 @@ Requires virtual environment built with:
 To download and clip layers for an area of interest defined by a list of watershed groups and load to a geopackage:
 
 
-## `dfp_source_bcdata.sh`
+## `rfp_source_bcdata.sh`
 
-  1. edit `dfp_source_bcdata.txt` as needed, listing all layers to be downloaded via bcdata/WFS
+  1. edit `rfp_source_bcdata.txt` as needed, listing all layers to be downloaded via bcdata/WFS
   2. if a file named `background_layers.gpkg` exists in the `scripts/qgis` directory it will ask the user if they want 
   to start over (yes) or update the existing geopackage (no). 
   2. Once input has been put to console the script will download these layers to `.geojson`, for given study area 
@@ -22,20 +22,20 @@ To download and clip layers for an area of interest defined by a list of watersh
   group polygons supplied in command to run the script:
   
   
-    time ./dfp_source_bcdata.sh "'BULK', 'KLUM'"
+    time ./rfp_source_bcdata.sh "'BULK', 'KLUM'"
   
-If downloads in `dfp_source_bcdata.sh` fail, re-run `dfp_source_bcdata.sh` until downloads are complete.
+If downloads in `rfp_source_bcdata.sh` fail, re-run `rfp_source_bcdata.sh` until downloads are complete.
 
-## dfp_source_aws.sh  
+## rfp_source_aws.sh  
   1. download data from file sources and load to `background_layers.gpkg` with clip from watershed group polygons
    (lateral_hbitat.tif) or by query.  Note that the `background_layers.gpkg` must be in the `scripts/qgis` directory:
   
   		
-    time ./dfp_source_aws.sh "'BULK', 'KLUM'"
+    time ./rfp_source_aws.sh "'BULK', 'KLUM'"
   		
   		
 
-## `dfp_qgis_create_bcfishpass.sh` 
+## `rfp_qgis_create_bcfishpass.sh` 
 
 Script will create the directory where the spatial layers, digital field forms (fiss site and pscis assessment) will be 
 burned and styled as part of a QGIS project.  This project can subsequently be turned into a mergin project on the cloud 
@@ -43,39 +43,39 @@ for collaboration. Define the name of the directory to be created for the projec
 the argument to run the script:
   
         
-    time ./dfp_qgis_create_bcfishpass.sh "new_project_directory"
+    time ./rfp_qgis_create_bcfishpass.sh "new_project_directory"
     
 
     
 **Or run everything at the same time**
   		
 
-    time ./dfp_source_bcdata.sh "'BULK', 'KLUM'" && time ./dfp_source_aws.sh "'BULK', 'KLUM'" && 
-    time ./dfp_qgis_create_bcfishpass.sh "dfp_test"
+    time ./rfp_source_bcdata.sh "'BULK', 'KLUM'" && time ./rfp_source_aws.sh "'BULK', 'KLUM'" && 
+    time ./rfp_qgis_create_bcfishpass.sh "rfp_test"
 
 
 **For updates to existing projects we copy the `background_layers.gpkg` from an existing project to the repo then run one or both of 
-`dfp_source_bcdata.sh` and `dfp_source_aws.sh`.  This will update the `background_layers.gpkg` with new data and in the
-case of `dfp_source_aws.sh` will produce a new `habitat_lateral.tif` file**.  Here is an example of how to do this:
+`rfp_source_bcdata.sh` and `rfp_source_aws.sh`.  This will update the `background_layers.gpkg` with new data and in the
+case of `rfp_source_aws.sh` will produce a new `habitat_lateral.tif` file**.  Here is an example of how to do this:
   
-    cp ~/Projects/gis/dfp_test/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
+    cp ~/Projects/gis/rfp_test/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
   
   <br>
   
 Run the update:
   
-    time ./dfp_source_bcdata.sh "'BULK', 'KLUM'" "update" && time ./dfp_source_aws.sh "'BULK', 'KLUM'"
+    time ./rfp_source_bcdata.sh "'BULK', 'KLUM'" "update" && time ./rfp_source_aws.sh "'BULK', 'KLUM'"
     
-    time ./dfp_source_bcdata.sh "'ADMS'" "update" && time ./dfp_source_aws.sh "'BULK'"
+    time ./rfp_source_bcdata.sh "'ADMS'" "update" && time ./rfp_source_aws.sh "'BULK'"
 
   
   <br>
   
 Move the `gpkg` and the `tiff` back to its directory:
   
-    mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/dfp_test/background_layers.gpkg
+    mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/rfp_test/background_layers.gpkg
     
-    mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/dfp_test/habitat_lateral.tif
+    mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/rfp_test/habitat_lateral.tif
     
 
 

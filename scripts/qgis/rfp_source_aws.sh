@@ -6,7 +6,7 @@ set -euxo pipefail
 
 # usage: specify watershed groups of interest as a comma separated, single quoted string
 # eg
-# test with ./dfp_sources_aws.sh "'PARS'" &>log.txt
+# test with ./rfp_sources_aws.sh "'PARS'" &>log.txt
 # ---------------
 
 
@@ -66,7 +66,7 @@ rm aoi_alb.geojson
 echo 'Getting bcfishpass and supporting layers from s3'
 
 # get a list of the aws layers to update
-FGB_SOURCES=$(grep -v '^#' dfp_source_aws.txt)
+FGB_SOURCES=$(grep -v '^#' rfp_source_aws.txt)
 
 for layer in $FGB_SOURCES; do
   ogr2ogr \
