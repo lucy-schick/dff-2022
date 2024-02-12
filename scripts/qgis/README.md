@@ -1,86 +1,81 @@
-# `bcdata.sh`, `background_layers.sh` and `qgis_create.sh`
-These are the scripts for creating projects ready for upload to mergin server.  Project directory defined in call to `qgis_create.sh` must not be present at ~Projects/gis/{project_directory} or it will not be created.
+# `rfp_source_bcdata.sh`, `rfp_source_aws.sh` and `rfp_qgis_create_bcfishpass.sh`
+These are the scripts for creating projects ready for upload to mergin server.  
 
-To download and clip layers for an area of interest defined by a list of watershed groups:
+Requires virtual environment built with:
+    
+    conda env create -f environment.yml
+    conda activate dff
 
-  1. edit `bcdata.txt` as needed, listing all layers to be downloaded via bcdata/WFS
-  2. download these layers to `.geojson`, for given study area (optionally with timer - `time `):
-  
-  
-    time ./bcdata.sh "'BULK', 'KLUM'"
-  
+**Note: Project directory defined in call to 
+`qgis_create.sh` must not be present at ~Projects/gis/{project_directory} or it will not be created.**
 
+To download and clip layers for an area of interest defined by a list of watershed groups and load to a geopackage:
+
+
+## `rfp_source_bcdata.sh`
+
+  1. edit `rfp_source_bcdata.txt` as needed, listing all layers to be downloaded via bcdata/WFS
+  2. if a file named `background_layers.gpkg` exists in the `scripts/qgis` directory it will ask the user if they want 
+  to start over (yes) or update the existing geopackage (no). 
+  2. Once input has been put to console the script will download these layers to `.geojson`, for given study area 
+  (optionally with timer - `time `), loaded to `background_layers.gpkg` with clip (or query) associated with watershed 
+  group polygons supplied in command to run the script:
   
-  3. download data from file sources and load all sources (including bcdata layers) to `background_layers.gpkg` with clip from watershed group polygons when necessary (`bcdata` layers):
+  
+    time ./rfp_source_bcdata.sh "'BULK', 'KLUM'"
+  
+If downloads in `rfp_source_bcdata.sh` fail, re-run `rfp_source_bcdata.sh` until downloads are complete.
+
+## rfp_source_aws.sh  
+  1. download data from file sources and load to `background_layers.gpkg` with clip from watershed group polygons
+   (lateral_hbitat.tif) or by query.  Note that the `background_layers.gpkg` must be in the `scripts/qgis` directory:
   
   		
-    time ./background_layers.sh "'BULK', 'KLUM'"
+    time ./rfp_source_aws.sh "'BULK', 'KLUM'"
   		
   		
 
-If downloads in #2 fail, re-run `bcdata.sh` until downloads are complete (Only files that do not exist are re-downloaded). In event of a failed download, be sure to remove the .geojson file created by the failed download.
+## `rfp_qgis_create_bcfishpass.sh` 
 
-
-  4. `qgis_create.sh` script will create the directory where the spatial layers, digital field forms (fiss site and pscis assessment) will be burned and styled as part of a QGIS project.  This project can subsequently be turned into a mergin project on the cloud for collaboration. Define the name of the directory to be created for the project by including it in quotes as part of the argument to run the script:
+Script will create the directory where the spatial layers, digital field forms (fiss site and pscis assessment) will be 
+burned and styled as part of a QGIS project.  This project can subsequently be turned into a mergin project on the cloud 
+for collaboration. Define the name of the directory to be created for the project by including it in quotes as part of 
+the argument to run the script:
   
         
-    time ./qgis_create.sh "new_project_directory"
+    time ./rfp_qgis_create_bcfishpass.sh "new_project_directory"
     
 
     
 **Or run everything at the same time**
   		
 
-    time ./bcdata.sh "'CRKD', 'PARS'" && time ./background_layers.sh "'CRKD','PARS'" && time ./qgis_create.sh "new_project_directory"
+    time ./rfp_source_bcdata.sh "'BULK', 'KLUM'" && time ./rfp_source_aws.sh "'BULK', 'KLUM'" && 
+    time ./rfp_qgis_create_bcfishpass.sh "rfp_test"
 
-# bcdata_update.sh
 
-Update existing `background_layers.sh` geopackage with select `bcdata` layers specified in `bcdata_update.txt` which points to a list of layers as `schema.table` as specified by https://catalogue.data.gov.bc.ca/ . 
-
-<br>
-
-**WARNING:** This script assumes the `background_layers.gpkg` is in the `scripts/qgis` directory so lives a bit dangerously because `background_layers.gpkg` is removed from the directory if `background_layers.sh` is run. For this reason we must be sure to `mv` it back to its home after the update.
-
-<br>
-
-Copy the `gpkg` to the repo:
-
-    cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
+**For updates to existing projects we copy the `background_layers.gpkg` from an existing project to the repo then run one or both of 
+`rfp_source_bcdata.sh` and `rfp_source_aws.sh`.  This will update the `background_layers.gpkg` with new data and in the
+case of `rfp_source_aws.sh` will produce a new `habitat_lateral.tif` file**.  Here is an example of how to do this:
   
-  <br>
-  
-  Run the update:
-  
-    time ./bcdata_update.sh "'CRKD', 'CARP', 'PARS'"
-
-<br>
-
-Move the `gpkg` back to its directory:
-
-    mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg
-
-# aws_update.sh
-
-For updating existing `background_layers.sh` geopackage with watershed group optimized `.fdb` layers stored on `aws`. 
-
-<br>
-
-**WARNING:** This script assumes the `background_layers.gpkg` is in the `scripts/qgis` directory of this repo when this is run so lives a bit dangerously because `background_layers.gpkg` will be removed from the directory if `background_layers.sh` is run. For this reason we must be sure to `mv` it back to its home after the update.
-
-<br>
-
-Copy the `gpkg` to the repo:
-  
-    cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
+    cp ~/Projects/gis/rfp_test/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
   
   <br>
   
 Run the update:
   
-    time ./aws_update.sh "'CRKD', 'CARP', 'PARS'"
+    time ./rfp_source_bcdata.sh "'BULK', 'KLUM'" "update" && time ./rfp_source_aws.sh "'BULK', 'KLUM'"
+    
+    time ./rfp_source_bcdata.sh "'ADMS'" "update" && time ./rfp_source_aws.sh "'BULK'"
+
   
   <br>
   
-Move the `gpkg` back to its directory:
+Move the `gpkg` and the `tiff` back to its directory:
   
-    mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg 
+    mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/rfp_test/background_layers.gpkg
+    
+    mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/rfp_test/habitat_lateral.tif
+    
+
+
