@@ -53,15 +53,12 @@ BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 -
 # should be able to pipe $(fio cat aoi.geojson --dst_crs EPSG:3005) to rio mask for a one liner,
 # but this works fine
 
-# remove any existing habitat_lateral.tif
-rm habitat_lateral.tif
-
-
 echo 'Clipping lateral habitat tiff to project area'
 ogr2ogr -f GeoJSON aoi_alb.geojson -t_srs EPSG:3005 aoi.geojson
 
 rio mask /vsicurl/https://bcfishpass.s3.us-west-2.amazonaws.com/habitat_lateral.tif \
   habitat_lateral.tif \
+  --overwrite \
   --crop \
   --geojson-mask aoi_alb.geojson
 
