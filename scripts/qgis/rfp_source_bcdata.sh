@@ -22,8 +22,6 @@ set -u
 
 # clean out the old files
 rm -f *.geojson
-rm -f *.tif
-
 
 # Name of the GeoPackage file
 GPKG="background_layers.gpkg"

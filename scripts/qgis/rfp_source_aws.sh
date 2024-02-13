@@ -42,6 +42,8 @@ echo 'Updateing project area from watershed group boundaries: '$1
             aoi.geojson
 fi
 
+rm *.tif
+
 # get bounding box of project area in BC Albers and WGS84 (lon/lat)
 BOUNDS=$(fio info background_layers.gpkg --layer fwa_watershed_groups_poly --bounds)
 BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 --dst_crs EPSG:4326 | tr -d '[] ')
