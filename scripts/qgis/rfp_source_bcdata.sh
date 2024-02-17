@@ -143,17 +143,19 @@ TIMESTAMP=$(date '+%Y-%m-%d %H:%M')
 
 # should remove this header now but will remove with script for now instead
 # Header for the CSV file
-echo "timestamp,content,watershed_groups,source" > temp.csv
+# echo "timestamp,content,watershed_groups,source" > temp.csv
 
 # Use awk to process the text file line by line - remove the commas from the watershed_groups variable
-awk -v timestamp="$TIMESTAMP" -v watershed_groups="$1" -v source="$SOURCES" 'BEGIN{gsub(",", "", watershed_groups)} !/^#/ && NF > 0 {print timestamp "," $0 "," watershed_groups "," source}' $SOURCES >> temp.csv
+awk -v timestamp="$TIMESTAMP" -v watershed_groups="$1" -v source="$SOURCES" 'BEGIN{gsub(",", "", watershed_groups)} !/^#/ && NF > 0 {print timestamp "," $0 "," watershed_groups "," source}' $SOURCES > temp.csv
 
 # -----------------get the descriptions from the bcdata catalogue preprocessed with rfp_lookup_bcdata.sh
-# Sort temp.csv based on the second column and rfp_lookup_bcdata.csv based on the first column
-# Sort temp.csv based on the second column and rfp_list_bcdata.csv based on the first column, excluding the header row
-tail -n +2 temp.csv | sort -t, -k2,2 > temp_sorted.csv
 
-# sort -t, -k2,2 > temp_sorted.csv
+# Sort temp.csv based on the second column and rfp_list_bcdata.csv based on the first column, excluding the header row
+# tail -n +2 temp.csv | sort -t, -k2,2 > temp_sorted.csv
+
+
+# Sort temp.csv based on the second column and rfp_lookup_bcdata.csv based on the first column
+sort -t, -k2,2 temp.csv > temp_sorted.csv
 tail -n +2 rfp_lookup_bcdata.csv | sort -t, -k1,1 > rfp_lookup_bcdata_sorted.csv
 
 # Write the header row to output.csv
