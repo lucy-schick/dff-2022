@@ -6,6 +6,10 @@ OUTPUT_FILE="./mergin_status_sum.txt"
 # Remove the output file if it already exists to start fresh
 rm -f "$OUTPUT_FILE"
 
+# Add a date stamp to the top of the file
+echo "Status Report Generated on: $(date)" >> "$OUTPUT_FILE"
+echo "" >> "$OUTPUT_FILE" # Add a newline for spacing
+
 # Run the command and capture its output
 PROJECTS=$(mergin list-projects --namespace newgraph)
 
@@ -18,4 +22,5 @@ echo "$PROJECTS" | awk '/newgraph \/ [a-zA-Z0-9_]+/ {print $3}' | while read -r 
 done
 
 echo "Mergin status summary has been saved to $OUTPUT_FILE."
+
 
