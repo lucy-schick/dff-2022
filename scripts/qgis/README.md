@@ -78,4 +78,6 @@ Move the `gpkg` and the `tiff` back to its directory:
     mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/rfp_test/habitat_lateral.tif
     
 
+## mergin_status_sum.sh
+This script will create a file called  mergin_status_sum.txt  in the current directory. It will contain the status of all projects in the  newgraph  namespace provided those files are in directories in `~/Projects/gis/`. 
 
