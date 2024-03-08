@@ -1,3 +1,5 @@
+whse_terrestrial_ecology.ste_scanned_map_boundary_sp
+whse_terrestrial_ecology.ste_ter_project_boundaries_svw
 whse_fish.fiss_stream_sample_sites_sp
 whse_imagery_and_base_maps.mot_culverts_sp
 whse_fish.pscis_assessment_svw
@@ -25,6 +27,8 @@ whse_environmental_monitoring.envcan_hydrometric_stn_sp
 whse_basemapping.utmg_utm_zones_sp
 whse_imagery_and_base_maps.mot_road_structure_sp
 whse_wildlife_management.wcp_fish_sensitive_ws_poly
+whse_basemapping.cwb_floodplains_bc_area_svw
+whse_imagery_and_base_maps.aimg_orthophoto_tiles_poly
 
 
 
