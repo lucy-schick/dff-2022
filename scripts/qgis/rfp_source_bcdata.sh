@@ -60,7 +60,7 @@ process_geopackage() {
             $update_option \
             -overwrite \
             -t_srs EPSG:3005 \
-            -nln fwa_watershed_groups_poly \
+            -nln whse_basemapping.fwa_watershed_groups_poly \
             aoi.geojson
 }
 
