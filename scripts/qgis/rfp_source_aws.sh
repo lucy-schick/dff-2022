@@ -38,12 +38,12 @@ echo 'Updateing project area from watershed group boundaries: '$1
             -update \
             -overwrite \
             -t_srs EPSG:3005 \
-            -nln fwa_watershed_groups_poly \
+            -nln whse_basemapping.fwa_watershed_groups_poly \
             aoi.geojson
 fi
 
 # get bounding box of project area in BC Albers and WGS84 (lon/lat)
-BOUNDS=$(fio info background_layers.gpkg --layer fwa_watershed_groups_poly --bounds)
+BOUNDS=$(fio info background_layers.gpkg --layer whse_basemapping.fwa_watershed_groups_poly --bounds)
 BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 --dst_crs EPSG:4326 | tr -d '[] ')
 
 
@@ -113,29 +113,47 @@ ogr2ogr -f GPKG background_layers.gpkg \
     -update \
     -overwrite \
     -t_srs EPSG:3005 \
-    -nln fwa_named_streams \
+    -nln whse_basemapping.fwa_named_streams \
     -clipsrc aoi.geojson \
     -clipsrclayer aoi \
     "https://features.hillcrestgeo.ca/fwa/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
     # "http://www.a11s.one:9000/collections/whse_basemapping.fwa_named_streams/items.json?bbox=$BOUNDS_LL"
-
 
 echo 'Creating a record of the layers that were loaded'
 # create a record of the layers that were loaded
 # Get the current date and time
 TIMESTAMP=$(date '+%Y-%m-%d %H:%M')
 
+# should remove this header now but will remove with script for now instead
 # Header for the CSV file
-echo "timestamp,content,watershed_groups,source" > temp.csv
+# echo "timestamp,content,watershed_groups,source" > temp.csv
 
-# Use awk to process the text file line by line
-awk -v timestamp="$TIMESTAMP" -v watershed_groups="$1" -v source="$SOURCES" '!/^#/ && NF > 0 {print timestamp "," $0 "," watershed_groups "," source}' $SOURCES >> temp.csv
+# Use awk to process the text file line by line - remove the commas from the watershed_groups variable
+awk -v timestamp="$TIMESTAMP" -v watershed_groups="$1" -v source="$SOURCES" 'BEGIN{gsub(",", "", watershed_groups)} !/^#/ && NF > 0 {print timestamp "," $0 "," watershed_groups "," source}' $SOURCES > temp.csv
+
+# -----------------get the descriptions from the bcdata catalogue preprocessed with rfp_lookup_bcdata.sh
+
+# Sort temp.csv based on the second column and rfp_list_bcdata.csv based on the first column, excluding the header row
+# tail -n +2 temp.csv | sort -t, -k2,2 > temp_sorted.csv
+
+
+# Sort temp.csv based on the second column and rfp_lookup_bcdata.csv based on the first column
+sort -t, -k2,2 temp.csv > temp_sorted.csv
+tail -n +2 rfp_lookup_bcdata.csv | sort -t, -k1,1 > rfp_lookup_bcdata_sorted.csv
+
+# Write the header row to output.csv
+echo "timestamp,content,watershed_groups,source,description" > output.csv
+
+# Join the files on the schema_table column and print all columns from temp.csv and the description column from rfp_lookup_sorted.csv
+join -t, -1 2 -2 1 -a 1 -o 1.1,1.2,1.3,1.4,2.2 temp_sorted.csv rfp_lookup_bcdata_sorted.csv >> output.csv
 
 # Append the temporary CSV file to the GeoPackage
-ogr2ogr -append -f "GPKG" $GPKG temp.csv -nln rfp_tracking
+ogr2ogr -append -f "GPKG" $GPKG output.csv -nln rfp_tracking
 
-# Remove the temporary CSV file
-rm temp.csv
+# Remove the temporary CSV files
+rm temp.csv temp_sorted.csv rfp_lookup_bcdata_sorted.csv output.csv
+
+echo 'bcdata layers are now loaded to background_layers.gpkg'
 
 
 
