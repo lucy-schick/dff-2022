@@ -4,7 +4,7 @@
 OUTPUT_FILE="./mergin_status_sum.txt"
 
 # Remove the output file if it already exists to start fresh
-rm -f "$OUTPUT_FILE"
+# rm -f "$OUTPUT_FILE"
 
 # Add a date stamp to the top of the file
 echo "Status Report Generated on: $(date)" >> "$OUTPUT_FILE"
