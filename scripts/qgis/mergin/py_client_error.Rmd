@@ -250,7 +250,7 @@ Now we make a change to `form_pscis.gpkg` programatically with R.
 # sf::st_layers(paste0(working_directory, "/form_pscis.gpkg"))
 form_in <- sf::st_read(paste0(working_directory, "/form_pscis.gpkg"))
 
-# this is adding rows to the table 
+# this was adding rows to the table so put append = FALSE
 form_in |> 
   dplyr::mutate(my_crossing_reference = sample(1:10000, 1)) |> 
   sf::st_write(paste0(working_directory, "/form_pscis.gpkg"), "form_pscis", append = FALSE)
@@ -312,7 +312,7 @@ Ok.  Looks like that is *maybe* the culprit. Let's visualize the differences if 
 
 Here is the `gpkg` in QGIS.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, message=FALSE, include = FALSE}
 
 library(jsonify)
 library(purrr)
@@ -322,7 +322,15 @@ library(tibble)
 gpkp_q <- jsonify::from_json(
   sf::gdal_utils("ogrinfo", paste0(working_directory, "/form_pscis.gpkg"), options = c("-json"))
 )
+```
 
+```
+gpkp_q <- jsonify::from_json(
+  sf::gdal_utils("ogrinfo", paste0(working_directory, "/form_pscis.gpkg"), options = c("-json"))
+)
+```
+
+```{r}
 gpkp_q_sum <- purrr::map2_dfr(
   gpkp_q$layers$fields$name, 
   gpkp_q$layers$fields$type, 
@@ -487,20 +495,15 @@ AHA!! It seemed like it was the QGIS plugin.  But our results were inconsistent.
 # Push Changes to Server
 This is interesting too though.. We can still push and pull no problem.
 
-```{r eval = FALSE}
+```{r }
 args <- c('run', '-n', 'dff2', 'mergin', 'push')
 
-result <- run(
-  command,
-  args = args,
-  echo = TRUE,            # Print the command output live (similar to stdout = TRUE in system2)
-  wd = working_directory, # Set the working directory
-  spinner = TRUE,         # Show a spinner in the R console while the command runs
-  timeout = 60            # Set a timeout for the command to complete
-)
+result <- mergin_call()
 
 ```
 
+
+# `git commit` and `push` to address issue
 Let's get the chunk ready to do our commits of these files to address our issue.  We turn it off though.
 
 
@@ -517,6 +520,7 @@ gert::git_add(
 
 message <- "initial commit file to address #166"
 message <- "update file to address #166 by includeing git commits"
+message <- "turn json output off"
 
 gert::git_commit(message)
 
@@ -545,7 +549,8 @@ gh::gh(endpoint = "POST /repos/{owner}/{repo}/issues/{issue_number}/comments",
 )
 ```
 
-
+# Render the Document
+This needs to be done in the console so is turned off. `environment` complexity I am still a bit lost with... ha.
 ```{r render, eval = FALSE}
 rmarkdown::render(input = params$file_in, output_file = params$file_out)
 ```
