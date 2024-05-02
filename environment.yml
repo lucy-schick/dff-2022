@@ -2,7 +2,7 @@
 
     # export SQLite3_ROOT=/opt/homebrew/Cellar/sqlite/3.40.1/
 
-name: dff
+name: dff2
 variables:
   PGHOST: localhost
   PGUSER: postgres
@@ -18,7 +18,7 @@ dependencies:
   - wget
   - zip
   - unzip
-  - python
+  - python==3.11.7
   #- sqlite
   - pip
   - pip:
