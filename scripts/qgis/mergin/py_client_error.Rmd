@@ -9,7 +9,7 @@ params:
   file_out: "py_client_error.html"
   repo_name: "dff-2022"
   repo_owner: "NewGraphEnvironment"
-  repo_branch: "main"
+  repo_branch: "master"
   repo_url: "https://github.com/NewGraphEnvironment/dff-2022/"
   font_set: 12
 ---
@@ -515,12 +515,36 @@ gert::git_add(
   c(params$file_in, path_file_out)
 )
 
-message <- "initial commit file to address #166")
+message <- "initial commit file to address #166"
+message <- "update file to address #166 by includeing git commits"
 
 gert::git_commit(message)
 
 gert::git_push()
 ```
+
+We can read our docs online so lets add a comment in the issue that points to the file:
+
+```{r, issue020}
+
+# construct the url of the viewer
+url_viewer <- paste0(
+  "http://htmlpreview.github.io/?",
+  params$repo_url,
+  "blob/",
+  params$repo_branch,
+  "/",
+  path_file_out
+)
+
+gh::gh(endpoint = "POST /repos/{owner}/{repo}/issues/{issue_number}/comments",
+       body = paste0("The documentation for this is available here ", url_viewer, " ."),
+       owner = params$repo_owner,
+       repo = params$repo_name,
+       issue_number = 166
+)
+```
+
 
 ```{r render, eval = FALSE}
 rmarkdown::render(input = params$file_in, output_file = params$file_out)
