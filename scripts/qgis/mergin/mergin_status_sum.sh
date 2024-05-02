@@ -11,7 +11,7 @@ echo "Status Report Generated on: $(date)" >> "$OUTPUT_FILE"
 echo "" >> "$OUTPUT_FILE" # Add a newline for spacing
 
 # Run the command and capture its output
-PROJECTS=$(mergin list-projects --namespace newgraph)
+PROJECTS=$(mergin list-projects newgraph)
 
 # Extract project names using awk
 echo "$PROJECTS" | awk '/newgraph \/ [a-zA-Z0-9_]+/ {print $3}' | while read -r project_name; do
