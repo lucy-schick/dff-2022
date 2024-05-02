@@ -504,7 +504,7 @@ result <- run(
 Let's get the chunk ready to do our commits of these files to address our issue.  We turn it off though.
 
 
-```{r git010, eval= FALSE}
+```{r git010, eval=FALSE}
 # we need to derive the properpath to the file for git to see it
 path_file_out <- paste0(
     tools::file_path_sans_ext(params$file_in),
@@ -525,7 +525,7 @@ gert::git_push()
 
 We can read our docs online so lets add a comment in the issue that points to the file:
 
-```{r, issue020}
+```{r issue020, eval = FALSE}
 
 # construct the url of the viewer
 url_viewer <- paste0(
