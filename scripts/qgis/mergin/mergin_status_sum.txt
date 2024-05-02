@@ -1,0 +1,502 @@
+Status Report Generated on: Wed Feb 21 16:40:03 PST 2024
+
+Status for project ng_koot_west_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_albn_clay_2023:
+### Server changes:
+### Local changes:
+
+>>> Added:
++ ignore_mobile/permissions.csv
+### Local changes summary ###
+
+Status for project moti_jerv_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_lidar_20230518:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_skeena_2023:
+### Server changes:
+### Local changes:
+
+>>> Added:
++ sern_skeena_2023_attachments (conflicted copy, newgraph_airvine v75).zip
++ ndvi_test.gpkg
+### Local changes summary ###
+
+Status for project sern_simpcw_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_20230516:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_lchl_necr_fran_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_lchl_necr_fran_2023?since=v42
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project sern_peace_fwcp_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_peace_fwcp_2023?since=v100
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status Report Generated on: Thu Feb 29 11:00:53 CST 2024
+
+Status for project ng_koot_west_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_albn_clay_2023:
+### Server changes:
+### Local changes:
+
+>>> Added:
++ ignore_mobile/permissions.csv
+### Local changes summary ###
+
+Status for project moti_jerv_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_lidar_20230518:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_skeena_2023:
+### Server changes:
+### Local changes:
+
+>>> Added:
++ sern_skeena_2023_attachments (conflicted copy, newgraph_airvine v75).zip
++ ndvi_test.gpkg
+### Local changes summary ###
+
+Status for project sern_simpcw_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_20230516:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_lchl_necr_fran_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_lchl_necr_fran_2023?since=v42
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project sern_peace_fwcp_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_peace_fwcp_2023?since=v100
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status Report Generated on: Mon Apr  1 07:57:08 PDT 2024
+
+Status for project ng_koot_west_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_albn_clay_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_jerv_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_lidar_20230518:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_skeena_2023:
+### Server changes:
+
+>>> Modified:
+M sern_skeena_2023.qgs
+M sern_skeena_2023_attachments.zip
+M data_field/2023/form_pscis_2023.gpkg
+### Local changes:
+
+>>> Added:
++ sern_skeena_2023_attachments (conflicted copy, newgraph_airvine v75).zip
++ ndvi_test.gpkg
+### Local changes summary ###
+
+Status for project sern_simpcw_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_20230516:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_lchl_necr_fran_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_lchl_necr_fran_2023?since=v52
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project sern_peace_fwcp_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_peace_fwcp_2023?since=v100
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project restoration_wedzin_kwa:
+### Server changes:
+### Local changes:
+
+>>> Removed:
+- permissions.txt
+
+>>> Added:
++ project_creation_and_permissions.txt
+### Local changes summary ###
+
+Status Report Generated on: Wed Apr  3 07:55:00 PDT 2024
+
+Status for project ng_koot_west_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_albn_clay_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_jerv_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_lidar_20230518:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_skeena_2023:
+Unhandled exception!
+Traceback (most recent call last):
+
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/dff/lib/python3.11/site-packages/mergin/cli.py", line 395, in status
+    pull_changes, push_changes, push_changes_summary = mc.project_status(os.getcwd())
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/dff/lib/python3.11/site-packages/mergin/client.py", line 836, in project_status
+    push_changes_summary = mp.get_list_of_push_changes(push_changes)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/dff/lib/python3.11/site-packages/mergin/merginproject.py", line 397, in get_list_of_push_changes
+    with open(result_file, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/airvine/Projects/gis/sern_skeena_2023/.mergin/change_list2'
+
+
+Status for project sern_simpcw_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_20230516:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_lchl_necr_fran_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_lchl_necr_fran_2023?since=v52
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project sern_peace_fwcp_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_peace_fwcp_2023?since=v100
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project restoration_wedzin_kwa:
+### Server changes:
+### Local changes:
+
+>>> Removed:
+- permissions.txt
+
+>>> Added:
++ project_creation_and_permissions.txt
+### Local changes summary ###
+
+##----------------------Manual Entry April 3, 2024---------------------------------##
+-------- made manual changes to sern_skeena_2023 in QGIS attribute table------
+##-------------------------------------------------------------------------------- ##
+
+Status Report Generated on: Wed Apr  3 08:01:05 PDT 2024
+
+Status for project ng_koot_west_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_albn_clay_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_jerv_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_lidar_20230518:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_skeena_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_skeena_2023?since=v83
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project sern_simpcw_2023:
+### Server changes:
+### Local changes:
+
+>>> Modified:
+M sern_simpcw_2023.qgs
+### Local changes summary ###
+
+Status for project bcfishpass_20230516:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_lchl_necr_fran_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_lchl_necr_fran_2023?since=v52
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project sern_peace_fwcp_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_peace_fwcp_2023?since=v100
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project restoration_wedzin_kwa:
+### Server changes:
+### Local changes:
+
+>>> Removed:
+- permissions.txt
+
+>>> Added:
++ project_creation_and_permissions.txt
+### Local changes summary ###
+
+
+##----------------------Manual Entry April 4, 2024--------------------------------------------##
+
+----manually delete  sern_peace_fwcp_2023 sern_skeena_2023 sern_lchl_necr_fran_2023 locally----
+
++ mergin download newgraph/sern_peace_fwcp_2023 /Users/airvine/Projects/gis/sern_peace_fwcp_2023
+Downloading into /Users/airvine/Projects/gis/sern_peace_fwcp_2023
+  [####################################]  100%
+Done
+
+
+Downloading into /Users/airvine/Projects/gis/sern_skeena_2023
+  [####################################]  100%
+Done
+
++ mergin download newgraph/sern_lchl_necr_fran_2023 /Users/airvine/Projects/gis/sern_lchl_necr_fran_2023
+Downloading into /Users/airvine/Projects/gis/sern_lchl_necr_fran_2023
+  [####################################]  100%
+Done
+
+
+-------- made manual changes to sern_skeena_2023 in QGIS attribute table------
+##--------------------------------------------------------------------------------------------------------##
+
+Status Report Generated on: Fri Apr  5 08:12:53 PDT 2024
+
+Status for project ng_koot_west_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_albn_clay_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_jerv_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_lidar_20230518:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_skeena_2023:
+Unhandled exception!
+Traceback (most recent call last):
+
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/dff/lib/python3.11/site-packages/mergin/cli.py", line 395, in status
+    pull_changes, push_changes, push_changes_summary = mc.project_status(os.getcwd())
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/dff/lib/python3.11/site-packages/mergin/client.py", line 836, in project_status
+    push_changes_summary = mp.get_list_of_push_changes(push_changes)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/dff/lib/python3.11/site-packages/mergin/merginproject.py", line 397, in get_list_of_push_changes
+    with open(result_file, "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^
+
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/airvine/Projects/gis/sern_skeena_2023/.mergin/change_list2'
+
+
+Status for project sern_simpcw_2023:
+### Server changes:
+### Local changes:
+
+>>> Modified:
+M sern_simpcw_2023.qgs
+### Local changes summary ###
+
+Status for project bcfishpass_20230516:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_lchl_necr_fran_2023:
+### Server changes:
+
+>>> Modified:
+M sern_lchl_necr_fran_2023.qgs
+M sern_lchl_necr_fran_2023_attachments.zip
+M data_field/2023/form_pscis_2023.gpkg
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_peace_fwcp_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project restoration_wedzin_kwa:
+### Server changes:
+### Local changes:
+
+>>> Removed:
+- permissions.txt
+
+>>> Added:
++ project_creation_and_permissions.txt
+### Local changes summary ###
+
+##----------------------Manual Entry April 5, 2024---------------------------------##
+
+Synced sern_skeena_2023 manually with the plugin - see screenshot in email
+
+##---------------------------------------------------------------------------------##
+
+Status Report Generated on: Fri Apr  5 08:20:28 PDT 2024
+
+Status for project ng_koot_west_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_albn_clay_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project moti_jerv_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project bcfishpass_lidar_20230518:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_skeena_2023:
+Error: HTTP Error: 405 METHOD NOT ALLOWED
+URL: https://app.merginmaps.com/v1/project/sern_skeena_2023?since=v84
+Method: GET
+Detail: The method is not allowed for the requested URL.
+
+Status for project sern_simpcw_2023:
+### Server changes:
+### Local changes:
+
+>>> Modified:
+M sern_simpcw_2023.qgs
+### Local changes summary ###
+
+Status for project bcfishpass_20230516:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_lchl_necr_fran_2023:
+### Server changes:
+
+>>> Modified:
+M sern_lchl_necr_fran_2023.qgs
+M sern_lchl_necr_fran_2023_attachments.zip
+M data_field/2023/form_pscis_2023.gpkg
+### Local changes:
+### Local changes summary ###
+
+Status for project sern_peace_fwcp_2023:
+### Server changes:
+### Local changes:
+### Local changes summary ###
+
+Status for project restoration_wedzin_kwa:
+### Server changes:
+### Local changes:
+
+>>> Removed:
+- permissions.txt
+
+>>> Added:
++ project_creation_and_permissions.txt
+### Local changes summary ###
+
+
+
