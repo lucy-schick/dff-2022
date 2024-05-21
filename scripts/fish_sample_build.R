@@ -21,15 +21,15 @@ utm_zone <- 9
 #' create one form that contains site data and characteristics, and one form that has only fish sampling data
 
 # only pull columns for fish data that will change within each site
-fish_coll <- fpr::fpr_import_hab_con(backup = F, row_empty_remove = T) %>%
-  pluck('step_3_individual_fish_data') %>%
-  select(local_name, species:weight_g, comments) %>%
+fish_coll <- fpr::fpr_import_hab_con(backup = F, row_empty_remove = T) |>
+  pluck('step_3_individual_fish_data') |>
+  select(local_name, species:weight_g, comments) |>
   slice(1)
 
 # # pull out site info from step 2
-fish_site <- fpr::fpr_import_hab_con(backup = F, row_empty_remove = T) %>%
-  pluck('step_2_fish_coll_data') %>%
-  select(sampling_method:frequency) %>%
+fish_site <- fpr::fpr_import_hab_con(backup = F, row_empty_remove = T) |>
+  pluck('step_2_fish_coll_data') |>
+  select(sampling_method:frequency) |>
   slice(1)
 
 form_prep <- bind_cols(fish_coll, fish_site)
@@ -37,7 +37,7 @@ form_prep <- bind_cols(fish_coll, fish_site)
 # see the names of the columns
 names(form_prep)
 
-form_prep2 <- form_prep %>%
+form_prep2 <- form_prep |>
   # add some columns of our own
   dplyr::mutate(utm_easting = NA_integer_,
                 utm_northing = NA_integer_,
@@ -47,15 +47,15 @@ form_prep2 <- form_prep %>%
                 tag_number = NA_character_,
                 photo_fish_1 = NA_character_,
                 photo_fish_2 = NA_character_
-  ) %>%
+  ) |>
   # populate utm fields with a location so we can use to burn geopackage
   mutate(utm_easting = 687879,
-         utm_northing = 6020659) %>%
+         utm_northing = 6020659) |>
   # make it a spatial file so we can burn it as a geopackage right into our mergin file of choice
   sf::st_as_sf(coords = c("utm_easting", "utm_northing"),
-               crs = 32600 + utm_zone, remove = F) %>%
+               crs = 32600 + utm_zone, remove = F) |>
   # put it into albers so we can use it anywhere
-  sf::st_transform(crs = 3005) %>%
+  sf::st_transform(crs = 3005) |>
   sf::st_write('data/qgis/form_fish_sample.gpkg', delete_layer = T)
 
 
