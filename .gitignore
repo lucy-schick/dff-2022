@@ -12,4 +12,5 @@ rsconnect
 data/lidar/*
 *.geojson
 *.tif
+scripts/qgis/hold/*
 !data/qgis/*.gpkg
