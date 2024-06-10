@@ -17,6 +17,25 @@ if [ $# -eq 0 ]
     exit 1
 fi
 
+# Function to check the format of the argument and provide proper feedback
+# https://chatgpt.com/share/f73eac46-032e-47b5-86ec-e9d711f36ff1
+check_format() {
+  local input="$1"
+
+  # Check if the input format is correct
+  if [[ ! $input =~ ^\'[^\']+\'(,\ \'[^\']+\')*$ ]]; then
+    echo "Invalid format for watershed groups supplied."
+    echo "You provided: \"$input\""
+    echo "Please provide the names in the format: \"'BULK'\" or \"'BULK', 'KLUM'\" with single quotes around each name and optionally separated by commas."
+    exit 1
+  fi
+}
+
+# Check that the watershed groups are in the correct format
+check_format "$1"
+
+echo "Watershed groups format is correct: $1"
+
 
 # Name of the file
 GPKG="background_layers.gpkg"
@@ -153,7 +172,7 @@ ogr2ogr -append -f "GPKG" $GPKG output.csv -nln rfp_tracking
 # Remove the temporary CSV files
 rm temp.csv temp_sorted.csv rfp_lookup_bcdata_sorted.csv output.csv
 
-echo 'bcdata layers are now loaded to background_layers.gpkg'
+echo 'layers stored on aws are now loaded to background_layers.gpkg'
 
 
 

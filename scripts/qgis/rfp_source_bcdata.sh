@@ -8,6 +8,24 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
+# Function to check the format of the argument and provide proper feedback
+# https://chatgpt.com/share/f73eac46-032e-47b5-86ec-e9d711f36ff1
+check_format() {
+  local input="$1"
+
+  # Check if the input format is correct
+  if [[ ! $input =~ ^\'[^\']+\'(,\ \'[^\']+\')*$ ]]; then
+    echo "Invalid format for watershed groups supplied."
+    echo "You provided: \"$input\""
+    echo "Please provide the names in the format: \"'BULK'\" or \"'BULK', 'KLUM'\" with single quotes around each name and optionally separated by commas."
+    exit 1
+  fi
+}
+
+# Check that the watershed groups are in the correct format
+check_format "$1"
+
+echo "Watershed groups format is correct: $1"
 
 # Temporarily disable the nounset option to allow for default values if one is not set
 set +u
@@ -36,11 +54,6 @@ if [[ "$operation" == "update" && ! -f "$GPKG" ]]; then
     exit 1
 fi
 
-# # Check for "update" flag and existence of the GeoPackage file
-# if [[ "$2" == "update" && ! -f "$GPKG" ]]; then
-#     echo "$GPKG does not exist. Cannot perform update operation."
-#     exit 1
-# fi
 
 process_geopackage() {
     local watersheds="$1"
