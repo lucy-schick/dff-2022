@@ -1,6 +1,9 @@
 #'  build a raw field form template using the excel file as the template for our template
 
-source('scripts/packages.R')
+# source('scripts/packages.R')
+
+# path_write <- 'data/qgis/form_pscis.gpkg'
+path_write <- '~/Projects/gis/sern_peace_fwcp_2023/form_fiss_site.gpkg'
 
 #' name the project directory we are burning to
 # dir_project <- 'bcfishpass_20230517'
@@ -12,7 +15,7 @@ source('scripts/packages.R')
 
 #' define your utm zone.  This can cause errors if you use the form in more than
 #' one zone!!!!! beware
-utm_zone <- 9
+utm_zone <- 10
 
 #' import the fish data submission template (needs to be in the data directory)
 #' because we want to keep the backup file clean for the value maps and because
@@ -180,12 +183,17 @@ form_prep3 <- form_prep2 %>%
                 photo_pool = NA_character_,
                 photo_typical_1 = NA_character_,
                 photo_typical_2 = NA_character_,
-                photo_extra_1 = NA_character_,
-                photo_extra_1_tag = NA_character_,
-                photo_extra_2 = NA_character_,
-                photo_extra_2_tag = NA_character_,
+                photo_extra1 = NA_character_,
+                photo_extra1_tag = NA_character_,
+                photo_extra2 = NA_character_,
+                photo_extra2_tag = NA_character_,
+                photo_extra3 = NA_character_,
+                photo_extra3_tag = NA_character_,
+                photo_extra4 = NA_character_,
+                photo_extra4_tag = NA_character_,
+                photo_extra5 = NA_character_,
+                photo_extra5_tag = NA_character_,
                 photo_card = NA_character_,
-                comments_2 = NA_character_,
                 feature_time = NA_POSIXct_,
                 feature_type_2 = NA_character_,
                 feature_height_2_m = NA_character_,
@@ -234,7 +242,7 @@ form_prep3 <- form_prep2 %>%
   relocate(matches('method'), .after = last_col()) %>%
   relocate(matches('average|avg'), .after = last_col()) %>%
   relocate(matches('link_method_site_card'), .after = last_col()) %>%
-  sf::st_write('data/qgis/form_fiss_site.gpkg', delete_layer = T)
+  sf::st_write(path_write, delete_layer = T)
 
 
 

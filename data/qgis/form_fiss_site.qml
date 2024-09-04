@@ -1,216 +1,216 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyDrawingTol="1" labelsEnabled="1" simplifyLocal="1" simplifyAlgorithm="0" simplifyMaxScale="1" version="3.30.1-'s-Hertogenbosch" maxScale="0" styleCategories="AllStyleCategories" minScale="100000000" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" symbologyReferenceScale="-1" readOnly="0">
+<qgis symbologyReferenceScale="-1" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" version="3.34.8-Prizren" readOnly="0" maxScale="0" simplifyLocal="1" simplifyMaxScale="1" minScale="100000000" labelsEnabled="1" simplifyDrawingHints="0" simplifyAlgorithm="0" simplifyDrawingTol="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal startExpression="" durationField="fid" limitMode="0" endField="" startField="date_time_start" fixedDuration="0" mode="1" durationUnit="min" accumulate="0" enabled="0" endExpression="">
+  <temporal mode="1" durationField="fid" startExpression="" endField="" accumulate="0" startField="date_time_start" endExpression="" enabled="0" limitMode="0" durationUnit="min" fixedDuration="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation showMarkerSymbolInSurfacePlots="0" binding="Centroid" zoffset="0" zscale="1" extrusion="0" clamping="Terrain" type="IndividualFeatures" respectLayerSymbol="1" extrusionEnabled="0" symbology="Line">
+  <elevation zscale="1" extrusionEnabled="0" binding="Centroid" extrusion="0" symbology="Line" zoffset="0" respectLayerSymbol="1" clamping="Terrain" showMarkerSymbolInSurfacePlots="0" type="IndividualFeatures">
     <data-defined-properties>
       <Option type="Map">
-        <Option name="name" value="" type="QString"/>
+        <Option value="" type="QString" name="name"/>
         <Option name="properties"/>
-        <Option name="type" value="collection" type="QString"/>
+        <Option value="collection" type="QString" name="type"/>
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol alpha="1" is_animated="0" name="" frame_rate="10" clip_to_extent="1" type="line" force_rhr="0">
+      <symbol clip_to_extent="1" frame_rate="10" force_rhr="0" is_animated="0" type="line" name="" alpha="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" id="{f100de74-7aef-4b5b-80ee-7f8a65ea6aca}" locked="0" enabled="1" class="SimpleLine">
+        <layer id="{f100de74-7aef-4b5b-80ee-7f8a65ea6aca}" class="SimpleLine" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option name="align_dash_pattern" value="0" type="QString"/>
-            <Option name="capstyle" value="square" type="QString"/>
-            <Option name="customdash" value="5;2" type="QString"/>
-            <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="customdash_unit" value="MM" type="QString"/>
-            <Option name="dash_pattern_offset" value="0" type="QString"/>
-            <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-            <Option name="draw_inside_polygon" value="0" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="line_color" value="213,180,60,255" type="QString"/>
-            <Option name="line_style" value="solid" type="QString"/>
-            <Option name="line_width" value="0.6" type="QString"/>
-            <Option name="line_width_unit" value="MM" type="QString"/>
-            <Option name="offset" value="0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="ring_filter" value="0" type="QString"/>
-            <Option name="trim_distance_end" value="0" type="QString"/>
-            <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-            <Option name="trim_distance_start" value="0" type="QString"/>
-            <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-            <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-            <Option name="use_custom_dash" value="0" type="QString"/>
-            <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option value="0" type="QString" name="align_dash_pattern"/>
+            <Option value="square" type="QString" name="capstyle"/>
+            <Option value="5;2" type="QString" name="customdash"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
+            <Option value="MM" type="QString" name="customdash_unit"/>
+            <Option value="0" type="QString" name="dash_pattern_offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
+            <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
+            <Option value="0" type="QString" name="draw_inside_polygon"/>
+            <Option value="bevel" type="QString" name="joinstyle"/>
+            <Option value="213,180,60,255" type="QString" name="line_color"/>
+            <Option value="solid" type="QString" name="line_style"/>
+            <Option value="0.6" type="QString" name="line_width"/>
+            <Option value="MM" type="QString" name="line_width_unit"/>
+            <Option value="0" type="QString" name="offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+            <Option value="MM" type="QString" name="offset_unit"/>
+            <Option value="0" type="QString" name="ring_filter"/>
+            <Option value="0" type="QString" name="trim_distance_end"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
+            <Option value="MM" type="QString" name="trim_distance_end_unit"/>
+            <Option value="0" type="QString" name="trim_distance_start"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
+            <Option value="MM" type="QString" name="trim_distance_start_unit"/>
+            <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
+            <Option value="0" type="QString" name="use_custom_dash"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol alpha="1" is_animated="0" name="" frame_rate="10" clip_to_extent="1" type="fill" force_rhr="0">
+      <symbol clip_to_extent="1" frame_rate="10" force_rhr="0" is_animated="0" type="fill" name="" alpha="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" id="{d52deaeb-ed79-46fb-92d5-688d21a96613}" locked="0" enabled="1" class="SimpleFill">
+        <layer id="{d52deaeb-ed79-46fb-92d5-688d21a96613}" class="SimpleFill" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="color" value="213,180,60,255" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="offset" value="0,0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="outline_color" value="152,129,43,255" type="QString"/>
-            <Option name="outline_style" value="solid" type="QString"/>
-            <Option name="outline_width" value="0.2" type="QString"/>
-            <Option name="outline_width_unit" value="MM" type="QString"/>
-            <Option name="style" value="solid" type="QString"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+            <Option value="213,180,60,255" type="QString" name="color"/>
+            <Option value="bevel" type="QString" name="joinstyle"/>
+            <Option value="0,0" type="QString" name="offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+            <Option value="MM" type="QString" name="offset_unit"/>
+            <Option value="152,129,43,255" type="QString" name="outline_color"/>
+            <Option value="solid" type="QString" name="outline_style"/>
+            <Option value="0.2" type="QString" name="outline_width"/>
+            <Option value="MM" type="QString" name="outline_width_unit"/>
+            <Option value="solid" type="QString" name="style"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol alpha="1" is_animated="0" name="" frame_rate="10" clip_to_extent="1" type="marker" force_rhr="0">
+      <symbol clip_to_extent="1" frame_rate="10" force_rhr="0" is_animated="0" type="marker" name="" alpha="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" id="{7dd8dec4-21f8-458f-a133-4ae505a896cb}" locked="0" enabled="1" class="SimpleMarker">
+        <layer id="{7dd8dec4-21f8-458f-a133-4ae505a896cb}" class="SimpleMarker" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option name="angle" value="0" type="QString"/>
-            <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="213,180,60,255" type="QString"/>
-            <Option name="horizontal_anchor_point" value="1" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="name" value="diamond" type="QString"/>
-            <Option name="offset" value="0,0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="outline_color" value="152,129,43,255" type="QString"/>
-            <Option name="outline_style" value="solid" type="QString"/>
-            <Option name="outline_width" value="0.2" type="QString"/>
-            <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="outline_width_unit" value="MM" type="QString"/>
-            <Option name="scale_method" value="diameter" type="QString"/>
-            <Option name="size" value="3" type="QString"/>
-            <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="size_unit" value="MM" type="QString"/>
-            <Option name="vertical_anchor_point" value="1" type="QString"/>
+            <Option value="0" type="QString" name="angle"/>
+            <Option value="square" type="QString" name="cap_style"/>
+            <Option value="213,180,60,255" type="QString" name="color"/>
+            <Option value="1" type="QString" name="horizontal_anchor_point"/>
+            <Option value="bevel" type="QString" name="joinstyle"/>
+            <Option value="diamond" type="QString" name="name"/>
+            <Option value="0,0" type="QString" name="offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+            <Option value="MM" type="QString" name="offset_unit"/>
+            <Option value="152,129,43,255" type="QString" name="outline_color"/>
+            <Option value="solid" type="QString" name="outline_style"/>
+            <Option value="0.2" type="QString" name="outline_width"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+            <Option value="MM" type="QString" name="outline_width_unit"/>
+            <Option value="diameter" type="QString" name="scale_method"/>
+            <Option value="3" type="QString" name="size"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+            <Option value="MM" type="QString" name="size_unit"/>
+            <Option value="1" type="QString" name="vertical_anchor_point"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 forceraster="0" symbollevels="0" referencescale="-1" type="singleSymbol" enableorderby="0">
+  <renderer-v2 forceraster="0" referencescale="-1" enableorderby="0" symbollevels="0" type="singleSymbol">
     <symbols>
-      <symbol alpha="1" is_animated="0" name="0" frame_rate="10" clip_to_extent="1" type="marker" force_rhr="0">
+      <symbol clip_to_extent="1" frame_rate="10" force_rhr="0" is_animated="0" type="marker" name="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" id="{39e92ca2-3080-4710-9a24-6583c9182e33}" locked="0" enabled="1" class="SimpleMarker">
+        <layer id="{39e92ca2-3080-4710-9a24-6583c9182e33}" class="SimpleMarker" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option name="angle" value="0" type="QString"/>
-            <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="255,255,255,255" type="QString"/>
-            <Option name="horizontal_anchor_point" value="1" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="name" value="circle" type="QString"/>
-            <Option name="offset" value="0,0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="outline_color" value="51,160,44,255" type="QString"/>
-            <Option name="outline_style" value="solid" type="QString"/>
-            <Option name="outline_width" value="0.4" type="QString"/>
-            <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="outline_width_unit" value="MM" type="QString"/>
-            <Option name="scale_method" value="area" type="QString"/>
-            <Option name="size" value="5.2" type="QString"/>
-            <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="size_unit" value="MM" type="QString"/>
-            <Option name="vertical_anchor_point" value="1" type="QString"/>
+            <Option value="0" type="QString" name="angle"/>
+            <Option value="square" type="QString" name="cap_style"/>
+            <Option value="255,255,255,255" type="QString" name="color"/>
+            <Option value="1" type="QString" name="horizontal_anchor_point"/>
+            <Option value="bevel" type="QString" name="joinstyle"/>
+            <Option value="circle" type="QString" name="name"/>
+            <Option value="0,0" type="QString" name="offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+            <Option value="MM" type="QString" name="offset_unit"/>
+            <Option value="51,160,44,255" type="QString" name="outline_color"/>
+            <Option value="solid" type="QString" name="outline_style"/>
+            <Option value="0.4" type="QString" name="outline_width"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+            <Option value="MM" type="QString" name="outline_width_unit"/>
+            <Option value="area" type="QString" name="scale_method"/>
+            <Option value="5.2" type="QString" name="size"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+            <Option value="MM" type="QString" name="size_unit"/>
+            <Option value="1" type="QString" name="vertical_anchor_point"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="0" id="{745299f4-8f35-4cb7-a618-42201301f5d4}" locked="0" enabled="1" class="SimpleMarker">
+        <layer id="{745299f4-8f35-4cb7-a618-42201301f5d4}" class="SimpleMarker" locked="0" pass="0" enabled="1">
           <Option type="Map">
-            <Option name="angle" value="0" type="QString"/>
-            <Option name="cap_style" value="square" type="QString"/>
-            <Option name="color" value="51,160,44,255" type="QString"/>
-            <Option name="horizontal_anchor_point" value="1" type="QString"/>
-            <Option name="joinstyle" value="bevel" type="QString"/>
-            <Option name="name" value="cross_fill" type="QString"/>
-            <Option name="offset" value="0,0" type="QString"/>
-            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="offset_unit" value="MM" type="QString"/>
-            <Option name="outline_color" value="51,160,44,255" type="QString"/>
-            <Option name="outline_style" value="solid" type="QString"/>
-            <Option name="outline_width" value="0.2" type="QString"/>
-            <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="outline_width_unit" value="MM" type="QString"/>
-            <Option name="scale_method" value="area" type="QString"/>
-            <Option name="size" value="3" type="QString"/>
-            <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-            <Option name="size_unit" value="MM" type="QString"/>
-            <Option name="vertical_anchor_point" value="1" type="QString"/>
+            <Option value="0" type="QString" name="angle"/>
+            <Option value="square" type="QString" name="cap_style"/>
+            <Option value="51,160,44,255" type="QString" name="color"/>
+            <Option value="1" type="QString" name="horizontal_anchor_point"/>
+            <Option value="bevel" type="QString" name="joinstyle"/>
+            <Option value="cross_fill" type="QString" name="name"/>
+            <Option value="0,0" type="QString" name="offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+            <Option value="MM" type="QString" name="offset_unit"/>
+            <Option value="51,160,44,255" type="QString" name="outline_color"/>
+            <Option value="solid" type="QString" name="outline_style"/>
+            <Option value="0.2" type="QString" name="outline_width"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+            <Option value="MM" type="QString" name="outline_width_unit"/>
+            <Option value="area" type="QString" name="scale_method"/>
+            <Option value="3" type="QString" name="size"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+            <Option value="MM" type="QString" name="size_unit"/>
+            <Option value="1" type="QString" name="vertical_anchor_point"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -219,136 +219,180 @@
     <rotation/>
     <sizescale/>
   </renderer-v2>
+  <selection mode="Default">
+    <selectionColor invalid="1"/>
+    <selectionSymbol>
+      <symbol clip_to_extent="1" frame_rate="10" force_rhr="0" is_animated="0" type="marker" name="" alpha="1">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </data_defined_properties>
+        <layer id="{231cea50-a43a-46d0-9a9e-dda1b13d7da8}" class="SimpleMarker" locked="0" pass="0" enabled="1">
+          <Option type="Map">
+            <Option value="0" type="QString" name="angle"/>
+            <Option value="square" type="QString" name="cap_style"/>
+            <Option value="255,0,0,255" type="QString" name="color"/>
+            <Option value="1" type="QString" name="horizontal_anchor_point"/>
+            <Option value="bevel" type="QString" name="joinstyle"/>
+            <Option value="circle" type="QString" name="name"/>
+            <Option value="0,0" type="QString" name="offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+            <Option value="MM" type="QString" name="offset_unit"/>
+            <Option value="35,35,35,255" type="QString" name="outline_color"/>
+            <Option value="solid" type="QString" name="outline_style"/>
+            <Option value="0" type="QString" name="outline_width"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+            <Option value="MM" type="QString" name="outline_width_unit"/>
+            <Option value="diameter" type="QString" name="scale_method"/>
+            <Option value="2" type="QString" name="size"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+            <Option value="MM" type="QString" name="size_unit"/>
+            <Option value="1" type="QString" name="vertical_anchor_point"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </selectionSymbol>
+  </selection>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style textColor="50,50,50,255" textOrientation="horizontal" namedStyle="Regular" fieldName=" concat( &quot;local_name&quot; + ' - ' +  &quot;gazetted_names&quot; )" fontFamily=".AppleSystemUIFont" multilineHeightUnit="Percentage" isExpression="1" forcedBold="0" fontWeight="50" fontKerning="1" blendMode="0" fontLetterSpacing="0" useSubstitutions="0" fontStrikeout="0" legendString="Aa" capitalization="0" fontSize="10" previewBkgrdColor="255,255,255,255" fontUnderline="0" multilineHeight="1" fontSizeUnit="Point" fontItalic="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" allowHtml="0" forcedItalic="0" fontWordSpacing="0">
+      <text-style forcedBold="0" fontSizeUnit="Point" textOpacity="1" blendMode="0" fontKerning="1" allowHtml="0" isExpression="1" forcedItalic="0" fontStrikeout="0" multilineHeight="1" textOrientation="horizontal" fontItalic="0" capitalization="0" fontUnderline="0" fontLetterSpacing="0" useSubstitutions="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" namedStyle="Regular" fontWeight="50" fieldName=" concat( &quot;local_name&quot; + ' - ' +  &quot;gazetted_names&quot; )" fontWordSpacing="0" fontSize="10" textColor="50,50,50,255" fontFamily=".AppleSystemUIFont" previewBkgrdColor="255,255,255,255" multilineHeightUnit="Percentage" legendString="Aa">
         <families/>
-        <text-buffer bufferSize="1" bufferNoFill="1" bufferColor="250,250,250,255" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferDraw="1" bufferSizeUnits="MM" bufferJoinStyle="128" bufferBlendMode="0"/>
-        <text-mask maskSizeUnits="MM" maskJoinStyle="128" maskEnabled="0" maskedSymbolLayers="" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskType="0" maskSize="0"/>
-        <background shapeRadiiUnit="Point" shapeSizeX="0" shapeSizeY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeBorderWidth="0" shapeSizeUnit="Point" shapeSVGFile="" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="Point" shapeRotation="0" shapeOffsetX="0" shapeOffsetY="0" shapeBorderColor="128,128,128,255" shapeRadiiX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeOpacity="1" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeDraw="0" shapeType="0" shapeOffsetUnit="Point" shapeJoinStyle="64" shapeRadiiY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0">
-          <symbol alpha="1" is_animated="0" name="markerSymbol" frame_rate="10" clip_to_extent="1" type="marker" force_rhr="0">
+        <text-buffer bufferOpacity="1" bufferSizeUnits="MM" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="250,250,250,255" bufferDraw="1" bufferJoinStyle="128" bufferBlendMode="0" bufferNoFill="1" bufferSize="1"/>
+        <text-mask maskOpacity="1" maskJoinStyle="128" maskEnabled="0" maskedSymbolLayers="" maskSize="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskType="0" maskSizeUnits="MM"/>
+        <background shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="Point" shapeBorderColor="128,128,128,255" shapeOffsetX="0" shapeDraw="0" shapeRadiiY="0" shapeJoinStyle="64" shapeOffsetUnit="Point" shapeSizeX="0" shapeSVGFile="" shapeFillColor="255,255,255,255" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeRotation="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeType="0" shapeRadiiUnit="Point" shapeRotationType="0" shapeOpacity="1" shapeBlendMode="0" shapeRadiiX="0" shapeSizeType="0" shapeBorderWidthUnit="Point" shapeBorderWidth="0">
+          <symbol clip_to_extent="1" frame_rate="10" force_rhr="0" is_animated="0" type="marker" name="markerSymbol" alpha="1">
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" value="" type="QString"/>
+                <Option value="" type="QString" name="name"/>
                 <Option name="properties"/>
-                <Option name="type" value="collection" type="QString"/>
+                <Option value="collection" type="QString" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer pass="0" id="" locked="0" enabled="1" class="SimpleMarker">
+            <layer id="" class="SimpleMarker" locked="0" pass="0" enabled="1">
               <Option type="Map">
-                <Option name="angle" value="0" type="QString"/>
-                <Option name="cap_style" value="square" type="QString"/>
-                <Option name="color" value="231,113,72,255" type="QString"/>
-                <Option name="horizontal_anchor_point" value="1" type="QString"/>
-                <Option name="joinstyle" value="bevel" type="QString"/>
-                <Option name="name" value="circle" type="QString"/>
-                <Option name="offset" value="0,0" type="QString"/>
-                <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="offset_unit" value="MM" type="QString"/>
-                <Option name="outline_color" value="35,35,35,255" type="QString"/>
-                <Option name="outline_style" value="solid" type="QString"/>
-                <Option name="outline_width" value="0" type="QString"/>
-                <Option name="outline_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="outline_width_unit" value="MM" type="QString"/>
-                <Option name="scale_method" value="diameter" type="QString"/>
-                <Option name="size" value="2" type="QString"/>
-                <Option name="size_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="size_unit" value="MM" type="QString"/>
-                <Option name="vertical_anchor_point" value="1" type="QString"/>
+                <Option value="0" type="QString" name="angle"/>
+                <Option value="square" type="QString" name="cap_style"/>
+                <Option value="231,113,72,255" type="QString" name="color"/>
+                <Option value="1" type="QString" name="horizontal_anchor_point"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="circle" type="QString" name="name"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0" type="QString" name="outline_width"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="diameter" type="QString" name="scale_method"/>
+                <Option value="2" type="QString" name="size"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+                <Option value="MM" type="QString" name="size_unit"/>
+                <Option value="1" type="QString" name="vertical_anchor_point"/>
               </Option>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" type="QString" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" type="QString" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol alpha="1" is_animated="0" name="fillSymbol" frame_rate="10" clip_to_extent="1" type="fill" force_rhr="0">
+          <symbol clip_to_extent="1" frame_rate="10" force_rhr="0" is_animated="0" type="fill" name="fillSymbol" alpha="1">
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" value="" type="QString"/>
+                <Option value="" type="QString" name="name"/>
                 <Option name="properties"/>
-                <Option name="type" value="collection" type="QString"/>
+                <Option value="collection" type="QString" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer pass="0" id="" locked="0" enabled="1" class="SimpleFill">
+            <layer id="" class="SimpleFill" locked="0" pass="0" enabled="1">
               <Option type="Map">
-                <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="color" value="255,255,255,255" type="QString"/>
-                <Option name="joinstyle" value="bevel" type="QString"/>
-                <Option name="offset" value="0,0" type="QString"/>
-                <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-                <Option name="offset_unit" value="MM" type="QString"/>
-                <Option name="outline_color" value="128,128,128,255" type="QString"/>
-                <Option name="outline_style" value="no" type="QString"/>
-                <Option name="outline_width" value="0" type="QString"/>
-                <Option name="outline_width_unit" value="Point" type="QString"/>
-                <Option name="style" value="solid" type="QString"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="255,255,255,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="128,128,128,255" type="QString" name="outline_color"/>
+                <Option value="no" type="QString" name="outline_style"/>
+                <Option value="0" type="QString" name="outline_width"/>
+                <Option value="Point" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
               </Option>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" type="QString" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" type="QString" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </background>
-        <shadow shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.69999999999999996" shadowBlendMode="6" shadowOffsetDist="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowRadiusAlphaOnly="0" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowOffsetGlobal="1" shadowRadius="1.5" shadowDraw="0" shadowUnder="0" shadowOffsetUnit="MM"/>
+        <shadow shadowDraw="0" shadowRadiusUnit="MM" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowUnder="0" shadowOffsetUnit="MM" shadowOffsetGlobal="1" shadowRadius="1.5" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowBlendMode="6" shadowScale="100" shadowOpacity="0.69999999999999996" shadowOffsetAngle="135" shadowColor="0,0,0,255"/>
         <dd_properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </dd_properties>
         <substitutions/>
       </text-style>
-      <text-format addDirectionSymbol="0" autoWrapLength="0" placeDirectionSymbol="0" wrapChar="" reverseDirectionSymbol="0" multilineAlign="3" plussign="0" useMaxLineLengthForAutoWrap="1" rightDirectionSymbol=">" formatNumbers="0" decimals="3" leftDirectionSymbol="&lt;"/>
-      <placement predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" repeatDistance="0" quadOffset="4" geometryGenerator="" offsetType="1" lineAnchorType="0" overrunDistance="0" rotationUnit="AngleDegrees" maxCurvedCharAngleIn="25" dist="0" xOffset="0" rotationAngle="0" fitInPolygonOnly="0" allowDegraded="0" offsetUnits="MM" yOffset="0" geometryGeneratorType="PointGeometry" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorClipping="0" lineAnchorTextPoint="CenterOfText" lineAnchorPercent="0.5" layerType="PointGeometry" geometryGeneratorEnabled="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidWhole="0" overrunDistanceUnit="MM" preserveRotation="1" centroidInside="0" distUnits="MM" overlapHandling="PreventOverlap" placementFlags="10" distMapUnitScale="3x:0,0,0,0,0,0" priority="5" repeatDistanceUnits="MM" placement="6" maxCurvedCharAngleOut="-25" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" polygonPlacementFlags="2"/>
-      <rendering mergeLines="0" obstacleFactor="1" fontMaxPixelSize="10000" scaleMin="0" fontMinPixelSize="3" obstacle="1" fontLimitPixelSize="0" maxNumLabels="2000" scaleVisibility="0" labelPerPart="0" upsidedownLabels="0" obstacleType="1" zIndex="0" drawLabels="1" scaleMax="0" unplacedVisibility="0" limitNumLabels="0" minFeatureSize="0"/>
+      <text-format decimals="3" multilineAlign="3" plussign="0" addDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;" autoWrapLength="0" formatNumbers="0" wrapChar="" placeDirectionSymbol="0" rightDirectionSymbol=">" reverseDirectionSymbol="0"/>
+      <placement lineAnchorPercent="0.5" layerType="PointGeometry" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorClipping="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" fitInPolygonOnly="0" lineAnchorTextPoint="CenterOfText" xOffset="0" centroidInside="0" preserveRotation="1" polygonPlacementFlags="2" maxCurvedCharAngleOut="-25" geometryGenerator="" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" lineAnchorType="0" placementFlags="10" priority="5" yOffset="0" rotationUnit="AngleDegrees" geometryGeneratorType="PointGeometry" offsetUnits="MM" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" overrunDistanceUnit="MM" centroidWhole="0" repeatDistanceUnits="MM" repeatDistance="0" maxCurvedCharAngleIn="25" allowDegraded="0" overlapHandling="PreventOverlap" geometryGeneratorEnabled="0" distUnits="MM" offsetType="1" rotationAngle="0" overrunDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" placement="6"/>
+      <rendering fontMinPixelSize="3" fontMaxPixelSize="10000" scaleVisibility="0" unplacedVisibility="0" fontLimitPixelSize="0" obstacleFactor="1" obstacle="1" upsidedownLabels="0" obstacleType="1" zIndex="0" maxNumLabels="2000" limitNumLabels="0" scaleMin="0" mergeLines="0" drawLabels="1" minFeatureSize="0" labelPerPart="0" scaleMax="0"/>
       <dd_properties>
         <Option type="Map">
-          <Option name="name" value="" type="QString"/>
+          <Option value="" type="QString" name="name"/>
           <Option name="properties"/>
-          <Option name="type" value="collection" type="QString"/>
+          <Option value="collection" type="QString" name="type"/>
         </Option>
       </dd_properties>
       <callout type="simple">
         <Option type="Map">
-          <Option name="anchorPoint" value="pole_of_inaccessibility" type="QString"/>
-          <Option name="blendMode" value="0" type="int"/>
-          <Option name="ddProperties" type="Map">
-            <Option name="name" value="" type="QString"/>
+          <Option value="pole_of_inaccessibility" type="QString" name="anchorPoint"/>
+          <Option value="0" type="int" name="blendMode"/>
+          <Option type="Map" name="ddProperties">
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
-          <Option name="drawToAllParts" value="false" type="bool"/>
-          <Option name="enabled" value="0" type="QString"/>
-          <Option name="labelAnchorPoint" value="point_on_exterior" type="QString"/>
-          <Option name="lineSymbol" value="&lt;symbol alpha=&quot;1&quot; is_animated=&quot;0&quot; name=&quot;symbol&quot; frame_rate=&quot;10&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot; force_rhr=&quot;0&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; value=&quot;&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; value=&quot;collection&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; id=&quot;{0c8eac40-f221-4192-b9ac-871211eed496}&quot; locked=&quot;0&quot; enabled=&quot;1&quot; class=&quot;SimpleLine&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;capstyle&quot; value=&quot;square&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;customdash&quot; value=&quot;5;2&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;customdash_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;joinstyle&quot; value=&quot;bevel&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_color&quot; value=&quot;60,60,60,255&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_style&quot; value=&quot;solid&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_width&quot; value=&quot;0.3&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;line_width_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;offset&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;offset_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;ring_filter&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_end&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_start&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; value=&quot;MM&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;use_custom_dash&quot; value=&quot;0&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; value=&quot;&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; value=&quot;collection&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString"/>
-          <Option name="minLength" value="0" type="double"/>
-          <Option name="minLengthMapUnitScale" value="3x:0,0,0,0,0,0" type="QString"/>
-          <Option name="minLengthUnit" value="MM" type="QString"/>
-          <Option name="offsetFromAnchor" value="0" type="double"/>
-          <Option name="offsetFromAnchorMapUnitScale" value="3x:0,0,0,0,0,0" type="QString"/>
-          <Option name="offsetFromAnchorUnit" value="MM" type="QString"/>
-          <Option name="offsetFromLabel" value="0" type="double"/>
-          <Option name="offsetFromLabelMapUnitScale" value="3x:0,0,0,0,0,0" type="QString"/>
-          <Option name="offsetFromLabelUnit" value="MM" type="QString"/>
+          <Option value="false" type="bool" name="drawToAllParts"/>
+          <Option value="0" type="QString" name="enabled"/>
+          <Option value="point_on_exterior" type="QString" name="labelAnchorPoint"/>
+          <Option value="&lt;symbol clip_to_extent=&quot;1&quot; frame_rate=&quot;10&quot; force_rhr=&quot;0&quot; is_animated=&quot;0&quot; type=&quot;line&quot; name=&quot;symbol&quot; alpha=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; type=&quot;QString&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; type=&quot;QString&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer id=&quot;{0c8eac40-f221-4192-b9ac-871211eed496}&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot; pass=&quot;0&quot; enabled=&quot;1&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;align_dash_pattern&quot;/>&lt;Option value=&quot;square&quot; type=&quot;QString&quot; name=&quot;capstyle&quot;/>&lt;Option value=&quot;5;2&quot; type=&quot;QString&quot; name=&quot;customdash&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;customdash_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;customdash_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;dash_pattern_offset&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;dash_pattern_offset_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;draw_inside_polygon&quot;/>&lt;Option value=&quot;bevel&quot; type=&quot;QString&quot; name=&quot;joinstyle&quot;/>&lt;Option value=&quot;60,60,60,255&quot; type=&quot;QString&quot; name=&quot;line_color&quot;/>&lt;Option value=&quot;solid&quot; type=&quot;QString&quot; name=&quot;line_style&quot;/>&lt;Option value=&quot;0.3&quot; type=&quot;QString&quot; name=&quot;line_width&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;line_width_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;offset&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;offset_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;offset_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;ring_filter&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;trim_distance_end&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;trim_distance_end_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;trim_distance_end_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;trim_distance_start&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;trim_distance_start_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;trim_distance_start_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;tweak_dash_pattern_on_corners&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;use_custom_dash&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;width_map_unit_scale&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; type=&quot;QString&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; type=&quot;QString&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString" name="lineSymbol"/>
+          <Option value="0" type="double" name="minLength"/>
+          <Option value="3x:0,0,0,0,0,0" type="QString" name="minLengthMapUnitScale"/>
+          <Option value="MM" type="QString" name="minLengthUnit"/>
+          <Option value="0" type="double" name="offsetFromAnchor"/>
+          <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromAnchorMapUnitScale"/>
+          <Option value="MM" type="QString" name="offsetFromAnchorUnit"/>
+          <Option value="0" type="double" name="offsetFromLabel"/>
+          <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromLabelMapUnitScale"/>
+          <Option value="MM" type="QString" name="offsetFromLabelUnit"/>
         </Option>
       </callout>
     </settings>
   </labeling>
   <customproperties>
     <Option type="Map">
-      <Option name="dualview/previewExpressions" type="List">
+      <Option type="List" name="dualview/previewExpressions">
         <Option value="&quot;gazetted_names&quot;" type="QString"/>
       </Option>
-      <Option name="embeddedWidgets/count" value="0" type="int"/>
+      <Option value="0" type="int" name="embeddedWidgets/count"/>
       <Option name="variableNames"/>
       <Option name="variableValues"/>
     </Option>
@@ -357,53 +401,53 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory width="15" spacingUnit="MM" scaleDependency="Area" penWidth="0" sizeType="MM" backgroundAlpha="255" direction="0" lineSizeType="MM" opacity="1" rotationOffset="270" labelPlacementMethod="XHeight" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0" minimumSize="0" showAxis="1" scaleBasedVisibility="0" backgroundColor="#ffffff" height="15" penAlpha="255" enabled="0" diagramOrientation="Up" maxScaleDenominator="1e+08" minScaleDenominator="0" sizeScale="3x:0,0,0,0,0,0" barWidth="5" spacing="5" spacingUnitScale="3x:0,0,0,0,0,0">
-      <fontProperties bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-      <attribute field="" colorOpacity="1" color="#000000" label=""/>
+    <DiagramCategory penWidth="0" height="15" minScaleDenominator="0" maxScaleDenominator="1e+08" spacing="5" labelPlacementMethod="XHeight" scaleBasedVisibility="0" barWidth="5" rotationOffset="270" sizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" spacingUnitScale="3x:0,0,0,0,0,0" diagramOrientation="Up" direction="0" showAxis="1" lineSizeType="MM" spacingUnit="MM" scaleDependency="Area" penColor="#000000" opacity="1" minimumSize="0" backgroundAlpha="255" width="15" backgroundColor="#ffffff" enabled="0">
+      <fontProperties bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+      <attribute color="#000000" label="" colorOpacity="1" field=""/>
       <axisSymbol>
-        <symbol alpha="1" is_animated="0" name="" frame_rate="10" clip_to_extent="1" type="line" force_rhr="0">
+        <symbol clip_to_extent="1" frame_rate="10" force_rhr="0" is_animated="0" type="line" name="" alpha="1">
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" value="" type="QString"/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
-          <layer pass="0" id="{da953599-423e-4998-ba40-43e6f7c88af2}" locked="0" enabled="1" class="SimpleLine">
+          <layer id="{da953599-423e-4998-ba40-43e6f7c88af2}" class="SimpleLine" locked="0" pass="0" enabled="1">
             <Option type="Map">
-              <Option name="align_dash_pattern" value="0" type="QString"/>
-              <Option name="capstyle" value="square" type="QString"/>
-              <Option name="customdash" value="5;2" type="QString"/>
-              <Option name="customdash_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="customdash_unit" value="MM" type="QString"/>
-              <Option name="dash_pattern_offset" value="0" type="QString"/>
-              <Option name="dash_pattern_offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="dash_pattern_offset_unit" value="MM" type="QString"/>
-              <Option name="draw_inside_polygon" value="0" type="QString"/>
-              <Option name="joinstyle" value="bevel" type="QString"/>
-              <Option name="line_color" value="35,35,35,255" type="QString"/>
-              <Option name="line_style" value="solid" type="QString"/>
-              <Option name="line_width" value="0.26" type="QString"/>
-              <Option name="line_width_unit" value="MM" type="QString"/>
-              <Option name="offset" value="0" type="QString"/>
-              <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="offset_unit" value="MM" type="QString"/>
-              <Option name="ring_filter" value="0" type="QString"/>
-              <Option name="trim_distance_end" value="0" type="QString"/>
-              <Option name="trim_distance_end_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="trim_distance_end_unit" value="MM" type="QString"/>
-              <Option name="trim_distance_start" value="0" type="QString"/>
-              <Option name="trim_distance_start_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
-              <Option name="trim_distance_start_unit" value="MM" type="QString"/>
-              <Option name="tweak_dash_pattern_on_corners" value="0" type="QString"/>
-              <Option name="use_custom_dash" value="0" type="QString"/>
-              <Option name="width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+              <Option value="0" type="QString" name="align_dash_pattern"/>
+              <Option value="square" type="QString" name="capstyle"/>
+              <Option value="5;2" type="QString" name="customdash"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="customdash_map_unit_scale"/>
+              <Option value="MM" type="QString" name="customdash_unit"/>
+              <Option value="0" type="QString" name="dash_pattern_offset"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="dash_pattern_offset_map_unit_scale"/>
+              <Option value="MM" type="QString" name="dash_pattern_offset_unit"/>
+              <Option value="0" type="QString" name="draw_inside_polygon"/>
+              <Option value="bevel" type="QString" name="joinstyle"/>
+              <Option value="35,35,35,255" type="QString" name="line_color"/>
+              <Option value="solid" type="QString" name="line_style"/>
+              <Option value="0.26" type="QString" name="line_width"/>
+              <Option value="MM" type="QString" name="line_width_unit"/>
+              <Option value="0" type="QString" name="offset"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+              <Option value="MM" type="QString" name="offset_unit"/>
+              <Option value="0" type="QString" name="ring_filter"/>
+              <Option value="0" type="QString" name="trim_distance_end"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_end_map_unit_scale"/>
+              <Option value="MM" type="QString" name="trim_distance_end_unit"/>
+              <Option value="0" type="QString" name="trim_distance_start"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="trim_distance_start_map_unit_scale"/>
+              <Option value="MM" type="QString" name="trim_distance_start_unit"/>
+              <Option value="0" type="QString" name="tweak_dash_pattern_on_corners"/>
+              <Option value="0" type="QString" name="use_custom_dash"/>
+              <Option value="3x:0,0,0,0,0,0" type="QString" name="width_map_unit_scale"/>
             </Option>
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" value="" type="QString"/>
+                <Option value="" type="QString" name="name"/>
                 <Option name="properties"/>
-                <Option name="type" value="collection" type="QString"/>
+                <Option value="collection" type="QString" name="type"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -411,2750 +455,2849 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings obstacle="0" dist="0" zIndex="0" priority="0" placement="0" showAll="1" linePlacementFlags="18">
+  <DiagramLayerSettings placement="0" obstacle="0" dist="0" showAll="1" priority="0" linePlacementFlags="18" zIndex="0">
     <properties>
       <Option type="Map">
-        <Option name="name" value="" type="QString"/>
+        <Option value="" type="QString" name="name"/>
         <Option name="properties"/>
-        <Option name="type" value="collection" type="QString"/>
+        <Option value="collection" type="QString" name="type"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
-  <legend showLabelLegend="0" type="default-vector"/>
+  <legend type="default-vector" showLabelLegend="0"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field name="fid" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="fid">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="date_time_start" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="date_time_start">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="mergin_user" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="mergin_user">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="camera_id" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="camera_id">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gps_id" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gps_id">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gazetted_names" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gazetted_names">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="local_name" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="local_name">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="temperature_c" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="temperature_c">
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option name="AllowNull" value="true" type="bool"/>
-            <Option name="Max" value="30" type="double"/>
-            <Option name="Min" value="0" type="double"/>
-            <Option name="Precision" value="0" type="int"/>
-            <Option name="Step" value="0.1" type="double"/>
-            <Option name="Style" value="SpinBox" type="QString"/>
+            <Option value="true" type="bool" name="AllowNull"/>
+            <Option value="30" type="double" name="Max"/>
+            <Option value="0" type="double" name="Min"/>
+            <Option value="0" type="int" name="Precision"/>
+            <Option value="0.1" type="double" name="Step"/>
+            <Option value="SpinBox" type="QString" name="Style"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="p_h" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="p_h">
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option name="AllowNull" value="true" type="bool"/>
-            <Option name="Max" value="14" type="double"/>
-            <Option name="Min" value="0" type="double"/>
-            <Option name="Precision" value="1" type="int"/>
-            <Option name="Step" value="0.1" type="double"/>
-            <Option name="Style" value="SpinBox" type="QString"/>
+            <Option value="true" type="bool" name="AllowNull"/>
+            <Option value="14" type="double" name="Max"/>
+            <Option value="0" type="double" name="Min"/>
+            <Option value="1" type="int" name="Precision"/>
+            <Option value="0.1" type="double" name="Step"/>
+            <Option value="SpinBox" type="QString" name="Style"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="conductivity_m_s_cm" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="conductivity_m_s_cm">
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option name="AllowNull" value="true" type="bool"/>
-            <Option name="Max" value="9999" type="int"/>
-            <Option name="Min" value="0" type="int"/>
-            <Option name="Precision" value="0" type="int"/>
-            <Option name="Step" value="1" type="int"/>
-            <Option name="Style" value="SpinBox" type="QString"/>
+            <Option value="true" type="bool" name="AllowNull"/>
+            <Option value="9999" type="int" name="Max"/>
+            <Option value="0" type="int" name="Min"/>
+            <Option value="0" type="int" name="Precision"/>
+            <Option value="1" type="int" name="Step"/>
+            <Option value="SpinBox" type="QString" name="Style"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="turbidity" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="turbidity">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="Lightly Turbid" value="Lightly Turbid" type="QString"/>
+                <Option value="Lightly Turbid" type="QString" name="Lightly Turbid"/>
               </Option>
               <Option type="Map">
-                <Option name="Moderately Turbid" value="Moderately Turbid" type="QString"/>
+                <Option value="Moderately Turbid" type="QString" name="Moderately Turbid"/>
               </Option>
               <Option type="Map">
-                <Option name="Turbid" value="Turbid" type="QString"/>
+                <Option value="Turbid" type="QString" name="Turbid"/>
               </Option>
               <Option type="Map">
-                <Option name="clear" value="clear" type="QString"/>
+                <Option value="clear" type="QString" name="clear"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="stage" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="stage">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="high" value="high" type="QString"/>
+                <Option value="high" type="QString" name="high"/>
               </Option>
               <Option type="Map">
-                <Option name="low" value="low" type="QString"/>
+                <Option value="low" type="QString" name="low"/>
               </Option>
               <Option type="Map">
-                <Option name="moderate" value="moderate" type="QString"/>
+                <Option value="moderate" type="QString" name="moderate"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="no_visible_channel" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="no_visible_channel">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="dewatered_dry_int_channel" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="dewatered_dry_int_channel">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="utm_zone" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="utm_zone">
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option name="AllowNull" value="true" type="bool"/>
-            <Option name="Max" value="99" type="double"/>
-            <Option name="Min" value="0" type="double"/>
-            <Option name="Precision" value="0" type="int"/>
-            <Option name="Step" value="1" type="double"/>
-            <Option name="Style" value="SpinBox" type="QString"/>
+            <Option value="true" type="bool" name="AllowNull"/>
+            <Option value="99" type="double" name="Max"/>
+            <Option value="0" type="double" name="Min"/>
+            <Option value="0" type="int" name="Precision"/>
+            <Option value="1" type="double" name="Step"/>
+            <Option value="SpinBox" type="QString" name="Style"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="utm_easting" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="utm_easting">
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option name="AllowNull" value="true" type="bool"/>
-            <Option name="Max" value="999999" type="double"/>
-            <Option name="Min" value="0" type="double"/>
-            <Option name="Precision" value="0" type="int"/>
-            <Option name="Step" value="1" type="double"/>
-            <Option name="Style" value="SpinBox" type="QString"/>
+            <Option value="true" type="bool" name="AllowNull"/>
+            <Option value="999999" type="double" name="Max"/>
+            <Option value="0" type="double" name="Min"/>
+            <Option value="0" type="int" name="Precision"/>
+            <Option value="1" type="double" name="Step"/>
+            <Option value="SpinBox" type="QString" name="Style"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="utm_northing" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="utm_northing">
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option name="AllowNull" value="true" type="bool"/>
-            <Option name="Max" value="9999999" type="double"/>
-            <Option name="Min" value="0" type="double"/>
-            <Option name="Precision" value="0" type="int"/>
-            <Option name="Step" value="1" type="double"/>
-            <Option name="Style" value="SpinBox" type="QString"/>
+            <Option value="true" type="bool" name="AllowNull"/>
+            <Option value="9999999" type="double" name="Max"/>
+            <Option value="0" type="double" name="Min"/>
+            <Option value="0" type="int" name="Precision"/>
+            <Option value="1" type="double" name="Step"/>
+            <Option value="SpinBox" type="QString" name="Style"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="channel_width_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="channel_width_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m-channel_width_m_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m-channel_width_m_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_2" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_2">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="channel_width_m_2" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="channel_width_m_2">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_2-channel_width_m_2_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_2-channel_width_m_2_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_3" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_3">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="channel_width_m_3" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="channel_width_m_3">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_3-channel_width_m_3_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_3-channel_width_m_3_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_4" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_4">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="channel_width_m_4" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="channel_width_m_4">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_4-channel_width_m_4_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_4-channel_width_m_4_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_5" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_5">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="channel_width_m_5" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="channel_width_m_5">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_5-channel_width_m_5_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_5-channel_width_m_5_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_6" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_6">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="channel_width_m_6" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="channel_width_m_6">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_6-channel_width_m_6_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_6-channel_width_m_6_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_7" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_7">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="channel_width_m_7" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="channel_width_m_7">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="wetted_width_m_7-channel_width_m_7_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="wetted_width_m_7-channel_width_m_7_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gradient_number_1_percent" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gradient_number_1_percent">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gradient_number_1_percent_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gradient_number_1_percent_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gradient_number_2_percent" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gradient_number_2_percent">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gradient_number_2_percent_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gradient_number_2_percent_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gradient" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gradient">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gradient_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gradient_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="true" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="true" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gradient_number_4_percent" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gradient_number_4_percent">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gradient_number_4_percent_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gradient_number_4_percent_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_2" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_2">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_2_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_2_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_3" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_3">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_3_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_3_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_4" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_4">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_4_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_4_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_5" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_5">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_5_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_5_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_6" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_6">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_6_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_6_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_7" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_7">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="residual_pool_depth_m_7_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="residual_pool_depth_m_7_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bankfull_depth_number_1_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bankfull_depth_number_1_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bankfull_depth_number_1_m_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bankfull_depth_number_1_m_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bankfull_depth_number_2_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bankfull_depth_number_2_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bankfull_depth_number_2_m_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bankfull_depth_number_2_m_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bankfull_depth_number_3_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bankfull_depth_number_3_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bankfull_depth_number_3_m_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bankfull_depth_number_3_m_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bankfull_depth_number_4_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bankfull_depth_number_4_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bankfull_depth_number_4_m_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bankfull_depth_number_4_m_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bed_material_dominant" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bed_material_dominant">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="large rock/bedrock" value="large rock/bedrock" type="QString"/>
+                <Option value="large rock/bedrock" type="QString" name="large rock/bedrock"/>
               </Option>
               <Option type="Map">
-                <Option name="gravels" value="gravels" type="QString"/>
+                <Option value="gravels" type="QString" name="gravels"/>
               </Option>
               <Option type="Map">
-                <Option name="fines" value="fines" type="QString"/>
+                <Option value="fines" type="QString" name="fines"/>
               </Option>
               <Option type="Map">
-                <Option name="cobbles" value="cobbles" type="QString"/>
+                <Option value="cobbles" type="QString" name="cobbles"/>
               </Option>
               <Option type="Map">
-                <Option name="boulders" value="boulders" type="QString"/>
+                <Option value="boulders" type="QString" name="boulders"/>
               </Option>
               <Option type="Map">
-                <Option name="anthropogenic" value="anthropogenic" type="QString"/>
+                <Option value="anthropogenic" type="QString" name="anthropogenic"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="bed_material_subdominant" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="bed_material_subdominant">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="anthropogenic" value="anthropogenic" type="QString"/>
+                <Option value="anthropogenic" type="QString" name="anthropogenic"/>
               </Option>
               <Option type="Map">
-                <Option name="boulders" value="boulders" type="QString"/>
+                <Option value="boulders" type="QString" name="boulders"/>
               </Option>
               <Option type="Map">
-                <Option name="cobbles" value="cobbles" type="QString"/>
+                <Option value="cobbles" type="QString" name="cobbles"/>
               </Option>
               <Option type="Map">
-                <Option name="fines" value="fines" type="QString"/>
+                <Option value="fines" type="QString" name="fines"/>
               </Option>
               <Option type="Map">
-                <Option name="gravels" value="gravels" type="QString"/>
+                <Option value="gravels" type="QString" name="gravels"/>
               </Option>
               <Option type="Map">
-                <Option name="large rock/bedrock" value="large rock/bedrock" type="QString"/>
+                <Option value="large rock/bedrock" type="QString" name="large rock/bedrock"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="comments" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="comments">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="true" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="true" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="comments_2" configurationFlags="None">
-      <editWidget type="TextEdit">
+    <field configurationFlags="NoFlag" name="habitat_value_rating">
+      <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="true" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option type="List" name="map">
+              <Option type="Map">
+                <Option value="high" type="QString" name="high"/>
+              </Option>
+              <Option type="Map">
+                <Option value="medium" type="QString" name="medium"/>
+              </Option>
+              <Option type="Map">
+                <Option value="low" type="QString" name="low"/>
+              </Option>
+            </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="habitat_value_rating" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="reference_number" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="reference_number">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="reach_number" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="reach_number">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="site_number" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="site_number">
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option name="AllowNull" value="true" type="bool"/>
-            <Option name="Max" value="2147483647" type="int"/>
-            <Option name="Min" value="-2147483648" type="int"/>
-            <Option name="Precision" value="0" type="int"/>
-            <Option name="Step" value="1" type="int"/>
-            <Option name="Style" value="SpinBox" type="QString"/>
+            <Option value="true" type="bool" name="AllowNull"/>
+            <Option value="2147483647" type="int" name="Max"/>
+            <Option value="-2147483648" type="int" name="Min"/>
+            <Option value="0" type="int" name="Precision"/>
+            <Option value="1" type="int" name="Step"/>
+            <Option value="SpinBox" type="QString" name="Style"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="tributaries" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="tributaries">
       <editWidget type="CheckBox">
         <config>
           <Option type="Map">
-            <Option name="CheckedState" value="" type="QString"/>
-            <Option name="TextDisplayMethod" value="0" type="int"/>
-            <Option name="UncheckedState" value="" type="QString"/>
+            <Option value="" type="QString" name="CheckedState"/>
+            <Option value="0" type="int" name="TextDisplayMethod"/>
+            <Option value="" type="QString" name="UncheckedState"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="total_cover" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="total_cover">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="abundant" value="abundant" type="QString"/>
+                <Option value="abundant" type="QString" name="abundant"/>
               </Option>
               <Option type="Map">
-                <Option name="moderate" value="moderate" type="QString"/>
+                <Option value="moderate" type="QString" name="moderate"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="trace" value="trace" type="QString"/>
+                <Option value="trace" type="QString" name="trace"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="small_woody_debris" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="small_woody_debris">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="dominant" value="dominant" type="QString"/>
+                <Option value="dominant" type="QString" name="dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="sub-dominant" value="sub-dominant" type="QString"/>
+                <Option value="sub-dominant" type="QString" name="sub-dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="trace" value="trace" type="QString"/>
+                <Option value="trace" type="QString" name="trace"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="large_woody_debris" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="large_woody_debris">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="dominant" value="dominant" type="QString"/>
+                <Option value="dominant" type="QString" name="dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="sub-dominant" value="sub-dominant" type="QString"/>
+                <Option value="sub-dominant" type="QString" name="sub-dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="trace" value="trace" type="QString"/>
+                <Option value="trace" type="QString" name="trace"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="boulders" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="boulders">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="dominant" value="dominant" type="QString"/>
+                <Option value="dominant" type="QString" name="dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="sub-dominant" value="sub-dominant" type="QString"/>
+                <Option value="sub-dominant" type="QString" name="sub-dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="trace" value="trace" type="QString"/>
+                <Option value="trace" type="QString" name="trace"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="undercut_banks" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="undercut_banks">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="dominant" value="dominant" type="QString"/>
+                <Option value="dominant" type="QString" name="dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="sub-dominant" value="sub-dominant" type="QString"/>
+                <Option value="sub-dominant" type="QString" name="sub-dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="trace" value="trace" type="QString"/>
+                <Option value="trace" type="QString" name="trace"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="deep_pools" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="deep_pools">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="dominant" value="dominant" type="QString"/>
+                <Option value="dominant" type="QString" name="dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="sub-dominant" value="sub-dominant" type="QString"/>
+                <Option value="sub-dominant" type="QString" name="sub-dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="trace" value="trace" type="QString"/>
+                <Option value="trace" type="QString" name="trace"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="overhanging_vegetation" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="overhanging_vegetation">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="dominant" value="dominant" type="QString"/>
+                <Option value="dominant" type="QString" name="dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="sub-dominant" value="sub-dominant" type="QString"/>
+                <Option value="sub-dominant" type="QString" name="sub-dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="trace" value="trace" type="QString"/>
+                <Option value="trace" type="QString" name="trace"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="instream_vegetation" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="instream_vegetation">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="dominant" value="dominant" type="QString"/>
+                <Option value="dominant" type="QString" name="dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="sub-dominant" value="sub-dominant" type="QString"/>
+                <Option value="sub-dominant" type="QString" name="sub-dominant"/>
               </Option>
               <Option type="Map">
-                <Option name="trace" value="trace" type="QString"/>
+                <Option value="trace" type="QString" name="trace"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="crown_closure" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="crown_closure">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="0" value="0" type="QString"/>
+                <Option value="0" type="QString" name="0"/>
               </Option>
               <Option type="Map">
-                <Option name="1-20%" value="1-20%" type="QString"/>
+                <Option value="1-20%" type="QString" name="1-20%"/>
               </Option>
               <Option type="Map">
-                <Option name="21-40%" value="21-40%" type="QString"/>
+                <Option value="21-40%" type="QString" name="21-40%"/>
               </Option>
               <Option type="Map">
-                <Option name="41-70%" value="41-70%" type="QString"/>
+                <Option value="41-70%" type="QString" name="41-70%"/>
               </Option>
               <Option type="Map">
-                <Option name="71-90%" value="71-90%" type="QString"/>
+                <Option value="71-90%" type="QString" name="71-90%"/>
               </Option>
               <Option type="Map">
-                <Option name=">90%" value=">90%" type="QString"/>
+                <Option value=">90%" type="QString" name=">90%"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="functional_lwd" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="functional_lwd">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="abundant" value="abundant" type="QString"/>
+                <Option value="abundant" type="QString" name="abundant"/>
               </Option>
               <Option type="Map">
-                <Option name="few" value="few" type="QString"/>
+                <Option value="few" type="QString" name="few"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="lwd_distribution" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="lwd_distribution">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="clumped" value="clumped" type="QString"/>
+                <Option value="clumped" type="QString" name="clumped"/>
               </Option>
               <Option type="Map">
-                <Option name="evenly distributed" value="evenly distributed" type="QString"/>
+                <Option value="evenly distributed" type="QString" name="evenly distributed"/>
               </Option>
               <Option type="Map">
-                <Option name="not applicable" value="not applicable" type="QString"/>
+                <Option value="not applicable" type="QString" name="not applicable"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="instream_vegetation_type" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="instream_vegetation_type">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="algae" value="algae" type="QString"/>
+                <Option value="algae" type="QString" name="algae"/>
               </Option>
               <Option type="Map">
-                <Option name="mosses" value="mosses" type="QString"/>
+                <Option value="mosses" type="QString" name="mosses"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="vascular plants" value="vascular plants" type="QString"/>
+                <Option value="vascular plants" type="QString" name="vascular plants"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="l_bank_shape" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="l_bank_shape">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="V-shaped" value="V-shaped" type="QString"/>
+                <Option value="V-shaped" type="QString" name="V-shaped"/>
               </Option>
               <Option type="Map">
-                <Option name="overhanging bank" value="overhanging bank" type="QString"/>
+                <Option value="overhanging bank" type="QString" name="overhanging bank"/>
               </Option>
               <Option type="Map">
-                <Option name="sloping" value="sloping" type="QString"/>
+                <Option value="sloping" type="QString" name="sloping"/>
               </Option>
               <Option type="Map">
-                <Option name="undercut" value="undercut" type="QString"/>
+                <Option value="undercut" type="QString" name="undercut"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="l_bank_texture_dominant_1" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="l_bank_texture_dominant_1">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="anthropogenic" value="anthropogenic" type="QString"/>
+                <Option value="anthropogenic" type="QString" name="anthropogenic"/>
               </Option>
               <Option type="Map">
-                <Option name="boulders" value="boulders" type="QString"/>
+                <Option value="boulders" type="QString" name="boulders"/>
               </Option>
               <Option type="Map">
-                <Option name="cobbles" value="cobbles" type="QString"/>
+                <Option value="cobbles" type="QString" name="cobbles"/>
               </Option>
               <Option type="Map">
-                <Option name="fines" value="fines" type="QString"/>
+                <Option value="fines" type="QString" name="fines"/>
               </Option>
               <Option type="Map">
-                <Option name="gravels" value="gravels" type="QString"/>
+                <Option value="gravels" type="QString" name="gravels"/>
               </Option>
               <Option type="Map">
-                <Option name="large rock/bedrock" value="large rock/bedrock" type="QString"/>
+                <Option value="large rock/bedrock" type="QString" name="large rock/bedrock"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="l_bank_texture_dominant_2" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="l_bank_texture_dominant_2">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="anthropogenic" value="anthropogenic" type="QString"/>
+                <Option value="anthropogenic" type="QString" name="anthropogenic"/>
               </Option>
               <Option type="Map">
-                <Option name="boulders" value="boulders" type="QString"/>
+                <Option value="boulders" type="QString" name="boulders"/>
               </Option>
               <Option type="Map">
-                <Option name="cobbles" value="cobbles" type="QString"/>
+                <Option value="cobbles" type="QString" name="cobbles"/>
               </Option>
               <Option type="Map">
-                <Option name="fines" value="fines" type="QString"/>
+                <Option value="fines" type="QString" name="fines"/>
               </Option>
               <Option type="Map">
-                <Option name="gravels" value="gravels" type="QString"/>
+                <Option value="gravels" type="QString" name="gravels"/>
               </Option>
               <Option type="Map">
-                <Option name="large rock/bedrock" value="large rock/bedrock" type="QString"/>
+                <Option value="large rock/bedrock" type="QString" name="large rock/bedrock"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="l_bank_riparian_vegetation" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="l_bank_riparian_vegetation">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="coniferous forest" value="coniferous forest" type="QString"/>
+                <Option value="coniferous forest" type="QString" name="coniferous forest"/>
               </Option>
               <Option type="Map">
-                <Option name="deciduous forest" value="deciduous forest" type="QString"/>
+                <Option value="deciduous forest" type="QString" name="deciduous forest"/>
               </Option>
               <Option type="Map">
-                <Option name="grass" value="grass" type="QString"/>
+                <Option value="grass" type="QString" name="grass"/>
               </Option>
               <Option type="Map">
-                <Option name="mixed forest" value="mixed forest" type="QString"/>
+                <Option value="mixed forest" type="QString" name="mixed forest"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="shrubs" value="shrubs" type="QString"/>
+                <Option value="shrubs" type="QString" name="shrubs"/>
               </Option>
               <Option type="Map">
-                <Option name="wetland" value="wetland" type="QString"/>
+                <Option value="wetland" type="QString" name="wetland"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="l_bank_riparian_vegetation_stage" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="l_bank_riparian_vegetation_stage">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="initial" value="initial" type="QString"/>
+                <Option value="initial" type="QString" name="initial"/>
               </Option>
               <Option type="Map">
-                <Option name="mature forest" value="mature forest" type="QString"/>
+                <Option value="mature forest" type="QString" name="mature forest"/>
               </Option>
               <Option type="Map">
-                <Option name="not applicable" value="not applicable" type="QString"/>
+                <Option value="not applicable" type="QString" name="not applicable"/>
               </Option>
               <Option type="Map">
-                <Option name="pole-sapling" value="pole-sapling" type="QString"/>
+                <Option value="pole-sapling" type="QString" name="pole-sapling"/>
               </Option>
               <Option type="Map">
-                <Option name="shrub" value="shrub" type="QString"/>
+                <Option value="shrub" type="QString" name="shrub"/>
               </Option>
               <Option type="Map">
-                <Option name="young forest" value="young forest" type="QString"/>
+                <Option value="young forest" type="QString" name="young forest"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="r_bank_shape" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="r_bank_shape">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="V-shaped" value="V-shaped" type="QString"/>
+                <Option value="V-shaped" type="QString" name="V-shaped"/>
               </Option>
               <Option type="Map">
-                <Option name="overhanging bank" value="overhanging bank" type="QString"/>
+                <Option value="overhanging bank" type="QString" name="overhanging bank"/>
               </Option>
               <Option type="Map">
-                <Option name="sloping" value="sloping" type="QString"/>
+                <Option value="sloping" type="QString" name="sloping"/>
               </Option>
               <Option type="Map">
-                <Option name="undercut" value="undercut" type="QString"/>
+                <Option value="undercut" type="QString" name="undercut"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="r_bank_texture_dominant_1" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="r_bank_texture_dominant_1">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="anthropogenic" value="anthropogenic" type="QString"/>
+                <Option value="anthropogenic" type="QString" name="anthropogenic"/>
               </Option>
               <Option type="Map">
-                <Option name="boulders" value="boulders" type="QString"/>
+                <Option value="boulders" type="QString" name="boulders"/>
               </Option>
               <Option type="Map">
-                <Option name="cobbles" value="cobbles" type="QString"/>
+                <Option value="cobbles" type="QString" name="cobbles"/>
               </Option>
               <Option type="Map">
-                <Option name="fines" value="fines" type="QString"/>
+                <Option value="fines" type="QString" name="fines"/>
               </Option>
               <Option type="Map">
-                <Option name="gravels" value="gravels" type="QString"/>
+                <Option value="gravels" type="QString" name="gravels"/>
               </Option>
               <Option type="Map">
-                <Option name="large rock/bedrock" value="large rock/bedrock" type="QString"/>
+                <Option value="large rock/bedrock" type="QString" name="large rock/bedrock"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="r_bank_texture_dominant_2" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="r_bank_texture_dominant_2">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="anthropogenic" value="anthropogenic" type="QString"/>
+                <Option value="anthropogenic" type="QString" name="anthropogenic"/>
               </Option>
               <Option type="Map">
-                <Option name="boulders" value="boulders" type="QString"/>
+                <Option value="boulders" type="QString" name="boulders"/>
               </Option>
               <Option type="Map">
-                <Option name="cobbles" value="cobbles" type="QString"/>
+                <Option value="cobbles" type="QString" name="cobbles"/>
               </Option>
               <Option type="Map">
-                <Option name="fines" value="fines" type="QString"/>
+                <Option value="fines" type="QString" name="fines"/>
               </Option>
               <Option type="Map">
-                <Option name="gravels" value="gravels" type="QString"/>
+                <Option value="gravels" type="QString" name="gravels"/>
               </Option>
               <Option type="Map">
-                <Option name="large rock/bedrock" value="large rock/bedrock" type="QString"/>
+                <Option value="large rock/bedrock" type="QString" name="large rock/bedrock"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="r_bank_riparian_vegetation" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="r_bank_riparian_vegetation">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="coniferous forest" value="coniferous forest" type="QString"/>
+                <Option value="coniferous forest" type="QString" name="coniferous forest"/>
               </Option>
               <Option type="Map">
-                <Option name="deciduous forest" value="deciduous forest" type="QString"/>
+                <Option value="deciduous forest" type="QString" name="deciduous forest"/>
               </Option>
               <Option type="Map">
-                <Option name="grass" value="grass" type="QString"/>
+                <Option value="grass" type="QString" name="grass"/>
               </Option>
               <Option type="Map">
-                <Option name="mixed forest" value="mixed forest" type="QString"/>
+                <Option value="mixed forest" type="QString" name="mixed forest"/>
               </Option>
               <Option type="Map">
-                <Option name="none" value="none" type="QString"/>
+                <Option value="none" type="QString" name="none"/>
               </Option>
               <Option type="Map">
-                <Option name="shrubs" value="shrubs" type="QString"/>
+                <Option value="shrubs" type="QString" name="shrubs"/>
               </Option>
               <Option type="Map">
-                <Option name="wetland" value="wetland" type="QString"/>
+                <Option value="wetland" type="QString" name="wetland"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="r_bank_riparian_vegetation_stage" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="r_bank_riparian_vegetation_stage">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="initial" value="initial" type="QString"/>
+                <Option value="initial" type="QString" name="initial"/>
               </Option>
               <Option type="Map">
-                <Option name="mature forest" value="mature forest" type="QString"/>
+                <Option value="mature forest" type="QString" name="mature forest"/>
               </Option>
               <Option type="Map">
-                <Option name="not applicable" value="not applicable" type="QString"/>
+                <Option value="not applicable" type="QString" name="not applicable"/>
               </Option>
               <Option type="Map">
-                <Option name="pole-sapling" value="pole-sapling" type="QString"/>
+                <Option value="pole-sapling" type="QString" name="pole-sapling"/>
               </Option>
               <Option type="Map">
-                <Option name="shrub" value="shrub" type="QString"/>
+                <Option value="shrub" type="QString" name="shrub"/>
               </Option>
               <Option type="Map">
-                <Option name="young forest" value="young forest" type="QString"/>
+                <Option value="young forest" type="QString" name="young forest"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="d95_cm" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="d95_cm">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="d_cm" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="d_cm">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="morphology" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="morphology">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="cascade-pool" value="cascade-pool" type="QString"/>
+                <Option value="cascade-pool" type="QString" name="cascade-pool"/>
               </Option>
               <Option type="Map">
-                <Option name="large channel" value="large channel" type="QString"/>
+                <Option value="large channel" type="QString" name="large channel"/>
               </Option>
               <Option type="Map">
-                <Option name="riffle-pool" value="riffle-pool" type="QString"/>
+                <Option value="riffle-pool" type="QString" name="riffle-pool"/>
               </Option>
               <Option type="Map">
-                <Option name="step-pool" value="step-pool" type="QString"/>
+                <Option value="step-pool" type="QString" name="step-pool"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="channel_pattern" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="channel_pattern">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="irregular meanders" value="irregular meanders" type="QString"/>
+                <Option value="irregular meanders" type="QString" name="irregular meanders"/>
               </Option>
               <Option type="Map">
-                <Option name="irregular wandering" value="irregular wandering" type="QString"/>
+                <Option value="irregular wandering" type="QString" name="irregular wandering"/>
               </Option>
               <Option type="Map">
-                <Option name="regular meanders" value="regular meanders" type="QString"/>
+                <Option value="regular meanders" type="QString" name="regular meanders"/>
               </Option>
               <Option type="Map">
-                <Option name="sinuous" value="sinuous" type="QString"/>
+                <Option value="sinuous" type="QString" name="sinuous"/>
               </Option>
               <Option type="Map">
-                <Option name="straight" value="straight" type="QString"/>
+                <Option value="straight" type="QString" name="straight"/>
               </Option>
               <Option type="Map">
-                <Option name="tortuous meanders" value="tortuous meanders" type="QString"/>
+                <Option value="tortuous meanders" type="QString" name="tortuous meanders"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="coupling" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="coupling">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="Coupled" value="Coupled" type="QString"/>
+                <Option value="Coupled" type="QString" name="Coupled"/>
               </Option>
               <Option type="Map">
-                <Option name="Decoupled" value="Decoupled" type="QString"/>
+                <Option value="Decoupled" type="QString" name="Decoupled"/>
               </Option>
               <Option type="Map">
-                <Option name="Partially Coupled" value="Partially Coupled" type="QString"/>
+                <Option value="Partially Coupled" type="QString" name="Partially Coupled"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="confinement" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="confinement">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="confined" value="confined" type="QString"/>
+                <Option value="confined" type="QString" name="confined"/>
               </Option>
               <Option type="Map">
-                <Option name="entrenched" value="entrenched" type="QString"/>
+                <Option value="entrenched" type="QString" name="entrenched"/>
               </Option>
               <Option type="Map">
-                <Option name="frequently confined" value="frequently confined" type="QString"/>
+                <Option value="frequently confined" type="QString" name="frequently confined"/>
               </Option>
               <Option type="Map">
-                <Option name="not applicable" value="not applicable" type="QString"/>
+                <Option value="not applicable" type="QString" name="not applicable"/>
               </Option>
               <Option type="Map">
-                <Option name="occasionally confined" value="occasionally confined" type="QString"/>
+                <Option value="occasionally confined" type="QString" name="occasionally confined"/>
               </Option>
               <Option type="Map">
-                <Option name="unconfined" value="unconfined" type="QString"/>
+                <Option value="unconfined" type="QString" name="unconfined"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_type" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_type">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="LWD Jam" value="LWD Jam" type="QString"/>
+                <Option value="LWD Jam" type="QString" name="LWD Jam"/>
               </Option>
               <Option type="Map">
-                <Option name="Subsurface flow" value="Subsurface flow" type="QString"/>
+                <Option value="Subsurface flow" type="QString" name="Subsurface flow"/>
               </Option>
               <Option type="Map">
-                <Option name="beaver dam" value="beaver dam" type="QString"/>
+                <Option value="beaver dam" type="QString" name="beaver dam"/>
               </Option>
               <Option type="Map">
-                <Option name="bridge" value="bridge" type="QString"/>
+                <Option value="bridge" type="QString" name="bridge"/>
               </Option>
               <Option type="Map">
-                <Option name="canyon" value="canyon" type="QString"/>
+                <Option value="canyon" type="QString" name="canyon"/>
               </Option>
               <Option type="Map">
-                <Option name="cascade or Chute" value="cascade or Chute" type="QString"/>
+                <Option value="cascade or Chute" type="QString" name="cascade or Chute"/>
               </Option>
               <Option type="Map">
-                <Option name="conduit" value="conduit" type="QString"/>
+                <Option value="conduit" type="QString" name="conduit"/>
               </Option>
               <Option type="Map">
-                <Option name="crossing (general)" value="crossing (general)" type="QString"/>
+                <Option value="crossing (general)" type="QString" name="crossing (general)"/>
               </Option>
               <Option type="Map">
-                <Option name="culvert" value="culvert" type="QString"/>
+                <Option value="culvert" type="QString" name="culvert"/>
               </Option>
               <Option type="Map">
-                <Option name="dam (general)" value="dam (general)" type="QString"/>
+                <Option value="dam (general)" type="QString" name="dam (general)"/>
               </Option>
               <Option type="Map">
-                <Option name="dewatering" value="dewatering" type="QString"/>
+                <Option value="dewatering" type="QString" name="dewatering"/>
               </Option>
               <Option type="Map">
-                <Option name="ditch/diversion channel" value="ditch/diversion channel" type="QString"/>
+                <Option value="ditch/diversion channel" type="QString" name="ditch/diversion channel"/>
               </Option>
               <Option type="Map">
-                <Option name="enhancement (general unspecified)" value="enhancement (general unspecified)" type="QString"/>
+                <Option value="enhancement (general unspecified)" type="QString" name="enhancement (general unspecified)"/>
               </Option>
               <Option type="Map">
-                <Option name="erosion/sedimentation" value="erosion/sedimentation" type="QString"/>
+                <Option value="erosion/sedimentation" type="QString" name="erosion/sedimentation"/>
               </Option>
               <Option type="Map">
-                <Option name="falls" value="falls" type="QString"/>
+                <Option value="falls" type="QString" name="falls"/>
               </Option>
               <Option type="Map">
-                <Option name="fence" value="fence" type="QString"/>
+                <Option value="fence" type="QString" name="fence"/>
               </Option>
               <Option type="Map">
-                <Option name="fisheries sensitive zone" value="fisheries sensitive zone" type="QString"/>
+                <Option value="fisheries sensitive zone" type="QString" name="fisheries sensitive zone"/>
               </Option>
               <Option type="Map">
-                <Option name="fishway" value="fishway" type="QString"/>
+                <Option value="fishway" type="QString" name="fishway"/>
               </Option>
               <Option type="Map">
-                <Option name="ford" value="ford" type="QString"/>
+                <Option value="ford" type="QString" name="ford"/>
               </Option>
               <Option type="Map">
-                <Option name="groundwater (field evidence)" value="groundwater (field evidence)" type="QString"/>
+                <Option value="groundwater (field evidence)" type="QString" name="groundwater (field evidence)"/>
               </Option>
               <Option type="Map">
-                <Option name="hatchery" value="hatchery" type="QString"/>
+                <Option value="hatchery" type="QString" name="hatchery"/>
               </Option>
               <Option type="Map">
-                <Option name="hydro dam" value="hydro dam" type="QString"/>
+                <Option value="hydro dam" type="QString" name="hydro dam"/>
               </Option>
               <Option type="Map">
-                <Option name="landslide or bank sloughing" value="landslide or bank sloughing" type="QString"/>
+                <Option value="landslide or bank sloughing" type="QString" name="landslide or bank sloughing"/>
               </Option>
               <Option type="Map">
-                <Option name="livestock Water Supply" value="livestock Water Supply" type="QString"/>
+                <Option value="livestock Water Supply" type="QString" name="livestock Water Supply"/>
               </Option>
               <Option type="Map">
-                <Option name="rock outcrop" value="rock outcrop" type="QString"/>
+                <Option value="rock outcrop" type="QString" name="rock outcrop"/>
               </Option>
               <Option type="Map">
-                <Option name="sinkhole" value="sinkhole" type="QString"/>
+                <Option value="sinkhole" type="QString" name="sinkhole"/>
               </Option>
               <Option type="Map">
-                <Option name="slide - debris" value="slide - debris" type="QString"/>
+                <Option value="slide - debris" type="QString" name="slide - debris"/>
               </Option>
               <Option type="Map">
-                <Option name="slump" value="slump" type="QString"/>
+                <Option value="slump" type="QString" name="slump"/>
               </Option>
               <Option type="Map">
-                <Option name="spawning channel" value="spawning channel" type="QString"/>
+                <Option value="spawning channel" type="QString" name="spawning channel"/>
               </Option>
               <Option type="Map">
-                <Option name="spring" value="spring" type="QString"/>
+                <Option value="spring" type="QString" name="spring"/>
               </Option>
               <Option type="Map">
-                <Option name="tributary" value="tributary" type="QString"/>
+                <Option value="tributary" type="QString" name="tributary"/>
               </Option>
               <Option type="Map">
-                <Option name="velocity barrier" value="velocity barrier" type="QString"/>
+                <Option value="velocity barrier" type="QString" name="velocity barrier"/>
               </Option>
               <Option type="Map">
-                <Option name="wedge" value="wedge" type="QString"/>
+                <Option value="wedge" type="QString" name="wedge"/>
               </Option>
               <Option type="Map">
-                <Option name="&lt;NULL>" value="{2839923C-8B7D-419E-B84B-CA2FE9B80EC7}" type="QString"/>
+                <Option value="{2839923C-8B7D-419E-B84B-CA2FE9B80EC7}" type="QString" name="&lt;NULL>"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_height_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_height_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_length_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_length_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="crew_members" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="crew_members">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="gps_waypoint_number" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="gps_waypoint_number">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="site_length" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="site_length">
       <editWidget type="Range">
         <config>
           <Option type="Map">
-            <Option name="AllowNull" value="true" type="bool"/>
-            <Option name="Max" value="10000" type="int"/>
-            <Option name="Min" value="0" type="int"/>
-            <Option name="Precision" value="0" type="int"/>
-            <Option name="Step" value="1" type="int"/>
-            <Option name="Style" value="SpinBox" type="QString"/>
+            <Option value="true" type="bool" name="AllowNull"/>
+            <Option value="10000" type="int" name="Max"/>
+            <Option value="0" type="int" name="Min"/>
+            <Option value="0" type="int" name="Precision"/>
+            <Option value="1" type="int" name="Step"/>
+            <Option value="SpinBox" type="QString" name="Style"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_time" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_time">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_type_2" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_type_2">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="&lt;NULL>" value="{2839923C-8B7D-419E-B84B-CA2FE9B80EC7}" type="QString"/>
+                <Option value="{2839923C-8B7D-419E-B84B-CA2FE9B80EC7}" type="QString" name="&lt;NULL>"/>
               </Option>
               <Option type="Map">
-                <Option name="LWD Jam" value="LWD Jam" type="QString"/>
+                <Option value="LWD Jam" type="QString" name="LWD Jam"/>
               </Option>
               <Option type="Map">
-                <Option name="Subsurface flow" value="Subsurface flow" type="QString"/>
+                <Option value="Subsurface flow" type="QString" name="Subsurface flow"/>
               </Option>
               <Option type="Map">
-                <Option name="beaver dam" value="beaver dam" type="QString"/>
+                <Option value="beaver dam" type="QString" name="beaver dam"/>
               </Option>
               <Option type="Map">
-                <Option name="bridge" value="bridge" type="QString"/>
+                <Option value="bridge" type="QString" name="bridge"/>
               </Option>
               <Option type="Map">
-                <Option name="canyon" value="canyon" type="QString"/>
+                <Option value="canyon" type="QString" name="canyon"/>
               </Option>
               <Option type="Map">
-                <Option name="cascade or Chute" value="cascade or Chute" type="QString"/>
+                <Option value="cascade or Chute" type="QString" name="cascade or Chute"/>
               </Option>
               <Option type="Map">
-                <Option name="conduit" value="conduit" type="QString"/>
+                <Option value="conduit" type="QString" name="conduit"/>
               </Option>
               <Option type="Map">
-                <Option name="crossing (general)" value="crossing (general)" type="QString"/>
+                <Option value="crossing (general)" type="QString" name="crossing (general)"/>
               </Option>
               <Option type="Map">
-                <Option name="culvert" value="culvert" type="QString"/>
+                <Option value="culvert" type="QString" name="culvert"/>
               </Option>
               <Option type="Map">
-                <Option name="dam (general)" value="dam (general)" type="QString"/>
+                <Option value="dam (general)" type="QString" name="dam (general)"/>
               </Option>
               <Option type="Map">
-                <Option name="dewatering" value="dewatering" type="QString"/>
+                <Option value="dewatering" type="QString" name="dewatering"/>
               </Option>
               <Option type="Map">
-                <Option name="ditch/diversion channel" value="ditch/diversion channel" type="QString"/>
+                <Option value="ditch/diversion channel" type="QString" name="ditch/diversion channel"/>
               </Option>
               <Option type="Map">
-                <Option name="enhancement (general unspecified)" value="enhancement (general unspecified)" type="QString"/>
+                <Option value="enhancement (general unspecified)" type="QString" name="enhancement (general unspecified)"/>
               </Option>
               <Option type="Map">
-                <Option name="erosion/sedimentation" value="erosion/sedimentation" type="QString"/>
+                <Option value="erosion/sedimentation" type="QString" name="erosion/sedimentation"/>
               </Option>
               <Option type="Map">
-                <Option name="falls" value="falls" type="QString"/>
+                <Option value="falls" type="QString" name="falls"/>
               </Option>
               <Option type="Map">
-                <Option name="fence" value="fence" type="QString"/>
+                <Option value="fence" type="QString" name="fence"/>
               </Option>
               <Option type="Map">
-                <Option name="fisheries sensitive zone" value="fisheries sensitive zone" type="QString"/>
+                <Option value="fisheries sensitive zone" type="QString" name="fisheries sensitive zone"/>
               </Option>
               <Option type="Map">
-                <Option name="fishway" value="fishway" type="QString"/>
+                <Option value="fishway" type="QString" name="fishway"/>
               </Option>
               <Option type="Map">
-                <Option name="ford" value="ford" type="QString"/>
+                <Option value="ford" type="QString" name="ford"/>
               </Option>
               <Option type="Map">
-                <Option name="groundwater (field evidence)" value="groundwater (field evidence)" type="QString"/>
+                <Option value="groundwater (field evidence)" type="QString" name="groundwater (field evidence)"/>
               </Option>
               <Option type="Map">
-                <Option name="hatchery" value="hatchery" type="QString"/>
+                <Option value="hatchery" type="QString" name="hatchery"/>
               </Option>
               <Option type="Map">
-                <Option name="hydro dam" value="hydro dam" type="QString"/>
+                <Option value="hydro dam" type="QString" name="hydro dam"/>
               </Option>
               <Option type="Map">
-                <Option name="landslide or bank sloughing" value="landslide or bank sloughing" type="QString"/>
+                <Option value="landslide or bank sloughing" type="QString" name="landslide or bank sloughing"/>
               </Option>
               <Option type="Map">
-                <Option name="livestock Water Supply" value="livestock Water Supply" type="QString"/>
+                <Option value="livestock Water Supply" type="QString" name="livestock Water Supply"/>
               </Option>
               <Option type="Map">
-                <Option name="rock outcrop" value="rock outcrop" type="QString"/>
+                <Option value="rock outcrop" type="QString" name="rock outcrop"/>
               </Option>
               <Option type="Map">
-                <Option name="sinkhole" value="sinkhole" type="QString"/>
+                <Option value="sinkhole" type="QString" name="sinkhole"/>
               </Option>
               <Option type="Map">
-                <Option name="slide - debris" value="slide - debris" type="QString"/>
+                <Option value="slide - debris" type="QString" name="slide - debris"/>
               </Option>
               <Option type="Map">
-                <Option name="slump" value="slump" type="QString"/>
+                <Option value="slump" type="QString" name="slump"/>
               </Option>
               <Option type="Map">
-                <Option name="spawning channel" value="spawning channel" type="QString"/>
+                <Option value="spawning channel" type="QString" name="spawning channel"/>
               </Option>
               <Option type="Map">
-                <Option name="spring" value="spring" type="QString"/>
+                <Option value="spring" type="QString" name="spring"/>
               </Option>
               <Option type="Map">
-                <Option name="tributary" value="tributary" type="QString"/>
+                <Option value="tributary" type="QString" name="tributary"/>
               </Option>
               <Option type="Map">
-                <Option name="velocity barrier" value="velocity barrier" type="QString"/>
+                <Option value="velocity barrier" type="QString" name="velocity barrier"/>
               </Option>
               <Option type="Map">
-                <Option name="wedge" value="wedge" type="QString"/>
+                <Option value="wedge" type="QString" name="wedge"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_height_2_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_height_2_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_length_2_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_length_2_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_time_2" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_time_2">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_type_3" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_type_3">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="LWD Jam" value="LWD Jam" type="QString"/>
+                <Option value="LWD Jam" type="QString" name="LWD Jam"/>
               </Option>
               <Option type="Map">
-                <Option name="Subsurface flow" value="Subsurface flow" type="QString"/>
+                <Option value="Subsurface flow" type="QString" name="Subsurface flow"/>
               </Option>
               <Option type="Map">
-                <Option name="beaver dam" value="beaver dam" type="QString"/>
+                <Option value="beaver dam" type="QString" name="beaver dam"/>
               </Option>
               <Option type="Map">
-                <Option name="bridge" value="bridge" type="QString"/>
+                <Option value="bridge" type="QString" name="bridge"/>
               </Option>
               <Option type="Map">
-                <Option name="canyon" value="canyon" type="QString"/>
+                <Option value="canyon" type="QString" name="canyon"/>
               </Option>
               <Option type="Map">
-                <Option name="cascade or Chute" value="cascade or Chute" type="QString"/>
+                <Option value="cascade or Chute" type="QString" name="cascade or Chute"/>
               </Option>
               <Option type="Map">
-                <Option name="conduit" value="conduit" type="QString"/>
+                <Option value="conduit" type="QString" name="conduit"/>
               </Option>
               <Option type="Map">
-                <Option name="crossing (general)" value="crossing (general)" type="QString"/>
+                <Option value="crossing (general)" type="QString" name="crossing (general)"/>
               </Option>
               <Option type="Map">
-                <Option name="culvert" value="culvert" type="QString"/>
+                <Option value="culvert" type="QString" name="culvert"/>
               </Option>
               <Option type="Map">
-                <Option name="dam (general)" value="dam (general)" type="QString"/>
+                <Option value="dam (general)" type="QString" name="dam (general)"/>
               </Option>
               <Option type="Map">
-                <Option name="dewatering" value="dewatering" type="QString"/>
+                <Option value="dewatering" type="QString" name="dewatering"/>
               </Option>
               <Option type="Map">
-                <Option name="ditch/diversion channel" value="ditch/diversion channel" type="QString"/>
+                <Option value="ditch/diversion channel" type="QString" name="ditch/diversion channel"/>
               </Option>
               <Option type="Map">
-                <Option name="enhancement (general unspecified)" value="enhancement (general unspecified)" type="QString"/>
+                <Option value="enhancement (general unspecified)" type="QString" name="enhancement (general unspecified)"/>
               </Option>
               <Option type="Map">
-                <Option name="erosion/sedimentation" value="erosion/sedimentation" type="QString"/>
+                <Option value="erosion/sedimentation" type="QString" name="erosion/sedimentation"/>
               </Option>
               <Option type="Map">
-                <Option name="falls" value="falls" type="QString"/>
+                <Option value="falls" type="QString" name="falls"/>
               </Option>
               <Option type="Map">
-                <Option name="fence" value="fence" type="QString"/>
+                <Option value="fence" type="QString" name="fence"/>
               </Option>
               <Option type="Map">
-                <Option name="fisheries sensitive zone" value="fisheries sensitive zone" type="QString"/>
+                <Option value="fisheries sensitive zone" type="QString" name="fisheries sensitive zone"/>
               </Option>
               <Option type="Map">
-                <Option name="fishway" value="fishway" type="QString"/>
+                <Option value="fishway" type="QString" name="fishway"/>
               </Option>
               <Option type="Map">
-                <Option name="ford" value="ford" type="QString"/>
+                <Option value="ford" type="QString" name="ford"/>
               </Option>
               <Option type="Map">
-                <Option name="groundwater (field evidence)" value="groundwater (field evidence)" type="QString"/>
+                <Option value="groundwater (field evidence)" type="QString" name="groundwater (field evidence)"/>
               </Option>
               <Option type="Map">
-                <Option name="hatchery" value="hatchery" type="QString"/>
+                <Option value="hatchery" type="QString" name="hatchery"/>
               </Option>
               <Option type="Map">
-                <Option name="hydro dam" value="hydro dam" type="QString"/>
+                <Option value="hydro dam" type="QString" name="hydro dam"/>
               </Option>
               <Option type="Map">
-                <Option name="landslide or bank sloughing" value="landslide or bank sloughing" type="QString"/>
+                <Option value="landslide or bank sloughing" type="QString" name="landslide or bank sloughing"/>
               </Option>
               <Option type="Map">
-                <Option name="livestock Water Supply" value="livestock Water Supply" type="QString"/>
+                <Option value="livestock Water Supply" type="QString" name="livestock Water Supply"/>
               </Option>
               <Option type="Map">
-                <Option name="rock outcrop" value="rock outcrop" type="QString"/>
+                <Option value="rock outcrop" type="QString" name="rock outcrop"/>
               </Option>
               <Option type="Map">
-                <Option name="sinkhole" value="sinkhole" type="QString"/>
+                <Option value="sinkhole" type="QString" name="sinkhole"/>
               </Option>
               <Option type="Map">
-                <Option name="slide - debris" value="slide - debris" type="QString"/>
+                <Option value="slide - debris" type="QString" name="slide - debris"/>
               </Option>
               <Option type="Map">
-                <Option name="slump" value="slump" type="QString"/>
+                <Option value="slump" type="QString" name="slump"/>
               </Option>
               <Option type="Map">
-                <Option name="spawning channel" value="spawning channel" type="QString"/>
+                <Option value="spawning channel" type="QString" name="spawning channel"/>
               </Option>
               <Option type="Map">
-                <Option name="spring" value="spring" type="QString"/>
+                <Option value="spring" type="QString" name="spring"/>
               </Option>
               <Option type="Map">
-                <Option name="tributary" value="tributary" type="QString"/>
+                <Option value="tributary" type="QString" name="tributary"/>
               </Option>
               <Option type="Map">
-                <Option name="velocity barrier" value="velocity barrier" type="QString"/>
+                <Option value="velocity barrier" type="QString" name="velocity barrier"/>
               </Option>
               <Option type="Map">
-                <Option name="wedge" value="wedge" type="QString"/>
+                <Option value="wedge" type="QString" name="wedge"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_height_3_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_height_3_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_length_3_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_length_3_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_time_3" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_time_3">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option name="allow_null" value="true" type="bool"/>
-            <Option name="calendar_popup" value="false" type="bool"/>
-            <Option name="display_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_format" value="yyyy-MM-dd HH:mm:ss" type="QString"/>
-            <Option name="field_iso_format" value="false" type="bool"/>
+            <Option value="true" type="bool" name="allow_null"/>
+            <Option value="false" type="bool" name="calendar_popup"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="display_format"/>
+            <Option value="yyyy-MM-dd HH:mm:ss" type="QString" name="field_format"/>
+            <Option value="false" type="bool" name="field_iso_format"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="photo_gravel" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="photo_gravel">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option name="DocumentViewer" value="0" type="int"/>
-            <Option name="DocumentViewerHeight" value="0" type="int"/>
-            <Option name="DocumentViewerWidth" value="0" type="int"/>
-            <Option name="FileWidget" value="true" type="bool"/>
-            <Option name="FileWidgetButton" value="true" type="bool"/>
-            <Option name="FileWidgetFilter" value="" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="@project_home + '/ignore_mobile/photos'" type="QString"/>
-                  <Option name="type" value="3" type="int"/>
+            <Option value="0" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="propertyRootPath">
+                  <Option value="true" type="bool" name="active"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="expression"/>
+                  <Option value="3" type="int" name="type"/>
                 </Option>
               </Option>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
-            <Option name="RelativeStorage" value="1" type="int"/>
-            <Option name="StorageAuthConfigId" value="" type="QString"/>
-            <Option name="StorageMode" value="0" type="int"/>
-            <Option name="StorageType" value="" type="QString"/>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="photo_pool" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="photo_pool">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option name="DocumentViewer" value="0" type="int"/>
-            <Option name="DocumentViewerHeight" value="0" type="int"/>
-            <Option name="DocumentViewerWidth" value="0" type="int"/>
-            <Option name="FileWidget" value="true" type="bool"/>
-            <Option name="FileWidgetButton" value="true" type="bool"/>
-            <Option name="FileWidgetFilter" value="" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="@project_home + '/ignore_mobile/photos'" type="QString"/>
-                  <Option name="type" value="3" type="int"/>
+            <Option value="0" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="propertyRootPath">
+                  <Option value="true" type="bool" name="active"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="expression"/>
+                  <Option value="3" type="int" name="type"/>
                 </Option>
               </Option>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
-            <Option name="RelativeStorage" value="1" type="int"/>
-            <Option name="StorageAuthConfigId" value="" type="QString"/>
-            <Option name="StorageMode" value="0" type="int"/>
-            <Option name="StorageType" value="" type="QString"/>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="photo_typical_1" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="photo_typical_1">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option name="DocumentViewer" value="0" type="int"/>
-            <Option name="DocumentViewerHeight" value="0" type="int"/>
-            <Option name="DocumentViewerWidth" value="0" type="int"/>
-            <Option name="FileWidget" value="true" type="bool"/>
-            <Option name="FileWidgetButton" value="true" type="bool"/>
-            <Option name="FileWidgetFilter" value="" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="@project_home + '/ignore_mobile/photos'" type="QString"/>
-                  <Option name="type" value="3" type="int"/>
+            <Option value="0" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="propertyRootPath">
+                  <Option value="true" type="bool" name="active"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="expression"/>
+                  <Option value="3" type="int" name="type"/>
                 </Option>
               </Option>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
-            <Option name="RelativeStorage" value="1" type="int"/>
-            <Option name="StorageAuthConfigId" value="" type="QString"/>
-            <Option name="StorageMode" value="0" type="int"/>
-            <Option name="StorageType" value="" type="QString"/>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="photo_typical_2" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="photo_typical_2">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option name="DocumentViewer" value="0" type="int"/>
-            <Option name="DocumentViewerHeight" value="0" type="int"/>
-            <Option name="DocumentViewerWidth" value="0" type="int"/>
-            <Option name="FileWidget" value="true" type="bool"/>
-            <Option name="FileWidgetButton" value="true" type="bool"/>
-            <Option name="FileWidgetFilter" value="" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="@project_home + '/ignore_mobile/photos'" type="QString"/>
-                  <Option name="type" value="3" type="int"/>
+            <Option value="0" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="propertyRootPath">
+                  <Option value="true" type="bool" name="active"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="expression"/>
+                  <Option value="3" type="int" name="type"/>
                 </Option>
               </Option>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
-            <Option name="RelativeStorage" value="1" type="int"/>
-            <Option name="StorageAuthConfigId" value="" type="QString"/>
-            <Option name="StorageMode" value="0" type="int"/>
-            <Option name="StorageType" value="" type="QString"/>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="photo_extra_1" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="photo_extra1">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option name="DocumentViewer" value="0" type="int"/>
-            <Option name="DocumentViewerHeight" value="0" type="int"/>
-            <Option name="DocumentViewerWidth" value="0" type="int"/>
-            <Option name="FileWidget" value="true" type="bool"/>
-            <Option name="FileWidgetButton" value="true" type="bool"/>
-            <Option name="FileWidgetFilter" value="" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="@project_home + '/ignore_mobile/photos'" type="QString"/>
-                  <Option name="type" value="3" type="int"/>
-                </Option>
-              </Option>
-              <Option name="type" value="collection" type="QString"/>
+            <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="DefaultRoot"/>
+            <Option value="0" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
-            <Option name="RelativeStorage" value="1" type="int"/>
-            <Option name="StorageAuthConfigId" value="" type="QString"/>
-            <Option name="StorageMode" value="0" type="int"/>
-            <Option name="StorageType" value="" type="QString"/>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="photo_extra_1_tag" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="photo_extra1_tag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="photo_extra_2" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="photo_extra2">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option name="DocumentViewer" value="0" type="int"/>
-            <Option name="DocumentViewerHeight" value="0" type="int"/>
-            <Option name="DocumentViewerWidth" value="0" type="int"/>
-            <Option name="FileWidget" value="true" type="bool"/>
-            <Option name="FileWidgetButton" value="true" type="bool"/>
-            <Option name="FileWidgetFilter" value="" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="@project_home + '/ignore_mobile/photos'" type="QString"/>
-                  <Option name="type" value="3" type="int"/>
-                </Option>
-              </Option>
-              <Option name="type" value="collection" type="QString"/>
+            <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="DefaultRoot"/>
+            <Option value="1" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
-            <Option name="RelativeStorage" value="1" type="int"/>
-            <Option name="StorageAuthConfigId" value="" type="QString"/>
-            <Option name="StorageMode" value="0" type="int"/>
-            <Option name="StorageType" value="" type="QString"/>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="photo_extra_2_tag" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="photo_extra2_tag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="photo_card" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="photo_extra3">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option name="DocumentViewer" value="0" type="int"/>
-            <Option name="DocumentViewerHeight" value="0" type="int"/>
-            <Option name="DocumentViewerWidth" value="0" type="int"/>
-            <Option name="FileWidget" value="true" type="bool"/>
-            <Option name="FileWidgetButton" value="true" type="bool"/>
-            <Option name="FileWidgetFilter" value="" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option name="name" value="" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="@project_home + '/ignore_mobile/photos'" type="QString"/>
-                  <Option name="type" value="3" type="int"/>
+            <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="DefaultRoot"/>
+            <Option value="0" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra3_tag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra4">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="DefaultRoot"/>
+            <Option value="0" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra4_tag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra5">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="DefaultRoot"/>
+            <Option value="0" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra5_tag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_card">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="0" type="int" name="DocumentViewer"/>
+            <Option value="0" type="int" name="DocumentViewerHeight"/>
+            <Option value="0" type="int" name="DocumentViewerWidth"/>
+            <Option value="true" type="bool" name="FileWidget"/>
+            <Option value="true" type="bool" name="FileWidgetButton"/>
+            <Option value="" type="QString" name="FileWidgetFilter"/>
+            <Option type="Map" name="PropertyCollection">
+              <Option value="" type="QString" name="name"/>
+              <Option type="Map" name="properties">
+                <Option type="Map" name="propertyRootPath">
+                  <Option value="true" type="bool" name="active"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" type="QString" name="expression"/>
+                  <Option value="3" type="int" name="type"/>
                 </Option>
               </Option>
-              <Option name="type" value="collection" type="QString"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
-            <Option name="RelativeStorage" value="1" type="int"/>
-            <Option name="StorageAuthConfigId" value="" type="QString"/>
-            <Option name="StorageMode" value="0" type="int"/>
-            <Option name="StorageType" value="" type="QString"/>
+            <Option value="1" type="int" name="RelativeStorage"/>
+            <Option value="" type="QString" name="StorageAuthConfigId"/>
+            <Option value="0" type="int" name="StorageMode"/>
+            <Option value="" type="QString" name="StorageType"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="method_for_temperature" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="method_for_temperature">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="Hydrolab" value="Hydrolab" type="QString"/>
+                <Option value="Hydrolab" type="QString" name="Hydrolab"/>
               </Option>
               <Option type="Map">
-                <Option name="YSI" value="YSI" type="QString"/>
+                <Option value="YSI" type="QString" name="YSI"/>
               </Option>
               <Option type="Map">
-                <Option name="other" value="other" type="QString"/>
+                <Option value="other" type="QString" name="other"/>
               </Option>
               <Option type="Map">
-                <Option name="recording meter" value="recording meter" type="QString"/>
+                <Option value="recording meter" type="QString" name="recording meter"/>
               </Option>
               <Option type="Map">
-                <Option name="thermister" value="thermister" type="QString"/>
+                <Option value="thermister" type="QString" name="thermister"/>
               </Option>
               <Option type="Map">
-                <Option name="thermometer (alcohol)" value="thermometer (alcohol)" type="QString"/>
+                <Option value="thermometer (alcohol)" type="QString" name="thermometer (alcohol)"/>
               </Option>
               <Option type="Map">
-                <Option name="thermometer (mercury)" value="thermometer (mercury)" type="QString"/>
-              </Option>
-            </Option>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="method_for_conductivity" configurationFlags="None">
-      <editWidget type="ValueMap">
-        <config>
-          <Option type="Map">
-            <Option name="map" type="List">
-              <Option type="Map">
-                <Option name="Hydrolab" value="Hydrolab" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="YSI" value="YSI" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="other" value="other" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="recording meter" value="recording meter" type="QString"/>
+                <Option value="thermometer (mercury)" type="QString" name="thermometer (mercury)"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="utm_method" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="method_for_conductivity">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="GPS general" value="GPS general" type="QString"/>
+                <Option value="Hydrolab" type="QString" name="Hydrolab"/>
               </Option>
               <Option type="Map">
-                <Option name="aerial photo" value="aerial photo" type="QString"/>
+                <Option value="YSI" type="QString" name="YSI"/>
               </Option>
               <Option type="Map">
-                <Option name="geographic information system (GIS)" value="geographic information system (GIS)" type="QString"/>
+                <Option value="other" type="QString" name="other"/>
               </Option>
               <Option type="Map">
-                <Option name="map interpretation" value="map interpretation" type="QString"/>
+                <Option value="recording meter" type="QString" name="recording meter"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="method_for_channel_width" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="utm_method">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="aerial estimate" value="aerial estimate" type="QString"/>
+                <Option value="GPS general" type="QString" name="GPS general"/>
               </Option>
               <Option type="Map">
-                <Option name="aerial photo" value="aerial photo" type="QString"/>
+                <Option value="aerial photo" type="QString" name="aerial photo"/>
               </Option>
               <Option type="Map">
-                <Option name="geographic information System (GIS)" value="geographic information System (GIS)" type="QString"/>
+                <Option value="geographic information system (GIS)" type="QString" name="geographic information system (GIS)"/>
               </Option>
               <Option type="Map">
-                <Option name="ground estimate" value="ground estimate" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="hip-chain" value="hip-chain" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="laser range Finder" value="laser range Finder" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="map interpretation" value="map interpretation" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="metre stick" value="metre stick" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="metre tape" value="metre tape" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="other" value="other" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="range finder" value="range finder" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="standard range finder" value="standard range finder" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="surveyor's chain" value="surveyor's chain" type="QString"/>
+                <Option value="map interpretation" type="QString" name="map interpretation"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="method_for_wetted_width" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="method_for_channel_width">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="invalid"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="method_for_gradient" configurationFlags="None">
-      <editWidget type="ValueMap">
-        <config>
-          <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="abney type level" value="abney type level" type="QString"/>
+                <Option value="aerial estimate" type="QString" name="aerial estimate"/>
               </Option>
               <Option type="Map">
-                <Option name="clinometer" value="clinometer" type="QString"/>
+                <Option value="aerial photo" type="QString" name="aerial photo"/>
               </Option>
               <Option type="Map">
-                <Option name="geographic information system (GIS)" value="geographic information system (GIS)" type="QString"/>
+                <Option value="geographic information System (GIS)" type="QString" name="geographic information System (GIS)"/>
               </Option>
               <Option type="Map">
-                <Option name="ground estimate" value="ground estimate" type="QString"/>
+                <Option value="ground estimate" type="QString" name="ground estimate"/>
               </Option>
               <Option type="Map">
-                <Option name="map interpretation" value="map interpretation" type="QString"/>
+                <Option value="hip-chain" type="QString" name="hip-chain"/>
               </Option>
               <Option type="Map">
-                <Option name="surveying equipment" value="surveying equipment" type="QString"/>
+                <Option value="laser range Finder" type="QString" name="laser range Finder"/>
+              </Option>
+              <Option type="Map">
+                <Option value="map interpretation" type="QString" name="map interpretation"/>
+              </Option>
+              <Option type="Map">
+                <Option value="metre stick" type="QString" name="metre stick"/>
+              </Option>
+              <Option type="Map">
+                <Option value="metre tape" type="QString" name="metre tape"/>
+              </Option>
+              <Option type="Map">
+                <Option value="other" type="QString" name="other"/>
+              </Option>
+              <Option type="Map">
+                <Option value="range finder" type="QString" name="range finder"/>
+              </Option>
+              <Option type="Map">
+                <Option value="standard range finder" type="QString" name="standard range finder"/>
+              </Option>
+              <Option type="Map">
+                <Option value="surveyor's chain" type="QString" name="surveyor's chain"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="method_for_residual_pool_depth" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="method_for_wetted_width">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="invalid" name="map"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="method_for_gradient">
+      <editWidget type="ValueMap">
+        <config>
+          <Option type="Map">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="metre stick" value="metre stick" type="QString"/>
+                <Option value="abney type level" type="QString" name="abney type level"/>
               </Option>
               <Option type="Map">
-                <Option name="metre tape" value="metre tape" type="QString"/>
+                <Option value="clinometer" type="QString" name="clinometer"/>
               </Option>
               <Option type="Map">
-                <Option name="other" value="other" type="QString"/>
+                <Option value="geographic information system (GIS)" type="QString" name="geographic information system (GIS)"/>
+              </Option>
+              <Option type="Map">
+                <Option value="ground estimate" type="QString" name="ground estimate"/>
+              </Option>
+              <Option type="Map">
+                <Option value="map interpretation" type="QString" name="map interpretation"/>
+              </Option>
+              <Option type="Map">
+                <Option value="surveying equipment" type="QString" name="surveying equipment"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="method_for_bankfull_depth" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="method_for_residual_pool_depth">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="metre stick" value="metre stick" type="QString"/>
+                <Option value="metre stick" type="QString" name="metre stick"/>
               </Option>
               <Option type="Map">
-                <Option name="metre tape" value="metre tape" type="QString"/>
+                <Option value="metre tape" type="QString" name="metre tape"/>
               </Option>
               <Option type="Map">
-                <Option name="other" value="other" type="QString"/>
+                <Option value="other" type="QString" name="other"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="method_for_p_h" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="method_for_bankfull_depth">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="colourimetric (paper indicator)" value="colourimetric (paper indicator)" type="QString"/>
+                <Option value="metre stick" type="QString" name="metre stick"/>
               </Option>
               <Option type="Map">
-                <Option name="other" value="other" type="QString"/>
+                <Option value="metre tape" type="QString" name="metre tape"/>
               </Option>
               <Option type="Map">
-                <Option name="pH meter (general)" value="pH meter (general)" type="QString"/>
+                <Option value="other" type="QString" name="other"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="feature_height_length_method" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="method_for_p_h">
       <editWidget type="ValueMap">
         <config>
           <Option type="Map">
-            <Option name="map" type="List">
+            <Option type="List" name="map">
               <Option type="Map">
-                <Option name="aerial estimate" value="aerial estimate" type="QString"/>
+                <Option value="colourimetric (paper indicator)" type="QString" name="colourimetric (paper indicator)"/>
               </Option>
               <Option type="Map">
-                <Option name="aerial photo" value="aerial photo" type="QString"/>
+                <Option value="other" type="QString" name="other"/>
               </Option>
               <Option type="Map">
-                <Option name="geographic information System (GIS)" value="geographic information System (GIS)" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="ground estimate" value="ground estimate" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="hip-chain" value="hip-chain" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="laser range Finder" value="laser range Finder" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="map interpretation" value="map interpretation" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="metre stick" value="metre stick" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="metre tape" value="metre tape" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="other" value="other" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="range finder" value="range finder" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="standard range finder" value="standard range finder" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="surveyor's chain" value="surveyor's chain" type="QString"/>
+                <Option value="pH meter (general)" type="QString" name="pH meter (general)"/>
               </Option>
             </Option>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="avg_channel_width_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="feature_height_length_method">
+      <editWidget type="ValueMap">
+        <config>
+          <Option type="Map">
+            <Option type="List" name="map">
+              <Option type="Map">
+                <Option value="aerial estimate" type="QString" name="aerial estimate"/>
+              </Option>
+              <Option type="Map">
+                <Option value="aerial photo" type="QString" name="aerial photo"/>
+              </Option>
+              <Option type="Map">
+                <Option value="geographic information System (GIS)" type="QString" name="geographic information System (GIS)"/>
+              </Option>
+              <Option type="Map">
+                <Option value="ground estimate" type="QString" name="ground estimate"/>
+              </Option>
+              <Option type="Map">
+                <Option value="hip-chain" type="QString" name="hip-chain"/>
+              </Option>
+              <Option type="Map">
+                <Option value="laser range Finder" type="QString" name="laser range Finder"/>
+              </Option>
+              <Option type="Map">
+                <Option value="map interpretation" type="QString" name="map interpretation"/>
+              </Option>
+              <Option type="Map">
+                <Option value="metre stick" type="QString" name="metre stick"/>
+              </Option>
+              <Option type="Map">
+                <Option value="metre tape" type="QString" name="metre tape"/>
+              </Option>
+              <Option type="Map">
+                <Option value="other" type="QString" name="other"/>
+              </Option>
+              <Option type="Map">
+                <Option value="range finder" type="QString" name="range finder"/>
+              </Option>
+              <Option type="Map">
+                <Option value="standard range finder" type="QString" name="standard range finder"/>
+              </Option>
+              <Option type="Map">
+                <Option value="surveyor's chain" type="QString" name="surveyor's chain"/>
+              </Option>
+            </Option>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="avg_channel_width_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="avg_wetted_width_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="avg_wetted_width_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="average_gradient_percent" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="average_gradient_percent">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="average_residual_pool_depth_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="average_residual_pool_depth_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="average_bankfull_depth_m" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="average_bankfull_depth_m">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="false" type="bool"/>
-            <Option name="UseHtml" value="false" type="bool"/>
+            <Option value="false" type="bool" name="IsMultiline"/>
+            <Option value="false" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="link_method_site_card" configurationFlags="None">
+    <field configurationFlags="NoFlag" name="link_method_site_card">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option name="IsMultiline" value="true" type="bool"/>
-            <Option name="UseHtml" value="true" type="bool"/>
+            <Option value="true" type="bool" name="IsMultiline"/>
+            <Option value="true" type="bool" name="UseHtml"/>
           </Option>
         </config>
       </editWidget>
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias name="" field="fid" index="0"/>
-    <alias name="" field="date_time_start" index="1"/>
-    <alias name="" field="mergin_user" index="2"/>
-    <alias name="" field="camera_id" index="3"/>
-    <alias name="" field="gps_id" index="4"/>
-    <alias name="Stream Name" field="gazetted_names" index="5"/>
-    <alias name="Site Name (ex. 12345_us or 12345_us_ef1)" field="local_name" index="6"/>
-    <alias name="" field="temperature_c" index="7"/>
-    <alias name="" field="p_h" index="8"/>
-    <alias name="" field="conductivity_m_s_cm" index="9"/>
-    <alias name="" field="turbidity" index="10"/>
-    <alias name="" field="stage" index="11"/>
-    <alias name="" field="no_visible_channel" index="12"/>
-    <alias name="" field="dewatered_dry_int_channel" index="13"/>
-    <alias name="" field="utm_zone" index="14"/>
-    <alias name="" field="utm_easting" index="15"/>
-    <alias name="" field="utm_northing" index="16"/>
-    <alias name="" field="wetted_width_m" index="17"/>
-    <alias name="" field="channel_width_m" index="18"/>
-    <alias name="" field="wetted_width_m-channel_width_m_time" index="19"/>
-    <alias name="" field="wetted_width_m_2" index="20"/>
-    <alias name="" field="channel_width_m_2" index="21"/>
-    <alias name="" field="wetted_width_m_2-channel_width_m_2_time" index="22"/>
-    <alias name="" field="wetted_width_m_3" index="23"/>
-    <alias name="" field="channel_width_m_3" index="24"/>
-    <alias name="" field="wetted_width_m_3-channel_width_m_3_time" index="25"/>
-    <alias name="" field="wetted_width_m_4" index="26"/>
-    <alias name="" field="channel_width_m_4" index="27"/>
-    <alias name="" field="wetted_width_m_4-channel_width_m_4_time" index="28"/>
-    <alias name="" field="wetted_width_m_5" index="29"/>
-    <alias name="" field="channel_width_m_5" index="30"/>
-    <alias name="" field="wetted_width_m_5-channel_width_m_5_time" index="31"/>
-    <alias name="" field="wetted_width_m_6" index="32"/>
-    <alias name="" field="channel_width_m_6" index="33"/>
-    <alias name="" field="wetted_width_m_6-channel_width_m_6_time" index="34"/>
-    <alias name="" field="wetted_width_m_7" index="35"/>
-    <alias name="" field="channel_width_m_7" index="36"/>
-    <alias name="" field="wetted_width_m_7-channel_width_m_7_time" index="37"/>
-    <alias name="" field="gradient_number_1_percent" index="38"/>
-    <alias name="" field="gradient_number_1_percent_time" index="39"/>
-    <alias name="" field="gradient_number_2_percent" index="40"/>
-    <alias name="" field="gradient_number_2_percent_time" index="41"/>
-    <alias name="" field="gradient" index="42"/>
-    <alias name="" field="gradient_time" index="43"/>
-    <alias name="" field="gradient_number_4_percent" index="44"/>
-    <alias name="" field="gradient_number_4_percent_time" index="45"/>
-    <alias name="" field="residual_pool_depth_m" index="46"/>
-    <alias name="" field="residual_pool_depth_m_time" index="47"/>
-    <alias name="" field="residual_pool_depth_m_2" index="48"/>
-    <alias name="" field="residual_pool_depth_m_2_time" index="49"/>
-    <alias name="" field="residual_pool_depth_m_3" index="50"/>
-    <alias name="" field="residual_pool_depth_m_3_time" index="51"/>
-    <alias name="" field="residual_pool_depth_m_4" index="52"/>
-    <alias name="" field="residual_pool_depth_m_4_time" index="53"/>
-    <alias name="" field="residual_pool_depth_m_5" index="54"/>
-    <alias name="" field="residual_pool_depth_m_5_time" index="55"/>
-    <alias name="" field="residual_pool_depth_m_6" index="56"/>
-    <alias name="" field="residual_pool_depth_m_6_time" index="57"/>
-    <alias name="" field="residual_pool_depth_m_7" index="58"/>
-    <alias name="" field="residual_pool_depth_m_7_time" index="59"/>
-    <alias name="" field="bankfull_depth_number_1_m" index="60"/>
-    <alias name="" field="bankfull_depth_number_1_m_time" index="61"/>
-    <alias name="" field="bankfull_depth_number_2_m" index="62"/>
-    <alias name="" field="bankfull_depth_number_2_m_time" index="63"/>
-    <alias name="" field="bankfull_depth_number_3_m" index="64"/>
-    <alias name="" field="bankfull_depth_number_3_m_time" index="65"/>
-    <alias name="" field="bankfull_depth_number_4_m" index="66"/>
-    <alias name="" field="bankfull_depth_number_4_m_time" index="67"/>
-    <alias name="" field="bed_material_dominant" index="68"/>
-    <alias name="" field="bed_material_subdominant" index="69"/>
-    <alias name="" field="comments" index="70"/>
-    <alias name="" field="comments_2" index="71"/>
-    <alias name="" field="habitat_value_rating" index="72"/>
-    <alias name="" field="reference_number" index="73"/>
-    <alias name="" field="reach_number" index="74"/>
-    <alias name="" field="site_number" index="75"/>
-    <alias name="" field="tributaries" index="76"/>
-    <alias name="" field="total_cover" index="77"/>
-    <alias name="" field="small_woody_debris" index="78"/>
-    <alias name="" field="large_woody_debris" index="79"/>
-    <alias name="" field="boulders" index="80"/>
-    <alias name="" field="undercut_banks" index="81"/>
-    <alias name="" field="deep_pools" index="82"/>
-    <alias name="" field="overhanging_vegetation" index="83"/>
-    <alias name="" field="instream_vegetation" index="84"/>
-    <alias name="" field="crown_closure" index="85"/>
-    <alias name="" field="functional_lwd" index="86"/>
-    <alias name="" field="lwd_distribution" index="87"/>
-    <alias name="" field="instream_vegetation_type" index="88"/>
-    <alias name="" field="l_bank_shape" index="89"/>
-    <alias name="" field="l_bank_texture_dominant_1" index="90"/>
-    <alias name="" field="l_bank_texture_dominant_2" index="91"/>
-    <alias name="" field="l_bank_riparian_vegetation" index="92"/>
-    <alias name="" field="l_bank_riparian_vegetation_stage" index="93"/>
-    <alias name="" field="r_bank_shape" index="94"/>
-    <alias name="" field="r_bank_texture_dominant_1" index="95"/>
-    <alias name="" field="r_bank_texture_dominant_2" index="96"/>
-    <alias name="" field="r_bank_riparian_vegetation" index="97"/>
-    <alias name="" field="r_bank_riparian_vegetation_stage" index="98"/>
-    <alias name="" field="d95_cm" index="99"/>
-    <alias name="" field="d_cm" index="100"/>
-    <alias name="" field="morphology" index="101"/>
-    <alias name="" field="channel_pattern" index="102"/>
-    <alias name="" field="coupling" index="103"/>
-    <alias name="" field="confinement" index="104"/>
-    <alias name="" field="feature_type" index="105"/>
-    <alias name="" field="feature_height_m" index="106"/>
-    <alias name="" field="feature_length_m" index="107"/>
-    <alias name="Crew Members Initials Separated with Spaces" field="crew_members" index="108"/>
-    <alias name="" field="gps_waypoint_number" index="109"/>
-    <alias name="site length (m)" field="site_length" index="110"/>
-    <alias name="" field="feature_time" index="111"/>
-    <alias name="" field="feature_type_2" index="112"/>
-    <alias name="" field="feature_height_2_m" index="113"/>
-    <alias name="" field="feature_length_2_m" index="114"/>
-    <alias name="" field="feature_time_2" index="115"/>
-    <alias name="" field="feature_type_3" index="116"/>
-    <alias name="" field="feature_height_3_m" index="117"/>
-    <alias name="" field="feature_length_3_m" index="118"/>
-    <alias name="" field="feature_time_3" index="119"/>
-    <alias name="" field="photo_gravel" index="120"/>
-    <alias name="" field="photo_pool" index="121"/>
-    <alias name="" field="photo_typical_1" index="122"/>
-    <alias name="" field="photo_typical_2" index="123"/>
-    <alias name="" field="photo_extra_1" index="124"/>
-    <alias name="" field="photo_extra_1_tag" index="125"/>
-    <alias name="" field="photo_extra_2" index="126"/>
-    <alias name="" field="photo_extra_2_tag" index="127"/>
-    <alias name="Photo - paper form from gallery for backup" field="photo_card" index="128"/>
-    <alias name="" field="method_for_temperature" index="129"/>
-    <alias name="" field="method_for_conductivity" index="130"/>
-    <alias name="" field="utm_method" index="131"/>
-    <alias name="" field="method_for_channel_width" index="132"/>
-    <alias name="" field="method_for_wetted_width" index="133"/>
-    <alias name="" field="method_for_gradient" index="134"/>
-    <alias name="" field="method_for_residual_pool_depth" index="135"/>
-    <alias name="" field="method_for_bankfull_depth" index="136"/>
-    <alias name="" field="method_for_p_h" index="137"/>
-    <alias name="" field="feature_height_length_method" index="138"/>
-    <alias name="" field="avg_channel_width_m" index="139"/>
-    <alias name="" field="avg_wetted_width_m" index="140"/>
-    <alias name="" field="average_gradient_percent" index="141"/>
-    <alias name="" field="average_residual_pool_depth_m" index="142"/>
-    <alias name="" field="average_bankfull_depth_m" index="143"/>
-    <alias name="" field="link_method_site_card" index="144"/>
+    <alias field="fid" index="0" name=""/>
+    <alias field="date_time_start" index="1" name=""/>
+    <alias field="mergin_user" index="2" name=""/>
+    <alias field="camera_id" index="3" name=""/>
+    <alias field="gps_id" index="4" name=""/>
+    <alias field="gazetted_names" index="5" name="Stream Name"/>
+    <alias field="local_name" index="6" name="Site Name (ex. 12345_us or 12345_us_ef1)"/>
+    <alias field="temperature_c" index="7" name=""/>
+    <alias field="p_h" index="8" name=""/>
+    <alias field="conductivity_m_s_cm" index="9" name=""/>
+    <alias field="turbidity" index="10" name=""/>
+    <alias field="stage" index="11" name=""/>
+    <alias field="no_visible_channel" index="12" name=""/>
+    <alias field="dewatered_dry_int_channel" index="13" name=""/>
+    <alias field="utm_zone" index="14" name=""/>
+    <alias field="utm_easting" index="15" name=""/>
+    <alias field="utm_northing" index="16" name=""/>
+    <alias field="wetted_width_m" index="17" name=""/>
+    <alias field="channel_width_m" index="18" name=""/>
+    <alias field="wetted_width_m-channel_width_m_time" index="19" name=""/>
+    <alias field="wetted_width_m_2" index="20" name=""/>
+    <alias field="channel_width_m_2" index="21" name=""/>
+    <alias field="wetted_width_m_2-channel_width_m_2_time" index="22" name=""/>
+    <alias field="wetted_width_m_3" index="23" name=""/>
+    <alias field="channel_width_m_3" index="24" name=""/>
+    <alias field="wetted_width_m_3-channel_width_m_3_time" index="25" name=""/>
+    <alias field="wetted_width_m_4" index="26" name=""/>
+    <alias field="channel_width_m_4" index="27" name=""/>
+    <alias field="wetted_width_m_4-channel_width_m_4_time" index="28" name=""/>
+    <alias field="wetted_width_m_5" index="29" name=""/>
+    <alias field="channel_width_m_5" index="30" name=""/>
+    <alias field="wetted_width_m_5-channel_width_m_5_time" index="31" name=""/>
+    <alias field="wetted_width_m_6" index="32" name=""/>
+    <alias field="channel_width_m_6" index="33" name=""/>
+    <alias field="wetted_width_m_6-channel_width_m_6_time" index="34" name=""/>
+    <alias field="wetted_width_m_7" index="35" name=""/>
+    <alias field="channel_width_m_7" index="36" name=""/>
+    <alias field="wetted_width_m_7-channel_width_m_7_time" index="37" name=""/>
+    <alias field="gradient_number_1_percent" index="38" name=""/>
+    <alias field="gradient_number_1_percent_time" index="39" name=""/>
+    <alias field="gradient_number_2_percent" index="40" name=""/>
+    <alias field="gradient_number_2_percent_time" index="41" name=""/>
+    <alias field="gradient" index="42" name=""/>
+    <alias field="gradient_time" index="43" name=""/>
+    <alias field="gradient_number_4_percent" index="44" name=""/>
+    <alias field="gradient_number_4_percent_time" index="45" name=""/>
+    <alias field="residual_pool_depth_m" index="46" name=""/>
+    <alias field="residual_pool_depth_m_time" index="47" name=""/>
+    <alias field="residual_pool_depth_m_2" index="48" name=""/>
+    <alias field="residual_pool_depth_m_2_time" index="49" name=""/>
+    <alias field="residual_pool_depth_m_3" index="50" name=""/>
+    <alias field="residual_pool_depth_m_3_time" index="51" name=""/>
+    <alias field="residual_pool_depth_m_4" index="52" name=""/>
+    <alias field="residual_pool_depth_m_4_time" index="53" name=""/>
+    <alias field="residual_pool_depth_m_5" index="54" name=""/>
+    <alias field="residual_pool_depth_m_5_time" index="55" name=""/>
+    <alias field="residual_pool_depth_m_6" index="56" name=""/>
+    <alias field="residual_pool_depth_m_6_time" index="57" name=""/>
+    <alias field="residual_pool_depth_m_7" index="58" name=""/>
+    <alias field="residual_pool_depth_m_7_time" index="59" name=""/>
+    <alias field="bankfull_depth_number_1_m" index="60" name=""/>
+    <alias field="bankfull_depth_number_1_m_time" index="61" name=""/>
+    <alias field="bankfull_depth_number_2_m" index="62" name=""/>
+    <alias field="bankfull_depth_number_2_m_time" index="63" name=""/>
+    <alias field="bankfull_depth_number_3_m" index="64" name=""/>
+    <alias field="bankfull_depth_number_3_m_time" index="65" name=""/>
+    <alias field="bankfull_depth_number_4_m" index="66" name=""/>
+    <alias field="bankfull_depth_number_4_m_time" index="67" name=""/>
+    <alias field="bed_material_dominant" index="68" name=""/>
+    <alias field="bed_material_subdominant" index="69" name=""/>
+    <alias field="comments" index="70" name=""/>
+    <alias field="habitat_value_rating" index="71" name="Habitat Value - justify in comments"/>
+    <alias field="reference_number" index="72" name=""/>
+    <alias field="reach_number" index="73" name=""/>
+    <alias field="site_number" index="74" name=""/>
+    <alias field="tributaries" index="75" name=""/>
+    <alias field="total_cover" index="76" name=""/>
+    <alias field="small_woody_debris" index="77" name=""/>
+    <alias field="large_woody_debris" index="78" name=""/>
+    <alias field="boulders" index="79" name=""/>
+    <alias field="undercut_banks" index="80" name=""/>
+    <alias field="deep_pools" index="81" name=""/>
+    <alias field="overhanging_vegetation" index="82" name=""/>
+    <alias field="instream_vegetation" index="83" name=""/>
+    <alias field="crown_closure" index="84" name=""/>
+    <alias field="functional_lwd" index="85" name=""/>
+    <alias field="lwd_distribution" index="86" name=""/>
+    <alias field="instream_vegetation_type" index="87" name=""/>
+    <alias field="l_bank_shape" index="88" name=""/>
+    <alias field="l_bank_texture_dominant_1" index="89" name=""/>
+    <alias field="l_bank_texture_dominant_2" index="90" name=""/>
+    <alias field="l_bank_riparian_vegetation" index="91" name=""/>
+    <alias field="l_bank_riparian_vegetation_stage" index="92" name=""/>
+    <alias field="r_bank_shape" index="93" name=""/>
+    <alias field="r_bank_texture_dominant_1" index="94" name=""/>
+    <alias field="r_bank_texture_dominant_2" index="95" name=""/>
+    <alias field="r_bank_riparian_vegetation" index="96" name=""/>
+    <alias field="r_bank_riparian_vegetation_stage" index="97" name=""/>
+    <alias field="d95_cm" index="98" name=""/>
+    <alias field="d_cm" index="99" name=""/>
+    <alias field="morphology" index="100" name=""/>
+    <alias field="channel_pattern" index="101" name=""/>
+    <alias field="coupling" index="102" name=""/>
+    <alias field="confinement" index="103" name=""/>
+    <alias field="feature_type" index="104" name=""/>
+    <alias field="feature_height_m" index="105" name=""/>
+    <alias field="feature_length_m" index="106" name=""/>
+    <alias field="crew_members" index="107" name="Crew Members Initials Separated with Spaces"/>
+    <alias field="gps_waypoint_number" index="108" name=""/>
+    <alias field="site_length" index="109" name="site length (m)"/>
+    <alias field="feature_time" index="110" name=""/>
+    <alias field="feature_type_2" index="111" name=""/>
+    <alias field="feature_height_2_m" index="112" name=""/>
+    <alias field="feature_length_2_m" index="113" name=""/>
+    <alias field="feature_time_2" index="114" name=""/>
+    <alias field="feature_type_3" index="115" name=""/>
+    <alias field="feature_height_3_m" index="116" name=""/>
+    <alias field="feature_length_3_m" index="117" name=""/>
+    <alias field="feature_time_3" index="118" name=""/>
+    <alias field="photo_gravel" index="119" name=""/>
+    <alias field="photo_pool" index="120" name=""/>
+    <alias field="photo_typical_1" index="121" name=""/>
+    <alias field="photo_typical_2" index="122" name=""/>
+    <alias field="photo_extra1" index="123" name=""/>
+    <alias field="photo_extra1_tag" index="124" name="Photo extra1 tag - one or two words only"/>
+    <alias field="photo_extra2" index="125" name=""/>
+    <alias field="photo_extra2_tag" index="126" name="Photo extra2 tag - one or two words only"/>
+    <alias field="photo_extra3" index="127" name=""/>
+    <alias field="photo_extra3_tag" index="128" name="Photo extra3 tag - one or two words only"/>
+    <alias field="photo_extra4" index="129" name=""/>
+    <alias field="photo_extra4_tag" index="130" name="Photo extra4 tag - one or two words only"/>
+    <alias field="photo_extra5" index="131" name=""/>
+    <alias field="photo_extra5_tag" index="132" name="Photo extra5 tag - one or two words only"/>
+    <alias field="photo_card" index="133" name="Photo - paper form from gallery for backup"/>
+    <alias field="method_for_temperature" index="134" name=""/>
+    <alias field="method_for_conductivity" index="135" name=""/>
+    <alias field="utm_method" index="136" name=""/>
+    <alias field="method_for_channel_width" index="137" name=""/>
+    <alias field="method_for_wetted_width" index="138" name=""/>
+    <alias field="method_for_gradient" index="139" name=""/>
+    <alias field="method_for_residual_pool_depth" index="140" name=""/>
+    <alias field="method_for_bankfull_depth" index="141" name=""/>
+    <alias field="method_for_p_h" index="142" name=""/>
+    <alias field="feature_height_length_method" index="143" name=""/>
+    <alias field="avg_channel_width_m" index="144" name=""/>
+    <alias field="avg_wetted_width_m" index="145" name=""/>
+    <alias field="average_gradient_percent" index="146" name=""/>
+    <alias field="average_residual_pool_depth_m" index="147" name=""/>
+    <alias field="average_bankfull_depth_m" index="148" name=""/>
+    <alias field="link_method_site_card" index="149" name=""/>
   </aliases>
   <splitPolicies>
     <policy policy="Duplicate" field="fid"/>
@@ -3227,9 +3370,8 @@
     <policy policy="Duplicate" field="bankfull_depth_number_4_m_time"/>
     <policy policy="Duplicate" field="bed_material_dominant"/>
     <policy policy="Duplicate" field="bed_material_subdominant"/>
-    <policy policy="Duplicate" field="comments"/>
-    <policy policy="Duplicate" field="comments_2"/>
-    <policy policy="Duplicate" field="habitat_value_rating"/>
+    <policy policy="DefaultValue" field="comments"/>
+    <policy policy="DefaultValue" field="habitat_value_rating"/>
     <policy policy="Duplicate" field="reference_number"/>
     <policy policy="Duplicate" field="reach_number"/>
     <policy policy="Duplicate" field="site_number"/>
@@ -3277,14 +3419,20 @@
     <policy policy="Duplicate" field="feature_height_3_m"/>
     <policy policy="Duplicate" field="feature_length_3_m"/>
     <policy policy="Duplicate" field="feature_time_3"/>
-    <policy policy="Duplicate" field="photo_gravel"/>
-    <policy policy="Duplicate" field="photo_pool"/>
-    <policy policy="Duplicate" field="photo_typical_1"/>
-    <policy policy="Duplicate" field="photo_typical_2"/>
-    <policy policy="Duplicate" field="photo_extra_1"/>
-    <policy policy="Duplicate" field="photo_extra_1_tag"/>
-    <policy policy="Duplicate" field="photo_extra_2"/>
-    <policy policy="Duplicate" field="photo_extra_2_tag"/>
+    <policy policy="DefaultValue" field="photo_gravel"/>
+    <policy policy="DefaultValue" field="photo_pool"/>
+    <policy policy="DefaultValue" field="photo_typical_1"/>
+    <policy policy="DefaultValue" field="photo_typical_2"/>
+    <policy policy="DefaultValue" field="photo_extra1"/>
+    <policy policy="DefaultValue" field="photo_extra1_tag"/>
+    <policy policy="DefaultValue" field="photo_extra2"/>
+    <policy policy="DefaultValue" field="photo_extra2_tag"/>
+    <policy policy="DefaultValue" field="photo_extra3"/>
+    <policy policy="DefaultValue" field="photo_extra3_tag"/>
+    <policy policy="DefaultValue" field="photo_extra4"/>
+    <policy policy="DefaultValue" field="photo_extra4_tag"/>
+    <policy policy="DefaultValue" field="photo_extra5"/>
+    <policy policy="DefaultValue" field="photo_extra5_tag"/>
     <policy policy="Duplicate" field="photo_card"/>
     <policy policy="Duplicate" field="method_for_temperature"/>
     <policy policy="Duplicate" field="method_for_conductivity"/>
@@ -3304,598 +3452,618 @@
     <policy policy="Duplicate" field="link_method_site_card"/>
   </splitPolicies>
   <defaults>
-    <default expression="" field="fid" applyOnUpdate="0"/>
-    <default expression="now()" field="date_time_start" applyOnUpdate="0"/>
-    <default expression="@mergin_username" field="mergin_user" applyOnUpdate="0"/>
-    <default expression="@mergin_username" field="camera_id" applyOnUpdate="0"/>
-    <default expression="@mergin_username" field="gps_id" applyOnUpdate="0"/>
-    <default expression="" field="gazetted_names" applyOnUpdate="0"/>
-    <default expression="" field="local_name" applyOnUpdate="0"/>
-    <default expression="" field="temperature_c" applyOnUpdate="0"/>
-    <default expression="" field="p_h" applyOnUpdate="0"/>
-    <default expression="" field="conductivity_m_s_cm" applyOnUpdate="0"/>
-    <default expression="" field="turbidity" applyOnUpdate="0"/>
-    <default expression="" field="stage" applyOnUpdate="0"/>
-    <default expression="" field="no_visible_channel" applyOnUpdate="0"/>
-    <default expression="" field="dewatered_dry_int_channel" applyOnUpdate="0"/>
-    <default expression="" field="utm_zone" applyOnUpdate="0"/>
-    <default expression="" field="utm_easting" applyOnUpdate="0"/>
-    <default expression="" field="utm_northing" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m" applyOnUpdate="0"/>
-    <default expression="" field="channel_width_m" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m-channel_width_m_time" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_2" applyOnUpdate="0"/>
-    <default expression="" field="channel_width_m_2" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_2-channel_width_m_2_time" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_3" applyOnUpdate="0"/>
-    <default expression="" field="channel_width_m_3" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_3-channel_width_m_3_time" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_4" applyOnUpdate="0"/>
-    <default expression="" field="channel_width_m_4" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_4-channel_width_m_4_time" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_5" applyOnUpdate="0"/>
-    <default expression="" field="channel_width_m_5" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_5-channel_width_m_5_time" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_6" applyOnUpdate="0"/>
-    <default expression="" field="channel_width_m_6" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_6-channel_width_m_6_time" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_7" applyOnUpdate="0"/>
-    <default expression="" field="channel_width_m_7" applyOnUpdate="0"/>
-    <default expression="" field="wetted_width_m_7-channel_width_m_7_time" applyOnUpdate="0"/>
-    <default expression="" field="gradient_number_1_percent" applyOnUpdate="0"/>
-    <default expression="" field="gradient_number_1_percent_time" applyOnUpdate="0"/>
-    <default expression="" field="gradient_number_2_percent" applyOnUpdate="0"/>
-    <default expression="" field="gradient_number_2_percent_time" applyOnUpdate="0"/>
-    <default expression="" field="gradient" applyOnUpdate="0"/>
-    <default expression="" field="gradient_time" applyOnUpdate="0"/>
-    <default expression="" field="gradient_number_4_percent" applyOnUpdate="0"/>
-    <default expression="" field="gradient_number_4_percent_time" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_time" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_2" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_2_time" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_3" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_3_time" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_4" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_4_time" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_5" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_5_time" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_6" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_6_time" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_7" applyOnUpdate="0"/>
-    <default expression="" field="residual_pool_depth_m_7_time" applyOnUpdate="0"/>
-    <default expression="" field="bankfull_depth_number_1_m" applyOnUpdate="0"/>
-    <default expression="" field="bankfull_depth_number_1_m_time" applyOnUpdate="0"/>
-    <default expression="" field="bankfull_depth_number_2_m" applyOnUpdate="0"/>
-    <default expression="" field="bankfull_depth_number_2_m_time" applyOnUpdate="0"/>
-    <default expression="" field="bankfull_depth_number_3_m" applyOnUpdate="0"/>
-    <default expression="" field="bankfull_depth_number_3_m_time" applyOnUpdate="0"/>
-    <default expression="" field="bankfull_depth_number_4_m" applyOnUpdate="0"/>
-    <default expression="" field="bankfull_depth_number_4_m_time" applyOnUpdate="0"/>
-    <default expression="" field="bed_material_dominant" applyOnUpdate="0"/>
-    <default expression="" field="bed_material_subdominant" applyOnUpdate="0"/>
-    <default expression="" field="comments" applyOnUpdate="0"/>
-    <default expression="" field="comments_2" applyOnUpdate="0"/>
-    <default expression="" field="habitat_value_rating" applyOnUpdate="0"/>
-    <default expression="" field="reference_number" applyOnUpdate="0"/>
-    <default expression="" field="reach_number" applyOnUpdate="0"/>
-    <default expression="" field="site_number" applyOnUpdate="0"/>
-    <default expression="" field="tributaries" applyOnUpdate="0"/>
-    <default expression="" field="total_cover" applyOnUpdate="0"/>
-    <default expression="" field="small_woody_debris" applyOnUpdate="0"/>
-    <default expression="" field="large_woody_debris" applyOnUpdate="0"/>
-    <default expression="" field="boulders" applyOnUpdate="0"/>
-    <default expression="" field="undercut_banks" applyOnUpdate="0"/>
-    <default expression="" field="deep_pools" applyOnUpdate="0"/>
-    <default expression="" field="overhanging_vegetation" applyOnUpdate="0"/>
-    <default expression="" field="instream_vegetation" applyOnUpdate="0"/>
-    <default expression="" field="crown_closure" applyOnUpdate="0"/>
-    <default expression="" field="functional_lwd" applyOnUpdate="0"/>
-    <default expression="" field="lwd_distribution" applyOnUpdate="0"/>
-    <default expression="" field="instream_vegetation_type" applyOnUpdate="0"/>
-    <default expression="" field="l_bank_shape" applyOnUpdate="0"/>
-    <default expression="" field="l_bank_texture_dominant_1" applyOnUpdate="0"/>
-    <default expression="" field="l_bank_texture_dominant_2" applyOnUpdate="0"/>
-    <default expression="" field="l_bank_riparian_vegetation" applyOnUpdate="0"/>
-    <default expression="" field="l_bank_riparian_vegetation_stage" applyOnUpdate="0"/>
-    <default expression="" field="r_bank_shape" applyOnUpdate="0"/>
-    <default expression="" field="r_bank_texture_dominant_1" applyOnUpdate="0"/>
-    <default expression="" field="r_bank_texture_dominant_2" applyOnUpdate="0"/>
-    <default expression="" field="r_bank_riparian_vegetation" applyOnUpdate="0"/>
-    <default expression="" field="r_bank_riparian_vegetation_stage" applyOnUpdate="0"/>
-    <default expression="" field="d95_cm" applyOnUpdate="0"/>
-    <default expression="" field="d_cm" applyOnUpdate="0"/>
-    <default expression="" field="morphology" applyOnUpdate="0"/>
-    <default expression="" field="channel_pattern" applyOnUpdate="0"/>
-    <default expression="" field="coupling" applyOnUpdate="0"/>
-    <default expression="" field="confinement" applyOnUpdate="0"/>
-    <default expression="" field="feature_type" applyOnUpdate="0"/>
-    <default expression="" field="feature_height_m" applyOnUpdate="0"/>
-    <default expression="" field="feature_length_m" applyOnUpdate="0"/>
-    <default expression="" field="crew_members" applyOnUpdate="0"/>
-    <default expression="" field="gps_waypoint_number" applyOnUpdate="0"/>
-    <default expression="" field="site_length" applyOnUpdate="0"/>
-    <default expression="" field="feature_time" applyOnUpdate="0"/>
-    <default expression="" field="feature_type_2" applyOnUpdate="0"/>
-    <default expression="" field="feature_height_2_m" applyOnUpdate="0"/>
-    <default expression="" field="feature_length_2_m" applyOnUpdate="0"/>
-    <default expression="" field="feature_time_2" applyOnUpdate="0"/>
-    <default expression="" field="feature_type_3" applyOnUpdate="0"/>
-    <default expression="" field="feature_height_3_m" applyOnUpdate="0"/>
-    <default expression="" field="feature_length_3_m" applyOnUpdate="0"/>
-    <default expression="" field="feature_time_3" applyOnUpdate="0"/>
-    <default expression="" field="photo_gravel" applyOnUpdate="0"/>
-    <default expression="" field="photo_pool" applyOnUpdate="0"/>
-    <default expression="" field="photo_typical_1" applyOnUpdate="0"/>
-    <default expression="" field="photo_typical_2" applyOnUpdate="0"/>
-    <default expression="" field="photo_extra_1" applyOnUpdate="0"/>
-    <default expression="" field="photo_extra_1_tag" applyOnUpdate="0"/>
-    <default expression="" field="photo_extra_2" applyOnUpdate="0"/>
-    <default expression="" field="photo_extra_2_tag" applyOnUpdate="0"/>
-    <default expression="" field="photo_card" applyOnUpdate="0"/>
-    <default expression="" field="method_for_temperature" applyOnUpdate="0"/>
-    <default expression="" field="method_for_conductivity" applyOnUpdate="0"/>
-    <default expression="" field="utm_method" applyOnUpdate="0"/>
-    <default expression="" field="method_for_channel_width" applyOnUpdate="0"/>
-    <default expression="" field="method_for_wetted_width" applyOnUpdate="0"/>
-    <default expression="" field="method_for_gradient" applyOnUpdate="0"/>
-    <default expression="" field="method_for_residual_pool_depth" applyOnUpdate="0"/>
-    <default expression="" field="method_for_bankfull_depth" applyOnUpdate="0"/>
-    <default expression="" field="method_for_p_h" applyOnUpdate="0"/>
-    <default expression="" field="feature_height_length_method" applyOnUpdate="0"/>
-    <default expression="" field="avg_channel_width_m" applyOnUpdate="0"/>
-    <default expression="" field="avg_wetted_width_m" applyOnUpdate="0"/>
-    <default expression="" field="average_gradient_percent" applyOnUpdate="0"/>
-    <default expression="" field="average_residual_pool_depth_m" applyOnUpdate="0"/>
-    <default expression="" field="average_bankfull_depth_m" applyOnUpdate="0"/>
-    <default expression="'&lt;a href=&quot;https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/sitecard20.pdf&quot;>Link to Methods for Site Card&lt;/a>'" field="link_method_site_card" applyOnUpdate="0"/>
+    <default applyOnUpdate="0" expression="" field="fid"/>
+    <default applyOnUpdate="0" expression="now()" field="date_time_start"/>
+    <default applyOnUpdate="0" expression="@mergin_username" field="mergin_user"/>
+    <default applyOnUpdate="0" expression="@mergin_username" field="camera_id"/>
+    <default applyOnUpdate="0" expression="@mergin_username" field="gps_id"/>
+    <default applyOnUpdate="0" expression="" field="gazetted_names"/>
+    <default applyOnUpdate="0" expression="" field="local_name"/>
+    <default applyOnUpdate="0" expression="" field="temperature_c"/>
+    <default applyOnUpdate="0" expression="" field="p_h"/>
+    <default applyOnUpdate="0" expression="" field="conductivity_m_s_cm"/>
+    <default applyOnUpdate="0" expression="" field="turbidity"/>
+    <default applyOnUpdate="0" expression="" field="stage"/>
+    <default applyOnUpdate="0" expression="" field="no_visible_channel"/>
+    <default applyOnUpdate="0" expression="" field="dewatered_dry_int_channel"/>
+    <default applyOnUpdate="0" expression="" field="utm_zone"/>
+    <default applyOnUpdate="0" expression="" field="utm_easting"/>
+    <default applyOnUpdate="0" expression="" field="utm_northing"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m"/>
+    <default applyOnUpdate="0" expression="" field="channel_width_m"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m-channel_width_m_time"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_2"/>
+    <default applyOnUpdate="0" expression="" field="channel_width_m_2"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_2-channel_width_m_2_time"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_3"/>
+    <default applyOnUpdate="0" expression="" field="channel_width_m_3"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_3-channel_width_m_3_time"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_4"/>
+    <default applyOnUpdate="0" expression="" field="channel_width_m_4"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_4-channel_width_m_4_time"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_5"/>
+    <default applyOnUpdate="0" expression="" field="channel_width_m_5"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_5-channel_width_m_5_time"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_6"/>
+    <default applyOnUpdate="0" expression="" field="channel_width_m_6"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_6-channel_width_m_6_time"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_7"/>
+    <default applyOnUpdate="0" expression="" field="channel_width_m_7"/>
+    <default applyOnUpdate="0" expression="" field="wetted_width_m_7-channel_width_m_7_time"/>
+    <default applyOnUpdate="0" expression="" field="gradient_number_1_percent"/>
+    <default applyOnUpdate="0" expression="" field="gradient_number_1_percent_time"/>
+    <default applyOnUpdate="0" expression="" field="gradient_number_2_percent"/>
+    <default applyOnUpdate="0" expression="" field="gradient_number_2_percent_time"/>
+    <default applyOnUpdate="0" expression="" field="gradient"/>
+    <default applyOnUpdate="0" expression="" field="gradient_time"/>
+    <default applyOnUpdate="0" expression="" field="gradient_number_4_percent"/>
+    <default applyOnUpdate="0" expression="" field="gradient_number_4_percent_time"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_time"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_2"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_2_time"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_3"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_3_time"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_4"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_4_time"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_5"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_5_time"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_6"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_6_time"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_7"/>
+    <default applyOnUpdate="0" expression="" field="residual_pool_depth_m_7_time"/>
+    <default applyOnUpdate="0" expression="" field="bankfull_depth_number_1_m"/>
+    <default applyOnUpdate="0" expression="" field="bankfull_depth_number_1_m_time"/>
+    <default applyOnUpdate="0" expression="" field="bankfull_depth_number_2_m"/>
+    <default applyOnUpdate="0" expression="" field="bankfull_depth_number_2_m_time"/>
+    <default applyOnUpdate="0" expression="" field="bankfull_depth_number_3_m"/>
+    <default applyOnUpdate="0" expression="" field="bankfull_depth_number_3_m_time"/>
+    <default applyOnUpdate="0" expression="" field="bankfull_depth_number_4_m"/>
+    <default applyOnUpdate="0" expression="" field="bankfull_depth_number_4_m_time"/>
+    <default applyOnUpdate="0" expression="" field="bed_material_dominant"/>
+    <default applyOnUpdate="0" expression="" field="bed_material_subdominant"/>
+    <default applyOnUpdate="0" expression="" field="comments"/>
+    <default applyOnUpdate="0" expression="" field="habitat_value_rating"/>
+    <default applyOnUpdate="0" expression="" field="reference_number"/>
+    <default applyOnUpdate="0" expression="" field="reach_number"/>
+    <default applyOnUpdate="0" expression="" field="site_number"/>
+    <default applyOnUpdate="0" expression="" field="tributaries"/>
+    <default applyOnUpdate="0" expression="" field="total_cover"/>
+    <default applyOnUpdate="0" expression="" field="small_woody_debris"/>
+    <default applyOnUpdate="0" expression="" field="large_woody_debris"/>
+    <default applyOnUpdate="0" expression="" field="boulders"/>
+    <default applyOnUpdate="0" expression="" field="undercut_banks"/>
+    <default applyOnUpdate="0" expression="" field="deep_pools"/>
+    <default applyOnUpdate="0" expression="" field="overhanging_vegetation"/>
+    <default applyOnUpdate="0" expression="" field="instream_vegetation"/>
+    <default applyOnUpdate="0" expression="" field="crown_closure"/>
+    <default applyOnUpdate="0" expression="" field="functional_lwd"/>
+    <default applyOnUpdate="0" expression="" field="lwd_distribution"/>
+    <default applyOnUpdate="0" expression="" field="instream_vegetation_type"/>
+    <default applyOnUpdate="0" expression="" field="l_bank_shape"/>
+    <default applyOnUpdate="0" expression="" field="l_bank_texture_dominant_1"/>
+    <default applyOnUpdate="0" expression="" field="l_bank_texture_dominant_2"/>
+    <default applyOnUpdate="0" expression="" field="l_bank_riparian_vegetation"/>
+    <default applyOnUpdate="0" expression="" field="l_bank_riparian_vegetation_stage"/>
+    <default applyOnUpdate="0" expression="" field="r_bank_shape"/>
+    <default applyOnUpdate="0" expression="" field="r_bank_texture_dominant_1"/>
+    <default applyOnUpdate="0" expression="" field="r_bank_texture_dominant_2"/>
+    <default applyOnUpdate="0" expression="" field="r_bank_riparian_vegetation"/>
+    <default applyOnUpdate="0" expression="" field="r_bank_riparian_vegetation_stage"/>
+    <default applyOnUpdate="0" expression="" field="d95_cm"/>
+    <default applyOnUpdate="0" expression="" field="d_cm"/>
+    <default applyOnUpdate="0" expression="" field="morphology"/>
+    <default applyOnUpdate="0" expression="" field="channel_pattern"/>
+    <default applyOnUpdate="0" expression="" field="coupling"/>
+    <default applyOnUpdate="0" expression="" field="confinement"/>
+    <default applyOnUpdate="0" expression="" field="feature_type"/>
+    <default applyOnUpdate="0" expression="" field="feature_height_m"/>
+    <default applyOnUpdate="0" expression="" field="feature_length_m"/>
+    <default applyOnUpdate="0" expression="" field="crew_members"/>
+    <default applyOnUpdate="0" expression="" field="gps_waypoint_number"/>
+    <default applyOnUpdate="0" expression="" field="site_length"/>
+    <default applyOnUpdate="0" expression="" field="feature_time"/>
+    <default applyOnUpdate="0" expression="" field="feature_type_2"/>
+    <default applyOnUpdate="0" expression="" field="feature_height_2_m"/>
+    <default applyOnUpdate="0" expression="" field="feature_length_2_m"/>
+    <default applyOnUpdate="0" expression="" field="feature_time_2"/>
+    <default applyOnUpdate="0" expression="" field="feature_type_3"/>
+    <default applyOnUpdate="0" expression="" field="feature_height_3_m"/>
+    <default applyOnUpdate="0" expression="" field="feature_length_3_m"/>
+    <default applyOnUpdate="0" expression="" field="feature_time_3"/>
+    <default applyOnUpdate="0" expression="" field="photo_gravel"/>
+    <default applyOnUpdate="0" expression="" field="photo_pool"/>
+    <default applyOnUpdate="0" expression="" field="photo_typical_1"/>
+    <default applyOnUpdate="0" expression="" field="photo_typical_2"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra1"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra1_tag"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra2"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra2_tag"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra3"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra3_tag"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra4"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra4_tag"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra5"/>
+    <default applyOnUpdate="0" expression="" field="photo_extra5_tag"/>
+    <default applyOnUpdate="0" expression="" field="photo_card"/>
+    <default applyOnUpdate="0" expression="" field="method_for_temperature"/>
+    <default applyOnUpdate="0" expression="" field="method_for_conductivity"/>
+    <default applyOnUpdate="0" expression="" field="utm_method"/>
+    <default applyOnUpdate="0" expression="" field="method_for_channel_width"/>
+    <default applyOnUpdate="0" expression="" field="method_for_wetted_width"/>
+    <default applyOnUpdate="0" expression="" field="method_for_gradient"/>
+    <default applyOnUpdate="0" expression="" field="method_for_residual_pool_depth"/>
+    <default applyOnUpdate="0" expression="" field="method_for_bankfull_depth"/>
+    <default applyOnUpdate="0" expression="" field="method_for_p_h"/>
+    <default applyOnUpdate="0" expression="" field="feature_height_length_method"/>
+    <default applyOnUpdate="0" expression="" field="avg_channel_width_m"/>
+    <default applyOnUpdate="0" expression="" field="avg_wetted_width_m"/>
+    <default applyOnUpdate="0" expression="" field="average_gradient_percent"/>
+    <default applyOnUpdate="0" expression="" field="average_residual_pool_depth_m"/>
+    <default applyOnUpdate="0" expression="" field="average_bankfull_depth_m"/>
+    <default applyOnUpdate="0" expression="'&lt;a href=&quot;https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/sitecard20.pdf&quot;>Link to Methods for Site Card&lt;/a>'" field="link_method_site_card"/>
   </defaults>
   <constraints>
-    <constraint notnull_strength="1" unique_strength="1" field="fid" exp_strength="0" constraints="3"/>
-    <constraint notnull_strength="0" unique_strength="0" field="date_time_start" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="mergin_user" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="camera_id" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gps_id" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gazetted_names" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="local_name" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="temperature_c" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="p_h" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="conductivity_m_s_cm" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="turbidity" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="stage" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="no_visible_channel" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="dewatered_dry_int_channel" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="utm_zone" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="utm_easting" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="utm_northing" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="channel_width_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m-channel_width_m_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="channel_width_m_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_2-channel_width_m_2_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_3" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="channel_width_m_3" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_3-channel_width_m_3_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_4" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="channel_width_m_4" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_4-channel_width_m_4_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_5" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="channel_width_m_5" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_5-channel_width_m_5_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_6" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="channel_width_m_6" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_6-channel_width_m_6_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_7" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="channel_width_m_7" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="wetted_width_m_7-channel_width_m_7_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gradient_number_1_percent" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gradient_number_1_percent_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gradient_number_2_percent" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gradient_number_2_percent_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gradient" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gradient_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gradient_number_4_percent" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gradient_number_4_percent_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_2_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_3" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_3_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_4" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_4_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_5" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_5_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_6" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_6_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_7" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="residual_pool_depth_m_7_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bankfull_depth_number_1_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bankfull_depth_number_1_m_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bankfull_depth_number_2_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bankfull_depth_number_2_m_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bankfull_depth_number_3_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bankfull_depth_number_3_m_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bankfull_depth_number_4_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bankfull_depth_number_4_m_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bed_material_dominant" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="bed_material_subdominant" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="comments" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="comments_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="habitat_value_rating" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="reference_number" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="reach_number" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="site_number" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="tributaries" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="total_cover" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="small_woody_debris" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="large_woody_debris" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="boulders" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="undercut_banks" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="deep_pools" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="overhanging_vegetation" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="instream_vegetation" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="crown_closure" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="functional_lwd" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="lwd_distribution" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="instream_vegetation_type" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="l_bank_shape" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="l_bank_texture_dominant_1" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="l_bank_texture_dominant_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="l_bank_riparian_vegetation" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="l_bank_riparian_vegetation_stage" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="r_bank_shape" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="r_bank_texture_dominant_1" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="r_bank_texture_dominant_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="r_bank_riparian_vegetation" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="r_bank_riparian_vegetation_stage" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="d95_cm" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="d_cm" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="morphology" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="channel_pattern" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="coupling" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="confinement" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_type" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_height_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_length_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="crew_members" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="gps_waypoint_number" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="site_length" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_time" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_type_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_height_2_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_length_2_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_time_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_type_3" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_height_3_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_length_3_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_time_3" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="photo_gravel" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="photo_pool" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="photo_typical_1" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="photo_typical_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="photo_extra_1" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="photo_extra_1_tag" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="photo_extra_2" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="photo_extra_2_tag" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="photo_card" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="method_for_temperature" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="method_for_conductivity" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="utm_method" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="method_for_channel_width" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="method_for_wetted_width" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="method_for_gradient" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="method_for_residual_pool_depth" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="method_for_bankfull_depth" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="method_for_p_h" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="feature_height_length_method" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="avg_channel_width_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="avg_wetted_width_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="average_gradient_percent" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="average_residual_pool_depth_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="average_bankfull_depth_m" exp_strength="0" constraints="0"/>
-    <constraint notnull_strength="0" unique_strength="0" field="link_method_site_card" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="1" notnull_strength="1" exp_strength="0" constraints="3" field="fid"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="date_time_start"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="mergin_user"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="camera_id"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gps_id"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gazetted_names"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="local_name"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="temperature_c"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="p_h"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="conductivity_m_s_cm"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="turbidity"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="stage"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="no_visible_channel"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="dewatered_dry_int_channel"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="utm_zone"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="utm_easting"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="utm_northing"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="channel_width_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m-channel_width_m_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_2"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="channel_width_m_2"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_2-channel_width_m_2_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_3"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="channel_width_m_3"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_3-channel_width_m_3_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_4"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="channel_width_m_4"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_4-channel_width_m_4_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_5"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="channel_width_m_5"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_5-channel_width_m_5_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_6"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="channel_width_m_6"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_6-channel_width_m_6_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_7"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="channel_width_m_7"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="wetted_width_m_7-channel_width_m_7_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gradient_number_1_percent"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gradient_number_1_percent_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gradient_number_2_percent"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gradient_number_2_percent_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gradient"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gradient_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gradient_number_4_percent"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gradient_number_4_percent_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_2"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_2_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_3"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_3_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_4"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_4_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_5"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_5_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_6"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_6_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_7"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="residual_pool_depth_m_7_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bankfull_depth_number_1_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bankfull_depth_number_1_m_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bankfull_depth_number_2_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bankfull_depth_number_2_m_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bankfull_depth_number_3_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bankfull_depth_number_3_m_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bankfull_depth_number_4_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bankfull_depth_number_4_m_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bed_material_dominant"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="bed_material_subdominant"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="comments"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="habitat_value_rating"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="reference_number"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="reach_number"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="site_number"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="tributaries"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="total_cover"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="small_woody_debris"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="large_woody_debris"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="boulders"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="undercut_banks"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="deep_pools"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="overhanging_vegetation"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="instream_vegetation"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="crown_closure"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="functional_lwd"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="lwd_distribution"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="instream_vegetation_type"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="l_bank_shape"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="l_bank_texture_dominant_1"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="l_bank_texture_dominant_2"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="l_bank_riparian_vegetation"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="l_bank_riparian_vegetation_stage"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="r_bank_shape"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="r_bank_texture_dominant_1"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="r_bank_texture_dominant_2"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="r_bank_riparian_vegetation"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="r_bank_riparian_vegetation_stage"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="d95_cm"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="d_cm"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="morphology"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="channel_pattern"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="coupling"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="confinement"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_type"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_height_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_length_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="crew_members"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="gps_waypoint_number"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="site_length"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_time"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_type_2"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_height_2_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_length_2_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_time_2"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_type_3"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_height_3_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_length_3_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_time_3"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_gravel"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_pool"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_typical_1"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_typical_2"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra1"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra1_tag"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra2"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra2_tag"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra3"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra3_tag"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra4"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra4_tag"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra5"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_extra5_tag"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="photo_card"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="method_for_temperature"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="method_for_conductivity"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="utm_method"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="method_for_channel_width"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="method_for_wetted_width"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="method_for_gradient"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="method_for_residual_pool_depth"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="method_for_bankfull_depth"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="method_for_p_h"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="feature_height_length_method"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="avg_channel_width_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="avg_wetted_width_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="average_gradient_percent"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="average_residual_pool_depth_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="average_bankfull_depth_m"/>
+    <constraint unique_strength="0" notnull_strength="0" exp_strength="0" constraints="0" field="link_method_site_card"/>
   </constraints>
   <constraintExpressions>
-    <constraint exp="" desc="" field="fid"/>
-    <constraint exp="" desc="" field="date_time_start"/>
-    <constraint exp="" desc="" field="mergin_user"/>
-    <constraint exp="" desc="" field="camera_id"/>
-    <constraint exp="" desc="" field="gps_id"/>
-    <constraint exp="" desc="" field="gazetted_names"/>
-    <constraint exp="" desc="" field="local_name"/>
-    <constraint exp="" desc="" field="temperature_c"/>
-    <constraint exp="" desc="" field="p_h"/>
-    <constraint exp="" desc="" field="conductivity_m_s_cm"/>
-    <constraint exp="" desc="" field="turbidity"/>
-    <constraint exp="" desc="" field="stage"/>
-    <constraint exp="" desc="" field="no_visible_channel"/>
-    <constraint exp="" desc="" field="dewatered_dry_int_channel"/>
-    <constraint exp="" desc="" field="utm_zone"/>
-    <constraint exp="" desc="" field="utm_easting"/>
-    <constraint exp="" desc="" field="utm_northing"/>
-    <constraint exp="" desc="" field="wetted_width_m"/>
-    <constraint exp="" desc="" field="channel_width_m"/>
-    <constraint exp="" desc="" field="wetted_width_m-channel_width_m_time"/>
-    <constraint exp="" desc="" field="wetted_width_m_2"/>
-    <constraint exp="" desc="" field="channel_width_m_2"/>
-    <constraint exp="" desc="" field="wetted_width_m_2-channel_width_m_2_time"/>
-    <constraint exp="" desc="" field="wetted_width_m_3"/>
-    <constraint exp="" desc="" field="channel_width_m_3"/>
-    <constraint exp="" desc="" field="wetted_width_m_3-channel_width_m_3_time"/>
-    <constraint exp="" desc="" field="wetted_width_m_4"/>
-    <constraint exp="" desc="" field="channel_width_m_4"/>
-    <constraint exp="" desc="" field="wetted_width_m_4-channel_width_m_4_time"/>
-    <constraint exp="" desc="" field="wetted_width_m_5"/>
-    <constraint exp="" desc="" field="channel_width_m_5"/>
-    <constraint exp="" desc="" field="wetted_width_m_5-channel_width_m_5_time"/>
-    <constraint exp="" desc="" field="wetted_width_m_6"/>
-    <constraint exp="" desc="" field="channel_width_m_6"/>
-    <constraint exp="" desc="" field="wetted_width_m_6-channel_width_m_6_time"/>
-    <constraint exp="" desc="" field="wetted_width_m_7"/>
-    <constraint exp="" desc="" field="channel_width_m_7"/>
-    <constraint exp="" desc="" field="wetted_width_m_7-channel_width_m_7_time"/>
-    <constraint exp="" desc="" field="gradient_number_1_percent"/>
-    <constraint exp="" desc="" field="gradient_number_1_percent_time"/>
-    <constraint exp="" desc="" field="gradient_number_2_percent"/>
-    <constraint exp="" desc="" field="gradient_number_2_percent_time"/>
-    <constraint exp="" desc="" field="gradient"/>
-    <constraint exp="" desc="" field="gradient_time"/>
-    <constraint exp="" desc="" field="gradient_number_4_percent"/>
-    <constraint exp="" desc="" field="gradient_number_4_percent_time"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_time"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_2"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_2_time"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_3"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_3_time"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_4"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_4_time"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_5"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_5_time"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_6"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_6_time"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_7"/>
-    <constraint exp="" desc="" field="residual_pool_depth_m_7_time"/>
-    <constraint exp="" desc="" field="bankfull_depth_number_1_m"/>
-    <constraint exp="" desc="" field="bankfull_depth_number_1_m_time"/>
-    <constraint exp="" desc="" field="bankfull_depth_number_2_m"/>
-    <constraint exp="" desc="" field="bankfull_depth_number_2_m_time"/>
-    <constraint exp="" desc="" field="bankfull_depth_number_3_m"/>
-    <constraint exp="" desc="" field="bankfull_depth_number_3_m_time"/>
-    <constraint exp="" desc="" field="bankfull_depth_number_4_m"/>
-    <constraint exp="" desc="" field="bankfull_depth_number_4_m_time"/>
-    <constraint exp="" desc="" field="bed_material_dominant"/>
-    <constraint exp="" desc="" field="bed_material_subdominant"/>
-    <constraint exp="" desc="" field="comments"/>
-    <constraint exp="" desc="" field="comments_2"/>
-    <constraint exp="" desc="" field="habitat_value_rating"/>
-    <constraint exp="" desc="" field="reference_number"/>
-    <constraint exp="" desc="" field="reach_number"/>
-    <constraint exp="" desc="" field="site_number"/>
-    <constraint exp="" desc="" field="tributaries"/>
-    <constraint exp="" desc="" field="total_cover"/>
-    <constraint exp="" desc="" field="small_woody_debris"/>
-    <constraint exp="" desc="" field="large_woody_debris"/>
-    <constraint exp="" desc="" field="boulders"/>
-    <constraint exp="" desc="" field="undercut_banks"/>
-    <constraint exp="" desc="" field="deep_pools"/>
-    <constraint exp="" desc="" field="overhanging_vegetation"/>
-    <constraint exp="" desc="" field="instream_vegetation"/>
-    <constraint exp="" desc="" field="crown_closure"/>
-    <constraint exp="" desc="" field="functional_lwd"/>
-    <constraint exp="" desc="" field="lwd_distribution"/>
-    <constraint exp="" desc="" field="instream_vegetation_type"/>
-    <constraint exp="" desc="" field="l_bank_shape"/>
-    <constraint exp="" desc="" field="l_bank_texture_dominant_1"/>
-    <constraint exp="" desc="" field="l_bank_texture_dominant_2"/>
-    <constraint exp="" desc="" field="l_bank_riparian_vegetation"/>
-    <constraint exp="" desc="" field="l_bank_riparian_vegetation_stage"/>
-    <constraint exp="" desc="" field="r_bank_shape"/>
-    <constraint exp="" desc="" field="r_bank_texture_dominant_1"/>
-    <constraint exp="" desc="" field="r_bank_texture_dominant_2"/>
-    <constraint exp="" desc="" field="r_bank_riparian_vegetation"/>
-    <constraint exp="" desc="" field="r_bank_riparian_vegetation_stage"/>
-    <constraint exp="" desc="" field="d95_cm"/>
-    <constraint exp="" desc="" field="d_cm"/>
-    <constraint exp="" desc="" field="morphology"/>
-    <constraint exp="" desc="" field="channel_pattern"/>
-    <constraint exp="" desc="" field="coupling"/>
-    <constraint exp="" desc="" field="confinement"/>
-    <constraint exp="" desc="" field="feature_type"/>
-    <constraint exp="" desc="" field="feature_height_m"/>
-    <constraint exp="" desc="" field="feature_length_m"/>
-    <constraint exp="" desc="" field="crew_members"/>
-    <constraint exp="" desc="" field="gps_waypoint_number"/>
-    <constraint exp="" desc="" field="site_length"/>
-    <constraint exp="" desc="" field="feature_time"/>
-    <constraint exp="" desc="" field="feature_type_2"/>
-    <constraint exp="" desc="" field="feature_height_2_m"/>
-    <constraint exp="" desc="" field="feature_length_2_m"/>
-    <constraint exp="" desc="" field="feature_time_2"/>
-    <constraint exp="" desc="" field="feature_type_3"/>
-    <constraint exp="" desc="" field="feature_height_3_m"/>
-    <constraint exp="" desc="" field="feature_length_3_m"/>
-    <constraint exp="" desc="" field="feature_time_3"/>
-    <constraint exp="" desc="" field="photo_gravel"/>
-    <constraint exp="" desc="" field="photo_pool"/>
-    <constraint exp="" desc="" field="photo_typical_1"/>
-    <constraint exp="" desc="" field="photo_typical_2"/>
-    <constraint exp="" desc="" field="photo_extra_1"/>
-    <constraint exp="" desc="" field="photo_extra_1_tag"/>
-    <constraint exp="" desc="" field="photo_extra_2"/>
-    <constraint exp="" desc="" field="photo_extra_2_tag"/>
-    <constraint exp="" desc="" field="photo_card"/>
-    <constraint exp="" desc="" field="method_for_temperature"/>
-    <constraint exp="" desc="" field="method_for_conductivity"/>
-    <constraint exp="" desc="" field="utm_method"/>
-    <constraint exp="" desc="" field="method_for_channel_width"/>
-    <constraint exp="" desc="" field="method_for_wetted_width"/>
-    <constraint exp="" desc="" field="method_for_gradient"/>
-    <constraint exp="" desc="" field="method_for_residual_pool_depth"/>
-    <constraint exp="" desc="" field="method_for_bankfull_depth"/>
-    <constraint exp="" desc="" field="method_for_p_h"/>
-    <constraint exp="" desc="" field="feature_height_length_method"/>
-    <constraint exp="" desc="" field="avg_channel_width_m"/>
-    <constraint exp="" desc="" field="avg_wetted_width_m"/>
-    <constraint exp="" desc="" field="average_gradient_percent"/>
-    <constraint exp="" desc="" field="average_residual_pool_depth_m"/>
-    <constraint exp="" desc="" field="average_bankfull_depth_m"/>
-    <constraint exp="" desc="" field="link_method_site_card"/>
+    <constraint desc="" exp="" field="fid"/>
+    <constraint desc="" exp="" field="date_time_start"/>
+    <constraint desc="" exp="" field="mergin_user"/>
+    <constraint desc="" exp="" field="camera_id"/>
+    <constraint desc="" exp="" field="gps_id"/>
+    <constraint desc="" exp="" field="gazetted_names"/>
+    <constraint desc="" exp="" field="local_name"/>
+    <constraint desc="" exp="" field="temperature_c"/>
+    <constraint desc="" exp="" field="p_h"/>
+    <constraint desc="" exp="" field="conductivity_m_s_cm"/>
+    <constraint desc="" exp="" field="turbidity"/>
+    <constraint desc="" exp="" field="stage"/>
+    <constraint desc="" exp="" field="no_visible_channel"/>
+    <constraint desc="" exp="" field="dewatered_dry_int_channel"/>
+    <constraint desc="" exp="" field="utm_zone"/>
+    <constraint desc="" exp="" field="utm_easting"/>
+    <constraint desc="" exp="" field="utm_northing"/>
+    <constraint desc="" exp="" field="wetted_width_m"/>
+    <constraint desc="" exp="" field="channel_width_m"/>
+    <constraint desc="" exp="" field="wetted_width_m-channel_width_m_time"/>
+    <constraint desc="" exp="" field="wetted_width_m_2"/>
+    <constraint desc="" exp="" field="channel_width_m_2"/>
+    <constraint desc="" exp="" field="wetted_width_m_2-channel_width_m_2_time"/>
+    <constraint desc="" exp="" field="wetted_width_m_3"/>
+    <constraint desc="" exp="" field="channel_width_m_3"/>
+    <constraint desc="" exp="" field="wetted_width_m_3-channel_width_m_3_time"/>
+    <constraint desc="" exp="" field="wetted_width_m_4"/>
+    <constraint desc="" exp="" field="channel_width_m_4"/>
+    <constraint desc="" exp="" field="wetted_width_m_4-channel_width_m_4_time"/>
+    <constraint desc="" exp="" field="wetted_width_m_5"/>
+    <constraint desc="" exp="" field="channel_width_m_5"/>
+    <constraint desc="" exp="" field="wetted_width_m_5-channel_width_m_5_time"/>
+    <constraint desc="" exp="" field="wetted_width_m_6"/>
+    <constraint desc="" exp="" field="channel_width_m_6"/>
+    <constraint desc="" exp="" field="wetted_width_m_6-channel_width_m_6_time"/>
+    <constraint desc="" exp="" field="wetted_width_m_7"/>
+    <constraint desc="" exp="" field="channel_width_m_7"/>
+    <constraint desc="" exp="" field="wetted_width_m_7-channel_width_m_7_time"/>
+    <constraint desc="" exp="" field="gradient_number_1_percent"/>
+    <constraint desc="" exp="" field="gradient_number_1_percent_time"/>
+    <constraint desc="" exp="" field="gradient_number_2_percent"/>
+    <constraint desc="" exp="" field="gradient_number_2_percent_time"/>
+    <constraint desc="" exp="" field="gradient"/>
+    <constraint desc="" exp="" field="gradient_time"/>
+    <constraint desc="" exp="" field="gradient_number_4_percent"/>
+    <constraint desc="" exp="" field="gradient_number_4_percent_time"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_time"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_2"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_2_time"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_3"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_3_time"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_4"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_4_time"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_5"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_5_time"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_6"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_6_time"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_7"/>
+    <constraint desc="" exp="" field="residual_pool_depth_m_7_time"/>
+    <constraint desc="" exp="" field="bankfull_depth_number_1_m"/>
+    <constraint desc="" exp="" field="bankfull_depth_number_1_m_time"/>
+    <constraint desc="" exp="" field="bankfull_depth_number_2_m"/>
+    <constraint desc="" exp="" field="bankfull_depth_number_2_m_time"/>
+    <constraint desc="" exp="" field="bankfull_depth_number_3_m"/>
+    <constraint desc="" exp="" field="bankfull_depth_number_3_m_time"/>
+    <constraint desc="" exp="" field="bankfull_depth_number_4_m"/>
+    <constraint desc="" exp="" field="bankfull_depth_number_4_m_time"/>
+    <constraint desc="" exp="" field="bed_material_dominant"/>
+    <constraint desc="" exp="" field="bed_material_subdominant"/>
+    <constraint desc="" exp="" field="comments"/>
+    <constraint desc="" exp="" field="habitat_value_rating"/>
+    <constraint desc="" exp="" field="reference_number"/>
+    <constraint desc="" exp="" field="reach_number"/>
+    <constraint desc="" exp="" field="site_number"/>
+    <constraint desc="" exp="" field="tributaries"/>
+    <constraint desc="" exp="" field="total_cover"/>
+    <constraint desc="" exp="" field="small_woody_debris"/>
+    <constraint desc="" exp="" field="large_woody_debris"/>
+    <constraint desc="" exp="" field="boulders"/>
+    <constraint desc="" exp="" field="undercut_banks"/>
+    <constraint desc="" exp="" field="deep_pools"/>
+    <constraint desc="" exp="" field="overhanging_vegetation"/>
+    <constraint desc="" exp="" field="instream_vegetation"/>
+    <constraint desc="" exp="" field="crown_closure"/>
+    <constraint desc="" exp="" field="functional_lwd"/>
+    <constraint desc="" exp="" field="lwd_distribution"/>
+    <constraint desc="" exp="" field="instream_vegetation_type"/>
+    <constraint desc="" exp="" field="l_bank_shape"/>
+    <constraint desc="" exp="" field="l_bank_texture_dominant_1"/>
+    <constraint desc="" exp="" field="l_bank_texture_dominant_2"/>
+    <constraint desc="" exp="" field="l_bank_riparian_vegetation"/>
+    <constraint desc="" exp="" field="l_bank_riparian_vegetation_stage"/>
+    <constraint desc="" exp="" field="r_bank_shape"/>
+    <constraint desc="" exp="" field="r_bank_texture_dominant_1"/>
+    <constraint desc="" exp="" field="r_bank_texture_dominant_2"/>
+    <constraint desc="" exp="" field="r_bank_riparian_vegetation"/>
+    <constraint desc="" exp="" field="r_bank_riparian_vegetation_stage"/>
+    <constraint desc="" exp="" field="d95_cm"/>
+    <constraint desc="" exp="" field="d_cm"/>
+    <constraint desc="" exp="" field="morphology"/>
+    <constraint desc="" exp="" field="channel_pattern"/>
+    <constraint desc="" exp="" field="coupling"/>
+    <constraint desc="" exp="" field="confinement"/>
+    <constraint desc="" exp="" field="feature_type"/>
+    <constraint desc="" exp="" field="feature_height_m"/>
+    <constraint desc="" exp="" field="feature_length_m"/>
+    <constraint desc="" exp="" field="crew_members"/>
+    <constraint desc="" exp="" field="gps_waypoint_number"/>
+    <constraint desc="" exp="" field="site_length"/>
+    <constraint desc="" exp="" field="feature_time"/>
+    <constraint desc="" exp="" field="feature_type_2"/>
+    <constraint desc="" exp="" field="feature_height_2_m"/>
+    <constraint desc="" exp="" field="feature_length_2_m"/>
+    <constraint desc="" exp="" field="feature_time_2"/>
+    <constraint desc="" exp="" field="feature_type_3"/>
+    <constraint desc="" exp="" field="feature_height_3_m"/>
+    <constraint desc="" exp="" field="feature_length_3_m"/>
+    <constraint desc="" exp="" field="feature_time_3"/>
+    <constraint desc="" exp="" field="photo_gravel"/>
+    <constraint desc="" exp="" field="photo_pool"/>
+    <constraint desc="" exp="" field="photo_typical_1"/>
+    <constraint desc="" exp="" field="photo_typical_2"/>
+    <constraint desc="" exp="" field="photo_extra1"/>
+    <constraint desc="" exp="" field="photo_extra1_tag"/>
+    <constraint desc="" exp="" field="photo_extra2"/>
+    <constraint desc="" exp="" field="photo_extra2_tag"/>
+    <constraint desc="" exp="" field="photo_extra3"/>
+    <constraint desc="" exp="" field="photo_extra3_tag"/>
+    <constraint desc="" exp="" field="photo_extra4"/>
+    <constraint desc="" exp="" field="photo_extra4_tag"/>
+    <constraint desc="" exp="" field="photo_extra5"/>
+    <constraint desc="" exp="" field="photo_extra5_tag"/>
+    <constraint desc="" exp="" field="photo_card"/>
+    <constraint desc="" exp="" field="method_for_temperature"/>
+    <constraint desc="" exp="" field="method_for_conductivity"/>
+    <constraint desc="" exp="" field="utm_method"/>
+    <constraint desc="" exp="" field="method_for_channel_width"/>
+    <constraint desc="" exp="" field="method_for_wetted_width"/>
+    <constraint desc="" exp="" field="method_for_gradient"/>
+    <constraint desc="" exp="" field="method_for_residual_pool_depth"/>
+    <constraint desc="" exp="" field="method_for_bankfull_depth"/>
+    <constraint desc="" exp="" field="method_for_p_h"/>
+    <constraint desc="" exp="" field="feature_height_length_method"/>
+    <constraint desc="" exp="" field="avg_channel_width_m"/>
+    <constraint desc="" exp="" field="avg_wetted_width_m"/>
+    <constraint desc="" exp="" field="average_gradient_percent"/>
+    <constraint desc="" exp="" field="average_residual_pool_depth_m"/>
+    <constraint desc="" exp="" field="average_bankfull_depth_m"/>
+    <constraint desc="" exp="" field="link_method_site_card"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
     <columns>
-      <column name="fid" hidden="0" type="field" width="-1"/>
-      <column name="date_time_start" hidden="0" type="field" width="-1"/>
-      <column name="mergin_user" hidden="0" type="field" width="-1"/>
-      <column name="camera_id" hidden="0" type="field" width="-1"/>
-      <column name="gps_id" hidden="0" type="field" width="-1"/>
-      <column name="gazetted_names" hidden="0" type="field" width="345"/>
-      <column name="local_name" hidden="0" type="field" width="-1"/>
-      <column name="temperature_c" hidden="0" type="field" width="-1"/>
-      <column name="p_h" hidden="0" type="field" width="-1"/>
-      <column name="conductivity_m_s_cm" hidden="0" type="field" width="-1"/>
-      <column name="turbidity" hidden="0" type="field" width="-1"/>
-      <column name="stage" hidden="0" type="field" width="-1"/>
-      <column name="utm_zone" hidden="0" type="field" width="-1"/>
-      <column name="utm_easting" hidden="0" type="field" width="-1"/>
-      <column name="utm_northing" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m" hidden="0" type="field" width="-1"/>
-      <column name="channel_width_m" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m-channel_width_m_time" hidden="0" type="field" width="242"/>
-      <column name="wetted_width_m_2" hidden="0" type="field" width="-1"/>
-      <column name="channel_width_m_2" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m_2-channel_width_m_2_time" hidden="0" type="field" width="270"/>
-      <column name="wetted_width_m_3" hidden="0" type="field" width="-1"/>
-      <column name="channel_width_m_3" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m_3-channel_width_m_3_time" hidden="0" type="field" width="272"/>
-      <column name="wetted_width_m_4" hidden="0" type="field" width="-1"/>
-      <column name="channel_width_m_4" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m_4-channel_width_m_4_time" hidden="0" type="field" width="272"/>
-      <column name="wetted_width_m_5" hidden="0" type="field" width="-1"/>
-      <column name="channel_width_m_5" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m_5-channel_width_m_5_time" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m_6" hidden="0" type="field" width="-1"/>
-      <column name="channel_width_m_6" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m_6-channel_width_m_6_time" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m_7" hidden="0" type="field" width="-1"/>
-      <column name="channel_width_m_7" hidden="0" type="field" width="-1"/>
-      <column name="wetted_width_m_7-channel_width_m_7_time" hidden="0" type="field" width="270"/>
-      <column name="gradient_number_1_percent" hidden="0" type="field" width="-1"/>
-      <column name="gradient_number_1_percent_time" hidden="0" type="field" width="-1"/>
-      <column name="gradient_number_2_percent" hidden="0" type="field" width="-1"/>
-      <column name="gradient_number_2_percent_time" hidden="0" type="field" width="-1"/>
-      <column name="gradient" hidden="0" type="field" width="-1"/>
-      <column name="gradient_time" hidden="0" type="field" width="-1"/>
-      <column name="gradient_number_4_percent" hidden="0" type="field" width="-1"/>
-      <column name="gradient_number_4_percent_time" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_time" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_2" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_2_time" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_3" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_3_time" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_4" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_4_time" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_5" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_5_time" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_6" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_6_time" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_7" hidden="0" type="field" width="-1"/>
-      <column name="residual_pool_depth_m_7_time" hidden="0" type="field" width="-1"/>
-      <column name="bankfull_depth_number_1_m" hidden="0" type="field" width="-1"/>
-      <column name="bankfull_depth_number_1_m_time" hidden="0" type="field" width="-1"/>
-      <column name="bankfull_depth_number_2_m" hidden="0" type="field" width="-1"/>
-      <column name="bankfull_depth_number_2_m_time" hidden="0" type="field" width="-1"/>
-      <column name="bankfull_depth_number_3_m" hidden="0" type="field" width="-1"/>
-      <column name="bankfull_depth_number_3_m_time" hidden="0" type="field" width="-1"/>
-      <column name="bankfull_depth_number_4_m" hidden="0" type="field" width="-1"/>
-      <column name="bankfull_depth_number_4_m_time" hidden="0" type="field" width="-1"/>
-      <column name="bed_material_dominant" hidden="0" type="field" width="-1"/>
-      <column name="bed_material_subdominant" hidden="0" type="field" width="-1"/>
-      <column name="comments" hidden="0" type="field" width="-1"/>
-      <column name="comments_2" hidden="0" type="field" width="-1"/>
-      <column name="reference_number" hidden="0" type="field" width="-1"/>
-      <column name="reach_number" hidden="0" type="field" width="-1"/>
-      <column name="site_number" hidden="0" type="field" width="-1"/>
-      <column name="tributaries" hidden="0" type="field" width="-1"/>
-      <column name="total_cover" hidden="0" type="field" width="-1"/>
-      <column name="small_woody_debris" hidden="0" type="field" width="-1"/>
-      <column name="large_woody_debris" hidden="0" type="field" width="-1"/>
-      <column name="boulders" hidden="0" type="field" width="-1"/>
-      <column name="undercut_banks" hidden="0" type="field" width="-1"/>
-      <column name="deep_pools" hidden="0" type="field" width="-1"/>
-      <column name="overhanging_vegetation" hidden="0" type="field" width="-1"/>
-      <column name="instream_vegetation" hidden="0" type="field" width="-1"/>
-      <column name="crown_closure" hidden="0" type="field" width="-1"/>
-      <column name="functional_lwd" hidden="0" type="field" width="-1"/>
-      <column name="lwd_distribution" hidden="0" type="field" width="-1"/>
-      <column name="instream_vegetation_type" hidden="0" type="field" width="-1"/>
-      <column name="l_bank_shape" hidden="0" type="field" width="-1"/>
-      <column name="l_bank_texture_dominant_1" hidden="0" type="field" width="-1"/>
-      <column name="l_bank_texture_dominant_2" hidden="0" type="field" width="-1"/>
-      <column name="l_bank_riparian_vegetation" hidden="0" type="field" width="-1"/>
-      <column name="l_bank_riparian_vegetation_stage" hidden="0" type="field" width="-1"/>
-      <column name="r_bank_shape" hidden="0" type="field" width="-1"/>
-      <column name="r_bank_texture_dominant_1" hidden="0" type="field" width="-1"/>
-      <column name="r_bank_texture_dominant_2" hidden="0" type="field" width="-1"/>
-      <column name="r_bank_riparian_vegetation" hidden="0" type="field" width="-1"/>
-      <column name="r_bank_riparian_vegetation_stage" hidden="0" type="field" width="-1"/>
-      <column name="d95_cm" hidden="0" type="field" width="-1"/>
-      <column name="d_cm" hidden="0" type="field" width="-1"/>
-      <column name="morphology" hidden="0" type="field" width="-1"/>
-      <column name="channel_pattern" hidden="0" type="field" width="-1"/>
-      <column name="coupling" hidden="0" type="field" width="-1"/>
-      <column name="confinement" hidden="0" type="field" width="-1"/>
-      <column name="feature_type" hidden="0" type="field" width="-1"/>
-      <column name="feature_height_m" hidden="0" type="field" width="-1"/>
-      <column name="feature_length_m" hidden="0" type="field" width="-1"/>
-      <column name="feature_time" hidden="0" type="field" width="-1"/>
-      <column name="feature_type_2" hidden="0" type="field" width="-1"/>
-      <column name="feature_height_2_m" hidden="0" type="field" width="-1"/>
-      <column name="feature_length_2_m" hidden="0" type="field" width="-1"/>
-      <column name="feature_time_2" hidden="0" type="field" width="-1"/>
-      <column name="feature_type_3" hidden="0" type="field" width="-1"/>
-      <column name="feature_height_3_m" hidden="0" type="field" width="-1"/>
-      <column name="feature_length_3_m" hidden="0" type="field" width="-1"/>
-      <column name="feature_time_3" hidden="0" type="field" width="-1"/>
-      <column name="photo_gravel" hidden="0" type="field" width="-1"/>
-      <column name="photo_pool" hidden="0" type="field" width="-1"/>
-      <column name="photo_typical_1" hidden="0" type="field" width="-1"/>
-      <column name="photo_typical_2" hidden="0" type="field" width="-1"/>
-      <column name="photo_extra_1" hidden="0" type="field" width="-1"/>
-      <column name="photo_extra_1_tag" hidden="0" type="field" width="-1"/>
-      <column name="photo_extra_2" hidden="0" type="field" width="-1"/>
-      <column name="photo_extra_2_tag" hidden="0" type="field" width="-1"/>
-      <column name="method_for_temperature" hidden="0" type="field" width="-1"/>
-      <column name="method_for_conductivity" hidden="0" type="field" width="-1"/>
-      <column name="utm_method" hidden="0" type="field" width="-1"/>
-      <column name="method_for_channel_width" hidden="0" type="field" width="-1"/>
-      <column name="method_for_wetted_width" hidden="0" type="field" width="-1"/>
-      <column name="method_for_gradient" hidden="0" type="field" width="-1"/>
-      <column name="method_for_residual_pool_depth" hidden="0" type="field" width="-1"/>
-      <column name="method_for_bankfull_depth" hidden="0" type="field" width="-1"/>
-      <column name="method_for_p_h" hidden="0" type="field" width="-1"/>
-      <column name="feature_height_length_method" hidden="0" type="field" width="-1"/>
-      <column name="avg_channel_width_m" hidden="0" type="field" width="-1"/>
-      <column name="avg_wetted_width_m" hidden="0" type="field" width="-1"/>
-      <column name="average_gradient_percent" hidden="0" type="field" width="-1"/>
-      <column name="average_residual_pool_depth_m" hidden="0" type="field" width="-1"/>
-      <column name="average_bankfull_depth_m" hidden="0" type="field" width="-1"/>
-      <column name="gps_waypoint_number" hidden="0" type="field" width="-1"/>
-      <column name="site_length" hidden="0" type="field" width="-1"/>
-      <column name="no_visible_channel" hidden="0" type="field" width="-1"/>
-      <column name="dewatered_dry_int_channel" hidden="0" type="field" width="-1"/>
-      <column name="habitat_value_rating" hidden="0" type="field" width="-1"/>
-      <column name="link_method_site_card" hidden="0" type="field" width="-1"/>
-      <column name="crew_members" hidden="0" type="field" width="-1"/>
-      <column name="photo_card" hidden="0" type="field" width="-1"/>
-      <column hidden="1" type="actions" width="-1"/>
+      <column width="-1" type="field" name="fid" hidden="0"/>
+      <column width="-1" type="field" name="date_time_start" hidden="0"/>
+      <column width="-1" type="field" name="mergin_user" hidden="0"/>
+      <column width="-1" type="field" name="camera_id" hidden="0"/>
+      <column width="-1" type="field" name="gps_id" hidden="0"/>
+      <column width="345" type="field" name="gazetted_names" hidden="0"/>
+      <column width="-1" type="field" name="local_name" hidden="0"/>
+      <column width="-1" type="field" name="temperature_c" hidden="0"/>
+      <column width="-1" type="field" name="p_h" hidden="0"/>
+      <column width="-1" type="field" name="conductivity_m_s_cm" hidden="0"/>
+      <column width="-1" type="field" name="turbidity" hidden="0"/>
+      <column width="-1" type="field" name="stage" hidden="0"/>
+      <column width="-1" type="field" name="utm_zone" hidden="0"/>
+      <column width="-1" type="field" name="utm_easting" hidden="0"/>
+      <column width="-1" type="field" name="utm_northing" hidden="0"/>
+      <column width="-1" type="field" name="wetted_width_m" hidden="0"/>
+      <column width="-1" type="field" name="channel_width_m" hidden="0"/>
+      <column width="242" type="field" name="wetted_width_m-channel_width_m_time" hidden="0"/>
+      <column width="-1" type="field" name="wetted_width_m_2" hidden="0"/>
+      <column width="-1" type="field" name="channel_width_m_2" hidden="0"/>
+      <column width="270" type="field" name="wetted_width_m_2-channel_width_m_2_time" hidden="0"/>
+      <column width="-1" type="field" name="wetted_width_m_3" hidden="0"/>
+      <column width="-1" type="field" name="channel_width_m_3" hidden="0"/>
+      <column width="272" type="field" name="wetted_width_m_3-channel_width_m_3_time" hidden="0"/>
+      <column width="-1" type="field" name="wetted_width_m_4" hidden="0"/>
+      <column width="-1" type="field" name="channel_width_m_4" hidden="0"/>
+      <column width="272" type="field" name="wetted_width_m_4-channel_width_m_4_time" hidden="0"/>
+      <column width="-1" type="field" name="wetted_width_m_5" hidden="0"/>
+      <column width="-1" type="field" name="channel_width_m_5" hidden="0"/>
+      <column width="-1" type="field" name="wetted_width_m_5-channel_width_m_5_time" hidden="0"/>
+      <column width="-1" type="field" name="wetted_width_m_6" hidden="0"/>
+      <column width="-1" type="field" name="channel_width_m_6" hidden="0"/>
+      <column width="-1" type="field" name="wetted_width_m_6-channel_width_m_6_time" hidden="0"/>
+      <column width="-1" type="field" name="wetted_width_m_7" hidden="0"/>
+      <column width="-1" type="field" name="channel_width_m_7" hidden="0"/>
+      <column width="270" type="field" name="wetted_width_m_7-channel_width_m_7_time" hidden="0"/>
+      <column width="-1" type="field" name="gradient_number_1_percent" hidden="0"/>
+      <column width="-1" type="field" name="gradient_number_1_percent_time" hidden="0"/>
+      <column width="-1" type="field" name="gradient_number_2_percent" hidden="0"/>
+      <column width="-1" type="field" name="gradient_number_2_percent_time" hidden="0"/>
+      <column width="-1" type="field" name="gradient" hidden="0"/>
+      <column width="-1" type="field" name="gradient_time" hidden="0"/>
+      <column width="-1" type="field" name="gradient_number_4_percent" hidden="0"/>
+      <column width="-1" type="field" name="gradient_number_4_percent_time" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_time" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_2" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_2_time" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_3" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_3_time" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_4" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_4_time" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_5" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_5_time" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_6" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_6_time" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_7" hidden="0"/>
+      <column width="-1" type="field" name="residual_pool_depth_m_7_time" hidden="0"/>
+      <column width="-1" type="field" name="bankfull_depth_number_1_m" hidden="0"/>
+      <column width="-1" type="field" name="bankfull_depth_number_1_m_time" hidden="0"/>
+      <column width="-1" type="field" name="bankfull_depth_number_2_m" hidden="0"/>
+      <column width="-1" type="field" name="bankfull_depth_number_2_m_time" hidden="0"/>
+      <column width="-1" type="field" name="bankfull_depth_number_3_m" hidden="0"/>
+      <column width="-1" type="field" name="bankfull_depth_number_3_m_time" hidden="0"/>
+      <column width="-1" type="field" name="bankfull_depth_number_4_m" hidden="0"/>
+      <column width="-1" type="field" name="bankfull_depth_number_4_m_time" hidden="0"/>
+      <column width="-1" type="field" name="bed_material_dominant" hidden="0"/>
+      <column width="-1" type="field" name="bed_material_subdominant" hidden="0"/>
+      <column width="-1" type="field" name="comments" hidden="0"/>
+      <column width="-1" type="field" name="reference_number" hidden="0"/>
+      <column width="-1" type="field" name="reach_number" hidden="0"/>
+      <column width="-1" type="field" name="site_number" hidden="0"/>
+      <column width="-1" type="field" name="tributaries" hidden="0"/>
+      <column width="-1" type="field" name="total_cover" hidden="0"/>
+      <column width="-1" type="field" name="small_woody_debris" hidden="0"/>
+      <column width="-1" type="field" name="large_woody_debris" hidden="0"/>
+      <column width="-1" type="field" name="boulders" hidden="0"/>
+      <column width="-1" type="field" name="undercut_banks" hidden="0"/>
+      <column width="-1" type="field" name="deep_pools" hidden="0"/>
+      <column width="-1" type="field" name="overhanging_vegetation" hidden="0"/>
+      <column width="-1" type="field" name="instream_vegetation" hidden="0"/>
+      <column width="-1" type="field" name="crown_closure" hidden="0"/>
+      <column width="-1" type="field" name="functional_lwd" hidden="0"/>
+      <column width="-1" type="field" name="lwd_distribution" hidden="0"/>
+      <column width="-1" type="field" name="instream_vegetation_type" hidden="0"/>
+      <column width="-1" type="field" name="l_bank_shape" hidden="0"/>
+      <column width="-1" type="field" name="l_bank_texture_dominant_1" hidden="0"/>
+      <column width="-1" type="field" name="l_bank_texture_dominant_2" hidden="0"/>
+      <column width="-1" type="field" name="l_bank_riparian_vegetation" hidden="0"/>
+      <column width="-1" type="field" name="l_bank_riparian_vegetation_stage" hidden="0"/>
+      <column width="-1" type="field" name="r_bank_shape" hidden="0"/>
+      <column width="-1" type="field" name="r_bank_texture_dominant_1" hidden="0"/>
+      <column width="-1" type="field" name="r_bank_texture_dominant_2" hidden="0"/>
+      <column width="-1" type="field" name="r_bank_riparian_vegetation" hidden="0"/>
+      <column width="-1" type="field" name="r_bank_riparian_vegetation_stage" hidden="0"/>
+      <column width="-1" type="field" name="d95_cm" hidden="0"/>
+      <column width="-1" type="field" name="d_cm" hidden="0"/>
+      <column width="-1" type="field" name="morphology" hidden="0"/>
+      <column width="-1" type="field" name="channel_pattern" hidden="0"/>
+      <column width="-1" type="field" name="coupling" hidden="0"/>
+      <column width="-1" type="field" name="confinement" hidden="0"/>
+      <column width="-1" type="field" name="feature_type" hidden="0"/>
+      <column width="-1" type="field" name="feature_height_m" hidden="0"/>
+      <column width="-1" type="field" name="feature_length_m" hidden="0"/>
+      <column width="-1" type="field" name="feature_time" hidden="0"/>
+      <column width="-1" type="field" name="feature_type_2" hidden="0"/>
+      <column width="-1" type="field" name="feature_height_2_m" hidden="0"/>
+      <column width="-1" type="field" name="feature_length_2_m" hidden="0"/>
+      <column width="-1" type="field" name="feature_time_2" hidden="0"/>
+      <column width="-1" type="field" name="feature_type_3" hidden="0"/>
+      <column width="-1" type="field" name="feature_height_3_m" hidden="0"/>
+      <column width="-1" type="field" name="feature_length_3_m" hidden="0"/>
+      <column width="-1" type="field" name="feature_time_3" hidden="0"/>
+      <column width="-1" type="field" name="photo_gravel" hidden="0"/>
+      <column width="-1" type="field" name="photo_pool" hidden="0"/>
+      <column width="-1" type="field" name="photo_typical_1" hidden="0"/>
+      <column width="-1" type="field" name="photo_typical_2" hidden="0"/>
+      <column width="-1" type="field" name="method_for_temperature" hidden="0"/>
+      <column width="-1" type="field" name="method_for_conductivity" hidden="0"/>
+      <column width="-1" type="field" name="utm_method" hidden="0"/>
+      <column width="-1" type="field" name="method_for_channel_width" hidden="0"/>
+      <column width="-1" type="field" name="method_for_wetted_width" hidden="0"/>
+      <column width="-1" type="field" name="method_for_gradient" hidden="0"/>
+      <column width="-1" type="field" name="method_for_residual_pool_depth" hidden="0"/>
+      <column width="-1" type="field" name="method_for_bankfull_depth" hidden="0"/>
+      <column width="-1" type="field" name="method_for_p_h" hidden="0"/>
+      <column width="-1" type="field" name="feature_height_length_method" hidden="0"/>
+      <column width="-1" type="field" name="avg_channel_width_m" hidden="0"/>
+      <column width="-1" type="field" name="avg_wetted_width_m" hidden="0"/>
+      <column width="-1" type="field" name="average_gradient_percent" hidden="0"/>
+      <column width="-1" type="field" name="average_residual_pool_depth_m" hidden="0"/>
+      <column width="-1" type="field" name="average_bankfull_depth_m" hidden="0"/>
+      <column width="-1" type="field" name="gps_waypoint_number" hidden="0"/>
+      <column width="-1" type="field" name="site_length" hidden="0"/>
+      <column width="-1" type="field" name="no_visible_channel" hidden="0"/>
+      <column width="-1" type="field" name="dewatered_dry_int_channel" hidden="0"/>
+      <column width="-1" type="field" name="habitat_value_rating" hidden="0"/>
+      <column width="-1" type="field" name="link_method_site_card" hidden="0"/>
+      <column width="-1" type="field" name="crew_members" hidden="0"/>
+      <column width="-1" type="field" name="photo_card" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra1" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra1_tag" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra2" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra2_tag" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra3" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra3_tag" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra4" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra4_tag" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra5" hidden="0"/>
+      <column width="-1" type="field" name="photo_extra5_tag" hidden="0"/>
+      <column width="-1" type="actions" hidden="1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -3927,1131 +4095,1191 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-      <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+      <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
     </labelStyle>
-    <attributeEditorContainer collapsedExpression="" showLabel="0" name="GENERAL" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="0" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="GENERAL" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="date_time_start" index="1">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="1" name="date_time_start">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="0" name="mergin_user" index="2">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="0" horizontalStretch="0" index="2" name="mergin_user">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="crew_members" index="108">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description="Academy Engraved LET,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="107" name="crew_members">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description="Academy Engraved LET,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="gps_waypoint_id" index="-1">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="-1" name="gps_waypoint_id">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="gazetted_names" index="5">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description="Academy Engraved LET,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="5" name="gazetted_names">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description="Academy Engraved LET,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="local_name" index="6">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="6" name="local_name">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer collapsedExpression="" showLabel="0" name="WATER" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="0" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="WATER" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="temperature_c" index="7">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="7" name="temperature_c">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="p_h" index="8">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="8" name="p_h">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="conductivity_m_s_cm" index="9">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="9" name="conductivity_m_s_cm">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="turbidity" index="10">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="10" name="turbidity">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer collapsedExpression="" showLabel="0" name="CHANNEL" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="0" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="CHANNEL" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="stage" index="11">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="11" name="stage">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorContainer collapsedExpression="" showLabel="1" name="widths" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="1" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="1" name="widths" type="GroupBox">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
-        <attributeEditorField showLabel="1" name="wetted_width_m" index="17">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="17" name="wetted_width_m">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="channel_width_m" index="18">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="18" name="channel_width_m">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m-channel_width_m_time" index="19">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="19" name="wetted_width_m-channel_width_m_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_2" index="20">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="20" name="wetted_width_m_2">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="channel_width_m_2" index="21">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="21" name="channel_width_m_2">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_2-channel_width_m_2_time" index="22">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="22" name="wetted_width_m_2-channel_width_m_2_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_3" index="23">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="23" name="wetted_width_m_3">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="channel_width_m_3" index="24">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="24" name="channel_width_m_3">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_3-channel_width_m_3_time" index="25">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="25" name="wetted_width_m_3-channel_width_m_3_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_4" index="26">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="26" name="wetted_width_m_4">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="channel_width_m_4" index="27">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="27" name="channel_width_m_4">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_4-channel_width_m_4_time" index="28">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="28" name="wetted_width_m_4-channel_width_m_4_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_5" index="29">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="29" name="wetted_width_m_5">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="channel_width_m_5" index="30">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="30" name="channel_width_m_5">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_5-channel_width_m_5_time" index="31">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="31" name="wetted_width_m_5-channel_width_m_5_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_6" index="32">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="32" name="wetted_width_m_6">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="channel_width_m_6" index="33">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="33" name="channel_width_m_6">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_6-channel_width_m_6_time" index="34">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="34" name="wetted_width_m_6-channel_width_m_6_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_7" index="35">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="35" name="wetted_width_m_7">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="channel_width_m_7" index="36">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="36" name="channel_width_m_7">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="wetted_width_m_7-channel_width_m_7_time" index="37">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="37" name="wetted_width_m_7-channel_width_m_7_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
       </attributeEditorContainer>
-      <attributeEditorContainer collapsedExpression="" showLabel="1" name="gradients" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="1" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="1" name="gradients" type="GroupBox">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
-        <attributeEditorField showLabel="1" name="gradient_number_1_percent" index="38">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="38" name="gradient_number_1_percent">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="gradient_number_1_percent_time" index="39">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="39" name="gradient_number_1_percent_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="gradient_number_2_percent" index="40">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="40" name="gradient_number_2_percent">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="gradient_number_2_percent_time" index="41">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="41" name="gradient_number_2_percent_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="gradient" index="42">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="42" name="gradient">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="gradient_time" index="43">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="43" name="gradient_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="gradient_number_4_percent" index="44">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="44" name="gradient_number_4_percent">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="gradient_number_4_percent_time" index="45">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-      </attributeEditorContainer>
-      <attributeEditorContainer collapsedExpression="" showLabel="1" name="pool depths" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-        </labelStyle>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m" index="46">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_time" index="47">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_2" index="48">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_2_time" index="49">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_3" index="50">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_3_time" index="51">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_4" index="52">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_4_time" index="53">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_5" index="54">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_5_time" index="55">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_6" index="56">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_6_time" index="57">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_7" index="58">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
-          </labelStyle>
-        </attributeEditorField>
-        <attributeEditorField showLabel="1" name="residual_pool_depth_m_7_time" index="59">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="45" name="gradient_number_4_percent_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
       </attributeEditorContainer>
-      <attributeEditorContainer collapsedExpression="" showLabel="1" name="bankful depths" groupBox="1" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="1" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="1" name="pool depths" type="GroupBox">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
-        <attributeEditorField showLabel="1" name="bankfull_depth_number_1_m" index="60">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="46" name="residual_pool_depth_m">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="bankfull_depth_number_1_m_time" index="61">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="47" name="residual_pool_depth_m_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="bankfull_depth_number_2_m" index="62">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="48" name="residual_pool_depth_m_2">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="bankfull_depth_number_2_m_time" index="63">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="49" name="residual_pool_depth_m_2_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="bankfull_depth_number_3_m" index="64">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="50" name="residual_pool_depth_m_3">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="bankfull_depth_number_3_m_time" index="65">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="51" name="residual_pool_depth_m_3_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="bankfull_depth_number_4_m" index="66">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="52" name="residual_pool_depth_m_4">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
-        <attributeEditorField showLabel="1" name="bankfull_depth_number_4_m_time" index="67">
-          <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-            <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="53" name="residual_pool_depth_m_4_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="54" name="residual_pool_depth_m_5">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="55" name="residual_pool_depth_m_5_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="56" name="residual_pool_depth_m_6">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="57" name="residual_pool_depth_m_6_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="58" name="residual_pool_depth_m_7">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="59" name="residual_pool_depth_m_7_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+      </attributeEditorContainer>
+      <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="1" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="1" name="bankful depths" type="GroupBox">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+        </labelStyle>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="60" name="bankfull_depth_number_1_m">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="61" name="bankfull_depth_number_1_m_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="62" name="bankfull_depth_number_2_m">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="63" name="bankfull_depth_number_2_m_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="64" name="bankfull_depth_number_3_m">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="65" name="bankfull_depth_number_3_m_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="66" name="bankfull_depth_number_4_m">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+          </labelStyle>
+        </attributeEditorField>
+        <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="67" name="bankfull_depth_number_4_m_time">
+          <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+            <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
           </labelStyle>
         </attributeEditorField>
       </attributeEditorContainer>
     </attributeEditorContainer>
-    <attributeEditorContainer collapsedExpression="" showLabel="0" name="FEATURES" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="0" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="FEATURES" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="feature_type" index="105">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="104" name="feature_type">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_height_m" index="106">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="105" name="feature_height_m">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_length_m" index="107">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="106" name="feature_length_m">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_time" index="111">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="110" name="feature_time">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_type_2" index="112">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="111" name="feature_type_2">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_height_2_m" index="113">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="112" name="feature_height_2_m">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_length_2_m" index="114">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="113" name="feature_length_2_m">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_time_2" index="115">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="114" name="feature_time_2">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_type_3" index="116">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="115" name="feature_type_3">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_height_3_m" index="117">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="116" name="feature_height_3_m">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_length_3_m" index="118">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="117" name="feature_length_3_m">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="feature_time_3" index="119">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="118" name="feature_time_3">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer collapsedExpression="" showLabel="0" name="MORPHOLOGY" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="0" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="MORPHOLOGY" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="bed_material_dominant" index="68">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="68" name="bed_material_dominant">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="bed_material_subdominant" index="69">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="69" name="bed_material_subdominant">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="d95_cm" index="99">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="98" name="d95_cm">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="d_cm" index="100">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="99" name="d_cm">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="morphology" index="101">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="100" name="morphology">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="channel_pattern" index="102">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="101" name="channel_pattern">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="coupling" index="103">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="102" name="coupling">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="confinement" index="104">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="103" name="confinement">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer collapsedExpression="" showLabel="1" name="COVER" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="1" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="COVER" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="total_cover" index="77">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="76" name="total_cover">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="small_woody_debris" index="78">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="77" name="small_woody_debris">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="large_woody_debris" index="79">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="78" name="large_woody_debris">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="boulders" index="80">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="79" name="boulders">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="undercut_banks" index="81">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="80" name="undercut_banks">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="deep_pools" index="82">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="81" name="deep_pools">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="overhanging_vegetation" index="83">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="82" name="overhanging_vegetation">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="instream_vegetation" index="84">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="83" name="instream_vegetation">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="crown_closure" index="85">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="84" name="crown_closure">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="functional_lwd" index="86">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="85" name="functional_lwd">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="lwd_distribution" index="87">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="86" name="lwd_distribution">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="instream_vegetation_type" index="88">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="87" name="instream_vegetation_type">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer collapsedExpression="" showLabel="1" name="BANKS" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="1" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="BANKS" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="l_bank_shape" index="89">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="88" name="l_bank_shape">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="l_bank_texture_dominant_1" index="90">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="89" name="l_bank_texture_dominant_1">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="l_bank_texture_dominant_2" index="91">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="90" name="l_bank_texture_dominant_2">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="l_bank_riparian_vegetation" index="92">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="91" name="l_bank_riparian_vegetation">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="l_bank_riparian_vegetation_stage" index="93">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="92" name="l_bank_riparian_vegetation_stage">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="r_bank_shape" index="94">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="93" name="r_bank_shape">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="r_bank_texture_dominant_1" index="95">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="94" name="r_bank_texture_dominant_1">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="r_bank_texture_dominant_2" index="96">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="95" name="r_bank_texture_dominant_2">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="r_bank_riparian_vegetation" index="97">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="96" name="r_bank_riparian_vegetation">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="r_bank_riparian_vegetation_stage" index="98">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="97" name="r_bank_riparian_vegetation_stage">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer collapsedExpression="" showLabel="0" name="HABITAT QUALITY" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="0" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="HABITAT QUALITY" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="site_length" index="110">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="109" name="site_length">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="comments" index="70">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="71" name="habitat_value_rating">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="comments_2" index="71">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="70" name="comments">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer collapsedExpression="" showLabel="0" name="PHOTOS" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="0" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="PHOTOS" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="photo_gravel" index="120">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="119" name="photo_gravel">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="photo_pool" index="121">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="120" name="photo_pool">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="photo_typical_1" index="122">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="121" name="photo_typical_1">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="photo_typical_2" index="123">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="122" name="photo_typical_2">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="photo_extra_1" index="124">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="123" name="photo_extra1">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="photo_extra_1_tag" index="125">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="124" name="photo_extra1_tag">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="photo_extra_2" index="126">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="125" name="photo_extra2">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="photo_extra_2_tag" index="127">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="126" name="photo_extra2_tag">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField showLabel="1" name="photo_card" index="128">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="127" name="photo_extra3">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="128" name="photo_extra3_tag">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="129" name="photo_extra4">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="130" name="photo_extra4_tag">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="131" name="photo_extra5">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="132" name="photo_extra5_tag">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="133" name="photo_card">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer collapsedExpression="" showLabel="1" name="METHODS" groupBox="0" visibilityExpressionEnabled="0" columnCount="1" collapsed="0" visibilityExpression="" collapsedExpressionEnabled="0">
-      <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-        <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+    <attributeEditorContainer collapsedExpressionEnabled="0" verticalStretch="0" collapsedExpression="" showLabel="1" collapsed="0" columnCount="1" visibilityExpressionEnabled="0" horizontalStretch="0" visibilityExpression="" groupBox="0" name="METHODS" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
       </labelStyle>
-      <attributeEditorField showLabel="1" name="link_method_site_card" index="144">
-        <labelStyle labelColor="0,0,0,255" overrideLabelFont="0" overrideLabelColor="0">
-          <labelFont bold="0" italic="0" style="" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" strikethrough="0"/>
+      <attributeEditorField verticalStretch="0" showLabel="1" horizontalStretch="0" index="149" name="link_method_site_card">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont bold="0" italic="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" underline="0" style=""/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
   </attributeEditorForm>
   <editable>
-    <field name="average_bankfull_depth_m" editable="1"/>
-    <field name="average_gradient_percent" editable="1"/>
-    <field name="average_residual_pool_depth_m" editable="1"/>
-    <field name="avg_channel_width_m" editable="0"/>
-    <field name="avg_wetted_width_m" editable="1"/>
-    <field name="bankfull_depth_number_1_m" editable="1"/>
-    <field name="bankfull_depth_number_1_m_time" editable="1"/>
-    <field name="bankfull_depth_number_2_m" editable="1"/>
-    <field name="bankfull_depth_number_2_m_time" editable="1"/>
-    <field name="bankfull_depth_number_3_m" editable="1"/>
-    <field name="bankfull_depth_number_3_m_time" editable="1"/>
-    <field name="bankfull_depth_number_4_m" editable="1"/>
-    <field name="bankfull_depth_number_4_m_time" editable="1"/>
-    <field name="bed_material_dominant" editable="1"/>
-    <field name="bed_material_subdominant" editable="1"/>
-    <field name="boulders" editable="1"/>
-    <field name="camera_id" editable="1"/>
-    <field name="channel_pattern" editable="1"/>
-    <field name="channel_width_m" editable="1"/>
-    <field name="channel_width_m_2" editable="1"/>
-    <field name="channel_width_m_3" editable="1"/>
-    <field name="channel_width_m_4" editable="1"/>
-    <field name="channel_width_m_5" editable="1"/>
-    <field name="channel_width_m_6" editable="1"/>
-    <field name="channel_width_m_7" editable="1"/>
-    <field name="comments" editable="1"/>
-    <field name="comments_2" editable="1"/>
-    <field name="conductivity_m_s_cm" editable="1"/>
-    <field name="confinement" editable="1"/>
-    <field name="coupling" editable="1"/>
-    <field name="crew_members" editable="1"/>
-    <field name="crown_closure" editable="1"/>
-    <field name="d95_cm" editable="1"/>
-    <field name="d_cm" editable="1"/>
-    <field name="date_time_start" editable="1"/>
-    <field name="deep_pools" editable="1"/>
-    <field name="dewatered_dry_int_channel" editable="1"/>
-    <field name="feature_height_2_m" editable="1"/>
-    <field name="feature_height_3_m" editable="1"/>
-    <field name="feature_height_length_method" editable="1"/>
-    <field name="feature_height_m" editable="1"/>
-    <field name="feature_length_2_m" editable="1"/>
-    <field name="feature_length_3_m" editable="1"/>
-    <field name="feature_length_m" editable="1"/>
-    <field name="feature_time" editable="1"/>
-    <field name="feature_time_2" editable="1"/>
-    <field name="feature_time_3" editable="1"/>
-    <field name="feature_type" editable="1"/>
-    <field name="feature_type_2" editable="1"/>
-    <field name="feature_type_3" editable="1"/>
-    <field name="fid" editable="1"/>
-    <field name="functional_lwd" editable="1"/>
-    <field name="gazetted_names" editable="1"/>
-    <field name="gps_id" editable="1"/>
-    <field name="gps_waypoint_id" editable="1"/>
-    <field name="gps_waypoint_number" editable="1"/>
-    <field name="gradient" editable="1"/>
-    <field name="gradient_number_1_percent" editable="1"/>
-    <field name="gradient_number_1_percent_time" editable="1"/>
-    <field name="gradient_number_2_percent" editable="1"/>
-    <field name="gradient_number_2_percent_time" editable="1"/>
-    <field name="gradient_number_4_percent" editable="1"/>
-    <field name="gradient_number_4_percent_time" editable="1"/>
-    <field name="gradient_time" editable="1"/>
-    <field name="habitat_value_rating" editable="1"/>
-    <field name="instream_vegetation" editable="1"/>
-    <field name="instream_vegetation_type" editable="1"/>
-    <field name="l_bank_riparian_vegetation" editable="1"/>
-    <field name="l_bank_riparian_vegetation_stage" editable="1"/>
-    <field name="l_bank_shape" editable="1"/>
-    <field name="l_bank_texture_dominant_1" editable="1"/>
-    <field name="l_bank_texture_dominant_2" editable="1"/>
-    <field name="large_woody_debris" editable="1"/>
-    <field name="link_method_site_card" editable="1"/>
-    <field name="local_name" editable="1"/>
-    <field name="lwd_distribution" editable="1"/>
-    <field name="mergin_user" editable="1"/>
-    <field name="method_for_bankfull_depth" editable="1"/>
-    <field name="method_for_channel_width" editable="1"/>
-    <field name="method_for_conductivity" editable="1"/>
-    <field name="method_for_gradient" editable="1"/>
-    <field name="method_for_p_h" editable="1"/>
-    <field name="method_for_residual_pool_depth" editable="1"/>
-    <field name="method_for_temperature" editable="1"/>
-    <field name="method_for_wetted_width" editable="1"/>
-    <field name="morphology" editable="1"/>
-    <field name="no_visible_channel" editable="1"/>
-    <field name="overhanging_vegetation" editable="1"/>
-    <field name="p_h" editable="1"/>
-    <field name="photo_card" editable="1"/>
-    <field name="photo_extra_1" editable="1"/>
-    <field name="photo_extra_1_tag" editable="1"/>
-    <field name="photo_extra_2" editable="1"/>
-    <field name="photo_extra_2_tag" editable="1"/>
-    <field name="photo_gravel" editable="1"/>
-    <field name="photo_pool" editable="1"/>
-    <field name="photo_typical_1" editable="1"/>
-    <field name="photo_typical_2" editable="1"/>
-    <field name="r_bank_riparian_vegetation" editable="1"/>
-    <field name="r_bank_riparian_vegetation_stage" editable="1"/>
-    <field name="r_bank_shape" editable="1"/>
-    <field name="r_bank_texture_dominant_1" editable="1"/>
-    <field name="r_bank_texture_dominant_2" editable="1"/>
-    <field name="reach_number" editable="1"/>
-    <field name="reference_number" editable="1"/>
-    <field name="residual_pool_depth_m" editable="1"/>
-    <field name="residual_pool_depth_m_2" editable="1"/>
-    <field name="residual_pool_depth_m_2_time" editable="1"/>
-    <field name="residual_pool_depth_m_3" editable="1"/>
-    <field name="residual_pool_depth_m_3_time" editable="1"/>
-    <field name="residual_pool_depth_m_4" editable="1"/>
-    <field name="residual_pool_depth_m_4_time" editable="1"/>
-    <field name="residual_pool_depth_m_5" editable="1"/>
-    <field name="residual_pool_depth_m_5_time" editable="1"/>
-    <field name="residual_pool_depth_m_6" editable="1"/>
-    <field name="residual_pool_depth_m_6_time" editable="1"/>
-    <field name="residual_pool_depth_m_7" editable="1"/>
-    <field name="residual_pool_depth_m_7_time" editable="1"/>
-    <field name="residual_pool_depth_m_time" editable="1"/>
-    <field name="site_length" editable="1"/>
-    <field name="site_number" editable="1"/>
-    <field name="small_woody_debris" editable="1"/>
-    <field name="stage" editable="1"/>
-    <field name="surveyor_1" editable="1"/>
-    <field name="surveyor_2" editable="1"/>
-    <field name="surveyor_3" editable="1"/>
-    <field name="temperature_c" editable="1"/>
-    <field name="total_cover" editable="1"/>
-    <field name="tributaries" editable="1"/>
-    <field name="turbidity" editable="1"/>
-    <field name="undercut_banks" editable="1"/>
-    <field name="utm_easting" editable="1"/>
-    <field name="utm_method" editable="1"/>
-    <field name="utm_northing" editable="1"/>
-    <field name="utm_zone" editable="1"/>
-    <field name="waterbody_id" editable="1"/>
-    <field name="wetted_width_m" editable="1"/>
-    <field name="wetted_width_m-channel_width_m_time" editable="1"/>
-    <field name="wetted_width_m_2" editable="1"/>
-    <field name="wetted_width_m_2-channel_width_m_2_time" editable="1"/>
-    <field name="wetted_width_m_3" editable="1"/>
-    <field name="wetted_width_m_3-channel_width_m_3_time" editable="1"/>
-    <field name="wetted_width_m_4" editable="1"/>
-    <field name="wetted_width_m_4-channel_width_m_4_time" editable="1"/>
-    <field name="wetted_width_m_5" editable="1"/>
-    <field name="wetted_width_m_5-channel_width_m_5_time" editable="1"/>
-    <field name="wetted_width_m_6" editable="1"/>
-    <field name="wetted_width_m_6-channel_width_m_6_time" editable="1"/>
-    <field name="wetted_width_m_7" editable="1"/>
-    <field name="wetted_width_m_7-channel_width_m_7_time" editable="1"/>
+    <field editable="1" name="average_bankfull_depth_m"/>
+    <field editable="1" name="average_gradient_percent"/>
+    <field editable="1" name="average_residual_pool_depth_m"/>
+    <field editable="0" name="avg_channel_width_m"/>
+    <field editable="1" name="avg_wetted_width_m"/>
+    <field editable="1" name="bankfull_depth_number_1_m"/>
+    <field editable="1" name="bankfull_depth_number_1_m_time"/>
+    <field editable="1" name="bankfull_depth_number_2_m"/>
+    <field editable="1" name="bankfull_depth_number_2_m_time"/>
+    <field editable="1" name="bankfull_depth_number_3_m"/>
+    <field editable="1" name="bankfull_depth_number_3_m_time"/>
+    <field editable="1" name="bankfull_depth_number_4_m"/>
+    <field editable="1" name="bankfull_depth_number_4_m_time"/>
+    <field editable="1" name="bed_material_dominant"/>
+    <field editable="1" name="bed_material_subdominant"/>
+    <field editable="1" name="boulders"/>
+    <field editable="1" name="camera_id"/>
+    <field editable="1" name="channel_pattern"/>
+    <field editable="1" name="channel_width_m"/>
+    <field editable="1" name="channel_width_m_2"/>
+    <field editable="1" name="channel_width_m_3"/>
+    <field editable="1" name="channel_width_m_4"/>
+    <field editable="1" name="channel_width_m_5"/>
+    <field editable="1" name="channel_width_m_6"/>
+    <field editable="1" name="channel_width_m_7"/>
+    <field editable="1" name="comments"/>
+    <field editable="1" name="comments_2"/>
+    <field editable="1" name="conductivity_m_s_cm"/>
+    <field editable="1" name="confinement"/>
+    <field editable="1" name="coupling"/>
+    <field editable="1" name="crew_members"/>
+    <field editable="1" name="crown_closure"/>
+    <field editable="1" name="d95_cm"/>
+    <field editable="1" name="d_cm"/>
+    <field editable="1" name="date_time_start"/>
+    <field editable="1" name="deep_pools"/>
+    <field editable="1" name="dewatered_dry_int_channel"/>
+    <field editable="1" name="feature_height_2_m"/>
+    <field editable="1" name="feature_height_3_m"/>
+    <field editable="1" name="feature_height_length_method"/>
+    <field editable="1" name="feature_height_m"/>
+    <field editable="1" name="feature_length_2_m"/>
+    <field editable="1" name="feature_length_3_m"/>
+    <field editable="1" name="feature_length_m"/>
+    <field editable="1" name="feature_time"/>
+    <field editable="1" name="feature_time_2"/>
+    <field editable="1" name="feature_time_3"/>
+    <field editable="1" name="feature_type"/>
+    <field editable="1" name="feature_type_2"/>
+    <field editable="1" name="feature_type_3"/>
+    <field editable="1" name="fid"/>
+    <field editable="1" name="functional_lwd"/>
+    <field editable="1" name="gazetted_names"/>
+    <field editable="1" name="gps_id"/>
+    <field editable="1" name="gps_waypoint_id"/>
+    <field editable="1" name="gps_waypoint_number"/>
+    <field editable="1" name="gradient"/>
+    <field editable="1" name="gradient_number_1_percent"/>
+    <field editable="1" name="gradient_number_1_percent_time"/>
+    <field editable="1" name="gradient_number_2_percent"/>
+    <field editable="1" name="gradient_number_2_percent_time"/>
+    <field editable="1" name="gradient_number_4_percent"/>
+    <field editable="1" name="gradient_number_4_percent_time"/>
+    <field editable="1" name="gradient_time"/>
+    <field editable="1" name="habitat_value_rating"/>
+    <field editable="1" name="instream_vegetation"/>
+    <field editable="1" name="instream_vegetation_type"/>
+    <field editable="1" name="l_bank_riparian_vegetation"/>
+    <field editable="1" name="l_bank_riparian_vegetation_stage"/>
+    <field editable="1" name="l_bank_shape"/>
+    <field editable="1" name="l_bank_texture_dominant_1"/>
+    <field editable="1" name="l_bank_texture_dominant_2"/>
+    <field editable="1" name="large_woody_debris"/>
+    <field editable="1" name="link_method_site_card"/>
+    <field editable="1" name="local_name"/>
+    <field editable="1" name="lwd_distribution"/>
+    <field editable="1" name="mergin_user"/>
+    <field editable="1" name="method_for_bankfull_depth"/>
+    <field editable="1" name="method_for_channel_width"/>
+    <field editable="1" name="method_for_conductivity"/>
+    <field editable="1" name="method_for_gradient"/>
+    <field editable="1" name="method_for_p_h"/>
+    <field editable="1" name="method_for_residual_pool_depth"/>
+    <field editable="1" name="method_for_temperature"/>
+    <field editable="1" name="method_for_wetted_width"/>
+    <field editable="1" name="morphology"/>
+    <field editable="1" name="no_visible_channel"/>
+    <field editable="1" name="overhanging_vegetation"/>
+    <field editable="1" name="p_h"/>
+    <field editable="1" name="photo_card"/>
+    <field editable="1" name="photo_extra1"/>
+    <field editable="1" name="photo_extra1_tag"/>
+    <field editable="1" name="photo_extra2"/>
+    <field editable="1" name="photo_extra2_tag"/>
+    <field editable="1" name="photo_extra3"/>
+    <field editable="1" name="photo_extra3_tag"/>
+    <field editable="1" name="photo_extra4"/>
+    <field editable="1" name="photo_extra4_tag"/>
+    <field editable="1" name="photo_extra5"/>
+    <field editable="1" name="photo_extra5_tag"/>
+    <field editable="1" name="photo_extra_1"/>
+    <field editable="1" name="photo_extra_1_tag"/>
+    <field editable="1" name="photo_extra_2"/>
+    <field editable="1" name="photo_extra_2_tag"/>
+    <field editable="1" name="photo_gravel"/>
+    <field editable="1" name="photo_pool"/>
+    <field editable="1" name="photo_typical_1"/>
+    <field editable="1" name="photo_typical_2"/>
+    <field editable="1" name="r_bank_riparian_vegetation"/>
+    <field editable="1" name="r_bank_riparian_vegetation_stage"/>
+    <field editable="1" name="r_bank_shape"/>
+    <field editable="1" name="r_bank_texture_dominant_1"/>
+    <field editable="1" name="r_bank_texture_dominant_2"/>
+    <field editable="1" name="reach_number"/>
+    <field editable="1" name="reference_number"/>
+    <field editable="1" name="residual_pool_depth_m"/>
+    <field editable="1" name="residual_pool_depth_m_2"/>
+    <field editable="1" name="residual_pool_depth_m_2_time"/>
+    <field editable="1" name="residual_pool_depth_m_3"/>
+    <field editable="1" name="residual_pool_depth_m_3_time"/>
+    <field editable="1" name="residual_pool_depth_m_4"/>
+    <field editable="1" name="residual_pool_depth_m_4_time"/>
+    <field editable="1" name="residual_pool_depth_m_5"/>
+    <field editable="1" name="residual_pool_depth_m_5_time"/>
+    <field editable="1" name="residual_pool_depth_m_6"/>
+    <field editable="1" name="residual_pool_depth_m_6_time"/>
+    <field editable="1" name="residual_pool_depth_m_7"/>
+    <field editable="1" name="residual_pool_depth_m_7_time"/>
+    <field editable="1" name="residual_pool_depth_m_time"/>
+    <field editable="1" name="site_length"/>
+    <field editable="1" name="site_number"/>
+    <field editable="1" name="small_woody_debris"/>
+    <field editable="1" name="stage"/>
+    <field editable="1" name="surveyor_1"/>
+    <field editable="1" name="surveyor_2"/>
+    <field editable="1" name="surveyor_3"/>
+    <field editable="1" name="temperature_c"/>
+    <field editable="1" name="total_cover"/>
+    <field editable="1" name="tributaries"/>
+    <field editable="1" name="turbidity"/>
+    <field editable="1" name="undercut_banks"/>
+    <field editable="1" name="utm_easting"/>
+    <field editable="1" name="utm_method"/>
+    <field editable="1" name="utm_northing"/>
+    <field editable="1" name="utm_zone"/>
+    <field editable="1" name="waterbody_id"/>
+    <field editable="1" name="wetted_width_m"/>
+    <field editable="1" name="wetted_width_m-channel_width_m_time"/>
+    <field editable="1" name="wetted_width_m_2"/>
+    <field editable="1" name="wetted_width_m_2-channel_width_m_2_time"/>
+    <field editable="1" name="wetted_width_m_3"/>
+    <field editable="1" name="wetted_width_m_3-channel_width_m_3_time"/>
+    <field editable="1" name="wetted_width_m_4"/>
+    <field editable="1" name="wetted_width_m_4-channel_width_m_4_time"/>
+    <field editable="1" name="wetted_width_m_5"/>
+    <field editable="1" name="wetted_width_m_5-channel_width_m_5_time"/>
+    <field editable="1" name="wetted_width_m_6"/>
+    <field editable="1" name="wetted_width_m_6-channel_width_m_6_time"/>
+    <field editable="1" name="wetted_width_m_7"/>
+    <field editable="1" name="wetted_width_m_7-channel_width_m_7_time"/>
   </editable>
   <labelOnTop>
-    <field name="average_bankfull_depth_m" labelOnTop="0"/>
-    <field name="average_gradient_percent" labelOnTop="0"/>
-    <field name="average_residual_pool_depth_m" labelOnTop="0"/>
-    <field name="avg_channel_width_m" labelOnTop="0"/>
-    <field name="avg_wetted_width_m" labelOnTop="0"/>
-    <field name="bankfull_depth_number_1_m" labelOnTop="0"/>
-    <field name="bankfull_depth_number_1_m_time" labelOnTop="0"/>
-    <field name="bankfull_depth_number_2_m" labelOnTop="0"/>
-    <field name="bankfull_depth_number_2_m_time" labelOnTop="0"/>
-    <field name="bankfull_depth_number_3_m" labelOnTop="0"/>
-    <field name="bankfull_depth_number_3_m_time" labelOnTop="0"/>
-    <field name="bankfull_depth_number_4_m" labelOnTop="0"/>
-    <field name="bankfull_depth_number_4_m_time" labelOnTop="0"/>
-    <field name="bed_material_dominant" labelOnTop="0"/>
-    <field name="bed_material_subdominant" labelOnTop="0"/>
-    <field name="boulders" labelOnTop="0"/>
-    <field name="camera_id" labelOnTop="0"/>
-    <field name="channel_pattern" labelOnTop="0"/>
-    <field name="channel_width_m" labelOnTop="0"/>
-    <field name="channel_width_m_2" labelOnTop="0"/>
-    <field name="channel_width_m_3" labelOnTop="0"/>
-    <field name="channel_width_m_4" labelOnTop="0"/>
-    <field name="channel_width_m_5" labelOnTop="0"/>
-    <field name="channel_width_m_6" labelOnTop="0"/>
-    <field name="channel_width_m_7" labelOnTop="0"/>
-    <field name="comments" labelOnTop="0"/>
-    <field name="comments_2" labelOnTop="0"/>
-    <field name="conductivity_m_s_cm" labelOnTop="0"/>
-    <field name="confinement" labelOnTop="0"/>
-    <field name="coupling" labelOnTop="0"/>
-    <field name="crew_members" labelOnTop="0"/>
-    <field name="crown_closure" labelOnTop="0"/>
-    <field name="d95_cm" labelOnTop="0"/>
-    <field name="d_cm" labelOnTop="0"/>
-    <field name="date_time_start" labelOnTop="0"/>
-    <field name="deep_pools" labelOnTop="0"/>
-    <field name="dewatered_dry_int_channel" labelOnTop="0"/>
-    <field name="feature_height_2_m" labelOnTop="0"/>
-    <field name="feature_height_3_m" labelOnTop="0"/>
-    <field name="feature_height_length_method" labelOnTop="0"/>
-    <field name="feature_height_m" labelOnTop="0"/>
-    <field name="feature_length_2_m" labelOnTop="0"/>
-    <field name="feature_length_3_m" labelOnTop="0"/>
-    <field name="feature_length_m" labelOnTop="0"/>
-    <field name="feature_time" labelOnTop="0"/>
-    <field name="feature_time_2" labelOnTop="0"/>
-    <field name="feature_time_3" labelOnTop="0"/>
-    <field name="feature_type" labelOnTop="0"/>
-    <field name="feature_type_2" labelOnTop="0"/>
-    <field name="feature_type_3" labelOnTop="0"/>
-    <field name="fid" labelOnTop="0"/>
-    <field name="functional_lwd" labelOnTop="0"/>
-    <field name="gazetted_names" labelOnTop="0"/>
-    <field name="gps_id" labelOnTop="0"/>
-    <field name="gps_waypoint_id" labelOnTop="0"/>
-    <field name="gps_waypoint_number" labelOnTop="0"/>
-    <field name="gradient" labelOnTop="0"/>
-    <field name="gradient_number_1_percent" labelOnTop="0"/>
-    <field name="gradient_number_1_percent_time" labelOnTop="0"/>
-    <field name="gradient_number_2_percent" labelOnTop="0"/>
-    <field name="gradient_number_2_percent_time" labelOnTop="0"/>
-    <field name="gradient_number_4_percent" labelOnTop="0"/>
-    <field name="gradient_number_4_percent_time" labelOnTop="0"/>
-    <field name="gradient_time" labelOnTop="0"/>
-    <field name="habitat_value_rating" labelOnTop="0"/>
-    <field name="instream_vegetation" labelOnTop="0"/>
-    <field name="instream_vegetation_type" labelOnTop="0"/>
-    <field name="l_bank_riparian_vegetation" labelOnTop="0"/>
-    <field name="l_bank_riparian_vegetation_stage" labelOnTop="0"/>
-    <field name="l_bank_shape" labelOnTop="0"/>
-    <field name="l_bank_texture_dominant_1" labelOnTop="0"/>
-    <field name="l_bank_texture_dominant_2" labelOnTop="0"/>
-    <field name="large_woody_debris" labelOnTop="0"/>
-    <field name="link_method_site_card" labelOnTop="0"/>
-    <field name="local_name" labelOnTop="0"/>
-    <field name="lwd_distribution" labelOnTop="0"/>
-    <field name="mergin_user" labelOnTop="0"/>
-    <field name="method_for_bankfull_depth" labelOnTop="0"/>
-    <field name="method_for_channel_width" labelOnTop="0"/>
-    <field name="method_for_conductivity" labelOnTop="0"/>
-    <field name="method_for_gradient" labelOnTop="0"/>
-    <field name="method_for_p_h" labelOnTop="0"/>
-    <field name="method_for_residual_pool_depth" labelOnTop="0"/>
-    <field name="method_for_temperature" labelOnTop="0"/>
-    <field name="method_for_wetted_width" labelOnTop="0"/>
-    <field name="morphology" labelOnTop="0"/>
-    <field name="no_visible_channel" labelOnTop="0"/>
-    <field name="overhanging_vegetation" labelOnTop="0"/>
-    <field name="p_h" labelOnTop="0"/>
-    <field name="photo_card" labelOnTop="0"/>
-    <field name="photo_extra_1" labelOnTop="0"/>
-    <field name="photo_extra_1_tag" labelOnTop="0"/>
-    <field name="photo_extra_2" labelOnTop="0"/>
-    <field name="photo_extra_2_tag" labelOnTop="0"/>
-    <field name="photo_gravel" labelOnTop="0"/>
-    <field name="photo_pool" labelOnTop="0"/>
-    <field name="photo_typical_1" labelOnTop="0"/>
-    <field name="photo_typical_2" labelOnTop="0"/>
-    <field name="r_bank_riparian_vegetation" labelOnTop="0"/>
-    <field name="r_bank_riparian_vegetation_stage" labelOnTop="0"/>
-    <field name="r_bank_shape" labelOnTop="0"/>
-    <field name="r_bank_texture_dominant_1" labelOnTop="0"/>
-    <field name="r_bank_texture_dominant_2" labelOnTop="0"/>
-    <field name="reach_number" labelOnTop="0"/>
-    <field name="reference_number" labelOnTop="0"/>
-    <field name="residual_pool_depth_m" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_2" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_2_time" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_3" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_3_time" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_4" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_4_time" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_5" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_5_time" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_6" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_6_time" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_7" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_7_time" labelOnTop="0"/>
-    <field name="residual_pool_depth_m_time" labelOnTop="0"/>
-    <field name="site_length" labelOnTop="0"/>
-    <field name="site_number" labelOnTop="0"/>
-    <field name="small_woody_debris" labelOnTop="0"/>
-    <field name="stage" labelOnTop="0"/>
-    <field name="surveyor_1" labelOnTop="0"/>
-    <field name="surveyor_2" labelOnTop="0"/>
-    <field name="surveyor_3" labelOnTop="0"/>
-    <field name="temperature_c" labelOnTop="0"/>
-    <field name="total_cover" labelOnTop="0"/>
-    <field name="tributaries" labelOnTop="0"/>
-    <field name="turbidity" labelOnTop="0"/>
-    <field name="undercut_banks" labelOnTop="0"/>
-    <field name="utm_easting" labelOnTop="0"/>
-    <field name="utm_method" labelOnTop="0"/>
-    <field name="utm_northing" labelOnTop="0"/>
-    <field name="utm_zone" labelOnTop="0"/>
-    <field name="waterbody_id" labelOnTop="0"/>
-    <field name="wetted_width_m" labelOnTop="0"/>
-    <field name="wetted_width_m-channel_width_m_time" labelOnTop="0"/>
-    <field name="wetted_width_m_2" labelOnTop="0"/>
-    <field name="wetted_width_m_2-channel_width_m_2_time" labelOnTop="0"/>
-    <field name="wetted_width_m_3" labelOnTop="0"/>
-    <field name="wetted_width_m_3-channel_width_m_3_time" labelOnTop="0"/>
-    <field name="wetted_width_m_4" labelOnTop="0"/>
-    <field name="wetted_width_m_4-channel_width_m_4_time" labelOnTop="0"/>
-    <field name="wetted_width_m_5" labelOnTop="0"/>
-    <field name="wetted_width_m_5-channel_width_m_5_time" labelOnTop="0"/>
-    <field name="wetted_width_m_6" labelOnTop="0"/>
-    <field name="wetted_width_m_6-channel_width_m_6_time" labelOnTop="0"/>
-    <field name="wetted_width_m_7" labelOnTop="0"/>
-    <field name="wetted_width_m_7-channel_width_m_7_time" labelOnTop="0"/>
+    <field labelOnTop="0" name="average_bankfull_depth_m"/>
+    <field labelOnTop="0" name="average_gradient_percent"/>
+    <field labelOnTop="0" name="average_residual_pool_depth_m"/>
+    <field labelOnTop="0" name="avg_channel_width_m"/>
+    <field labelOnTop="0" name="avg_wetted_width_m"/>
+    <field labelOnTop="0" name="bankfull_depth_number_1_m"/>
+    <field labelOnTop="0" name="bankfull_depth_number_1_m_time"/>
+    <field labelOnTop="0" name="bankfull_depth_number_2_m"/>
+    <field labelOnTop="0" name="bankfull_depth_number_2_m_time"/>
+    <field labelOnTop="0" name="bankfull_depth_number_3_m"/>
+    <field labelOnTop="0" name="bankfull_depth_number_3_m_time"/>
+    <field labelOnTop="0" name="bankfull_depth_number_4_m"/>
+    <field labelOnTop="0" name="bankfull_depth_number_4_m_time"/>
+    <field labelOnTop="0" name="bed_material_dominant"/>
+    <field labelOnTop="0" name="bed_material_subdominant"/>
+    <field labelOnTop="0" name="boulders"/>
+    <field labelOnTop="0" name="camera_id"/>
+    <field labelOnTop="0" name="channel_pattern"/>
+    <field labelOnTop="0" name="channel_width_m"/>
+    <field labelOnTop="0" name="channel_width_m_2"/>
+    <field labelOnTop="0" name="channel_width_m_3"/>
+    <field labelOnTop="0" name="channel_width_m_4"/>
+    <field labelOnTop="0" name="channel_width_m_5"/>
+    <field labelOnTop="0" name="channel_width_m_6"/>
+    <field labelOnTop="0" name="channel_width_m_7"/>
+    <field labelOnTop="0" name="comments"/>
+    <field labelOnTop="0" name="comments_2"/>
+    <field labelOnTop="0" name="conductivity_m_s_cm"/>
+    <field labelOnTop="0" name="confinement"/>
+    <field labelOnTop="0" name="coupling"/>
+    <field labelOnTop="0" name="crew_members"/>
+    <field labelOnTop="0" name="crown_closure"/>
+    <field labelOnTop="0" name="d95_cm"/>
+    <field labelOnTop="0" name="d_cm"/>
+    <field labelOnTop="0" name="date_time_start"/>
+    <field labelOnTop="0" name="deep_pools"/>
+    <field labelOnTop="0" name="dewatered_dry_int_channel"/>
+    <field labelOnTop="0" name="feature_height_2_m"/>
+    <field labelOnTop="0" name="feature_height_3_m"/>
+    <field labelOnTop="0" name="feature_height_length_method"/>
+    <field labelOnTop="0" name="feature_height_m"/>
+    <field labelOnTop="0" name="feature_length_2_m"/>
+    <field labelOnTop="0" name="feature_length_3_m"/>
+    <field labelOnTop="0" name="feature_length_m"/>
+    <field labelOnTop="0" name="feature_time"/>
+    <field labelOnTop="0" name="feature_time_2"/>
+    <field labelOnTop="0" name="feature_time_3"/>
+    <field labelOnTop="0" name="feature_type"/>
+    <field labelOnTop="0" name="feature_type_2"/>
+    <field labelOnTop="0" name="feature_type_3"/>
+    <field labelOnTop="0" name="fid"/>
+    <field labelOnTop="0" name="functional_lwd"/>
+    <field labelOnTop="0" name="gazetted_names"/>
+    <field labelOnTop="0" name="gps_id"/>
+    <field labelOnTop="0" name="gps_waypoint_id"/>
+    <field labelOnTop="0" name="gps_waypoint_number"/>
+    <field labelOnTop="0" name="gradient"/>
+    <field labelOnTop="0" name="gradient_number_1_percent"/>
+    <field labelOnTop="0" name="gradient_number_1_percent_time"/>
+    <field labelOnTop="0" name="gradient_number_2_percent"/>
+    <field labelOnTop="0" name="gradient_number_2_percent_time"/>
+    <field labelOnTop="0" name="gradient_number_4_percent"/>
+    <field labelOnTop="0" name="gradient_number_4_percent_time"/>
+    <field labelOnTop="0" name="gradient_time"/>
+    <field labelOnTop="0" name="habitat_value_rating"/>
+    <field labelOnTop="0" name="instream_vegetation"/>
+    <field labelOnTop="0" name="instream_vegetation_type"/>
+    <field labelOnTop="0" name="l_bank_riparian_vegetation"/>
+    <field labelOnTop="0" name="l_bank_riparian_vegetation_stage"/>
+    <field labelOnTop="0" name="l_bank_shape"/>
+    <field labelOnTop="0" name="l_bank_texture_dominant_1"/>
+    <field labelOnTop="0" name="l_bank_texture_dominant_2"/>
+    <field labelOnTop="0" name="large_woody_debris"/>
+    <field labelOnTop="0" name="link_method_site_card"/>
+    <field labelOnTop="0" name="local_name"/>
+    <field labelOnTop="0" name="lwd_distribution"/>
+    <field labelOnTop="0" name="mergin_user"/>
+    <field labelOnTop="0" name="method_for_bankfull_depth"/>
+    <field labelOnTop="0" name="method_for_channel_width"/>
+    <field labelOnTop="0" name="method_for_conductivity"/>
+    <field labelOnTop="0" name="method_for_gradient"/>
+    <field labelOnTop="0" name="method_for_p_h"/>
+    <field labelOnTop="0" name="method_for_residual_pool_depth"/>
+    <field labelOnTop="0" name="method_for_temperature"/>
+    <field labelOnTop="0" name="method_for_wetted_width"/>
+    <field labelOnTop="0" name="morphology"/>
+    <field labelOnTop="0" name="no_visible_channel"/>
+    <field labelOnTop="0" name="overhanging_vegetation"/>
+    <field labelOnTop="0" name="p_h"/>
+    <field labelOnTop="0" name="photo_card"/>
+    <field labelOnTop="0" name="photo_extra1"/>
+    <field labelOnTop="0" name="photo_extra1_tag"/>
+    <field labelOnTop="0" name="photo_extra2"/>
+    <field labelOnTop="0" name="photo_extra2_tag"/>
+    <field labelOnTop="0" name="photo_extra3"/>
+    <field labelOnTop="0" name="photo_extra3_tag"/>
+    <field labelOnTop="0" name="photo_extra4"/>
+    <field labelOnTop="0" name="photo_extra4_tag"/>
+    <field labelOnTop="0" name="photo_extra5"/>
+    <field labelOnTop="0" name="photo_extra5_tag"/>
+    <field labelOnTop="0" name="photo_extra_1"/>
+    <field labelOnTop="0" name="photo_extra_1_tag"/>
+    <field labelOnTop="0" name="photo_extra_2"/>
+    <field labelOnTop="0" name="photo_extra_2_tag"/>
+    <field labelOnTop="0" name="photo_gravel"/>
+    <field labelOnTop="0" name="photo_pool"/>
+    <field labelOnTop="0" name="photo_typical_1"/>
+    <field labelOnTop="0" name="photo_typical_2"/>
+    <field labelOnTop="0" name="r_bank_riparian_vegetation"/>
+    <field labelOnTop="0" name="r_bank_riparian_vegetation_stage"/>
+    <field labelOnTop="0" name="r_bank_shape"/>
+    <field labelOnTop="0" name="r_bank_texture_dominant_1"/>
+    <field labelOnTop="0" name="r_bank_texture_dominant_2"/>
+    <field labelOnTop="0" name="reach_number"/>
+    <field labelOnTop="0" name="reference_number"/>
+    <field labelOnTop="0" name="residual_pool_depth_m"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_2"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_2_time"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_3"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_3_time"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_4"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_4_time"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_5"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_5_time"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_6"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_6_time"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_7"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_7_time"/>
+    <field labelOnTop="0" name="residual_pool_depth_m_time"/>
+    <field labelOnTop="0" name="site_length"/>
+    <field labelOnTop="0" name="site_number"/>
+    <field labelOnTop="0" name="small_woody_debris"/>
+    <field labelOnTop="0" name="stage"/>
+    <field labelOnTop="0" name="surveyor_1"/>
+    <field labelOnTop="0" name="surveyor_2"/>
+    <field labelOnTop="0" name="surveyor_3"/>
+    <field labelOnTop="0" name="temperature_c"/>
+    <field labelOnTop="0" name="total_cover"/>
+    <field labelOnTop="0" name="tributaries"/>
+    <field labelOnTop="0" name="turbidity"/>
+    <field labelOnTop="0" name="undercut_banks"/>
+    <field labelOnTop="0" name="utm_easting"/>
+    <field labelOnTop="0" name="utm_method"/>
+    <field labelOnTop="0" name="utm_northing"/>
+    <field labelOnTop="0" name="utm_zone"/>
+    <field labelOnTop="0" name="waterbody_id"/>
+    <field labelOnTop="0" name="wetted_width_m"/>
+    <field labelOnTop="0" name="wetted_width_m-channel_width_m_time"/>
+    <field labelOnTop="0" name="wetted_width_m_2"/>
+    <field labelOnTop="0" name="wetted_width_m_2-channel_width_m_2_time"/>
+    <field labelOnTop="0" name="wetted_width_m_3"/>
+    <field labelOnTop="0" name="wetted_width_m_3-channel_width_m_3_time"/>
+    <field labelOnTop="0" name="wetted_width_m_4"/>
+    <field labelOnTop="0" name="wetted_width_m_4-channel_width_m_4_time"/>
+    <field labelOnTop="0" name="wetted_width_m_5"/>
+    <field labelOnTop="0" name="wetted_width_m_5-channel_width_m_5_time"/>
+    <field labelOnTop="0" name="wetted_width_m_6"/>
+    <field labelOnTop="0" name="wetted_width_m_6-channel_width_m_6_time"/>
+    <field labelOnTop="0" name="wetted_width_m_7"/>
+    <field labelOnTop="0" name="wetted_width_m_7-channel_width_m_7_time"/>
   </labelOnTop>
   <reuseLastValue>
-    <field name="average_bankfull_depth_m" reuseLastValue="0"/>
-    <field name="average_gradient_percent" reuseLastValue="0"/>
-    <field name="average_residual_pool_depth_m" reuseLastValue="0"/>
-    <field name="avg_channel_width_m" reuseLastValue="0"/>
-    <field name="avg_wetted_width_m" reuseLastValue="0"/>
-    <field name="bankfull_depth_number_1_m" reuseLastValue="0"/>
-    <field name="bankfull_depth_number_1_m_time" reuseLastValue="0"/>
-    <field name="bankfull_depth_number_2_m" reuseLastValue="0"/>
-    <field name="bankfull_depth_number_2_m_time" reuseLastValue="0"/>
-    <field name="bankfull_depth_number_3_m" reuseLastValue="0"/>
-    <field name="bankfull_depth_number_3_m_time" reuseLastValue="0"/>
-    <field name="bankfull_depth_number_4_m" reuseLastValue="0"/>
-    <field name="bankfull_depth_number_4_m_time" reuseLastValue="0"/>
-    <field name="bed_material_dominant" reuseLastValue="0"/>
-    <field name="bed_material_subdominant" reuseLastValue="0"/>
-    <field name="boulders" reuseLastValue="0"/>
-    <field name="camera_id" reuseLastValue="0"/>
-    <field name="channel_pattern" reuseLastValue="0"/>
-    <field name="channel_width_m" reuseLastValue="0"/>
-    <field name="channel_width_m_2" reuseLastValue="0"/>
-    <field name="channel_width_m_3" reuseLastValue="0"/>
-    <field name="channel_width_m_4" reuseLastValue="0"/>
-    <field name="channel_width_m_5" reuseLastValue="0"/>
-    <field name="channel_width_m_6" reuseLastValue="0"/>
-    <field name="channel_width_m_7" reuseLastValue="0"/>
-    <field name="comments" reuseLastValue="0"/>
-    <field name="comments_2" reuseLastValue="0"/>
-    <field name="conductivity_m_s_cm" reuseLastValue="0"/>
-    <field name="confinement" reuseLastValue="0"/>
-    <field name="coupling" reuseLastValue="0"/>
-    <field name="crew_members" reuseLastValue="1"/>
-    <field name="crown_closure" reuseLastValue="0"/>
-    <field name="d95_cm" reuseLastValue="0"/>
-    <field name="d_cm" reuseLastValue="0"/>
-    <field name="date_time_start" reuseLastValue="0"/>
-    <field name="deep_pools" reuseLastValue="0"/>
-    <field name="dewatered_dry_int_channel" reuseLastValue="0"/>
-    <field name="feature_height_2_m" reuseLastValue="0"/>
-    <field name="feature_height_3_m" reuseLastValue="0"/>
-    <field name="feature_height_length_method" reuseLastValue="0"/>
-    <field name="feature_height_m" reuseLastValue="0"/>
-    <field name="feature_length_2_m" reuseLastValue="0"/>
-    <field name="feature_length_3_m" reuseLastValue="0"/>
-    <field name="feature_length_m" reuseLastValue="0"/>
-    <field name="feature_time" reuseLastValue="0"/>
-    <field name="feature_time_2" reuseLastValue="0"/>
-    <field name="feature_time_3" reuseLastValue="0"/>
-    <field name="feature_type" reuseLastValue="0"/>
-    <field name="feature_type_2" reuseLastValue="0"/>
-    <field name="feature_type_3" reuseLastValue="0"/>
-    <field name="fid" reuseLastValue="0"/>
-    <field name="functional_lwd" reuseLastValue="0"/>
-    <field name="gazetted_names" reuseLastValue="0"/>
-    <field name="gps_id" reuseLastValue="0"/>
-    <field name="gps_waypoint_id" reuseLastValue="0"/>
-    <field name="gps_waypoint_number" reuseLastValue="0"/>
-    <field name="gradient" reuseLastValue="0"/>
-    <field name="gradient_number_1_percent" reuseLastValue="0"/>
-    <field name="gradient_number_1_percent_time" reuseLastValue="0"/>
-    <field name="gradient_number_2_percent" reuseLastValue="0"/>
-    <field name="gradient_number_2_percent_time" reuseLastValue="0"/>
-    <field name="gradient_number_4_percent" reuseLastValue="0"/>
-    <field name="gradient_number_4_percent_time" reuseLastValue="0"/>
-    <field name="gradient_time" reuseLastValue="0"/>
-    <field name="habitat_value_rating" reuseLastValue="0"/>
-    <field name="instream_vegetation" reuseLastValue="0"/>
-    <field name="instream_vegetation_type" reuseLastValue="0"/>
-    <field name="l_bank_riparian_vegetation" reuseLastValue="0"/>
-    <field name="l_bank_riparian_vegetation_stage" reuseLastValue="0"/>
-    <field name="l_bank_shape" reuseLastValue="0"/>
-    <field name="l_bank_texture_dominant_1" reuseLastValue="0"/>
-    <field name="l_bank_texture_dominant_2" reuseLastValue="0"/>
-    <field name="large_woody_debris" reuseLastValue="0"/>
-    <field name="link_method_site_card" reuseLastValue="0"/>
-    <field name="local_name" reuseLastValue="0"/>
-    <field name="lwd_distribution" reuseLastValue="0"/>
-    <field name="mergin_user" reuseLastValue="0"/>
-    <field name="method_for_bankfull_depth" reuseLastValue="0"/>
-    <field name="method_for_channel_width" reuseLastValue="0"/>
-    <field name="method_for_conductivity" reuseLastValue="0"/>
-    <field name="method_for_gradient" reuseLastValue="0"/>
-    <field name="method_for_p_h" reuseLastValue="0"/>
-    <field name="method_for_residual_pool_depth" reuseLastValue="0"/>
-    <field name="method_for_temperature" reuseLastValue="0"/>
-    <field name="method_for_wetted_width" reuseLastValue="0"/>
-    <field name="morphology" reuseLastValue="0"/>
-    <field name="no_visible_channel" reuseLastValue="0"/>
-    <field name="overhanging_vegetation" reuseLastValue="0"/>
-    <field name="p_h" reuseLastValue="0"/>
-    <field name="photo_card" reuseLastValue="0"/>
-    <field name="photo_extra_1" reuseLastValue="0"/>
-    <field name="photo_extra_1_tag" reuseLastValue="0"/>
-    <field name="photo_extra_2" reuseLastValue="0"/>
-    <field name="photo_extra_2_tag" reuseLastValue="0"/>
-    <field name="photo_gravel" reuseLastValue="0"/>
-    <field name="photo_pool" reuseLastValue="0"/>
-    <field name="photo_typical_1" reuseLastValue="0"/>
-    <field name="photo_typical_2" reuseLastValue="0"/>
-    <field name="r_bank_riparian_vegetation" reuseLastValue="0"/>
-    <field name="r_bank_riparian_vegetation_stage" reuseLastValue="0"/>
-    <field name="r_bank_shape" reuseLastValue="0"/>
-    <field name="r_bank_texture_dominant_1" reuseLastValue="0"/>
-    <field name="r_bank_texture_dominant_2" reuseLastValue="0"/>
-    <field name="reach_number" reuseLastValue="0"/>
-    <field name="reference_number" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_2" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_2_time" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_3" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_3_time" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_4" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_4_time" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_5" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_5_time" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_6" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_6_time" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_7" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_7_time" reuseLastValue="0"/>
-    <field name="residual_pool_depth_m_time" reuseLastValue="0"/>
-    <field name="site_length" reuseLastValue="0"/>
-    <field name="site_number" reuseLastValue="0"/>
-    <field name="small_woody_debris" reuseLastValue="0"/>
-    <field name="stage" reuseLastValue="0"/>
-    <field name="surveyor_1" reuseLastValue="0"/>
-    <field name="surveyor_2" reuseLastValue="0"/>
-    <field name="surveyor_3" reuseLastValue="0"/>
-    <field name="temperature_c" reuseLastValue="0"/>
-    <field name="total_cover" reuseLastValue="0"/>
-    <field name="tributaries" reuseLastValue="0"/>
-    <field name="turbidity" reuseLastValue="0"/>
-    <field name="undercut_banks" reuseLastValue="0"/>
-    <field name="utm_easting" reuseLastValue="0"/>
-    <field name="utm_method" reuseLastValue="0"/>
-    <field name="utm_northing" reuseLastValue="0"/>
-    <field name="utm_zone" reuseLastValue="0"/>
-    <field name="waterbody_id" reuseLastValue="0"/>
-    <field name="wetted_width_m" reuseLastValue="0"/>
-    <field name="wetted_width_m-channel_width_m_time" reuseLastValue="0"/>
-    <field name="wetted_width_m_2" reuseLastValue="0"/>
-    <field name="wetted_width_m_2-channel_width_m_2_time" reuseLastValue="0"/>
-    <field name="wetted_width_m_3" reuseLastValue="0"/>
-    <field name="wetted_width_m_3-channel_width_m_3_time" reuseLastValue="0"/>
-    <field name="wetted_width_m_4" reuseLastValue="0"/>
-    <field name="wetted_width_m_4-channel_width_m_4_time" reuseLastValue="0"/>
-    <field name="wetted_width_m_5" reuseLastValue="0"/>
-    <field name="wetted_width_m_5-channel_width_m_5_time" reuseLastValue="0"/>
-    <field name="wetted_width_m_6" reuseLastValue="0"/>
-    <field name="wetted_width_m_6-channel_width_m_6_time" reuseLastValue="0"/>
-    <field name="wetted_width_m_7" reuseLastValue="0"/>
-    <field name="wetted_width_m_7-channel_width_m_7_time" reuseLastValue="0"/>
+    <field reuseLastValue="0" name="average_bankfull_depth_m"/>
+    <field reuseLastValue="0" name="average_gradient_percent"/>
+    <field reuseLastValue="0" name="average_residual_pool_depth_m"/>
+    <field reuseLastValue="0" name="avg_channel_width_m"/>
+    <field reuseLastValue="0" name="avg_wetted_width_m"/>
+    <field reuseLastValue="0" name="bankfull_depth_number_1_m"/>
+    <field reuseLastValue="0" name="bankfull_depth_number_1_m_time"/>
+    <field reuseLastValue="0" name="bankfull_depth_number_2_m"/>
+    <field reuseLastValue="0" name="bankfull_depth_number_2_m_time"/>
+    <field reuseLastValue="0" name="bankfull_depth_number_3_m"/>
+    <field reuseLastValue="0" name="bankfull_depth_number_3_m_time"/>
+    <field reuseLastValue="0" name="bankfull_depth_number_4_m"/>
+    <field reuseLastValue="0" name="bankfull_depth_number_4_m_time"/>
+    <field reuseLastValue="0" name="bed_material_dominant"/>
+    <field reuseLastValue="0" name="bed_material_subdominant"/>
+    <field reuseLastValue="0" name="boulders"/>
+    <field reuseLastValue="0" name="camera_id"/>
+    <field reuseLastValue="0" name="channel_pattern"/>
+    <field reuseLastValue="0" name="channel_width_m"/>
+    <field reuseLastValue="0" name="channel_width_m_2"/>
+    <field reuseLastValue="0" name="channel_width_m_3"/>
+    <field reuseLastValue="0" name="channel_width_m_4"/>
+    <field reuseLastValue="0" name="channel_width_m_5"/>
+    <field reuseLastValue="0" name="channel_width_m_6"/>
+    <field reuseLastValue="0" name="channel_width_m_7"/>
+    <field reuseLastValue="0" name="comments"/>
+    <field reuseLastValue="0" name="comments_2"/>
+    <field reuseLastValue="0" name="conductivity_m_s_cm"/>
+    <field reuseLastValue="0" name="confinement"/>
+    <field reuseLastValue="0" name="coupling"/>
+    <field reuseLastValue="1" name="crew_members"/>
+    <field reuseLastValue="0" name="crown_closure"/>
+    <field reuseLastValue="0" name="d95_cm"/>
+    <field reuseLastValue="0" name="d_cm"/>
+    <field reuseLastValue="0" name="date_time_start"/>
+    <field reuseLastValue="0" name="deep_pools"/>
+    <field reuseLastValue="0" name="dewatered_dry_int_channel"/>
+    <field reuseLastValue="0" name="feature_height_2_m"/>
+    <field reuseLastValue="0" name="feature_height_3_m"/>
+    <field reuseLastValue="0" name="feature_height_length_method"/>
+    <field reuseLastValue="0" name="feature_height_m"/>
+    <field reuseLastValue="0" name="feature_length_2_m"/>
+    <field reuseLastValue="0" name="feature_length_3_m"/>
+    <field reuseLastValue="0" name="feature_length_m"/>
+    <field reuseLastValue="0" name="feature_time"/>
+    <field reuseLastValue="0" name="feature_time_2"/>
+    <field reuseLastValue="0" name="feature_time_3"/>
+    <field reuseLastValue="0" name="feature_type"/>
+    <field reuseLastValue="0" name="feature_type_2"/>
+    <field reuseLastValue="0" name="feature_type_3"/>
+    <field reuseLastValue="0" name="fid"/>
+    <field reuseLastValue="0" name="functional_lwd"/>
+    <field reuseLastValue="0" name="gazetted_names"/>
+    <field reuseLastValue="0" name="gps_id"/>
+    <field reuseLastValue="0" name="gps_waypoint_id"/>
+    <field reuseLastValue="0" name="gps_waypoint_number"/>
+    <field reuseLastValue="0" name="gradient"/>
+    <field reuseLastValue="0" name="gradient_number_1_percent"/>
+    <field reuseLastValue="0" name="gradient_number_1_percent_time"/>
+    <field reuseLastValue="0" name="gradient_number_2_percent"/>
+    <field reuseLastValue="0" name="gradient_number_2_percent_time"/>
+    <field reuseLastValue="0" name="gradient_number_4_percent"/>
+    <field reuseLastValue="0" name="gradient_number_4_percent_time"/>
+    <field reuseLastValue="0" name="gradient_time"/>
+    <field reuseLastValue="0" name="habitat_value_rating"/>
+    <field reuseLastValue="0" name="instream_vegetation"/>
+    <field reuseLastValue="0" name="instream_vegetation_type"/>
+    <field reuseLastValue="0" name="l_bank_riparian_vegetation"/>
+    <field reuseLastValue="0" name="l_bank_riparian_vegetation_stage"/>
+    <field reuseLastValue="0" name="l_bank_shape"/>
+    <field reuseLastValue="0" name="l_bank_texture_dominant_1"/>
+    <field reuseLastValue="0" name="l_bank_texture_dominant_2"/>
+    <field reuseLastValue="0" name="large_woody_debris"/>
+    <field reuseLastValue="0" name="link_method_site_card"/>
+    <field reuseLastValue="0" name="local_name"/>
+    <field reuseLastValue="0" name="lwd_distribution"/>
+    <field reuseLastValue="0" name="mergin_user"/>
+    <field reuseLastValue="0" name="method_for_bankfull_depth"/>
+    <field reuseLastValue="0" name="method_for_channel_width"/>
+    <field reuseLastValue="0" name="method_for_conductivity"/>
+    <field reuseLastValue="0" name="method_for_gradient"/>
+    <field reuseLastValue="0" name="method_for_p_h"/>
+    <field reuseLastValue="0" name="method_for_residual_pool_depth"/>
+    <field reuseLastValue="0" name="method_for_temperature"/>
+    <field reuseLastValue="0" name="method_for_wetted_width"/>
+    <field reuseLastValue="0" name="morphology"/>
+    <field reuseLastValue="0" name="no_visible_channel"/>
+    <field reuseLastValue="0" name="overhanging_vegetation"/>
+    <field reuseLastValue="0" name="p_h"/>
+    <field reuseLastValue="0" name="photo_card"/>
+    <field reuseLastValue="0" name="photo_extra1"/>
+    <field reuseLastValue="0" name="photo_extra1_tag"/>
+    <field reuseLastValue="0" name="photo_extra2"/>
+    <field reuseLastValue="0" name="photo_extra2_tag"/>
+    <field reuseLastValue="0" name="photo_extra3"/>
+    <field reuseLastValue="0" name="photo_extra3_tag"/>
+    <field reuseLastValue="0" name="photo_extra4"/>
+    <field reuseLastValue="0" name="photo_extra4_tag"/>
+    <field reuseLastValue="0" name="photo_extra5"/>
+    <field reuseLastValue="0" name="photo_extra5_tag"/>
+    <field reuseLastValue="0" name="photo_extra_1"/>
+    <field reuseLastValue="0" name="photo_extra_1_tag"/>
+    <field reuseLastValue="0" name="photo_extra_2"/>
+    <field reuseLastValue="0" name="photo_extra_2_tag"/>
+    <field reuseLastValue="0" name="photo_gravel"/>
+    <field reuseLastValue="0" name="photo_pool"/>
+    <field reuseLastValue="0" name="photo_typical_1"/>
+    <field reuseLastValue="0" name="photo_typical_2"/>
+    <field reuseLastValue="0" name="r_bank_riparian_vegetation"/>
+    <field reuseLastValue="0" name="r_bank_riparian_vegetation_stage"/>
+    <field reuseLastValue="0" name="r_bank_shape"/>
+    <field reuseLastValue="0" name="r_bank_texture_dominant_1"/>
+    <field reuseLastValue="0" name="r_bank_texture_dominant_2"/>
+    <field reuseLastValue="0" name="reach_number"/>
+    <field reuseLastValue="0" name="reference_number"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_2"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_2_time"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_3"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_3_time"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_4"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_4_time"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_5"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_5_time"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_6"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_6_time"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_7"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_7_time"/>
+    <field reuseLastValue="0" name="residual_pool_depth_m_time"/>
+    <field reuseLastValue="0" name="site_length"/>
+    <field reuseLastValue="0" name="site_number"/>
+    <field reuseLastValue="0" name="small_woody_debris"/>
+    <field reuseLastValue="0" name="stage"/>
+    <field reuseLastValue="0" name="surveyor_1"/>
+    <field reuseLastValue="0" name="surveyor_2"/>
+    <field reuseLastValue="0" name="surveyor_3"/>
+    <field reuseLastValue="0" name="temperature_c"/>
+    <field reuseLastValue="0" name="total_cover"/>
+    <field reuseLastValue="0" name="tributaries"/>
+    <field reuseLastValue="0" name="turbidity"/>
+    <field reuseLastValue="0" name="undercut_banks"/>
+    <field reuseLastValue="0" name="utm_easting"/>
+    <field reuseLastValue="0" name="utm_method"/>
+    <field reuseLastValue="0" name="utm_northing"/>
+    <field reuseLastValue="0" name="utm_zone"/>
+    <field reuseLastValue="0" name="waterbody_id"/>
+    <field reuseLastValue="0" name="wetted_width_m"/>
+    <field reuseLastValue="0" name="wetted_width_m-channel_width_m_time"/>
+    <field reuseLastValue="0" name="wetted_width_m_2"/>
+    <field reuseLastValue="0" name="wetted_width_m_2-channel_width_m_2_time"/>
+    <field reuseLastValue="0" name="wetted_width_m_3"/>
+    <field reuseLastValue="0" name="wetted_width_m_3-channel_width_m_3_time"/>
+    <field reuseLastValue="0" name="wetted_width_m_4"/>
+    <field reuseLastValue="0" name="wetted_width_m_4-channel_width_m_4_time"/>
+    <field reuseLastValue="0" name="wetted_width_m_5"/>
+    <field reuseLastValue="0" name="wetted_width_m_5-channel_width_m_5_time"/>
+    <field reuseLastValue="0" name="wetted_width_m_6"/>
+    <field reuseLastValue="0" name="wetted_width_m_6-channel_width_m_6_time"/>
+    <field reuseLastValue="0" name="wetted_width_m_7"/>
+    <field reuseLastValue="0" name="wetted_width_m_7-channel_width_m_7_time"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets>
     <widget name="form_fish__local_name_form_fiss__local_name">
       <config type="Map">
-        <Option name="force-suppress-popup" value="false" type="bool"/>
-        <Option name="nm-rel" type="invalid"/>
+        <Option value="false" type="bool" name="force-suppress-popup"/>
+        <Option type="invalid" name="nm-rel"/>
       </config>
     </widget>
   </widgets>
   <previewExpression>"gazetted_names"</previewExpression>
-  <mapTip></mapTip>
+  <mapTip enabled="1"></mapTip>
   <layerGeometryType>0</layerGeometryType>
 </qgis>
