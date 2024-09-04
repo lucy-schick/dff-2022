@@ -4,6 +4,9 @@ source('scripts/packages.R')
 source('scripts/functions.R')
 
 
+# path_write <- 'data/qgis/form_pscis.gpkg'
+path_write <- '~/Projects/gis/sern_peace_fwcp_2023/form_pscis.gpkg'
+
 # import the pscis template with custom test function
 form_prep1 <- tfpr_import_pscis_all() %>% bind_rows()
 # see the names of the columns
@@ -34,13 +37,18 @@ form_prep2 <- form_prep1 %>%
   # select(-rowid,
   #        -site_id) %>%
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
-  dplyr::mutate(-rowid,
-                date_time_start = NA_POSIXct_,
+  dplyr::mutate(date_time_start = NA_POSIXct_,
                 mergin_user = NA_character_,
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_number = NA_character_,
                 moti_chris_culvert_id = NA_integer_,
+                moti_chris_culvert_id2 = NA_integer_,
+                moti_chris_culvert_id3 = NA_integer_,
+                assess_type_phase1 = NA_character_,
+                assess_type_reassessment = NA_character_,
+                assess_type_phase2 = NA_character_,
+                my_priority = NA_character_, #need to think about this one. priority_follow_up_rank perhaps.
                 erosion_issues = NA_integer_,
                 embankment_fill_issues = NA_integer_,
                 blockage_issues = NA_integer_,
@@ -59,7 +67,7 @@ form_prep2 <- form_prep1 %>%
                 environmental_impacts = NA_integer_,
                 priority_rank = NA_integer_,
                 overall_rank = NA_integer_,
-                priority_notes = NA_character_,
+                climate_priority_notes = NA_character_,
                 mergin_user = NA_character_,
                 photo_road = NA_character_,
                 photo_upstream = NA_character_,
@@ -73,9 +81,15 @@ form_prep2 <- form_prep1 %>%
                 photo_paper_card = NA_character_,
                 photo_extra1 = NA_character_,
                 photo_extra2 = NA_character_,
+                photo_extra3 = NA_character_,
                 photo_extra1_tag = NA_character_,
                 photo_extra2_tag = NA_character_,
-                link_method_phase1 = NA_character_
+                photo_extra3_tag = NA_character_,
+                link_method_phase1 = NA_character_,
+                my_citation_key1 = NA_character_,
+                my_citation_key2 = NA_character_,
+                my_citation_key3 = NA_character_,
+                uav_flight_completed = NA_character_
   ) %>%
   # slice it down so it has only 1 row
   dplyr::slice(1) %>%
@@ -104,8 +118,8 @@ form_prep2 <- form_prep1 %>%
 glimpse(form_prep1)
 glimpse(form_prep2)
 
-
+# latest version only burned to fwcp peace qgis
 form_prep2 %>%
    # make this filepath whatever - this just backs out two directories and then walks into `gis`.
-  sf::st_write('data/qgis/form_pscis.gpkg', delete_layer = T)
+  sf::st_write(path_write, delete_layer = T)
 
