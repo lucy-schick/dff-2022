@@ -5,25 +5,21 @@ source('scripts/functions.R')
 
 
 # path_write <- 'data/qgis/form_pscis.gpkg'
-path_write <- '~/Projects/gis/sern_peace_fwcp_2023/form_pscis.gpkg'
+path_write <- '~/Projects/gis/sern_skeena_2023/form_pscis.gpkg'
 
 # import the pscis template with custom test function
-form_prep1 <- tfpr_import_pscis_all() %>% bind_rows()
+form_prep1 <- tfpr_import_pscis_all() |>
+  bind_rows()
+
 # see the names of the columns
 names(form_prep1)
 
-# which utm zone do all the coordinates fall into?
-unique(form_prep1$utm_zone)
-
-#------------------------------name the project directory we are burning to-----------------------------
-# dir_project <- 'clay_2023'
-#-------------------------------------------------------------------------------------------------------
-
-
 #---------------------------------------define your utm zone ------------------------------------------
-# !!!!!!!!!!!!!!!!!!!!!!!!This can cause errors if you use the form in more than
-utm_zone <- 10
-#------------------------------------------------------------------------------------------------------
+utm_zone <- form_prep1 |>
+  dplyr::filter(!is.na(utm_zone)) |>
+  pull(utm_zone)
+
+
 
 
 # name the form using the date and time
