@@ -23,7 +23,7 @@ check_format() {
   local input="$1"
 
   # Check if the input format is correct
-  if [[ ! $input =~ ^\'[^\']+\'(,\ \'[^\']+\')*$ ]]; then
+  if [[ ! $input =~ ^\'[^\']+\'(,\ *\'[^\']+\')*$ ]]; then
     echo "Invalid format for watershed groups supplied."
     echo "You provided: \"$input\""
     echo "Please provide the names in the format: \"'BULK'\" or \"'BULK', 'KLUM'\" with single quotes around each name and optionally separated by commas."
