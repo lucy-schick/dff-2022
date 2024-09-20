@@ -1,0 +1,25 @@
+"'MORK', 'UFRA', 'LCHL', 'NECR', 'FRAN', 'LSAL', 'TABR', 'WILL', 'BOWR'"
+
+time ./rfp_source_bcdata.sh "'MORK', 'UFRA', 'LCHL', 'NECR', 'FRAN', 'LSAL', 'TABR', 'WILL', 'BOWR'" && time ./rfp_source_aws.sh "'MORK', 'UFRA', 'LCHL', 'NECR', 'FRAN', 'LSAL', 'TABR', 'WILL', 'BOWR'" && time time ./rfp_qgis_create.sh "sern_fraser_2024" "bcrestoration_mobile.qgs"
+
+
+mergin create newgraph/sern_fraser_2024 --from-dir ~/Projects/gis/sern_fraser_2024
+
+mergin share-add newgraph/sern_fraser_2024 newgraph_bute --permissions writer \
+mergin share-add newgraph/sern_fraser_2024 newgraph_lschick --permissions writer \
+mergin share-add newgraph/sern_fraser_2024 jmdegagn --permissions writer \
+mergin share-add newgraph/sern_fraser_2024 rivershed_jmarquis --permissions writer \
+mergin share-add newgraph/sern_fraser_2024 Alexandras --permissions writer \
+mergin share-add newgraph/sern_fraser_2024 tdonald --permissions writer \
+mergin share-add newgraph/sern_fraser_2024 sern_bgeldart --permissions reader \
+mergin share-add newgraph/sern_fraser_2024 seanwong --permissions reader \
+
+
+
+--update
+
+cp ~/Projects/gis/sern_fraser_2024/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
+
+time ./rfp_source_aws.sh "'BULK', 'MORR'"
+
+mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_fraser_2024/background_layers.gpkg
