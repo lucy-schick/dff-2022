@@ -14,12 +14,15 @@ To download and clip layers for an area of interest defined by a list of watersh
 
 ## `rfp_source_bcdata.sh`
 
-  1. edit `rfp_source_bcdata.txt` as needed, listing all layers to be downloaded via bcdata/WFS
-  2. To update an existing `background_layers.gpkg` file non-interactively - include the `update` flag.  if a file named `background_layers.gpkg` exists in the `scripts/qgis` directory it will ask the user if they want 
-  to start over (yes) or update the existing geopackage (no). 
-  2. Once input has been put to console the script will download these layers to `.geojson`, for given study area 
-  (optionally with timer - `time `), loaded to `background_layers.gpkg` with clip (or query) associated with watershed 
-  group polygons supplied in command to run the script:
+  1. edit `rfp_source_bcdata.txt` as needed, listing all layers to be downloaded via bcdata/WFS 
+  2. source the file and include **double quoted list of single quoted** (ex. "'BULK', 'KLUM'") watershed groups to run
+  the script and define the study area boundaries.
+  3.To update an existing `background_layers.gpkg` file non-interactively - include the `update` flag.  Ff a file named
+  `background_layers.gpkg` exists in the `scripts/qgis` directory it will ask the user if they want to start over (yes)
+  or update the existing geopackage (no).
+  4. Once input has been put to console the script will download `rfp_source_bcdata.txt` layers to `.geojson`, for given
+  study area (optionally with timer - `time `) and load to `background_layers.gpkg` with clip associated with
+  watershed group polygons supplied in command to run the script:
   
     
     Non interactive:
