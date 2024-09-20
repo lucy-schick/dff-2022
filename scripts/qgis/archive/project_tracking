@@ -1,19 +1,43 @@
 # sern_peace_fwcp_2023
 time ./bcdata.sh "'CRKD', 'CARP', 'PARS'" && time ./background_layers.sh "'CRKD', 'CARP','PARS'"
 
+cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
+
+./rfp_source_bcdata.sh "'CRKD', 'CARP', 'PARS'"
+
+mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg
+
 time ./bcdata.sh "'LARL', 'SLOC', 'KOTL'" && time ./background_layers.sh  "'LARL', 'SLOC', 'KOTL'"
 
 # sern_simpcw_2023
 time ./bcdata.sh "'ADMS', 'MORK', 'UFRA', 'CANO', 'LNTH', 'UNTH', 'MURT', 'CLWR', 'CLRH', 'REVL'" && time ./background_layers.sh  "'ADMS', 'MORK', 'UFRA', 'CANO', 'LNTH', 'UNTH', 'MURT', 'CLWR', 'CLRH', 'REVL'"
 
+# sern_simpcw_2023 updates in summer 2024 (before migration to single project)
+cp ~/Projects/gis/sern_simpcw_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
+
+time ./rfp_source_bcdata.sh "'ADMS', 'MORK', 'UFRA', 'CANO', 'LNTH', 'UNTH', 'MURT', 'CLWR', 'CLRH', 'REVL'" && time time ./rfp_source_aws.sh  "'ADMS', 'MORK', 'UFRA', 'CANO', 'LNTH', 'UNTH', 'MURT', 'CLWR', 'CLRH', 'REVL'"
+
+mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_simpcw_2023/background_layers.gpkg
+mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/sern_simpcw_2023/habitat_lateral.tif
+
 # sern_lchl_necr_fran_2023
 time ./bcdata.sh "'LCHL', 'NECR', 'FRAN'" && time ./background_layers.sh  "'LCHL', 'NECR', 'FRAN'"
+
+#update a couple layers
+
+cp ~/Projects/gis/sern_lchl_necr_fran_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
+
+time ./rfp_source_bcdata.sh "'LCHL', 'NECR', 'FRAN'"
+time ./rfp_source_aws.sh "'LCHL', 'NECR', 'FRAN'"
+
+mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_lchl_necr_fran_2023/background_layers.gpkg
+
+mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/sern_lchl_necr_fran_2023/habitat_lateral.tif
 
 # test_revl_clrh_2023
 time ./bcdata.sh "'REVL', 'CLRH'" && time ./background_layers.sh  "'REVL', 'CLRH'"
 
-# test_larl_adms
-time ./bcdata.sh "'LARL', 'ADMS'" && time ./background_layers.sh  "'LARL', 'ADMS'"
+
 
 # test_adms
 time ./bcdata.sh "'ADMS'" && time ./background_layers.sh  "'ADMS'"
@@ -27,8 +51,26 @@ time ./bcdata.sh "'BABL'" && time ./background_layers.sh  "'BABL'"
 time ./bcdata.sh "'TABR', 'WILL', 'BOWR', 'MORK', 'LCHL', 'LSAL'" && time ./background_layers.sh  "'TABR', 'WILL', 'BOWR', 'MORK', 'LCHL', 'LSAL'"
 
 # sern_skeena_2023
-time ./bcdata.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'" && ./background_layers.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
+
+cp ~/Projects/gis/sern_skeena_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
+
+
+# bcdata only
+./rfp_source_bcdata.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
+
+mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_skeena_2023/background_layers.gpkg
+
+
+time ./rfp_source_bcdata.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'" && ./rfp_source_aws.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
 
 
 # update select bcdata layers
 time ./bcdata_update.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
+
+# sern_fraser_2024
+./rfp_source_bcdata.sh "'MORK', 'UFRA'" && ./rfp_source_aws.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
+
+#20240808
+# test_adms
+time ./rfp_source_bcdata.sh "'ADMS'" && time ./rfp_source_aws.sh  "'ADMS'" && time ./rfp_qgis_create.sh "test_adms" "bcrestoration_mobile.qgs"
+
