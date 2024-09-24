@@ -3,14 +3,14 @@
 source('scripts/packages.R')
 
 
-# import a populated pscis template (habitat_confirmations.xls)
-form_prep1 <- fpr::fpr_import_pscis()
+# # import a populated pscis template (habitat_confirmations.xls)
+# form_prep1 <- fpr::fpr_import_pscis()
 
 # path_write <- 'data/qgis/form_pscis.gpkg'
-path_write <- '~/Projects/gis/sern_peace_fwcp_2023/form_monitoring.gpkg'
+path_write <- '~/Projects/gis/restoration_wedzin_kwa/form_monitoring_ree.gpkg'
 
 # import the pscis template with custom test function
-form_prep1 <- tfpr_import_pscis_all() |>
+form_prep1 <- fpr::fpr_import_pscis_all() |>
   bind_rows()
 
 # see the names of the columns
@@ -19,26 +19,15 @@ names(form_prep1)
 #---------------------------------------define your utm zone ------------------------------------------
 utm_zone <- form_prep1 |>
   dplyr::filter(!is.na(utm_zone)) |>
+  dplyr::slice(1) |>
   pull(utm_zone)
 
-# see the names of the columns
-names(form_prep1)
 
-# which utm zone do all the coordinates fall into?
-unique(form_prep1$utm_zone)
-
-# # name the project directory we are burning to
-# dir_project <- 'bcfishpass_20230517'
-# #dir_project <- 'bcfishpass_cown_vict'
-#
 # # name the form using the date and time
 # # we should be able to name the form the same in the active project but the files can be versioned
 # # seems safer...
 # file_name <- paste0('form_monitor_', format(lubridate::now(), "%Y%m%d"))
 
-#' #' define your utm zone.  This can cause errors if you use the form in more than
-#' #' one zone!!!!! beware
-#' utm_zone <- 11
 
 form_prep2 <- form_prep1 %>%
   # example - drop  columns that we don't need - there are more
