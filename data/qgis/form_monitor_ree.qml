@@ -471,7 +471,10 @@
     <field configurationFlags="NoFlag" name="fid">
       <editWidget type="TextEdit">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
         </config>
       </editWidget>
     </field>
@@ -592,21 +595,30 @@
     <field configurationFlags="NoFlag" name="utm_zone">
       <editWidget type="TextEdit">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="NoFlag" name="easting">
       <editWidget type="TextEdit">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="NoFlag" name="northing">
       <editWidget type="TextEdit">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
         </config>
       </editWidget>
     </field>
@@ -624,7 +636,7 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="true" name="IsMultiline" type="bool"/>
             <Option value="false" name="UseHtml" type="bool"/>
           </Option>
         </config>
@@ -640,27 +652,52 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="NoFlag" name="erosion_notes">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="NoFlag" name="condition_notes">
+    <field configurationFlags="NoFlag" name="channel_width">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="true" name="IsMultiline" type="bool"/>
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="stream_slope">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
             <Option value="false" name="UseHtml" type="bool"/>
           </Option>
         </config>
       </editWidget>
     </field>
     <field configurationFlags="NoFlag" name="photo_access">
-      <editWidget type="TextEdit">
+      <editWidget type="ExternalResource">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
+          </Option>
         </config>
       </editWidget>
     </field>
@@ -920,7 +957,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -959,7 +996,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -995,11 +1032,30 @@
       </editWidget>
     </field>
     <field configurationFlags="NoFlag" name="photo_extra5">
-      <editWidget type="TextEdit">
+      <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
           </Option>
         </config>
       </editWidget>
@@ -1009,6 +1065,54 @@
         <config>
           <Option type="Map">
             <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="erosion">
+      <editWidget type="Range">
+        <config>
+          <Option type="Map">
+            <Option value="true" name="AllowNull" type="bool"/>
+            <Option value="5" name="Max" type="int"/>
+            <Option value="1" name="Min" type="int"/>
+            <Option value="0" name="Precision" type="int"/>
+            <Option value="1" name="Step" type="int"/>
+            <Option value="SpinBox" name="Style" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="erosion_notes">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="condition">
+      <editWidget type="Range">
+        <config>
+          <Option type="Map">
+            <Option value="true" name="AllowNull" type="bool"/>
+            <Option value="5" name="Max" type="int"/>
+            <Option value="1" name="Min" type="int"/>
+            <Option value="0" name="Precision" type="int"/>
+            <Option value="1" name="Step" type="int"/>
+            <Option value="SpinBox" name="Style" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="condition_notes">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="true" name="IsMultiline" type="bool"/>
             <Option value="false" name="UseHtml" type="bool"/>
           </Option>
         </config>
@@ -1042,7 +1146,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="3" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -1095,7 +1199,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -1112,7 +1216,7 @@
               </Option>
               <Option value="collection" name="type" type="QString"/>
             </Option>
-            <Option value="2" name="RelativeStorage" type="int"/>
+            <Option value="1" name="RelativeStorage" type="int"/>
             <Option value="" name="StorageAuthConfigId" type="QString"/>
             <Option value="0" name="StorageMode" type="int"/>
             <Option value="" name="StorageType" type="QString"/>
@@ -1148,7 +1252,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="3" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -1201,7 +1305,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -1254,7 +1358,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -1307,7 +1411,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="3" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -1360,7 +1464,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -1466,7 +1570,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -1519,7 +1623,7 @@
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
             <Option value="0" name="DocumentViewerHeight" type="int"/>
             <Option value="0" name="DocumentViewerWidth" type="int"/>
             <Option value="true" name="FileWidget" type="bool"/>
@@ -1576,8 +1680,8 @@
     <alias index="15" field="mergin_user" name=""/>
     <alias index="16" field="land_owner" name=""/>
     <alias index="17" field="access_comment" name=""/>
-    <alias index="18" field="erosion_notes" name=""/>
-    <alias index="19" field="condition_notes" name=""/>
+    <alias index="18" field="channel_width" name=""/>
+    <alias index="19" field="stream_slope" name=""/>
     <alias index="20" field="photo_access" name=""/>
     <alias index="21" field="photo_upstream" name=""/>
     <alias index="22" field="photo_downstream" name=""/>
@@ -1595,40 +1699,44 @@
     <alias index="34" field="photo_extra4_tag" name=""/>
     <alias index="35" field="photo_extra5" name=""/>
     <alias index="36" field="photo_extra5_tag" name=""/>
-    <alias index="37" field="dewatering" name=""/>
-    <alias index="38" field="dewatering_notes" name=""/>
-    <alias index="39" field="photo_dewatering" name=""/>
-    <alias index="40" field="velocity" name=""/>
-    <alias index="41" field="velocity_notes" name=""/>
-    <alias index="42" field="photo_velocity" name=""/>
-    <alias index="43" field="constriction" name=""/>
-    <alias index="44" field="constriction_notes" name=""/>
-    <alias index="45" field="photo_constriction" name=""/>
-    <alias index="46" field="substrate" name=""/>
-    <alias index="47" field="substrate_notes" name=""/>
-    <alias index="48" field="photo_substrate" name=""/>
-    <alias index="49" field="riparian" name=""/>
-    <alias index="50" field="riparian_notes" name=""/>
-    <alias index="51" field="photo_riparian" name=""/>
-    <alias index="52" field="flow_depth" name=""/>
-    <alias index="53" field="flow_depth_notes" name=""/>
-    <alias index="54" field="photo_flow_depth" name=""/>
-    <alias index="55" field="stability" name=""/>
-    <alias index="56" field="stability_notes" name=""/>
-    <alias index="57" field="photo_stability" name=""/>
-    <alias index="58" field="revegetation" name=""/>
-    <alias index="59" field="revegetation_notes" name=""/>
-    <alias index="60" field="photo_revegetation" name=""/>
-    <alias index="61" field="cover" name=""/>
-    <alias index="62" field="cover_notes" name=""/>
-    <alias index="63" field="photo_cover" name=""/>
-    <alias index="64" field="maintenance" name=""/>
-    <alias index="65" field="maintenance_notes" name=""/>
-    <alias index="66" field="photo_maintenance" name=""/>
-    <alias index="67" field="uav_flight" name=""/>
+    <alias index="37" field="erosion" name=""/>
+    <alias index="38" field="erosion_notes" name=""/>
+    <alias index="39" field="condition" name=""/>
+    <alias index="40" field="condition_notes" name=""/>
+    <alias index="41" field="dewatering" name=""/>
+    <alias index="42" field="dewatering_notes" name=""/>
+    <alias index="43" field="photo_dewatering" name=""/>
+    <alias index="44" field="velocity" name=""/>
+    <alias index="45" field="velocity_notes" name=""/>
+    <alias index="46" field="photo_velocity" name=""/>
+    <alias index="47" field="constriction" name=""/>
+    <alias index="48" field="constriction_notes" name=""/>
+    <alias index="49" field="photo_constriction" name=""/>
+    <alias index="50" field="substrate" name=""/>
+    <alias index="51" field="substrate_notes" name=""/>
+    <alias index="52" field="photo_substrate" name=""/>
+    <alias index="53" field="riparian" name=""/>
+    <alias index="54" field="riparian_notes" name=""/>
+    <alias index="55" field="photo_riparian" name=""/>
+    <alias index="56" field="flow_depth" name=""/>
+    <alias index="57" field="flow_depth_notes" name=""/>
+    <alias index="58" field="photo_flow_depth" name=""/>
+    <alias index="59" field="stability" name=""/>
+    <alias index="60" field="stability_notes" name=""/>
+    <alias index="61" field="photo_stability" name=""/>
+    <alias index="62" field="revegetation" name=""/>
+    <alias index="63" field="revegetation_notes" name=""/>
+    <alias index="64" field="photo_revegetation" name=""/>
+    <alias index="65" field="cover" name=""/>
+    <alias index="66" field="cover_notes" name=""/>
+    <alias index="67" field="photo_cover" name=""/>
+    <alias index="68" field="maintenance" name=""/>
+    <alias index="69" field="maintenance_notes" name=""/>
+    <alias index="70" field="photo_maintenance" name=""/>
+    <alias index="71" field="uav_flight" name=""/>
   </aliases>
   <splitPolicies>
-    <policy policy="Duplicate" field="fid"/>
+    <policy policy="DefaultValue" field="fid"/>
     <policy policy="DefaultValue" field="date_time_start"/>
     <policy policy="DefaultValue" field="crew_members"/>
     <policy policy="DefaultValue" field="site_id"/>
@@ -1640,15 +1748,15 @@
     <policy policy="DefaultValue" field="length_meters"/>
     <policy policy="DefaultValue" field="assessment_comment"/>
     <policy policy="DefaultValue" field="habitat_comment"/>
-    <policy policy="Duplicate" field="utm_zone"/>
-    <policy policy="Duplicate" field="easting"/>
-    <policy policy="Duplicate" field="northing"/>
-    <policy policy="Duplicate" field="mergin_user"/>
+    <policy policy="DefaultValue" field="utm_zone"/>
+    <policy policy="DefaultValue" field="easting"/>
+    <policy policy="DefaultValue" field="northing"/>
+    <policy policy="DefaultValue" field="mergin_user"/>
     <policy policy="DefaultValue" field="land_owner"/>
     <policy policy="DefaultValue" field="access_comment"/>
-    <policy policy="Duplicate" field="erosion_notes"/>
-    <policy policy="Duplicate" field="condition_notes"/>
-    <policy policy="Duplicate" field="photo_access"/>
+    <policy policy="DefaultValue" field="channel_width"/>
+    <policy policy="DefaultValue" field="stream_slope"/>
+    <policy policy="DefaultValue" field="photo_access"/>
     <policy policy="DefaultValue" field="photo_upstream"/>
     <policy policy="DefaultValue" field="photo_downstream"/>
     <policy policy="DefaultValue" field="photo_inlet"/>
@@ -1665,6 +1773,10 @@
     <policy policy="DefaultValue" field="photo_extra4_tag"/>
     <policy policy="DefaultValue" field="photo_extra5"/>
     <policy policy="DefaultValue" field="photo_extra5_tag"/>
+    <policy policy="DefaultValue" field="erosion"/>
+    <policy policy="DefaultValue" field="erosion_notes"/>
+    <policy policy="DefaultValue" field="condition"/>
+    <policy policy="DefaultValue" field="condition_notes"/>
     <policy policy="DefaultValue" field="dewatering"/>
     <policy policy="DefaultValue" field="dewatering_notes"/>
     <policy policy="DefaultValue" field="photo_dewatering"/>
@@ -1716,8 +1828,8 @@
     <default expression="" field="mergin_user" applyOnUpdate="0"/>
     <default expression="" field="land_owner" applyOnUpdate="0"/>
     <default expression="" field="access_comment" applyOnUpdate="0"/>
-    <default expression="" field="erosion_notes" applyOnUpdate="0"/>
-    <default expression="" field="condition_notes" applyOnUpdate="0"/>
+    <default expression="" field="channel_width" applyOnUpdate="0"/>
+    <default expression="" field="stream_slope" applyOnUpdate="0"/>
     <default expression="" field="photo_access" applyOnUpdate="0"/>
     <default expression="" field="photo_upstream" applyOnUpdate="0"/>
     <default expression="" field="photo_downstream" applyOnUpdate="0"/>
@@ -1735,6 +1847,10 @@
     <default expression="" field="photo_extra4_tag" applyOnUpdate="0"/>
     <default expression="" field="photo_extra5" applyOnUpdate="0"/>
     <default expression="" field="photo_extra5_tag" applyOnUpdate="0"/>
+    <default expression="" field="erosion" applyOnUpdate="0"/>
+    <default expression="" field="erosion_notes" applyOnUpdate="0"/>
+    <default expression="" field="condition" applyOnUpdate="0"/>
+    <default expression="" field="condition_notes" applyOnUpdate="0"/>
     <default expression="" field="dewatering" applyOnUpdate="0"/>
     <default expression="" field="dewatering_notes" applyOnUpdate="0"/>
     <default expression="" field="photo_dewatering" applyOnUpdate="0"/>
@@ -1786,8 +1902,8 @@
     <constraint notnull_strength="0" constraints="0" field="mergin_user" unique_strength="0" exp_strength="0"/>
     <constraint notnull_strength="0" constraints="0" field="land_owner" unique_strength="0" exp_strength="0"/>
     <constraint notnull_strength="0" constraints="0" field="access_comment" unique_strength="0" exp_strength="0"/>
-    <constraint notnull_strength="0" constraints="0" field="erosion_notes" unique_strength="0" exp_strength="0"/>
-    <constraint notnull_strength="0" constraints="0" field="condition_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="channel_width" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="stream_slope" unique_strength="0" exp_strength="0"/>
     <constraint notnull_strength="0" constraints="0" field="photo_access" unique_strength="0" exp_strength="0"/>
     <constraint notnull_strength="0" constraints="0" field="photo_upstream" unique_strength="0" exp_strength="0"/>
     <constraint notnull_strength="0" constraints="0" field="photo_downstream" unique_strength="0" exp_strength="0"/>
@@ -1805,6 +1921,10 @@
     <constraint notnull_strength="0" constraints="0" field="photo_extra4_tag" unique_strength="0" exp_strength="0"/>
     <constraint notnull_strength="0" constraints="4" field="photo_extra5" unique_strength="0" exp_strength="2"/>
     <constraint notnull_strength="0" constraints="0" field="photo_extra5_tag" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="erosion" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="erosion_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="condition" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="condition_notes" unique_strength="0" exp_strength="0"/>
     <constraint notnull_strength="0" constraints="0" field="dewatering" unique_strength="0" exp_strength="0"/>
     <constraint notnull_strength="0" constraints="0" field="dewatering_notes" unique_strength="0" exp_strength="0"/>
     <constraint notnull_strength="0" constraints="0" field="photo_dewatering" unique_strength="0" exp_strength="0"/>
@@ -1856,8 +1976,8 @@
     <constraint exp="" desc="" field="mergin_user"/>
     <constraint exp="" desc="" field="land_owner"/>
     <constraint exp="" desc="" field="access_comment"/>
-    <constraint exp="" desc="" field="erosion_notes"/>
-    <constraint exp="" desc="" field="condition_notes"/>
+    <constraint exp="" desc="" field="channel_width"/>
+    <constraint exp="" desc="" field="stream_slope"/>
     <constraint exp="" desc="" field="photo_access"/>
     <constraint exp="" desc="" field="photo_upstream"/>
     <constraint exp="" desc="" field="photo_downstream"/>
@@ -1875,6 +1995,10 @@
     <constraint exp="" desc="" field="photo_extra4_tag"/>
     <constraint exp="@project_home + '/ignore_mobile/photos'" desc="" field="photo_extra5"/>
     <constraint exp="" desc="" field="photo_extra5_tag"/>
+    <constraint exp="" desc="" field="erosion"/>
+    <constraint exp="" desc="" field="erosion_notes"/>
+    <constraint exp="" desc="" field="condition"/>
+    <constraint exp="" desc="" field="condition_notes"/>
     <constraint exp="" desc="" field="dewatering"/>
     <constraint exp="" desc="" field="dewatering_notes"/>
     <constraint exp="" desc="" field="photo_dewatering"/>
@@ -1981,6 +2105,10 @@
       <column hidden="0" width="-1" name="photo_access" type="field"/>
       <column hidden="0" width="-1" name="photo_extra5" type="field"/>
       <column hidden="0" width="-1" name="photo_extra5_tag" type="field"/>
+      <column hidden="0" width="-1" name="channel_width" type="field"/>
+      <column hidden="0" width="-1" name="stream_slope" type="field"/>
+      <column hidden="0" width="-1" name="erosion" type="field"/>
+      <column hidden="0" width="-1" name="condition" type="field"/>
       <column hidden="1" width="-1" type="actions"/>
     </columns>
   </attributetableconfig>
@@ -2080,7 +2208,17 @@ def my_form_open(dialog, layer, feature):
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="11" showLabel="1" name="habitat_comment" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
       <attributeEditorField horizontalStretch="0" index="10" showLabel="1" name="assessment_comment" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="71" showLabel="1" name="uav_flight" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
@@ -2090,27 +2228,12 @@ def my_form_open(dialog, layer, feature):
       <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
         <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
       </labelStyle>
-      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="downstream_channel_width_meters" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="18" showLabel="1" name="channel_width" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="stream_slope" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="fish_observed_yes_no" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="beaver_activity_yes_no" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="habitat_value" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="19" showLabel="1" name="stream_slope" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
@@ -2125,122 +2248,102 @@ def my_form_open(dialog, layer, feature):
       <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
         <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
       </labelStyle>
-      <attributeEditorField horizontalStretch="0" index="37" showLabel="1" name="dewatering" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="39" showLabel="1" name="condition" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="38" showLabel="1" name="dewatering_notes" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="40" showLabel="1" name="condition_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="40" showLabel="1" name="velocity" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="38" showLabel="1" name="erosion_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="41" showLabel="1" name="velocity_notes" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="37" showLabel="1" name="erosion" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="velocity_photo" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="44" showLabel="1" name="velocity" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="43" showLabel="1" name="constriction" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="45" showLabel="1" name="velocity_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="44" showLabel="1" name="constriction_notes" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="50" showLabel="1" name="substrate" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="46" showLabel="1" name="substrate" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="51" showLabel="1" name="substrate_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="47" showLabel="1" name="substrate_notes" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="53" showLabel="1" name="riparian" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="49" showLabel="1" name="riparian" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="54" showLabel="1" name="riparian_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="50" showLabel="1" name="riparian_notes" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="56" showLabel="1" name="flow_depth" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="52" showLabel="1" name="flow_depth" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="57" showLabel="1" name="flow_depth_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="53" showLabel="1" name="flow_depth_notes" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="59" showLabel="1" name="stability" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="55" showLabel="1" name="stability" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="60" showLabel="1" name="stability_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="56" showLabel="1" name="stability_notes" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="62" showLabel="1" name="revegetation" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="58" showLabel="1" name="revegetation" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="63" showLabel="1" name="revegetation_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="59" showLabel="1" name="revegetation_notes" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="65" showLabel="1" name="cover" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="61" showLabel="1" name="cover" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="66" showLabel="1" name="cover_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="62" showLabel="1" name="cover_notes" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="68" showLabel="1" name="maintenance" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="64" showLabel="1" name="maintenance" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="65" showLabel="1" name="maintenance_notes" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="67" showLabel="1" name="uav_flight" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="fish_sampling" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="site_card_filled" verticalStretch="0">
+      <attributeEditorField horizontalStretch="0" index="69" showLabel="1" name="maintenance_notes" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
@@ -2250,6 +2353,11 @@ def my_form_open(dialog, layer, feature):
       <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
         <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
       </labelStyle>
+      <attributeEditorField horizontalStretch="0" index="20" showLabel="1" name="photo_access" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
       <attributeEditorField horizontalStretch="0" index="21" showLabel="1" name="photo_upstream" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
@@ -2271,6 +2379,46 @@ def my_form_open(dialog, layer, feature):
         </labelStyle>
       </attributeEditorField>
       <attributeEditorField horizontalStretch="0" index="26" showLabel="1" name="photo_condition" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="64" showLabel="1" name="photo_revegetation" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="61" showLabel="1" name="photo_stability" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="70" showLabel="1" name="photo_maintenance" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="67" showLabel="1" name="photo_cover" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="55" showLabel="1" name="photo_riparian" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="52" showLabel="1" name="photo_substrate" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="46" showLabel="1" name="photo_velocity" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="58" showLabel="1" name="photo_flow_depth" verticalStretch="0">
         <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
@@ -2325,81 +2473,6 @@ def my_form_open(dialog, layer, feature):
           <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="26" showLabel="1" name="photo_condition" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="60" showLabel="1" name="photo_revegetation" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="57" showLabel="1" name="photo_stability" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="66" showLabel="1" name="photo_maintenance" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="63" showLabel="1" name="photo_cover" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="51" showLabel="1" name="photo_riparian" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="48" showLabel="1" name="photo_substrate" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="45" showLabel="1" name="photo_constriction" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="42" showLabel="1" name="photo_velocity" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="39" showLabel="1" name="photo_dewatering" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="54" showLabel="1" name="photo_flow_depth" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="31" showLabel="1" name="photo_extra3" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="32" showLabel="1" name="photo_extra3_tag" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="33" showLabel="1" name="photo_extra4" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" index="34" showLabel="1" name="photo_extra4_tag" verticalStretch="0">
-        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
-          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
-        </labelStyle>
-      </attributeEditorField>
     </attributeEditorContainer>
   </attributeEditorForm>
   <editable>
@@ -2418,6 +2491,7 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="blockage_issues"/>
     <field editable="1" name="blue_line_key"/>
     <field editable="1" name="camera_id"/>
+    <field editable="1" name="channel_width"/>
     <field editable="0" name="climate_change_flood_risk"/>
     <field editable="1" name="climate_notes"/>
     <field editable="1" name="community_access"/>
@@ -2637,6 +2711,7 @@ def my_form_open(dialog, layer, feature):
     <field name="blockage_issues" labelOnTop="0"/>
     <field name="blue_line_key" labelOnTop="0"/>
     <field name="camera_id" labelOnTop="0"/>
+    <field name="channel_width" labelOnTop="0"/>
     <field name="climate_change_flood_risk" labelOnTop="0"/>
     <field name="climate_notes" labelOnTop="0"/>
     <field name="community_access" labelOnTop="0"/>
@@ -2856,6 +2931,7 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="blockage_issues"/>
     <field reuseLastValue="0" name="blue_line_key"/>
     <field reuseLastValue="0" name="camera_id"/>
+    <field reuseLastValue="0" name="channel_width"/>
     <field reuseLastValue="0" name="climate_change_flood_risk"/>
     <field reuseLastValue="0" name="climate_notes"/>
     <field reuseLastValue="0" name="community_access"/>
