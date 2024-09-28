@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis minScale="0" symbologyReferenceScale="-1" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" simplifyAlgorithm="0" readOnly="0" simplifyMaxScale="1" labelsEnabled="1" simplifyDrawingHints="0" simplifyLocal="1" version="3.34.8-Prizren" styleCategories="AllStyleCategories" maxScale="0">
+<qgis labelsEnabled="1" simplifyAlgorithm="0" simplifyLocal="1" simplifyDrawingHints="0" simplifyMaxScale="1" minScale="0" simplifyDrawingTol="1" maxScale="0" hasScaleBasedVisibilityFlag="0" readOnly="0" styleCategories="AllStyleCategories" version="3.34.8-Prizren" symbologyReferenceScale="-1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal mode="0" limitMode="0" endExpression="" durationUnit="min" endField="" startField="date_time_start" accumulate="0" enabled="0" fixedDuration="0" durationField="fid" startExpression="">
+  <temporal durationUnit="min" fixedDuration="0" accumulate="0" enabled="0" limitMode="0" startField="date_time_start" mode="0" durationField="fid" startExpression="" endField="" endExpression="">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation clamping="Terrain" binding="Centroid" respectLayerSymbol="1" extrusion="0" symbology="Line" extrusionEnabled="0" zoffset="0" zscale="1" showMarkerSymbolInSurfacePlots="0" type="IndividualFeatures">
+  <elevation symbology="Line" extrusion="0" zscale="1" respectLayerSymbol="1" extrusionEnabled="0" clamping="Terrain" showMarkerSymbolInSurfacePlots="0" binding="Centroid" zoffset="0" type="IndividualFeatures">
     <data-defined-properties>
       <Option type="Map">
         <Option value="" name="name" type="QString"/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="" is_animated="0" type="line">
+      <symbol frame_rate="10" alpha="1" clip_to_extent="1" name="" force_rhr="0" type="line" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -29,7 +29,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleLine" pass="0" enabled="1" locked="0" id="{f17fe4b0-23be-4ff0-bf9d-13015af45e1f}">
+        <layer id="{f17fe4b0-23be-4ff0-bf9d-13015af45e1f}" pass="0" locked="0" class="SimpleLine" enabled="1">
           <Option type="Map">
             <Option value="0" name="align_dash_pattern" type="QString"/>
             <Option value="square" name="capstyle" type="QString"/>
@@ -70,7 +70,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="" is_animated="0" type="fill">
+      <symbol frame_rate="10" alpha="1" clip_to_extent="1" name="" force_rhr="0" type="fill" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -78,7 +78,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleFill" pass="0" enabled="1" locked="0" id="{9bb0c903-e4a0-4c0a-bf7f-db648d8cb97a}">
+        <layer id="{9bb0c903-e4a0-4c0a-bf7f-db648d8cb97a}" pass="0" locked="0" class="SimpleFill" enabled="1">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
             <Option value="243,166,178,255" name="color" type="QString"/>
@@ -103,7 +103,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="" is_animated="0" type="marker">
+      <symbol frame_rate="10" alpha="1" clip_to_extent="1" name="" force_rhr="0" type="marker" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -111,7 +111,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" enabled="1" locked="0" id="{6c47b782-7c76-4fc4-9059-9835fa8e65f3}">
+        <layer id="{6c47b782-7c76-4fc4-9059-9835fa8e65f3}" pass="0" locked="0" class="SimpleMarker" enabled="1">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -144,9 +144,9 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 forceraster="0" referencescale="-1" enableorderby="0" symbollevels="0" type="singleSymbol">
+  <renderer-v2 symbollevels="0" referencescale="-1" forceraster="0" enableorderby="0" type="singleSymbol">
     <symbols>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="0" is_animated="0" type="marker">
+      <symbol frame_rate="10" alpha="1" clip_to_extent="1" name="0" force_rhr="0" type="marker" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -154,7 +154,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" enabled="1" locked="0" id="{d11b0d03-4022-4566-a69f-a3ee42128357}">
+        <layer id="{d11b0d03-4022-4566-a69f-a3ee42128357}" pass="0" locked="0" class="SimpleMarker" enabled="1">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -184,7 +184,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer class="SimpleMarker" pass="0" enabled="1" locked="0" id="{c62b0251-965f-4d4f-8e29-6a23d7e38a7c}">
+        <layer id="{c62b0251-965f-4d4f-8e29-6a23d7e38a7c}" pass="0" locked="0" class="SimpleMarker" enabled="1">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -222,7 +222,7 @@
   <selection mode="Default">
     <selectionColor invalid="1"/>
     <selectionSymbol>
-      <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="" is_animated="0" type="marker">
+      <symbol frame_rate="10" alpha="1" clip_to_extent="1" name="" force_rhr="0" type="marker" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -230,7 +230,7 @@
             <Option value="collection" name="type" type="QString"/>
           </Option>
         </data_defined_properties>
-        <layer class="SimpleMarker" pass="0" enabled="1" locked="0" id="{8588624f-d435-4e66-ba09-e47758b4f997}">
+        <layer id="{8588624f-d435-4e66-ba09-e47758b4f997}" pass="0" locked="0" class="SimpleMarker" enabled="1">
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
@@ -265,12 +265,12 @@
   </selection>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fieldName=" concat( &quot;pscis_crossing_id&quot; , ' _ ',  &quot;my_crossing_reference&quot; )" blendMode="0" forcedItalic="0" fontStrikeout="0" fontSizeUnit="Point" fontKerning="1" textOrientation="horizontal" multilineHeightUnit="Percentage" forcedBold="0" fontItalic="0" fontFamily="Helvetica" multilineHeight="1" fontLetterSpacing="0" textColor="50,50,50,255" fontWeight="50" fontWordSpacing="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontUnderline="0" isExpression="1" previewBkgrdColor="255,255,255,255" allowHtml="0" namedStyle="Regular" fontSize="10" useSubstitutions="0" capitalization="0" legendString="Aa">
+      <text-style blendMode="0" isExpression="1" fontWordSpacing="0" multilineHeight="1" fontFamily="Helvetica" namedStyle="Regular" legendString="Aa" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontWeight="50" fontKerning="1" forcedBold="0" capitalization="0" forcedItalic="0" fontSizeUnit="Point" previewBkgrdColor="255,255,255,255" allowHtml="0" fontStrikeout="0" textOpacity="1" textOrientation="horizontal" multilineHeightUnit="Percentage" fontItalic="0" fontSize="10" fieldName=" concat( &quot;pscis_crossing_id&quot; , ' _ ',  &quot;my_crossing_reference&quot; )" textColor="50,50,50,255" fontUnderline="0" useSubstitutions="0" fontLetterSpacing="0">
         <families/>
-        <text-buffer bufferNoFill="1" bufferSizeUnits="MM" bufferBlendMode="0" bufferSize="1" bufferColor="250,250,250,255" bufferDraw="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferJoinStyle="128"/>
-        <text-mask maskSizeUnits="MM" maskEnabled="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskType="0" maskSize="0" maskedSymbolLayers="" maskJoinStyle="128" maskOpacity="1"/>
-        <background shapeRadiiUnit="Point" shapeRotationType="0" shapeFillColor="255,255,255,255" shapeOffsetUnit="Point" shapeBorderWidth="0" shapeBlendMode="0" shapeSizeY="0" shapeSizeX="0" shapeType="0" shapeDraw="0" shapeJoinStyle="64" shapeRadiiX="0" shapeSVGFile="" shapeRotation="0" shapeOffsetX="0" shapeSizeUnit="Point" shapeOpacity="1" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeOffsetY="0" shapeBorderColor="128,128,128,255" shapeRadiiY="0" shapeBorderWidthUnit="Point" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0">
-          <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="markerSymbol" is_animated="0" type="marker">
+        <text-buffer bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="250,250,250,255" bufferBlendMode="0" bufferSize="1" bufferOpacity="1" bufferDraw="0" bufferJoinStyle="128" bufferSizeUnits="MM" bufferNoFill="1"/>
+        <text-mask maskType="0" maskOpacity="1" maskedSymbolLayers="" maskSizeUnits="MM" maskSize="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0" maskJoinStyle="128"/>
+        <background shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeBorderWidth="0" shapeBlendMode="0" shapeDraw="0" shapeSizeType="0" shapeRadiiX="0" shapeSizeUnit="Point" shapeSizeY="0" shapeBorderWidthUnit="Point" shapeRadiiY="0" shapeOpacity="1" shapeType="0" shapeBorderColor="128,128,128,255" shapeOffsetUnit="Point" shapeSVGFile="" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0" shapeRadiiUnit="Point" shapeFillColor="255,255,255,255" shapeOffsetY="0" shapeJoinStyle="64" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRotation="0" shapeOffsetX="0">
+          <symbol frame_rate="10" alpha="1" clip_to_extent="1" name="markerSymbol" force_rhr="0" type="marker" is_animated="0">
             <data_defined_properties>
               <Option type="Map">
                 <Option value="" name="name" type="QString"/>
@@ -278,7 +278,7 @@
                 <Option value="collection" name="type" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleMarker" pass="0" enabled="1" locked="0" id="">
+            <layer id="" pass="0" locked="0" class="SimpleMarker" enabled="1">
               <Option type="Map">
                 <Option value="0" name="angle" type="QString"/>
                 <Option value="square" name="cap_style" type="QString"/>
@@ -309,7 +309,7 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="fillSymbol" is_animated="0" type="fill">
+          <symbol frame_rate="10" alpha="1" clip_to_extent="1" name="fillSymbol" force_rhr="0" type="fill" is_animated="0">
             <data_defined_properties>
               <Option type="Map">
                 <Option value="" name="name" type="QString"/>
@@ -317,7 +317,7 @@
                 <Option value="collection" name="type" type="QString"/>
               </Option>
             </data_defined_properties>
-            <layer class="SimpleFill" pass="0" enabled="1" locked="0" id="">
+            <layer id="" pass="0" locked="0" class="SimpleFill" enabled="1">
               <Option type="Map">
                 <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
                 <Option value="255,255,255,255" name="color" type="QString"/>
@@ -341,7 +341,7 @@
             </layer>
           </symbol>
         </background>
-        <shadow shadowUnder="0" shadowColor="0,0,0,255" shadowDraw="0" shadowOpacity="0.69999999999999996" shadowOffsetUnit="MM" shadowRadius="1.5" shadowRadiusAlphaOnly="0" shadowOffsetDist="1" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnit="MM" shadowScale="100" shadowBlendMode="6"/>
+        <shadow shadowOffsetGlobal="1" shadowRadius="1.5" shadowColor="0,0,0,255" shadowBlendMode="6" shadowRadiusUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowRadiusAlphaOnly="0" shadowOffsetUnit="MM" shadowOpacity="0.69999999999999996" shadowOffsetDist="1" shadowOffsetAngle="135" shadowScale="100" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowDraw="0"/>
         <dd_properties>
           <Option type="Map">
             <Option value="" name="name" type="QString"/>
@@ -351,9 +351,9 @@
         </dd_properties>
         <substitutions/>
       </text-style>
-      <text-format reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;" placeDirectionSymbol="0" formatNumbers="0" addDirectionSymbol="0" autoWrapLength="0" plussign="0" wrapChar="" multilineAlign="3" rightDirectionSymbol=">" decimals="3"/>
-      <placement placementFlags="10" distUnits="MM" maxCurvedCharAngleOut="-25" geometryGeneratorType="PointGeometry" yOffset="0" quadOffset="4" overrunDistance="0" lineAnchorPercent="0.5" layerType="PointGeometry" overrunDistanceUnit="MM" maxCurvedCharAngleIn="25" offsetUnits="MM" lineAnchorClipping="0" lineAnchorTextPoint="CenterOfText" priority="5" offsetType="1" rotationAngle="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" xOffset="0" geometryGenerator="" fitInPolygonOnly="0" centroidInside="0" placement="6" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" overlapHandling="PreventOverlap" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" lineAnchorType="0" preserveRotation="1" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" dist="0" centroidWhole="0" geometryGeneratorEnabled="0" repeatDistanceUnits="MM" polygonPlacementFlags="2" allowDegraded="0" rotationUnit="AngleDegrees"/>
-      <rendering labelPerPart="0" mergeLines="0" scaleMax="0" upsidedownLabels="0" scaleMin="0" obstacleType="1" limitNumLabels="0" scaleVisibility="0" unplacedVisibility="0" maxNumLabels="2000" obstacleFactor="1" zIndex="0" fontMinPixelSize="3" minFeatureSize="0" drawLabels="1" fontMaxPixelSize="10000" fontLimitPixelSize="0" obstacle="1"/>
+      <text-format formatNumbers="0" autoWrapLength="0" useMaxLineLengthForAutoWrap="1" multilineAlign="3" rightDirectionSymbol=">" reverseDirectionSymbol="0" decimals="3" leftDirectionSymbol="&lt;" placeDirectionSymbol="0" wrapChar="" plussign="0" addDirectionSymbol="0"/>
+      <placement maxCurvedCharAngleIn="25" xOffset="0" fitInPolygonOnly="0" lineAnchorType="0" dist="0" repeatDistance="0" lineAnchorClipping="0" geometryGenerator="" lineAnchorTextPoint="CenterOfText" yOffset="0" placementFlags="10" placement="6" geometryGeneratorType="PointGeometry" centroidWhole="0" distMapUnitScale="3x:0,0,0,0,0,0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" distUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" offsetUnits="MM" allowDegraded="0" polygonPlacementFlags="2" layerType="PointGeometry" maxCurvedCharAngleOut="-25" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4" repeatDistanceUnits="MM" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" offsetType="1" priority="5" overlapHandling="PreventOverlap" overrunDistanceUnit="MM" rotationUnit="AngleDegrees" centroidInside="0" overrunDistance="0" lineAnchorPercent="0.5" rotationAngle="0"/>
+      <rendering scaleMax="0" fontMaxPixelSize="10000" obstacleFactor="1" fontLimitPixelSize="0" labelPerPart="0" mergeLines="0" limitNumLabels="0" scaleVisibility="0" fontMinPixelSize="3" maxNumLabels="2000" upsidedownLabels="0" drawLabels="1" unplacedVisibility="0" minFeatureSize="0" scaleMin="0" obstacle="1" obstacleType="1" zIndex="0"/>
       <dd_properties>
         <Option type="Map">
           <Option value="" name="name" type="QString"/>
@@ -373,7 +373,7 @@
           <Option value="false" name="drawToAllParts" type="bool"/>
           <Option value="0" name="enabled" type="QString"/>
           <Option value="point_on_exterior" name="labelAnchorPoint" type="QString"/>
-          <Option value="&lt;symbol clip_to_extent=&quot;1&quot; force_rhr=&quot;0&quot; frame_rate=&quot;10&quot; alpha=&quot;1&quot; name=&quot;symbol&quot; is_animated=&quot;0&quot; type=&quot;line&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer class=&quot;SimpleLine&quot; pass=&quot;0&quot; enabled=&quot;1&quot; locked=&quot;0&quot; id=&quot;{9d4ad343-b677-4347-bc9e-dba39f43b9b8}&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;0&quot; name=&quot;align_dash_pattern&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;square&quot; name=&quot;capstyle&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;5;2&quot; name=&quot;customdash&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;customdash_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;bevel&quot; name=&quot;joinstyle&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;60,60,60,255&quot; name=&quot;line_color&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;solid&quot; name=&quot;line_style&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0.3&quot; name=&quot;line_width&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;line_width_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;offset&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;offset_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;ring_filter&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;trim_distance_end&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;trim_distance_start&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;use_custom_dash&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol" type="QString"/>
+          <Option value="&lt;symbol frame_rate=&quot;10&quot; alpha=&quot;1&quot; clip_to_extent=&quot;1&quot; name=&quot;symbol&quot; force_rhr=&quot;0&quot; type=&quot;line&quot; is_animated=&quot;0&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer id=&quot;{9d4ad343-b677-4347-bc9e-dba39f43b9b8}&quot; pass=&quot;0&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot; enabled=&quot;1&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;0&quot; name=&quot;align_dash_pattern&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;square&quot; name=&quot;capstyle&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;5;2&quot; name=&quot;customdash&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;customdash_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;bevel&quot; name=&quot;joinstyle&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;60,60,60,255&quot; name=&quot;line_color&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;solid&quot; name=&quot;line_style&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0.3&quot; name=&quot;line_width&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;line_width_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;offset&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;offset_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;ring_filter&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;trim_distance_end&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;trim_distance_start&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;0&quot; name=&quot;use_custom_dash&quot; type=&quot;QString&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol" type="QString"/>
           <Option value="0" name="minLength" type="double"/>
           <Option value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale" type="QString"/>
           <Option value="MM" name="minLengthUnit" type="QString"/>
@@ -398,11 +398,11 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory scaleBasedVisibility="0" maxScaleDenominator="0" sizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" showAxis="1" height="15" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" penAlpha="255" backgroundAlpha="255" opacity="1" spacingUnit="MM" sizeType="MM" enabled="0" direction="0" scaleDependency="Area" spacing="5" minimumSize="0" lineSizeType="MM" penWidth="0" rotationOffset="270" minScaleDenominator="0" barWidth="5" width="15" spacingUnitScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" diagramOrientation="Up">
-      <fontProperties strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-      <attribute colorOpacity="1" color="#000000" label="" field=""/>
+    <DiagramCategory enabled="0" scaleBasedVisibility="0" labelPlacementMethod="XHeight" sizeType="MM" penColor="#000000" penAlpha="255" width="15" lineSizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" barWidth="5" height="15" spacingUnit="MM" direction="0" minimumSize="0" penWidth="0" spacing="5" spacingUnitScale="3x:0,0,0,0,0,0" opacity="1" maxScaleDenominator="0" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" scaleDependency="Area" diagramOrientation="Up" minScaleDenominator="0" rotationOffset="270" showAxis="1" backgroundAlpha="255">
+      <fontProperties description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+      <attribute colorOpacity="1" field="" color="#000000" label=""/>
       <axisSymbol>
-        <symbol clip_to_extent="1" force_rhr="0" frame_rate="10" alpha="1" name="" is_animated="0" type="line">
+        <symbol frame_rate="10" alpha="1" clip_to_extent="1" name="" force_rhr="0" type="line" is_animated="0">
           <data_defined_properties>
             <Option type="Map">
               <Option value="" name="name" type="QString"/>
@@ -410,7 +410,7 @@
               <Option value="collection" name="type" type="QString"/>
             </Option>
           </data_defined_properties>
-          <layer class="SimpleLine" pass="0" enabled="1" locked="0" id="{b3a5dfb8-34b1-4648-a124-6403c5715602}">
+          <layer id="{b3a5dfb8-34b1-4648-a124-6403c5715602}" pass="0" locked="0" class="SimpleLine" enabled="1">
             <Option type="Map">
               <Option value="0" name="align_dash_pattern" type="QString"/>
               <Option value="square" name="capstyle" type="QString"/>
@@ -452,7 +452,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings priority="0" dist="0" showAll="1" placement="0" linePlacementFlags="18" obstacle="0" zIndex="0">
+  <DiagramLayerSettings linePlacementFlags="18" showAll="1" obstacle="0" priority="0" placement="0" zIndex="0" dist="0">
     <properties>
       <Option type="Map">
         <Option value="" name="name" type="QString"/>
@@ -461,21 +461,21 @@
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
   <legend showLabelLegend="0" type="default-vector"/>
   <referencedLayers/>
   <fieldConfiguration>
-    <field name="fid" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="fid">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="date_time_start" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="date_time_start">
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
@@ -489,7 +489,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="pscis_crossing_id" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="crew_members">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -499,7 +499,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="my_crossing_reference" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="site_id">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -509,7 +509,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="crew_members" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="camera_id">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -519,21 +519,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="aggregated_crossings_id" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="AllowNull" type="bool"/>
-            <Option value="2147483647" name="Max" type="double"/>
-            <Option value="-2147483648" name="Min" type="double"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="double"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="camera_id" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gps_id">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -543,7 +529,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="site_id" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="gps_waypoint_number">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -553,7 +539,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="gps_id" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="stream_name">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -563,7 +549,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="gps_waypoint_number" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="width_meters">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -573,7 +559,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="stream_name" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="length_meters">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -583,502 +569,85 @@
         </config>
       </editWidget>
     </field>
-    <field name="road_name" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="assessment_comment">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="true" name="IsMultiline" type="bool"/>
             <Option value="false" name="UseHtml" type="bool"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="road_km_mark" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="habitat_comment">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="true" name="IsMultiline" type="bool"/>
             <Option value="false" name="UseHtml" type="bool"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="road_tenure" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="crossing_type" configurationFlags="NoFlag">
-      <editWidget type="ValueMap">
-        <config>
-          <Option type="Map">
-            <Option name="map" type="List">
-              <Option type="Map">
-                <Option value="CBS" name="Closed Bottom Structure" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="OBS" name="Open Bottom Structure" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="OTHER" name="Other" type="QString"/>
-              </Option>
-            </Option>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="crossing_subtype" configurationFlags="NoFlag">
-      <editWidget type="ValueMap">
-        <config>
-          <Option type="Map">
-            <Option name="map" type="List">
-              <Option type="Map">
-                <Option value="BRIDGE" name="BRIDGE" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="CRTBOX" name="CRTBOX" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="FORD" name="FORD" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="OVAL" name="OVAL" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="PIPEARCH" name="PIPEARCH" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="ROUND" name="ROUND" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="WEIR" name="WEIR" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="WOODBOX" name="WOODBOX" type="QString"/>
-              </Option>
-            </Option>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="crossing_fix" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="utm_zone">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="diameter_or_span_meters" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="length_or_width_meters" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="assessment_comment" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="habitat_comment" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="date" configurationFlags="NoFlag">
-      <editWidget type="DateTime">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="allow_null" type="bool"/>
-            <Option value="false" name="calendar_popup" type="bool"/>
-            <Option value="yyyy-MM-dd HH:mm:ss" name="display_format" type="QString"/>
-            <Option value="yyyy-MM-dd HH:mm:ss" name="field_format" type="QString"/>
-            <Option value="false" name="field_format_overwrite" type="bool"/>
-            <Option value="false" name="field_iso_format" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="continuous_embeddedment_yes_no" configurationFlags="NoFlag">
-      <editWidget type="CheckBox">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNullState" type="bool"/>
-            <Option value="Yes" name="CheckedState" type="QString"/>
-            <Option value="0" name="TextDisplayMethod" type="int"/>
-            <Option value="No" name="UncheckedState" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="average_depth_embededdment_meters" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="resemble_channel_yes_no" configurationFlags="NoFlag">
-      <editWidget type="CheckBox">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNullState" type="bool"/>
-            <Option value="Yes" name="CheckedState" type="QString"/>
-            <Option value="0" name="TextDisplayMethod" type="int"/>
-            <Option value="No" name="UncheckedState" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="backwatered_yes_no" configurationFlags="NoFlag">
-      <editWidget type="CheckBox">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNullState" type="bool"/>
-            <Option value="Yes" name="CheckedState" type="QString"/>
-            <Option value="1" name="TextDisplayMethod" type="int"/>
-            <Option value="No" name="UncheckedState" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="percentage_backwatered" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="fill_depth_meters" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="outlet_drop_meters" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="outlet_pool_depth_0_01m" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="inlet_drop_yes_no" configurationFlags="NoFlag">
-      <editWidget type="CheckBox">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNullState" type="bool"/>
-            <Option value="Yes" name="CheckedState" type="QString"/>
-            <Option value="1" name="TextDisplayMethod" type="int"/>
-            <Option value="No" name="UncheckedState" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="culvert_slope_percent" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="downstream_channel_width_meters" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="stream_slope" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="beaver_activity_yes_no" configurationFlags="NoFlag">
-      <editWidget type="CheckBox">
-        <config>
-          <Option type="Map">
-            <Option value="Yes" name="CheckedState" type="QString"/>
-            <Option value="1" name="TextDisplayMethod" type="int"/>
-            <Option value="No" name="UncheckedState" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="fish_observed_yes_no" configurationFlags="NoFlag">
-      <editWidget type="CheckBox">
-        <config>
-          <Option type="Map">
-            <Option value="Yes" name="CheckedState" type="QString"/>
-            <Option value="1" name="TextDisplayMethod" type="int"/>
-            <Option value="No" name="UncheckedState" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="valley_fill" configurationFlags="NoFlag">
-      <editWidget type="ValueMap">
-        <config>
-          <Option type="Map">
-            <Option name="map" type="List">
-              <Option type="Map">
-                <Option value="Bedrock" name="Bedrock" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="Deep Fill" name="Deep Fill" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="Shallow Fill" name="Shallow Fill" type="QString"/>
-              </Option>
-            </Option>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="habitat_value" configurationFlags="NoFlag">
-      <editWidget type="ValueMap">
-        <config>
-          <Option type="Map">
-            <Option name="map" type="List">
-              <Option type="Map">
-                <Option value="HIGH" name="HIGH" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="LOW" name="LOW" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option value="MEDIUM" name="MEDIUM" type="QString"/>
-              </Option>
-            </Option>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="stream_width_ratio" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="culvert_length_score" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="embed_score" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="outlet_drop_score" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="culvert_slope_score" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="stream_width_ratio_score" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="final_score" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="barrier_result" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="recommended_diameter_or_span_meters" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="easting">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="source" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="northing">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="time_start" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="mergin_user">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="land_owner">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="access_comment">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="erosion_notes">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="mergin_user" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="erosion_issues" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="AllowNull" type="bool"/>
-            <Option value="5" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="embankment_fill_issues" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="AllowNull" type="bool"/>
-            <Option value="3" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="blockage_issues" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="3" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="condition_rank" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="condition_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="condition_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1088,35 +657,217 @@
         </config>
       </editWidget>
     </field>
-    <field name="likelihood_flood_event_affecting_culvert" configurationFlags="NoFlag">
-      <editWidget type="Range">
+    <field configurationFlags="NoFlag" name="photo_access">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_upstream">
+      <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="5" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="consequence_flood_event_affecting_culvert" configurationFlags="NoFlag">
-      <editWidget type="Range">
+    <field configurationFlags="NoFlag" name="photo_downstream">
+      <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="5" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="climate_change_flood_risk" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_inlet">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_barrel">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_outlet">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_condition">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra1">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra1_tag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1126,7 +877,36 @@
         </config>
       </editWidget>
     </field>
-    <field name="vulnerability_rank" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_extra2">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="1" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra2_tag">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1136,495 +916,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="climate_notes" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="traffic_volume" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="10" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="community_access" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="10" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="cost" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="10" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="constructability" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="10" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="fish_bearing" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="10" name="Max" type="int"/>
-            <Option value="0" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="environmental_impacts" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="10" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="priority_rank" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="overall_rank" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="priority_notes" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_road" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="@project_folder + '/photos'" name="DefaultRoot" type="QString"/>
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_upstream" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_downstream" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_inlet" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_barrel" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_outlet" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_condition" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_embankment_fill" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_blockage" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_extra1" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_extra2" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="1" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_extra1_tag" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_extra2_tag" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="dewatering" configurationFlags="NoFlag">
-      <editWidget type="Range">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNull" type="bool"/>
-            <Option value="5" name="Max" type="int"/>
-            <Option value="1" name="Min" type="int"/>
-            <Option value="0" name="Precision" type="int"/>
-            <Option value="1" name="Step" type="int"/>
-            <Option value="SpinBox" name="Style" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="dewatering_notes" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_dewatering" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_extra3">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -1653,7 +945,76 @@
         </config>
       </editWidget>
     </field>
-    <field name="velocity" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_extra3_tag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra4">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra4_tag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra5">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_extra5_tag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="dewatering">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -1667,7 +1028,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="velocity_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="dewatering_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1677,7 +1038,60 @@
         </config>
       </editWidget>
     </field>
-    <field name="photo_velocity" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_dewatering">
+      <editWidget type="ExternalResource">
+        <config>
+          <Option type="Map">
+            <Option value="0" name="DocumentViewer" type="int"/>
+            <Option value="0" name="DocumentViewerHeight" type="int"/>
+            <Option value="0" name="DocumentViewerWidth" type="int"/>
+            <Option value="true" name="FileWidget" type="bool"/>
+            <Option value="true" name="FileWidgetButton" type="bool"/>
+            <Option value="" name="FileWidgetFilter" type="QString"/>
+            <Option name="PropertyCollection" type="Map">
+              <Option value="" name="name" type="QString"/>
+              <Option name="properties" type="Map">
+                <Option name="propertyRootPath" type="Map">
+                  <Option value="true" name="active" type="bool"/>
+                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
+                  <Option value="3" name="type" type="int"/>
+                </Option>
+              </Option>
+              <Option value="collection" name="type" type="QString"/>
+            </Option>
+            <Option value="1" name="RelativeStorage" type="int"/>
+            <Option value="" name="StorageAuthConfigId" type="QString"/>
+            <Option value="0" name="StorageMode" type="int"/>
+            <Option value="" name="StorageType" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="velocity">
+      <editWidget type="Range">
+        <config>
+          <Option type="Map">
+            <Option value="false" name="AllowNull" type="bool"/>
+            <Option value="5" name="Max" type="int"/>
+            <Option value="1" name="Min" type="int"/>
+            <Option value="0" name="Precision" type="int"/>
+            <Option value="1" name="Step" type="int"/>
+            <Option value="SpinBox" name="Style" type="QString"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="velocity_notes">
+      <editWidget type="TextEdit">
+        <config>
+          <Option type="Map">
+            <Option value="true" name="IsMultiline" type="bool"/>
+            <Option value="false" name="UseHtml" type="bool"/>
+          </Option>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="NoFlag" name="photo_velocity">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -1706,7 +1120,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="constriction" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="constriction">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -1720,7 +1134,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="constriction_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="constriction_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1730,7 +1144,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="photo_constriction" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_constriction">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -1759,7 +1173,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="substrate" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="substrate">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -1773,7 +1187,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="substrate_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="substrate_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1783,7 +1197,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="photo_substrate" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_substrate">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -1812,7 +1226,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="riparian" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="riparian">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -1826,7 +1240,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="riparian_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="riparian_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1836,7 +1250,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="photo_riparian" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_riparian">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -1865,7 +1279,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="flow_depth" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="flow_depth">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -1879,7 +1293,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="flow_depth_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="flow_depth_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1889,7 +1303,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="photo_flow_depth" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_flow_depth">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -1918,7 +1332,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="stability" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="stability">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -1932,7 +1346,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="stability_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="stability_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1942,7 +1356,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="photo_stability" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_stability">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -1971,7 +1385,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="revegetation" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="revegetation">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -1985,7 +1399,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="revegetation_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="revegetation_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -1995,7 +1409,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="photo_revegetation" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_revegetation">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -2024,7 +1438,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="cover" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="cover">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -2038,7 +1452,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="cover_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="cover_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2048,7 +1462,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="photo_cover" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_cover">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -2077,7 +1491,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="maintenance" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="maintenance">
       <editWidget type="Range">
         <config>
           <Option type="Map">
@@ -2091,7 +1505,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="maintenance_notes" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="maintenance_notes">
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
@@ -2101,7 +1515,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="photo_maintenance" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="photo_maintenance">
       <editWidget type="ExternalResource">
         <config>
           <Option type="Map">
@@ -2130,7 +1544,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="uav_flight" configurationFlags="NoFlag">
+    <field configurationFlags="NoFlag" name="uav_flight">
       <editWidget type="CheckBox">
         <config>
           <Option type="Map">
@@ -2138,317 +1552,119 @@
             <Option value="Yes" name="CheckedState" type="QString"/>
             <Option value="1" name="TextDisplayMethod" type="int"/>
             <Option value="No" name="UncheckedState" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="fish_sampling" configurationFlags="NoFlag">
-      <editWidget type="CheckBox">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNullState" type="bool"/>
-            <Option value="Yes" name="CheckedState" type="QString"/>
-            <Option value="1" name="TextDisplayMethod" type="int"/>
-            <Option value="No" name="UncheckedState" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="site_card_filled" configurationFlags="NoFlag">
-      <editWidget type="CheckBox">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="AllowNullState" type="bool"/>
-            <Option value="Yes" name="CheckedState" type="QString"/>
-            <Option value="1" name="TextDisplayMethod" type="int"/>
-            <Option value="No" name="UncheckedState" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_extra3" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_extra4" configurationFlags="NoFlag">
-      <editWidget type="ExternalResource">
-        <config>
-          <Option type="Map">
-            <Option value="0" name="DocumentViewer" type="int"/>
-            <Option value="0" name="DocumentViewerHeight" type="int"/>
-            <Option value="0" name="DocumentViewerWidth" type="int"/>
-            <Option value="true" name="FileWidget" type="bool"/>
-            <Option value="true" name="FileWidgetButton" type="bool"/>
-            <Option value="" name="FileWidgetFilter" type="QString"/>
-            <Option name="PropertyCollection" type="Map">
-              <Option value="" name="name" type="QString"/>
-              <Option name="properties" type="Map">
-                <Option name="propertyRootPath" type="Map">
-                  <Option value="true" name="active" type="bool"/>
-                  <Option value="@project_home + '/ignore_mobile/photos'" name="expression" type="QString"/>
-                  <Option value="3" name="type" type="int"/>
-                </Option>
-              </Option>
-              <Option value="collection" name="type" type="QString"/>
-            </Option>
-            <Option value="1" name="RelativeStorage" type="int"/>
-            <Option value="" name="StorageAuthConfigId" type="QString"/>
-            <Option value="0" name="StorageMode" type="int"/>
-            <Option value="" name="StorageType" type="QString"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_extra3_tag" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="photo_extra4_tag" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
-        <config>
-          <Option type="Map">
-            <Option value="false" name="IsMultiline" type="bool"/>
-            <Option value="false" name="UseHtml" type="bool"/>
           </Option>
         </config>
       </editWidget>
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias index="0" name="" field="fid"/>
-    <alias index="1" name="" field="date_time_start"/>
-    <alias index="2" name="" field="pscis_crossing_id"/>
-    <alias index="3" name="" field="my_crossing_reference"/>
-    <alias index="4" name="" field="crew_members"/>
-    <alias index="5" name="" field="aggregated_crossings_id"/>
-    <alias index="6" name="" field="camera_id"/>
-    <alias index="7" name="" field="site_id"/>
-    <alias index="8" name="" field="gps_id"/>
-    <alias index="9" name="" field="gps_waypoint_number"/>
-    <alias index="10" name="" field="stream_name"/>
-    <alias index="11" name="" field="road_name"/>
-    <alias index="12" name="" field="road_km_mark"/>
-    <alias index="13" name="" field="road_tenure"/>
-    <alias index="14" name="" field="crossing_type"/>
-    <alias index="15" name="" field="crossing_subtype"/>
-    <alias index="16" name="" field="crossing_fix"/>
-    <alias index="17" name="" field="diameter_or_span_meters"/>
-    <alias index="18" name="" field="length_or_width_meters"/>
-    <alias index="19" name="" field="assessment_comment"/>
-    <alias index="20" name="" field="habitat_comment"/>
-    <alias index="21" name="" field="date"/>
-    <alias index="22" name="" field="continuous_embeddedment_yes_no"/>
-    <alias index="23" name="" field="average_depth_embededdment_meters"/>
-    <alias index="24" name="" field="resemble_channel_yes_no"/>
-    <alias index="25" name="" field="backwatered_yes_no"/>
-    <alias index="26" name="" field="percentage_backwatered"/>
-    <alias index="27" name="" field="fill_depth_meters"/>
-    <alias index="28" name="" field="outlet_drop_meters"/>
-    <alias index="29" name="" field="outlet_pool_depth_0_01m"/>
-    <alias index="30" name="" field="inlet_drop_yes_no"/>
-    <alias index="31" name="" field="culvert_slope_percent"/>
-    <alias index="32" name="" field="downstream_channel_width_meters"/>
-    <alias index="33" name="" field="stream_slope"/>
-    <alias index="34" name="" field="beaver_activity_yes_no"/>
-    <alias index="35" name="" field="fish_observed_yes_no"/>
-    <alias index="36" name="" field="valley_fill"/>
-    <alias index="37" name="" field="habitat_value"/>
-    <alias index="38" name="" field="stream_width_ratio"/>
-    <alias index="39" name="" field="culvert_length_score"/>
-    <alias index="40" name="" field="embed_score"/>
-    <alias index="41" name="" field="outlet_drop_score"/>
-    <alias index="42" name="" field="culvert_slope_score"/>
-    <alias index="43" name="" field="stream_width_ratio_score"/>
-    <alias index="44" name="" field="final_score"/>
-    <alias index="45" name="" field="barrier_result"/>
-    <alias index="46" name="" field="recommended_diameter_or_span_meters"/>
-    <alias index="47" name="" field="source"/>
-    <alias index="48" name="" field="time_start"/>
-    <alias index="49" name="" field="mergin_user"/>
-    <alias index="50" name="" field="erosion_issues"/>
-    <alias index="51" name="" field="embankment_fill_issues"/>
-    <alias index="52" name="" field="blockage_issues"/>
-    <alias index="53" name="" field="condition_rank"/>
-    <alias index="54" name="" field="condition_notes"/>
-    <alias index="55" name="" field="likelihood_flood_event_affecting_culvert"/>
-    <alias index="56" name="" field="consequence_flood_event_affecting_culvert"/>
-    <alias index="57" name="" field="climate_change_flood_risk"/>
-    <alias index="58" name="" field="vulnerability_rank"/>
-    <alias index="59" name="" field="climate_notes"/>
-    <alias index="60" name="" field="traffic_volume"/>
-    <alias index="61" name="" field="community_access"/>
-    <alias index="62" name="" field="cost"/>
-    <alias index="63" name="" field="constructability"/>
-    <alias index="64" name="" field="fish_bearing"/>
-    <alias index="65" name="" field="environmental_impacts"/>
-    <alias index="66" name="" field="priority_rank"/>
-    <alias index="67" name="" field="overall_rank"/>
-    <alias index="68" name="" field="priority_notes"/>
-    <alias index="69" name="" field="photo_road"/>
-    <alias index="70" name="" field="photo_upstream"/>
-    <alias index="71" name="" field="photo_downstream"/>
-    <alias index="72" name="" field="photo_inlet"/>
-    <alias index="73" name="" field="photo_barrel"/>
-    <alias index="74" name="" field="photo_outlet"/>
-    <alias index="75" name="" field="photo_condition"/>
-    <alias index="76" name="" field="photo_embankment_fill"/>
-    <alias index="77" name="" field="photo_blockage"/>
-    <alias index="78" name="" field="photo_extra1"/>
-    <alias index="79" name="" field="photo_extra2"/>
-    <alias index="80" name="" field="photo_extra1_tag"/>
-    <alias index="81" name="" field="photo_extra2_tag"/>
-    <alias index="82" name="" field="dewatering"/>
-    <alias index="83" name="" field="dewatering_notes"/>
-    <alias index="84" name="" field="photo_dewatering"/>
-    <alias index="85" name="" field="velocity"/>
-    <alias index="86" name="" field="velocity_notes"/>
-    <alias index="87" name="" field="photo_velocity"/>
-    <alias index="88" name="" field="constriction"/>
-    <alias index="89" name="" field="constriction_notes"/>
-    <alias index="90" name="" field="photo_constriction"/>
-    <alias index="91" name="" field="substrate"/>
-    <alias index="92" name="" field="substrate_notes"/>
-    <alias index="93" name="" field="photo_substrate"/>
-    <alias index="94" name="" field="riparian"/>
-    <alias index="95" name="" field="riparian_notes"/>
-    <alias index="96" name="" field="photo_riparian"/>
-    <alias index="97" name="" field="flow_depth"/>
-    <alias index="98" name="" field="flow_depth_notes"/>
-    <alias index="99" name="" field="photo_flow_depth"/>
-    <alias index="100" name="" field="stability"/>
-    <alias index="101" name="" field="stability_notes"/>
-    <alias index="102" name="" field="photo_stability"/>
-    <alias index="103" name="" field="revegetation"/>
-    <alias index="104" name="" field="revegetation_notes"/>
-    <alias index="105" name="" field="photo_revegetation"/>
-    <alias index="106" name="" field="cover"/>
-    <alias index="107" name="" field="cover_notes"/>
-    <alias index="108" name="" field="photo_cover"/>
-    <alias index="109" name="" field="maintenance"/>
-    <alias index="110" name="" field="maintenance_notes"/>
-    <alias index="111" name="" field="photo_maintenance"/>
-    <alias index="112" name="" field="uav_flight"/>
-    <alias index="113" name="" field="fish_sampling"/>
-    <alias index="114" name="" field="site_card_filled"/>
-    <alias index="115" name="" field="photo_extra3"/>
-    <alias index="116" name="" field="photo_extra4"/>
-    <alias index="117" name="" field="photo_extra3_tag"/>
-    <alias index="118" name="" field="photo_extra4_tag"/>
+    <alias index="0" field="fid" name=""/>
+    <alias index="1" field="date_time_start" name=""/>
+    <alias index="2" field="crew_members" name=""/>
+    <alias index="3" field="site_id" name=""/>
+    <alias index="4" field="camera_id" name=""/>
+    <alias index="5" field="gps_id" name=""/>
+    <alias index="6" field="gps_waypoint_number" name=""/>
+    <alias index="7" field="stream_name" name=""/>
+    <alias index="8" field="width_meters" name=""/>
+    <alias index="9" field="length_meters" name=""/>
+    <alias index="10" field="assessment_comment" name=""/>
+    <alias index="11" field="habitat_comment" name=""/>
+    <alias index="12" field="utm_zone" name=""/>
+    <alias index="13" field="easting" name=""/>
+    <alias index="14" field="northing" name=""/>
+    <alias index="15" field="mergin_user" name=""/>
+    <alias index="16" field="land_owner" name=""/>
+    <alias index="17" field="access_comment" name=""/>
+    <alias index="18" field="erosion_notes" name=""/>
+    <alias index="19" field="condition_notes" name=""/>
+    <alias index="20" field="photo_access" name=""/>
+    <alias index="21" field="photo_upstream" name=""/>
+    <alias index="22" field="photo_downstream" name=""/>
+    <alias index="23" field="photo_inlet" name=""/>
+    <alias index="24" field="photo_barrel" name=""/>
+    <alias index="25" field="photo_outlet" name=""/>
+    <alias index="26" field="photo_condition" name=""/>
+    <alias index="27" field="photo_extra1" name=""/>
+    <alias index="28" field="photo_extra1_tag" name=""/>
+    <alias index="29" field="photo_extra2" name=""/>
+    <alias index="30" field="photo_extra2_tag" name=""/>
+    <alias index="31" field="photo_extra3" name=""/>
+    <alias index="32" field="photo_extra3_tag" name=""/>
+    <alias index="33" field="photo_extra4" name=""/>
+    <alias index="34" field="photo_extra4_tag" name=""/>
+    <alias index="35" field="photo_extra5" name=""/>
+    <alias index="36" field="photo_extra5_tag" name=""/>
+    <alias index="37" field="dewatering" name=""/>
+    <alias index="38" field="dewatering_notes" name=""/>
+    <alias index="39" field="photo_dewatering" name=""/>
+    <alias index="40" field="velocity" name=""/>
+    <alias index="41" field="velocity_notes" name=""/>
+    <alias index="42" field="photo_velocity" name=""/>
+    <alias index="43" field="constriction" name=""/>
+    <alias index="44" field="constriction_notes" name=""/>
+    <alias index="45" field="photo_constriction" name=""/>
+    <alias index="46" field="substrate" name=""/>
+    <alias index="47" field="substrate_notes" name=""/>
+    <alias index="48" field="photo_substrate" name=""/>
+    <alias index="49" field="riparian" name=""/>
+    <alias index="50" field="riparian_notes" name=""/>
+    <alias index="51" field="photo_riparian" name=""/>
+    <alias index="52" field="flow_depth" name=""/>
+    <alias index="53" field="flow_depth_notes" name=""/>
+    <alias index="54" field="photo_flow_depth" name=""/>
+    <alias index="55" field="stability" name=""/>
+    <alias index="56" field="stability_notes" name=""/>
+    <alias index="57" field="photo_stability" name=""/>
+    <alias index="58" field="revegetation" name=""/>
+    <alias index="59" field="revegetation_notes" name=""/>
+    <alias index="60" field="photo_revegetation" name=""/>
+    <alias index="61" field="cover" name=""/>
+    <alias index="62" field="cover_notes" name=""/>
+    <alias index="63" field="photo_cover" name=""/>
+    <alias index="64" field="maintenance" name=""/>
+    <alias index="65" field="maintenance_notes" name=""/>
+    <alias index="66" field="photo_maintenance" name=""/>
+    <alias index="67" field="uav_flight" name=""/>
   </aliases>
   <splitPolicies>
     <policy policy="Duplicate" field="fid"/>
     <policy policy="DefaultValue" field="date_time_start"/>
-    <policy policy="DefaultValue" field="pscis_crossing_id"/>
-    <policy policy="DefaultValue" field="my_crossing_reference"/>
     <policy policy="DefaultValue" field="crew_members"/>
-    <policy policy="Duplicate" field="aggregated_crossings_id"/>
-    <policy policy="DefaultValue" field="camera_id"/>
     <policy policy="DefaultValue" field="site_id"/>
+    <policy policy="DefaultValue" field="camera_id"/>
     <policy policy="DefaultValue" field="gps_id"/>
     <policy policy="DefaultValue" field="gps_waypoint_number"/>
     <policy policy="DefaultValue" field="stream_name"/>
-    <policy policy="DefaultValue" field="road_name"/>
-    <policy policy="DefaultValue" field="road_km_mark"/>
-    <policy policy="DefaultValue" field="road_tenure"/>
-    <policy policy="DefaultValue" field="crossing_type"/>
-    <policy policy="DefaultValue" field="crossing_subtype"/>
-    <policy policy="Duplicate" field="crossing_fix"/>
-    <policy policy="DefaultValue" field="diameter_or_span_meters"/>
-    <policy policy="DefaultValue" field="length_or_width_meters"/>
+    <policy policy="DefaultValue" field="width_meters"/>
+    <policy policy="DefaultValue" field="length_meters"/>
     <policy policy="DefaultValue" field="assessment_comment"/>
     <policy policy="DefaultValue" field="habitat_comment"/>
-    <policy policy="DefaultValue" field="date"/>
-    <policy policy="DefaultValue" field="continuous_embeddedment_yes_no"/>
-    <policy policy="DefaultValue" field="average_depth_embededdment_meters"/>
-    <policy policy="DefaultValue" field="resemble_channel_yes_no"/>
-    <policy policy="DefaultValue" field="backwatered_yes_no"/>
-    <policy policy="DefaultValue" field="percentage_backwatered"/>
-    <policy policy="DefaultValue" field="fill_depth_meters"/>
-    <policy policy="DefaultValue" field="outlet_drop_meters"/>
-    <policy policy="DefaultValue" field="outlet_pool_depth_0_01m"/>
-    <policy policy="DefaultValue" field="inlet_drop_yes_no"/>
-    <policy policy="DefaultValue" field="culvert_slope_percent"/>
-    <policy policy="DefaultValue" field="downstream_channel_width_meters"/>
-    <policy policy="Duplicate" field="stream_slope"/>
-    <policy policy="Duplicate" field="beaver_activity_yes_no"/>
-    <policy policy="Duplicate" field="fish_observed_yes_no"/>
-    <policy policy="DefaultValue" field="valley_fill"/>
-    <policy policy="Duplicate" field="habitat_value"/>
-    <policy policy="Duplicate" field="stream_width_ratio"/>
-    <policy policy="Duplicate" field="culvert_length_score"/>
-    <policy policy="Duplicate" field="embed_score"/>
-    <policy policy="Duplicate" field="outlet_drop_score"/>
-    <policy policy="Duplicate" field="culvert_slope_score"/>
-    <policy policy="Duplicate" field="stream_width_ratio_score"/>
-    <policy policy="Duplicate" field="final_score"/>
-    <policy policy="Duplicate" field="barrier_result"/>
-    <policy policy="Duplicate" field="recommended_diameter_or_span_meters"/>
-    <policy policy="Duplicate" field="source"/>
-    <policy policy="Duplicate" field="time_start"/>
+    <policy policy="Duplicate" field="utm_zone"/>
+    <policy policy="Duplicate" field="easting"/>
+    <policy policy="Duplicate" field="northing"/>
     <policy policy="Duplicate" field="mergin_user"/>
-    <policy policy="Duplicate" field="erosion_issues"/>
-    <policy policy="Duplicate" field="embankment_fill_issues"/>
-    <policy policy="Duplicate" field="blockage_issues"/>
-    <policy policy="Duplicate" field="condition_rank"/>
+    <policy policy="DefaultValue" field="land_owner"/>
+    <policy policy="DefaultValue" field="access_comment"/>
+    <policy policy="Duplicate" field="erosion_notes"/>
     <policy policy="Duplicate" field="condition_notes"/>
-    <policy policy="Duplicate" field="likelihood_flood_event_affecting_culvert"/>
-    <policy policy="Duplicate" field="consequence_flood_event_affecting_culvert"/>
-    <policy policy="Duplicate" field="climate_change_flood_risk"/>
-    <policy policy="Duplicate" field="vulnerability_rank"/>
-    <policy policy="Duplicate" field="climate_notes"/>
-    <policy policy="Duplicate" field="traffic_volume"/>
-    <policy policy="Duplicate" field="community_access"/>
-    <policy policy="Duplicate" field="cost"/>
-    <policy policy="Duplicate" field="constructability"/>
-    <policy policy="Duplicate" field="fish_bearing"/>
-    <policy policy="Duplicate" field="environmental_impacts"/>
-    <policy policy="Duplicate" field="priority_rank"/>
-    <policy policy="Duplicate" field="overall_rank"/>
-    <policy policy="Duplicate" field="priority_notes"/>
-    <policy policy="DefaultValue" field="photo_road"/>
+    <policy policy="Duplicate" field="photo_access"/>
     <policy policy="DefaultValue" field="photo_upstream"/>
     <policy policy="DefaultValue" field="photo_downstream"/>
     <policy policy="DefaultValue" field="photo_inlet"/>
     <policy policy="DefaultValue" field="photo_barrel"/>
     <policy policy="DefaultValue" field="photo_outlet"/>
     <policy policy="DefaultValue" field="photo_condition"/>
-    <policy policy="DefaultValue" field="photo_embankment_fill"/>
-    <policy policy="DefaultValue" field="photo_blockage"/>
     <policy policy="DefaultValue" field="photo_extra1"/>
-    <policy policy="DefaultValue" field="photo_extra2"/>
     <policy policy="DefaultValue" field="photo_extra1_tag"/>
+    <policy policy="DefaultValue" field="photo_extra2"/>
     <policy policy="DefaultValue" field="photo_extra2_tag"/>
+    <policy policy="DefaultValue" field="photo_extra3"/>
+    <policy policy="DefaultValue" field="photo_extra3_tag"/>
+    <policy policy="DefaultValue" field="photo_extra4"/>
+    <policy policy="DefaultValue" field="photo_extra4_tag"/>
+    <policy policy="DefaultValue" field="photo_extra5"/>
+    <policy policy="DefaultValue" field="photo_extra5_tag"/>
     <policy policy="DefaultValue" field="dewatering"/>
     <policy policy="DefaultValue" field="dewatering_notes"/>
     <policy policy="DefaultValue" field="photo_dewatering"/>
@@ -2480,460 +1696,241 @@
     <policy policy="DefaultValue" field="maintenance_notes"/>
     <policy policy="DefaultValue" field="photo_maintenance"/>
     <policy policy="DefaultValue" field="uav_flight"/>
-    <policy policy="DefaultValue" field="fish_sampling"/>
-    <policy policy="DefaultValue" field="site_card_filled"/>
-    <policy policy="DefaultValue" field="photo_extra3"/>
-    <policy policy="DefaultValue" field="photo_extra4"/>
-    <policy policy="DefaultValue" field="photo_extra3_tag"/>
-    <policy policy="DefaultValue" field="photo_extra4_tag"/>
   </splitPolicies>
   <defaults>
-    <default expression="" applyOnUpdate="0" field="fid"/>
-    <default expression="" applyOnUpdate="0" field="date_time_start"/>
-    <default expression="" applyOnUpdate="0" field="pscis_crossing_id"/>
-    <default expression="" applyOnUpdate="0" field="my_crossing_reference"/>
-    <default expression="" applyOnUpdate="0" field="crew_members"/>
-    <default expression="" applyOnUpdate="0" field="aggregated_crossings_id"/>
-    <default expression="" applyOnUpdate="0" field="camera_id"/>
-    <default expression="" applyOnUpdate="0" field="site_id"/>
-    <default expression="" applyOnUpdate="0" field="gps_id"/>
-    <default expression="" applyOnUpdate="0" field="gps_waypoint_number"/>
-    <default expression="" applyOnUpdate="0" field="stream_name"/>
-    <default expression="" applyOnUpdate="0" field="road_name"/>
-    <default expression="" applyOnUpdate="0" field="road_km_mark"/>
-    <default expression="" applyOnUpdate="0" field="road_tenure"/>
-    <default expression="" applyOnUpdate="0" field="crossing_type"/>
-    <default expression="" applyOnUpdate="0" field="crossing_subtype"/>
-    <default expression="" applyOnUpdate="0" field="crossing_fix"/>
-    <default expression="" applyOnUpdate="0" field="diameter_or_span_meters"/>
-    <default expression="" applyOnUpdate="0" field="length_or_width_meters"/>
-    <default expression="" applyOnUpdate="0" field="assessment_comment"/>
-    <default expression="" applyOnUpdate="0" field="habitat_comment"/>
-    <default expression="" applyOnUpdate="0" field="date"/>
-    <default expression="" applyOnUpdate="0" field="continuous_embeddedment_yes_no"/>
-    <default expression="" applyOnUpdate="0" field="average_depth_embededdment_meters"/>
-    <default expression="" applyOnUpdate="0" field="resemble_channel_yes_no"/>
-    <default expression="" applyOnUpdate="0" field="backwatered_yes_no"/>
-    <default expression="" applyOnUpdate="0" field="percentage_backwatered"/>
-    <default expression="" applyOnUpdate="0" field="fill_depth_meters"/>
-    <default expression="" applyOnUpdate="0" field="outlet_drop_meters"/>
-    <default expression="" applyOnUpdate="0" field="outlet_pool_depth_0_01m"/>
-    <default expression="" applyOnUpdate="0" field="inlet_drop_yes_no"/>
-    <default expression="" applyOnUpdate="0" field="culvert_slope_percent"/>
-    <default expression="" applyOnUpdate="0" field="downstream_channel_width_meters"/>
-    <default expression="" applyOnUpdate="0" field="stream_slope"/>
-    <default expression="" applyOnUpdate="0" field="beaver_activity_yes_no"/>
-    <default expression="" applyOnUpdate="0" field="fish_observed_yes_no"/>
-    <default expression="" applyOnUpdate="0" field="valley_fill"/>
-    <default expression="" applyOnUpdate="0" field="habitat_value"/>
-    <default expression="" applyOnUpdate="0" field="stream_width_ratio"/>
-    <default expression="" applyOnUpdate="0" field="culvert_length_score"/>
-    <default expression="" applyOnUpdate="0" field="embed_score"/>
-    <default expression="" applyOnUpdate="0" field="outlet_drop_score"/>
-    <default expression="" applyOnUpdate="0" field="culvert_slope_score"/>
-    <default expression="" applyOnUpdate="0" field="stream_width_ratio_score"/>
-    <default expression="" applyOnUpdate="0" field="final_score"/>
-    <default expression="" applyOnUpdate="0" field="barrier_result"/>
-    <default expression="" applyOnUpdate="0" field="recommended_diameter_or_span_meters"/>
-    <default expression="" applyOnUpdate="0" field="source"/>
-    <default expression="" applyOnUpdate="0" field="time_start"/>
-    <default expression="" applyOnUpdate="0" field="mergin_user"/>
-    <default expression="" applyOnUpdate="0" field="erosion_issues"/>
-    <default expression="" applyOnUpdate="0" field="embankment_fill_issues"/>
-    <default expression="" applyOnUpdate="0" field="blockage_issues"/>
-    <default expression="" applyOnUpdate="0" field="condition_rank"/>
-    <default expression="" applyOnUpdate="0" field="condition_notes"/>
-    <default expression="" applyOnUpdate="0" field="likelihood_flood_event_affecting_culvert"/>
-    <default expression="" applyOnUpdate="0" field="consequence_flood_event_affecting_culvert"/>
-    <default expression="" applyOnUpdate="0" field="climate_change_flood_risk"/>
-    <default expression="" applyOnUpdate="0" field="vulnerability_rank"/>
-    <default expression="" applyOnUpdate="0" field="climate_notes"/>
-    <default expression="" applyOnUpdate="0" field="traffic_volume"/>
-    <default expression="" applyOnUpdate="0" field="community_access"/>
-    <default expression="" applyOnUpdate="0" field="cost"/>
-    <default expression="" applyOnUpdate="0" field="constructability"/>
-    <default expression="" applyOnUpdate="0" field="fish_bearing"/>
-    <default expression="" applyOnUpdate="0" field="environmental_impacts"/>
-    <default expression="" applyOnUpdate="0" field="priority_rank"/>
-    <default expression="" applyOnUpdate="0" field="overall_rank"/>
-    <default expression="" applyOnUpdate="0" field="priority_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_road"/>
-    <default expression="" applyOnUpdate="0" field="photo_upstream"/>
-    <default expression="" applyOnUpdate="0" field="photo_downstream"/>
-    <default expression="" applyOnUpdate="0" field="photo_inlet"/>
-    <default expression="" applyOnUpdate="0" field="photo_barrel"/>
-    <default expression="" applyOnUpdate="0" field="photo_outlet"/>
-    <default expression="" applyOnUpdate="0" field="photo_condition"/>
-    <default expression="" applyOnUpdate="0" field="photo_embankment_fill"/>
-    <default expression="" applyOnUpdate="0" field="photo_blockage"/>
-    <default expression="" applyOnUpdate="0" field="photo_extra1"/>
-    <default expression="" applyOnUpdate="0" field="photo_extra2"/>
-    <default expression="" applyOnUpdate="0" field="photo_extra1_tag"/>
-    <default expression="" applyOnUpdate="0" field="photo_extra2_tag"/>
-    <default expression="" applyOnUpdate="0" field="dewatering"/>
-    <default expression="" applyOnUpdate="0" field="dewatering_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_dewatering"/>
-    <default expression="" applyOnUpdate="0" field="velocity"/>
-    <default expression="" applyOnUpdate="0" field="velocity_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_velocity"/>
-    <default expression="" applyOnUpdate="0" field="constriction"/>
-    <default expression="" applyOnUpdate="0" field="constriction_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_constriction"/>
-    <default expression="" applyOnUpdate="0" field="substrate"/>
-    <default expression="" applyOnUpdate="0" field="substrate_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_substrate"/>
-    <default expression="" applyOnUpdate="0" field="riparian"/>
-    <default expression="" applyOnUpdate="0" field="riparian_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_riparian"/>
-    <default expression="" applyOnUpdate="0" field="flow_depth"/>
-    <default expression="" applyOnUpdate="0" field="flow_depth_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_flow_depth"/>
-    <default expression="" applyOnUpdate="0" field="stability"/>
-    <default expression="" applyOnUpdate="0" field="stability_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_stability"/>
-    <default expression="" applyOnUpdate="0" field="revegetation"/>
-    <default expression="" applyOnUpdate="0" field="revegetation_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_revegetation"/>
-    <default expression="" applyOnUpdate="0" field="cover"/>
-    <default expression="" applyOnUpdate="0" field="cover_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_cover"/>
-    <default expression="" applyOnUpdate="0" field="maintenance"/>
-    <default expression="" applyOnUpdate="0" field="maintenance_notes"/>
-    <default expression="" applyOnUpdate="0" field="photo_maintenance"/>
-    <default expression="" applyOnUpdate="0" field="uav_flight"/>
-    <default expression="" applyOnUpdate="0" field="fish_sampling"/>
-    <default expression="" applyOnUpdate="0" field="site_card_filled"/>
-    <default expression="" applyOnUpdate="0" field="photo_extra3"/>
-    <default expression="" applyOnUpdate="0" field="photo_extra4"/>
-    <default expression="" applyOnUpdate="0" field="photo_extra3_tag"/>
-    <default expression="" applyOnUpdate="0" field="photo_extra4_tag"/>
+    <default expression="" field="fid" applyOnUpdate="0"/>
+    <default expression="" field="date_time_start" applyOnUpdate="0"/>
+    <default expression="" field="crew_members" applyOnUpdate="0"/>
+    <default expression="" field="site_id" applyOnUpdate="0"/>
+    <default expression="" field="camera_id" applyOnUpdate="0"/>
+    <default expression="" field="gps_id" applyOnUpdate="0"/>
+    <default expression="" field="gps_waypoint_number" applyOnUpdate="0"/>
+    <default expression="" field="stream_name" applyOnUpdate="0"/>
+    <default expression="" field="width_meters" applyOnUpdate="0"/>
+    <default expression="" field="length_meters" applyOnUpdate="0"/>
+    <default expression="" field="assessment_comment" applyOnUpdate="0"/>
+    <default expression="" field="habitat_comment" applyOnUpdate="0"/>
+    <default expression="" field="utm_zone" applyOnUpdate="0"/>
+    <default expression="" field="easting" applyOnUpdate="0"/>
+    <default expression="" field="northing" applyOnUpdate="0"/>
+    <default expression="" field="mergin_user" applyOnUpdate="0"/>
+    <default expression="" field="land_owner" applyOnUpdate="0"/>
+    <default expression="" field="access_comment" applyOnUpdate="0"/>
+    <default expression="" field="erosion_notes" applyOnUpdate="0"/>
+    <default expression="" field="condition_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_access" applyOnUpdate="0"/>
+    <default expression="" field="photo_upstream" applyOnUpdate="0"/>
+    <default expression="" field="photo_downstream" applyOnUpdate="0"/>
+    <default expression="" field="photo_inlet" applyOnUpdate="0"/>
+    <default expression="" field="photo_barrel" applyOnUpdate="0"/>
+    <default expression="" field="photo_outlet" applyOnUpdate="0"/>
+    <default expression="" field="photo_condition" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra1" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra1_tag" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra2" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra2_tag" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra3" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra3_tag" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra4" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra4_tag" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra5" applyOnUpdate="0"/>
+    <default expression="" field="photo_extra5_tag" applyOnUpdate="0"/>
+    <default expression="" field="dewatering" applyOnUpdate="0"/>
+    <default expression="" field="dewatering_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_dewatering" applyOnUpdate="0"/>
+    <default expression="" field="velocity" applyOnUpdate="0"/>
+    <default expression="" field="velocity_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_velocity" applyOnUpdate="0"/>
+    <default expression="" field="constriction" applyOnUpdate="0"/>
+    <default expression="" field="constriction_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_constriction" applyOnUpdate="0"/>
+    <default expression="" field="substrate" applyOnUpdate="0"/>
+    <default expression="" field="substrate_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_substrate" applyOnUpdate="0"/>
+    <default expression="" field="riparian" applyOnUpdate="0"/>
+    <default expression="" field="riparian_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_riparian" applyOnUpdate="0"/>
+    <default expression="" field="flow_depth" applyOnUpdate="0"/>
+    <default expression="" field="flow_depth_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_flow_depth" applyOnUpdate="0"/>
+    <default expression="" field="stability" applyOnUpdate="0"/>
+    <default expression="" field="stability_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_stability" applyOnUpdate="0"/>
+    <default expression="" field="revegetation" applyOnUpdate="0"/>
+    <default expression="" field="revegetation_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_revegetation" applyOnUpdate="0"/>
+    <default expression="" field="cover" applyOnUpdate="0"/>
+    <default expression="" field="cover_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_cover" applyOnUpdate="0"/>
+    <default expression="" field="maintenance" applyOnUpdate="0"/>
+    <default expression="" field="maintenance_notes" applyOnUpdate="0"/>
+    <default expression="" field="photo_maintenance" applyOnUpdate="0"/>
+    <default expression="" field="uav_flight" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint constraints="3" notnull_strength="1" field="fid" exp_strength="0" unique_strength="1"/>
-    <constraint constraints="0" notnull_strength="0" field="date_time_start" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="pscis_crossing_id" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="my_crossing_reference" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="crew_members" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="aggregated_crossings_id" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="4" notnull_strength="0" field="camera_id" exp_strength="2" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="site_id" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="4" notnull_strength="0" field="gps_id" exp_strength="2" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="gps_waypoint_number" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="stream_name" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="road_name" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="road_km_mark" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="road_tenure" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="crossing_type" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="crossing_subtype" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="crossing_fix" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="diameter_or_span_meters" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="length_or_width_meters" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="assessment_comment" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="habitat_comment" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="date" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="continuous_embeddedment_yes_no" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="average_depth_embededdment_meters" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="resemble_channel_yes_no" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="backwatered_yes_no" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="percentage_backwatered" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="fill_depth_meters" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="outlet_drop_meters" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="outlet_pool_depth_0_01m" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="inlet_drop_yes_no" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="culvert_slope_percent" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="downstream_channel_width_meters" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="stream_slope" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="beaver_activity_yes_no" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="fish_observed_yes_no" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="valley_fill" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="habitat_value" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="stream_width_ratio" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="culvert_length_score" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="embed_score" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="outlet_drop_score" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="culvert_slope_score" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="stream_width_ratio_score" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="final_score" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="barrier_result" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="recommended_diameter_or_span_meters" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="source" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="time_start" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="mergin_user" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="erosion_issues" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="embankment_fill_issues" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="blockage_issues" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="condition_rank" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="condition_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="likelihood_flood_event_affecting_culvert" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="consequence_flood_event_affecting_culvert" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="climate_change_flood_risk" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="vulnerability_rank" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="climate_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="traffic_volume" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="community_access" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="cost" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="constructability" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="fish_bearing" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="environmental_impacts" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="priority_rank" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="overall_rank" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="priority_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_road" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_upstream" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_downstream" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_inlet" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_barrel" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_outlet" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_condition" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_embankment_fill" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_blockage" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_extra1" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_extra2" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_extra1_tag" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_extra2_tag" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="dewatering" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="dewatering_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_dewatering" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="velocity" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="velocity_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_velocity" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="constriction" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="constriction_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_constriction" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="substrate" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="substrate_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_substrate" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="riparian" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="riparian_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_riparian" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="flow_depth" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="flow_depth_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_flow_depth" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="stability" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="stability_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_stability" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="revegetation" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="revegetation_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_revegetation" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="cover" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="cover_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_cover" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="maintenance" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="maintenance_notes" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_maintenance" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="uav_flight" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="fish_sampling" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="site_card_filled" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_extra3" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_extra4" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_extra3_tag" exp_strength="0" unique_strength="0"/>
-    <constraint constraints="0" notnull_strength="0" field="photo_extra4_tag" exp_strength="0" unique_strength="0"/>
+    <constraint notnull_strength="1" constraints="3" field="fid" unique_strength="1" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="date_time_start" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="crew_members" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="site_id" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="4" field="camera_id" unique_strength="0" exp_strength="2"/>
+    <constraint notnull_strength="0" constraints="4" field="gps_id" unique_strength="0" exp_strength="2"/>
+    <constraint notnull_strength="0" constraints="0" field="gps_waypoint_number" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="stream_name" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="width_meters" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="length_meters" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="assessment_comment" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="habitat_comment" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="utm_zone" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="easting" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="northing" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="mergin_user" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="land_owner" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="access_comment" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="erosion_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="condition_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_access" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_upstream" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_downstream" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_inlet" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_barrel" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_outlet" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_condition" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_extra1" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_extra1_tag" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_extra2" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_extra2_tag" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_extra3" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_extra3_tag" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_extra4" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_extra4_tag" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="4" field="photo_extra5" unique_strength="0" exp_strength="2"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_extra5_tag" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="dewatering" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="dewatering_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_dewatering" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="velocity" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="velocity_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_velocity" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="constriction" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="constriction_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_constriction" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="substrate" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="substrate_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_substrate" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="riparian" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="riparian_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_riparian" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="flow_depth" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="flow_depth_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_flow_depth" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="stability" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="stability_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_stability" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="revegetation" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="revegetation_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_revegetation" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="cover" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="cover_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_cover" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="maintenance" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="maintenance_notes" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="photo_maintenance" unique_strength="0" exp_strength="0"/>
+    <constraint notnull_strength="0" constraints="0" field="uav_flight" unique_strength="0" exp_strength="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint field="fid" exp="" desc=""/>
-    <constraint field="date_time_start" exp="" desc=""/>
-    <constraint field="pscis_crossing_id" exp="" desc=""/>
-    <constraint field="my_crossing_reference" exp="" desc=""/>
-    <constraint field="crew_members" exp="" desc=""/>
-    <constraint field="aggregated_crossings_id" exp="" desc=""/>
-    <constraint field="camera_id" exp="@mergin_username" desc=""/>
-    <constraint field="site_id" exp="" desc=""/>
-    <constraint field="gps_id" exp="@mergin_username" desc=""/>
-    <constraint field="gps_waypoint_number" exp="" desc=""/>
-    <constraint field="stream_name" exp="" desc=""/>
-    <constraint field="road_name" exp="" desc=""/>
-    <constraint field="road_km_mark" exp="" desc=""/>
-    <constraint field="road_tenure" exp="" desc=""/>
-    <constraint field="crossing_type" exp="" desc=""/>
-    <constraint field="crossing_subtype" exp="" desc=""/>
-    <constraint field="crossing_fix" exp="" desc=""/>
-    <constraint field="diameter_or_span_meters" exp="" desc=""/>
-    <constraint field="length_or_width_meters" exp="" desc=""/>
-    <constraint field="assessment_comment" exp="" desc=""/>
-    <constraint field="habitat_comment" exp="" desc=""/>
-    <constraint field="date" exp="" desc=""/>
-    <constraint field="continuous_embeddedment_yes_no" exp="" desc=""/>
-    <constraint field="average_depth_embededdment_meters" exp="" desc=""/>
-    <constraint field="resemble_channel_yes_no" exp="" desc=""/>
-    <constraint field="backwatered_yes_no" exp="" desc=""/>
-    <constraint field="percentage_backwatered" exp="" desc=""/>
-    <constraint field="fill_depth_meters" exp="" desc=""/>
-    <constraint field="outlet_drop_meters" exp="" desc=""/>
-    <constraint field="outlet_pool_depth_0_01m" exp="" desc=""/>
-    <constraint field="inlet_drop_yes_no" exp="" desc=""/>
-    <constraint field="culvert_slope_percent" exp="" desc=""/>
-    <constraint field="downstream_channel_width_meters" exp="" desc=""/>
-    <constraint field="stream_slope" exp="" desc=""/>
-    <constraint field="beaver_activity_yes_no" exp="" desc=""/>
-    <constraint field="fish_observed_yes_no" exp="" desc=""/>
-    <constraint field="valley_fill" exp="" desc=""/>
-    <constraint field="habitat_value" exp="" desc=""/>
-    <constraint field="stream_width_ratio" exp="" desc=""/>
-    <constraint field="culvert_length_score" exp="" desc=""/>
-    <constraint field="embed_score" exp="" desc=""/>
-    <constraint field="outlet_drop_score" exp="" desc=""/>
-    <constraint field="culvert_slope_score" exp="" desc=""/>
-    <constraint field="stream_width_ratio_score" exp="" desc=""/>
-    <constraint field="final_score" exp="" desc=""/>
-    <constraint field="barrier_result" exp="" desc=""/>
-    <constraint field="recommended_diameter_or_span_meters" exp="" desc=""/>
-    <constraint field="source" exp="" desc=""/>
-    <constraint field="time_start" exp="" desc=""/>
-    <constraint field="mergin_user" exp="" desc=""/>
-    <constraint field="erosion_issues" exp="" desc=""/>
-    <constraint field="embankment_fill_issues" exp="" desc=""/>
-    <constraint field="blockage_issues" exp="" desc=""/>
-    <constraint field="condition_rank" exp="" desc=""/>
-    <constraint field="condition_notes" exp="" desc=""/>
-    <constraint field="likelihood_flood_event_affecting_culvert" exp="" desc=""/>
-    <constraint field="consequence_flood_event_affecting_culvert" exp="" desc=""/>
-    <constraint field="climate_change_flood_risk" exp="" desc=""/>
-    <constraint field="vulnerability_rank" exp="" desc=""/>
-    <constraint field="climate_notes" exp="" desc=""/>
-    <constraint field="traffic_volume" exp="" desc=""/>
-    <constraint field="community_access" exp="" desc=""/>
-    <constraint field="cost" exp="" desc=""/>
-    <constraint field="constructability" exp="" desc=""/>
-    <constraint field="fish_bearing" exp="" desc=""/>
-    <constraint field="environmental_impacts" exp="" desc=""/>
-    <constraint field="priority_rank" exp="" desc=""/>
-    <constraint field="overall_rank" exp="" desc=""/>
-    <constraint field="priority_notes" exp="" desc=""/>
-    <constraint field="photo_road" exp="" desc=""/>
-    <constraint field="photo_upstream" exp="" desc=""/>
-    <constraint field="photo_downstream" exp="" desc=""/>
-    <constraint field="photo_inlet" exp="" desc=""/>
-    <constraint field="photo_barrel" exp="" desc=""/>
-    <constraint field="photo_outlet" exp="" desc=""/>
-    <constraint field="photo_condition" exp="" desc=""/>
-    <constraint field="photo_embankment_fill" exp="" desc=""/>
-    <constraint field="photo_blockage" exp="" desc=""/>
-    <constraint field="photo_extra1" exp="" desc=""/>
-    <constraint field="photo_extra2" exp="" desc=""/>
-    <constraint field="photo_extra1_tag" exp="" desc=""/>
-    <constraint field="photo_extra2_tag" exp="" desc=""/>
-    <constraint field="dewatering" exp="" desc=""/>
-    <constraint field="dewatering_notes" exp="" desc=""/>
-    <constraint field="photo_dewatering" exp="" desc=""/>
-    <constraint field="velocity" exp="" desc=""/>
-    <constraint field="velocity_notes" exp="" desc=""/>
-    <constraint field="photo_velocity" exp="" desc=""/>
-    <constraint field="constriction" exp="" desc=""/>
-    <constraint field="constriction_notes" exp="" desc=""/>
-    <constraint field="photo_constriction" exp="" desc=""/>
-    <constraint field="substrate" exp="" desc=""/>
-    <constraint field="substrate_notes" exp="" desc=""/>
-    <constraint field="photo_substrate" exp="" desc=""/>
-    <constraint field="riparian" exp="" desc=""/>
-    <constraint field="riparian_notes" exp="" desc=""/>
-    <constraint field="photo_riparian" exp="" desc=""/>
-    <constraint field="flow_depth" exp="" desc=""/>
-    <constraint field="flow_depth_notes" exp="" desc=""/>
-    <constraint field="photo_flow_depth" exp="" desc=""/>
-    <constraint field="stability" exp="" desc=""/>
-    <constraint field="stability_notes" exp="" desc=""/>
-    <constraint field="photo_stability" exp="" desc=""/>
-    <constraint field="revegetation" exp="" desc=""/>
-    <constraint field="revegetation_notes" exp="" desc=""/>
-    <constraint field="photo_revegetation" exp="" desc=""/>
-    <constraint field="cover" exp="" desc=""/>
-    <constraint field="cover_notes" exp="" desc=""/>
-    <constraint field="photo_cover" exp="" desc=""/>
-    <constraint field="maintenance" exp="" desc=""/>
-    <constraint field="maintenance_notes" exp="" desc=""/>
-    <constraint field="photo_maintenance" exp="" desc=""/>
-    <constraint field="uav_flight" exp="" desc=""/>
-    <constraint field="fish_sampling" exp="" desc=""/>
-    <constraint field="site_card_filled" exp="" desc=""/>
-    <constraint field="photo_extra3" exp="" desc=""/>
-    <constraint field="photo_extra4" exp="" desc=""/>
-    <constraint field="photo_extra3_tag" exp="" desc=""/>
-    <constraint field="photo_extra4_tag" exp="" desc=""/>
+    <constraint exp="" desc="" field="fid"/>
+    <constraint exp="" desc="" field="date_time_start"/>
+    <constraint exp="" desc="" field="crew_members"/>
+    <constraint exp="" desc="" field="site_id"/>
+    <constraint exp="@mergin_username" desc="" field="camera_id"/>
+    <constraint exp="@mergin_username" desc="" field="gps_id"/>
+    <constraint exp="" desc="" field="gps_waypoint_number"/>
+    <constraint exp="" desc="" field="stream_name"/>
+    <constraint exp="" desc="" field="width_meters"/>
+    <constraint exp="" desc="" field="length_meters"/>
+    <constraint exp="" desc="" field="assessment_comment"/>
+    <constraint exp="" desc="" field="habitat_comment"/>
+    <constraint exp="" desc="" field="utm_zone"/>
+    <constraint exp="" desc="" field="easting"/>
+    <constraint exp="" desc="" field="northing"/>
+    <constraint exp="" desc="" field="mergin_user"/>
+    <constraint exp="" desc="" field="land_owner"/>
+    <constraint exp="" desc="" field="access_comment"/>
+    <constraint exp="" desc="" field="erosion_notes"/>
+    <constraint exp="" desc="" field="condition_notes"/>
+    <constraint exp="" desc="" field="photo_access"/>
+    <constraint exp="" desc="" field="photo_upstream"/>
+    <constraint exp="" desc="" field="photo_downstream"/>
+    <constraint exp="" desc="" field="photo_inlet"/>
+    <constraint exp="" desc="" field="photo_barrel"/>
+    <constraint exp="" desc="" field="photo_outlet"/>
+    <constraint exp="" desc="" field="photo_condition"/>
+    <constraint exp="" desc="" field="photo_extra1"/>
+    <constraint exp="" desc="" field="photo_extra1_tag"/>
+    <constraint exp="" desc="" field="photo_extra2"/>
+    <constraint exp="" desc="" field="photo_extra2_tag"/>
+    <constraint exp="" desc="" field="photo_extra3"/>
+    <constraint exp="" desc="" field="photo_extra3_tag"/>
+    <constraint exp="" desc="" field="photo_extra4"/>
+    <constraint exp="" desc="" field="photo_extra4_tag"/>
+    <constraint exp="@project_home + '/ignore_mobile/photos'" desc="" field="photo_extra5"/>
+    <constraint exp="" desc="" field="photo_extra5_tag"/>
+    <constraint exp="" desc="" field="dewatering"/>
+    <constraint exp="" desc="" field="dewatering_notes"/>
+    <constraint exp="" desc="" field="photo_dewatering"/>
+    <constraint exp="" desc="" field="velocity"/>
+    <constraint exp="" desc="" field="velocity_notes"/>
+    <constraint exp="" desc="" field="photo_velocity"/>
+    <constraint exp="" desc="" field="constriction"/>
+    <constraint exp="" desc="" field="constriction_notes"/>
+    <constraint exp="" desc="" field="photo_constriction"/>
+    <constraint exp="" desc="" field="substrate"/>
+    <constraint exp="" desc="" field="substrate_notes"/>
+    <constraint exp="" desc="" field="photo_substrate"/>
+    <constraint exp="" desc="" field="riparian"/>
+    <constraint exp="" desc="" field="riparian_notes"/>
+    <constraint exp="" desc="" field="photo_riparian"/>
+    <constraint exp="" desc="" field="flow_depth"/>
+    <constraint exp="" desc="" field="flow_depth_notes"/>
+    <constraint exp="" desc="" field="photo_flow_depth"/>
+    <constraint exp="" desc="" field="stability"/>
+    <constraint exp="" desc="" field="stability_notes"/>
+    <constraint exp="" desc="" field="photo_stability"/>
+    <constraint exp="" desc="" field="revegetation"/>
+    <constraint exp="" desc="" field="revegetation_notes"/>
+    <constraint exp="" desc="" field="photo_revegetation"/>
+    <constraint exp="" desc="" field="cover"/>
+    <constraint exp="" desc="" field="cover_notes"/>
+    <constraint exp="" desc="" field="photo_cover"/>
+    <constraint exp="" desc="" field="maintenance"/>
+    <constraint exp="" desc="" field="maintenance_notes"/>
+    <constraint exp="" desc="" field="photo_maintenance"/>
+    <constraint exp="" desc="" field="uav_flight"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
     <columns>
       <column hidden="0" width="-1" name="fid" type="field"/>
       <column hidden="0" width="-1" name="date_time_start" type="field"/>
-      <column hidden="0" width="-1" name="pscis_crossing_id" type="field"/>
-      <column hidden="0" width="-1" name="my_crossing_reference" type="field"/>
       <column hidden="0" width="-1" name="crew_members" type="field"/>
-      <column hidden="0" width="-1" name="aggregated_crossings_id" type="field"/>
       <column hidden="0" width="-1" name="camera_id" type="field"/>
       <column hidden="0" width="-1" name="site_id" type="field"/>
       <column hidden="0" width="-1" name="gps_id" type="field"/>
       <column hidden="0" width="-1" name="gps_waypoint_number" type="field"/>
       <column hidden="0" width="-1" name="stream_name" type="field"/>
-      <column hidden="0" width="-1" name="road_name" type="field"/>
-      <column hidden="0" width="-1" name="road_km_mark" type="field"/>
-      <column hidden="0" width="-1" name="road_tenure" type="field"/>
-      <column hidden="0" width="-1" name="crossing_type" type="field"/>
-      <column hidden="0" width="-1" name="crossing_subtype" type="field"/>
-      <column hidden="0" width="-1" name="crossing_fix" type="field"/>
-      <column hidden="0" width="-1" name="diameter_or_span_meters" type="field"/>
-      <column hidden="0" width="-1" name="length_or_width_meters" type="field"/>
       <column hidden="0" width="-1" name="assessment_comment" type="field"/>
       <column hidden="0" width="-1" name="habitat_comment" type="field"/>
-      <column hidden="0" width="-1" name="date" type="field"/>
-      <column hidden="0" width="-1" name="continuous_embeddedment_yes_no" type="field"/>
-      <column hidden="0" width="-1" name="average_depth_embededdment_meters" type="field"/>
-      <column hidden="0" width="-1" name="resemble_channel_yes_no" type="field"/>
-      <column hidden="0" width="-1" name="backwatered_yes_no" type="field"/>
-      <column hidden="0" width="-1" name="percentage_backwatered" type="field"/>
-      <column hidden="0" width="-1" name="fill_depth_meters" type="field"/>
-      <column hidden="0" width="-1" name="outlet_drop_meters" type="field"/>
-      <column hidden="0" width="-1" name="outlet_pool_depth_0_01m" type="field"/>
-      <column hidden="0" width="-1" name="inlet_drop_yes_no" type="field"/>
-      <column hidden="0" width="-1" name="culvert_slope_percent" type="field"/>
-      <column hidden="0" width="-1" name="downstream_channel_width_meters" type="field"/>
-      <column hidden="0" width="-1" name="stream_slope" type="field"/>
-      <column hidden="0" width="-1" name="beaver_activity_yes_no" type="field"/>
-      <column hidden="0" width="-1" name="fish_observed_yes_no" type="field"/>
-      <column hidden="0" width="-1" name="valley_fill" type="field"/>
-      <column hidden="0" width="-1" name="habitat_value" type="field"/>
-      <column hidden="0" width="-1" name="stream_width_ratio" type="field"/>
-      <column hidden="0" width="-1" name="culvert_length_score" type="field"/>
-      <column hidden="0" width="-1" name="embed_score" type="field"/>
-      <column hidden="0" width="-1" name="outlet_drop_score" type="field"/>
-      <column hidden="0" width="-1" name="culvert_slope_score" type="field"/>
-      <column hidden="0" width="-1" name="stream_width_ratio_score" type="field"/>
-      <column hidden="0" width="-1" name="final_score" type="field"/>
-      <column hidden="0" width="-1" name="barrier_result" type="field"/>
-      <column hidden="0" width="-1" name="recommended_diameter_or_span_meters" type="field"/>
-      <column hidden="0" width="-1" name="source" type="field"/>
-      <column hidden="0" width="-1" name="time_start" type="field"/>
       <column hidden="0" width="-1" name="mergin_user" type="field"/>
-      <column hidden="0" width="-1" name="erosion_issues" type="field"/>
-      <column hidden="0" width="-1" name="embankment_fill_issues" type="field"/>
-      <column hidden="0" width="-1" name="blockage_issues" type="field"/>
-      <column hidden="0" width="-1" name="condition_rank" type="field"/>
       <column hidden="0" width="-1" name="condition_notes" type="field"/>
-      <column hidden="0" width="-1" name="likelihood_flood_event_affecting_culvert" type="field"/>
-      <column hidden="0" width="-1" name="consequence_flood_event_affecting_culvert" type="field"/>
-      <column hidden="0" width="-1" name="climate_change_flood_risk" type="field"/>
-      <column hidden="0" width="-1" name="vulnerability_rank" type="field"/>
-      <column hidden="0" width="-1" name="climate_notes" type="field"/>
-      <column hidden="0" width="-1" name="traffic_volume" type="field"/>
-      <column hidden="0" width="-1" name="community_access" type="field"/>
-      <column hidden="0" width="-1" name="cost" type="field"/>
-      <column hidden="0" width="-1" name="constructability" type="field"/>
-      <column hidden="0" width="-1" name="fish_bearing" type="field"/>
-      <column hidden="0" width="-1" name="environmental_impacts" type="field"/>
-      <column hidden="0" width="-1" name="priority_rank" type="field"/>
-      <column hidden="0" width="-1" name="overall_rank" type="field"/>
-      <column hidden="0" width="-1" name="priority_notes" type="field"/>
-      <column hidden="0" width="-1" name="photo_road" type="field"/>
       <column hidden="0" width="-1" name="photo_upstream" type="field"/>
       <column hidden="0" width="-1" name="photo_downstream" type="field"/>
       <column hidden="0" width="-1" name="photo_inlet" type="field"/>
       <column hidden="0" width="-1" name="photo_barrel" type="field"/>
       <column hidden="0" width="-1" name="photo_outlet" type="field"/>
       <column hidden="0" width="-1" name="photo_condition" type="field"/>
-      <column hidden="0" width="-1" name="photo_embankment_fill" type="field"/>
-      <column hidden="0" width="-1" name="photo_blockage" type="field"/>
       <column hidden="0" width="-1" name="photo_extra1" type="field"/>
       <column hidden="0" width="-1" name="photo_extra2" type="field"/>
       <column hidden="0" width="-1" name="photo_extra1_tag" type="field"/>
@@ -2969,12 +1966,21 @@
       <column hidden="0" width="-1" name="maintenance_notes" type="field"/>
       <column hidden="0" width="-1" name="photo_maintenance" type="field"/>
       <column hidden="0" width="-1" name="uav_flight" type="field"/>
-      <column hidden="0" width="-1" name="fish_sampling" type="field"/>
-      <column hidden="0" width="-1" name="site_card_filled" type="field"/>
       <column hidden="0" width="-1" name="photo_extra3" type="field"/>
       <column hidden="0" width="-1" name="photo_extra4" type="field"/>
       <column hidden="0" width="-1" name="photo_extra3_tag" type="field"/>
       <column hidden="0" width="-1" name="photo_extra4_tag" type="field"/>
+      <column hidden="0" width="-1" name="width_meters" type="field"/>
+      <column hidden="0" width="-1" name="length_meters" type="field"/>
+      <column hidden="0" width="-1" name="utm_zone" type="field"/>
+      <column hidden="0" width="-1" name="easting" type="field"/>
+      <column hidden="0" width="-1" name="northing" type="field"/>
+      <column hidden="0" width="-1" name="land_owner" type="field"/>
+      <column hidden="0" width="-1" name="access_comment" type="field"/>
+      <column hidden="0" width="-1" name="erosion_notes" type="field"/>
+      <column hidden="0" width="-1" name="photo_access" type="field"/>
+      <column hidden="0" width="-1" name="photo_extra5" type="field"/>
+      <column hidden="0" width="-1" name="photo_extra5_tag" type="field"/>
       <column hidden="1" width="-1" type="actions"/>
     </columns>
   </attributetableconfig>
@@ -3007,582 +2013,616 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>2</featformsuppress>
   <editorlayout>tablayout</editorlayout>
   <attributeEditorForm>
-    <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-      <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+    <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+      <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
     </labelStyle>
-    <attributeEditorContainer visibilityExpressionEnabled="0" horizontalStretch="0" columnCount="1" groupBox="0" visibilityExpression="" collapsed="0" collapsedExpression="" verticalStretch="0" collapsedExpressionEnabled="0" name="Overview" type="Tab" showLabel="0" backgroundColor="#ffffff">
-      <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-        <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+    <attributeEditorContainer horizontalStretch="0" columnCount="1" groupBox="0" collapsedExpressionEnabled="0" showLabel="0" name="Overview" visibilityExpressionEnabled="0" collapsed="0" collapsedExpression="" visibilityExpression="" verticalStretch="0" type="Tab" backgroundColor="#ffffff">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
       </labelStyle>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="21" name="date" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="1" showLabel="1" name="date_time_start" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="7" name="site_id" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="3" showLabel="1" name="site_id" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="4" name="crew_members" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="2" showLabel="1" name="crew_members" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="8" name="gps_id" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="5" showLabel="1" name="gps_id" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="6" name="camera_id" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="4" showLabel="1" name="camera_id" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="9" name="gps_waypoint_number" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="6" showLabel="1" name="gps_waypoint_number" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="10" name="stream_name" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="7" showLabel="1" name="stream_name" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer visibilityExpressionEnabled="0" horizontalStretch="0" columnCount="1" groupBox="0" visibilityExpression="" collapsed="0" collapsedExpression="" verticalStretch="0" collapsedExpressionEnabled="0" name="Crossing" type="Tab" showLabel="1" backgroundColor="#ffffff">
-      <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-        <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+    <attributeEditorContainer horizontalStretch="0" columnCount="1" groupBox="0" collapsedExpressionEnabled="0" showLabel="1" name="Site" visibilityExpressionEnabled="0" collapsed="0" collapsedExpression="" visibilityExpression="" verticalStretch="0" type="Tab" backgroundColor="#ffffff">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
       </labelStyle>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="14" name="crossing_type" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="16" showLabel="1" name="land_owner" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="15" name="crossing_subtype" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="8" showLabel="1" name="width_meters" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="17" name="diameter_or_span_meters" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="9" showLabel="1" name="length_meters" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="18" name="length_or_width_meters" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="17" showLabel="1" name="access_comment" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="19" name="assessment_comment" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="20" name="habitat_comment" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="10" showLabel="1" name="assessment_comment" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer visibilityExpressionEnabled="1" horizontalStretch="0" columnCount="1" groupBox="0" visibilityExpression=" &quot;crossing_type&quot;  =  'CBS' " collapsed="0" collapsedExpression="" verticalStretch="0" collapsedExpressionEnabled="0" name="Stream" type="Tab" showLabel="1" backgroundColor="#ffffff">
-      <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-        <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+    <attributeEditorContainer horizontalStretch="0" columnCount="1" groupBox="0" collapsedExpressionEnabled="0" showLabel="1" name="Stream" visibilityExpressionEnabled="1" collapsed="0" collapsedExpression="" visibilityExpression=" &quot;crossing_type&quot;  =  'CBS' " verticalStretch="0" type="Tab" backgroundColor="#ffffff">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
       </labelStyle>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="32" name="downstream_channel_width_meters" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="downstream_channel_width_meters" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="33" name="stream_slope" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="stream_slope" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="35" name="fish_observed_yes_no" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="fish_observed_yes_no" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="34" name="beaver_activity_yes_no" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="beaver_activity_yes_no" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="37" name="habitat_value" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="habitat_value" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="11" showLabel="1" name="habitat_comment" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer visibilityExpressionEnabled="0" horizontalStretch="0" columnCount="1" groupBox="0" visibilityExpression="" collapsed="0" collapsedExpression="" verticalStretch="0" collapsedExpressionEnabled="0" name="Photos" type="Tab" showLabel="0" backgroundColor="#ffffff">
-      <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-        <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+    <attributeEditorContainer horizontalStretch="0" columnCount="1" groupBox="0" collapsedExpressionEnabled="0" showLabel="1" name="Monitoring" visibilityExpressionEnabled="0" collapsed="0" collapsedExpression="" visibilityExpression="" verticalStretch="0" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
       </labelStyle>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="70" name="photo_upstream" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="37" showLabel="1" name="dewatering" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="72" name="photo_inlet" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="38" showLabel="1" name="dewatering_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="74" name="photo_outlet" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="40" showLabel="1" name="velocity" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="71" name="photo_downstream" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="41" showLabel="1" name="velocity_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="75" name="photo_condition" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="velocity_photo" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="78" name="photo_extra1" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="43" showLabel="1" name="constriction" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="80" name="photo_extra1_tag" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="44" showLabel="1" name="constriction_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="79" name="photo_extra2" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="46" showLabel="1" name="substrate" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="81" name="photo_extra2_tag" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="47" showLabel="1" name="substrate_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="49" showLabel="1" name="riparian" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="50" showLabel="1" name="riparian_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="52" showLabel="1" name="flow_depth" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="53" showLabel="1" name="flow_depth_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="55" showLabel="1" name="stability" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="56" showLabel="1" name="stability_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="58" showLabel="1" name="revegetation" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="59" showLabel="1" name="revegetation_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="61" showLabel="1" name="cover" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="62" showLabel="1" name="cover_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="64" showLabel="1" name="maintenance" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="65" showLabel="1" name="maintenance_notes" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="67" showLabel="1" name="uav_flight" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="fish_sampling" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField horizontalStretch="0" index="-1" showLabel="1" name="site_card_filled" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
-    <attributeEditorContainer visibilityExpressionEnabled="0" horizontalStretch="0" columnCount="1" groupBox="0" visibilityExpression="" collapsed="0" collapsedExpression="" verticalStretch="0" collapsedExpressionEnabled="0" name="Monitoring" type="Tab" showLabel="1">
-      <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-        <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+    <attributeEditorContainer horizontalStretch="0" columnCount="1" groupBox="0" collapsedExpressionEnabled="0" showLabel="1" name="Photos" visibilityExpressionEnabled="0" collapsed="0" collapsedExpression="" visibilityExpression="" verticalStretch="0" type="Tab">
+      <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+        <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
       </labelStyle>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="82" name="dewatering" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="21" showLabel="1" name="photo_upstream" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="83" name="dewatering_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="23" showLabel="1" name="photo_inlet" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="85" name="velocity" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="25" showLabel="1" name="photo_outlet" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="86" name="velocity_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="22" showLabel="1" name="photo_downstream" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="-1" name="velocity_photo" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="26" showLabel="1" name="photo_condition" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="88" name="constriction" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="27" showLabel="1" name="photo_extra1" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="89" name="constriction_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="28" showLabel="1" name="photo_extra1_tag" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="91" name="substrate" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="29" showLabel="1" name="photo_extra2" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="92" name="substrate_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="30" showLabel="1" name="photo_extra2_tag" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="94" name="riparian" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="31" showLabel="1" name="photo_extra3" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="95" name="riparian_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="32" showLabel="1" name="photo_extra3_tag" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="97" name="flow_depth" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="33" showLabel="1" name="photo_extra4" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="98" name="flow_depth_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="34" showLabel="1" name="photo_extra4_tag" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="100" name="stability" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="35" showLabel="1" name="photo_extra5" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="101" name="stability_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="36" showLabel="1" name="photo_extra5_tag" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="103" name="revegetation" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="26" showLabel="1" name="photo_condition" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="104" name="revegetation_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="60" showLabel="1" name="photo_revegetation" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="106" name="cover" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="57" showLabel="1" name="photo_stability" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="107" name="cover_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="66" showLabel="1" name="photo_maintenance" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="109" name="maintenance" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="63" showLabel="1" name="photo_cover" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="110" name="maintenance_notes" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="51" showLabel="1" name="photo_riparian" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="112" name="uav_flight" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="48" showLabel="1" name="photo_substrate" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="113" name="fish_sampling" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="45" showLabel="1" name="photo_constriction" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="114" name="site_card_filled" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="42" showLabel="1" name="photo_velocity" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-    </attributeEditorContainer>
-    <attributeEditorContainer visibilityExpressionEnabled="0" horizontalStretch="0" columnCount="1" groupBox="0" visibilityExpression="" collapsed="0" collapsedExpression="" verticalStretch="0" collapsedExpressionEnabled="0" name="Photos_Monitoring" type="Tab" showLabel="1">
-      <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-        <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-      </labelStyle>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="75" name="photo_condition" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="39" showLabel="1" name="photo_dewatering" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="105" name="photo_revegetation" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="54" showLabel="1" name="photo_flow_depth" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="102" name="photo_stability" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="31" showLabel="1" name="photo_extra3" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="111" name="photo_maintenance" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="32" showLabel="1" name="photo_extra3_tag" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="108" name="photo_cover" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="33" showLabel="1" name="photo_extra4" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="96" name="photo_riparian" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="93" name="photo_substrate" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="90" name="photo_constriction" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="87" name="photo_velocity" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="84" name="photo_dewatering" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="99" name="photo_flow_depth" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="115" name="photo_extra3" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="117" name="photo_extra3_tag" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="116" name="photo_extra4" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
-        </labelStyle>
-      </attributeEditorField>
-      <attributeEditorField horizontalStretch="0" verticalStretch="0" index="118" name="photo_extra4_tag" showLabel="1">
-        <labelStyle overrideLabelFont="0" labelColor="0,0,0,255" overrideLabelColor="0">
-          <labelFont strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" bold="0" underline="0"/>
+      <attributeEditorField horizontalStretch="0" index="34" showLabel="1" name="photo_extra4_tag" verticalStretch="0">
+        <labelStyle labelColor="0,0,0,255" overrideLabelColor="0" overrideLabelFont="0">
+          <labelFont description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" italic="0" style="" strikethrough="0" underline="0" bold="0"/>
         </labelStyle>
       </attributeEditorField>
     </attributeEditorContainer>
   </attributeEditorForm>
   <editable>
-    <field name="aggregated_crossings_id" editable="1"/>
-    <field name="assessment_comment" editable="1"/>
-    <field name="assessment_date" editable="1"/>
-    <field name="average_depth_embededdment" editable="1"/>
-    <field name="average_depth_embededdment_meters" editable="1"/>
-    <field name="backwatered_ind" editable="1"/>
-    <field name="backwatered_yes_no" editable="1"/>
-    <field name="barrier_result" editable="1"/>
-    <field name="barrier_status" editable="0"/>
-    <field name="beaver_activity_ind" editable="1"/>
-    <field name="beaver_activity_yes_no" editable="1"/>
-    <field name="blockage_issues" editable="1"/>
-    <field name="blue_line_key" editable="1"/>
-    <field name="camera_id" editable="1"/>
-    <field name="climate_change_flood_risk" editable="0"/>
-    <field name="climate_notes" editable="1"/>
-    <field name="community_access" editable="1"/>
-    <field name="condition" editable="1"/>
-    <field name="condition_notes" editable="1"/>
-    <field name="condition_rank" editable="0"/>
-    <field name="consequence_flood_event_affecting_culvert" editable="1"/>
-    <field name="constriction" editable="1"/>
-    <field name="constriction_notes" editable="1"/>
-    <field name="constriction_photo" editable="1"/>
-    <field name="constructability" editable="1"/>
-    <field name="continuous_embeddedment_ind" editable="1"/>
-    <field name="continuous_embeddedment_yes_no" editable="1"/>
-    <field name="corrosion/rust" editable="1"/>
-    <field name="corrosion_rust" editable="1"/>
-    <field name="cost" editable="1"/>
-    <field name="cover" editable="1"/>
-    <field name="cover_notes" editable="1"/>
-    <field name="cover_photo" editable="1"/>
-    <field name="crew_members" editable="1"/>
-    <field name="crossing_fix" editable="1"/>
-    <field name="crossing_subtype" editable="1"/>
-    <field name="crossing_subtype_code" editable="1"/>
-    <field name="crossing_type" editable="1"/>
-    <field name="crossing_type_code" editable="1"/>
-    <field name="culvert_length_score" editable="0"/>
-    <field name="culvert_slope" editable="1"/>
-    <field name="culvert_slope_percent" editable="1"/>
-    <field name="culvert_slope_score" editable="0"/>
-    <field name="dam_id" editable="0"/>
-    <field name="date" editable="1"/>
-    <field name="date_time_start" editable="1"/>
-    <field name="dbm_mof_50k_grid" editable="0"/>
-    <field name="debris_accumulation" editable="1"/>
-    <field name="deforming" editable="1"/>
-    <field name="dewatering" editable="1"/>
-    <field name="dewatering_notes" editable="1"/>
-    <field name="dewatering_photo" editable="1"/>
-    <field name="diameter_or_span" editable="1"/>
-    <field name="diameter_or_span_meters" editable="1"/>
-    <field name="downstream_channel_width" editable="1"/>
-    <field name="downstream_channel_width1" editable="1"/>
-    <field name="downstream_channel_width2" editable="1"/>
-    <field name="downstream_channel_width3" editable="1"/>
-    <field name="downstream_channel_width_meters" editable="1"/>
-    <field name="easting" editable="1"/>
-    <field name="embankment_fill_issues" editable="1"/>
-    <field name="embankment_issues" editable="1"/>
-    <field name="embed_score" editable="0"/>
-    <field name="environmental_impacts" editable="1"/>
-    <field name="erosion" editable="1"/>
-    <field name="erosion_issues" editable="1"/>
-    <field name="external_crossing_reference" editable="0"/>
-    <field name="fid" editable="1"/>
-    <field name="fill_depth" editable="1"/>
-    <field name="fill_depth_meters" editable="1"/>
-    <field name="final_score" editable="0"/>
-    <field name="fish_bearing" editable="1"/>
-    <field name="fish_observed_ind" editable="1"/>
-    <field name="fish_observed_yes_no" editable="1"/>
-    <field name="fish_sampling" editable="1"/>
-    <field name="flooding" editable="1"/>
-    <field name="flow_depth" editable="1"/>
-    <field name="flow_depth_notes" editable="1"/>
-    <field name="flow_depth_photo" editable="1"/>
-    <field name="ften_client_name" editable="1"/>
-    <field name="ften_client_number" editable="1"/>
-    <field name="ften_file_type_description" editable="1"/>
-    <field name="ften_forest_file_id" editable="1"/>
-    <field name="funding_project_number" editable="1"/>
-    <field name="gnis_stream_name" editable="1"/>
-    <field name="gps_id" editable="1"/>
-    <field name="gps_waypoint_id" editable="1"/>
-    <field name="gps_waypoint_number" editable="1"/>
-    <field name="gps_wp" editable="1"/>
-    <field name="habitat_comment" editable="1"/>
-    <field name="habitat_value" editable="1"/>
-    <field name="habitat_value_code" editable="1"/>
-    <field name="inlet_drop_ind" editable="1"/>
-    <field name="inlet_drop_yes_no" editable="1"/>
-    <field name="lat" editable="1"/>
-    <field name="length_or_width" editable="1"/>
-    <field name="length_or_width_meters" editable="1"/>
-    <field name="likelihood_flood_event_affecting_culvert" editable="1"/>
-    <field name="linear_feature_id" editable="1"/>
-    <field name="lon" editable="1"/>
-    <field name="maintenance" editable="1"/>
-    <field name="maintenance_notes" editable="1"/>
-    <field name="maintenance_photo" editable="1"/>
-    <field name="mergin_user" editable="1"/>
-    <field name="modelled_crossing_id" editable="1"/>
-    <field name="mot_culvert_id" editable="1"/>
-    <field name="moti__chris_culvert_id" editable="1"/>
-    <field name="moti_chris_culvert_id" editable="1"/>
-    <field name="my_crossing_reference" editable="1"/>
-    <field name="northing" editable="1"/>
-    <field name="observedspp_upstr" editable="0"/>
-    <field name="outlet_drop" editable="1"/>
-    <field name="outlet_drop_meters" editable="1"/>
-    <field name="outlet_drop_score" editable="0"/>
-    <field name="outlet_pool_depth" editable="1"/>
-    <field name="outlet_pool_depth_0_01m" editable="1"/>
-    <field name="overall_rank" editable="0"/>
-    <field name="percentage_backwatered" editable="1"/>
-    <field name="photo" editable="1"/>
-    <field name="photo_additional_notes" editable="1"/>
-    <field name="photo_barrel" editable="1"/>
-    <field name="photo_blockage" editable="1"/>
-    <field name="photo_condition" editable="1"/>
-    <field name="photo_constriction" editable="1"/>
-    <field name="photo_cover" editable="1"/>
-    <field name="photo_dewatering" editable="1"/>
-    <field name="photo_downstream" editable="1"/>
-    <field name="photo_embankment" editable="1"/>
-    <field name="photo_embankment_fill" editable="1"/>
-    <field name="photo_extra1" editable="1"/>
-    <field name="photo_extra1_tag" editable="1"/>
-    <field name="photo_extra2" editable="1"/>
-    <field name="photo_extra2_tag" editable="1"/>
-    <field name="photo_extra3" editable="1"/>
-    <field name="photo_extra3_tag" editable="1"/>
-    <field name="photo_extra4" editable="1"/>
-    <field name="photo_extra4_tag" editable="1"/>
-    <field name="photo_flow_depth" editable="1"/>
-    <field name="photo_inlet" editable="1"/>
-    <field name="photo_maintenance" editable="1"/>
-    <field name="photo_outlet" editable="1"/>
-    <field name="photo_revegetation" editable="1"/>
-    <field name="photo_riparian" editable="1"/>
-    <field name="photo_road" editable="1"/>
-    <field name="photo_stability" editable="1"/>
-    <field name="photo_substrate" editable="1"/>
-    <field name="photo_upstream" editable="1"/>
-    <field name="photo_velocity" editable="1"/>
-    <field name="piping_leakage" editable="1"/>
-    <field name="priority_notes" editable="1"/>
-    <field name="priority_rank" editable="0"/>
-    <field name="pscis_crossing_id" editable="1"/>
-    <field name="pscis_status" editable="0"/>
-    <field name="rail_owner_name" editable="1"/>
-    <field name="recommended_diameter_or_span_meters" editable="1"/>
-    <field name="resemble_channel_ind" editable="1"/>
-    <field name="resemble_channel_yes_no" editable="1"/>
-    <field name="revegetation" editable="1"/>
-    <field name="revegetation_notes" editable="1"/>
-    <field name="revegetation_photo" editable="1"/>
-    <field name="riparian" editable="1"/>
-    <field name="riparian_notes" editable="1"/>
-    <field name="riparian_photo" editable="1"/>
-    <field name="road_km_mark" editable="1"/>
-    <field name="road_name" editable="1"/>
-    <field name="road_tenure" editable="1"/>
-    <field name="rowid" editable="1"/>
-    <field name="site_card_filled" editable="1"/>
-    <field name="site_id" editable="1"/>
-    <field name="source" editable="1"/>
-    <field name="stability" editable="1"/>
-    <field name="stability_notes" editable="1"/>
-    <field name="stability_photo" editable="1"/>
-    <field name="stream_crossing_id" editable="1"/>
-    <field name="stream_name" editable="1"/>
-    <field name="stream_order" editable="0"/>
-    <field name="stream_slope" editable="1"/>
-    <field name="stream_width_ratio" editable="0"/>
-    <field name="stream_width_ratio_score" editable="0"/>
-    <field name="substrate" editable="1"/>
-    <field name="substrate_notes" editable="1"/>
-    <field name="substrate_photo" editable="1"/>
-    <field name="surveyor" editable="0"/>
-    <field name="surveyor_1" editable="1"/>
-    <field name="surveyor_2" editable="1"/>
-    <field name="surveyor_3" editable="1"/>
-    <field name="surveyor_camera" editable="1"/>
-    <field name="surveyor_gps" editable="1"/>
-    <field name="test" editable="1"/>
-    <field name="time_start" editable="1"/>
-    <field name="traffic_volume" editable="1"/>
-    <field name="transport_line_structured_name_1" editable="1"/>
-    <field name="uav_flight" editable="1"/>
-    <field name="user_barrier_anthropogenic_id" editable="0"/>
-    <field name="utm_corrected" editable="1"/>
-    <field name="utm_corrected_easting" editable="1"/>
-    <field name="utm_corrected_northing" editable="1"/>
-    <field name="utm_easting" editable="1"/>
-    <field name="utm_easting_pscis" editable="1"/>
-    <field name="utm_northing" editable="1"/>
-    <field name="utm_northing_pscis" editable="1"/>
-    <field name="utm_zone" editable="1"/>
-    <field name="valley_fill" editable="1"/>
-    <field name="valley_fill_code" editable="1"/>
-    <field name="velocity" editable="1"/>
-    <field name="velocity_notes" editable="1"/>
-    <field name="velocity_photo" editable="1"/>
-    <field name="vulnerability_rank" editable="0"/>
-    <field name="watershed_group_code" editable="0"/>
+    <field editable="1" name="access_comment"/>
+    <field editable="1" name="aggregated_crossings_id"/>
+    <field editable="1" name="assessment_comment"/>
+    <field editable="1" name="assessment_date"/>
+    <field editable="1" name="average_depth_embededdment"/>
+    <field editable="1" name="average_depth_embededdment_meters"/>
+    <field editable="1" name="backwatered_ind"/>
+    <field editable="1" name="backwatered_yes_no"/>
+    <field editable="1" name="barrier_result"/>
+    <field editable="0" name="barrier_status"/>
+    <field editable="1" name="beaver_activity_ind"/>
+    <field editable="1" name="beaver_activity_yes_no"/>
+    <field editable="1" name="blockage_issues"/>
+    <field editable="1" name="blue_line_key"/>
+    <field editable="1" name="camera_id"/>
+    <field editable="0" name="climate_change_flood_risk"/>
+    <field editable="1" name="climate_notes"/>
+    <field editable="1" name="community_access"/>
+    <field editable="1" name="condition"/>
+    <field editable="1" name="condition_notes"/>
+    <field editable="0" name="condition_rank"/>
+    <field editable="1" name="consequence_flood_event_affecting_culvert"/>
+    <field editable="1" name="constriction"/>
+    <field editable="1" name="constriction_notes"/>
+    <field editable="1" name="constriction_photo"/>
+    <field editable="1" name="constructability"/>
+    <field editable="1" name="continuous_embeddedment_ind"/>
+    <field editable="1" name="continuous_embeddedment_yes_no"/>
+    <field editable="1" name="corrosion/rust"/>
+    <field editable="1" name="corrosion_rust"/>
+    <field editable="1" name="cost"/>
+    <field editable="1" name="cover"/>
+    <field editable="1" name="cover_notes"/>
+    <field editable="1" name="cover_photo"/>
+    <field editable="1" name="crew_members"/>
+    <field editable="1" name="crossing_fix"/>
+    <field editable="1" name="crossing_subtype"/>
+    <field editable="1" name="crossing_subtype_code"/>
+    <field editable="1" name="crossing_type"/>
+    <field editable="1" name="crossing_type_code"/>
+    <field editable="0" name="culvert_length_score"/>
+    <field editable="1" name="culvert_slope"/>
+    <field editable="1" name="culvert_slope_percent"/>
+    <field editable="0" name="culvert_slope_score"/>
+    <field editable="0" name="dam_id"/>
+    <field editable="1" name="date"/>
+    <field editable="1" name="date_time_start"/>
+    <field editable="0" name="dbm_mof_50k_grid"/>
+    <field editable="1" name="debris_accumulation"/>
+    <field editable="1" name="deforming"/>
+    <field editable="1" name="dewatering"/>
+    <field editable="1" name="dewatering_notes"/>
+    <field editable="1" name="dewatering_photo"/>
+    <field editable="1" name="diameter_or_span"/>
+    <field editable="1" name="diameter_or_span_meters"/>
+    <field editable="1" name="downstream_channel_width"/>
+    <field editable="1" name="downstream_channel_width1"/>
+    <field editable="1" name="downstream_channel_width2"/>
+    <field editable="1" name="downstream_channel_width3"/>
+    <field editable="1" name="downstream_channel_width_meters"/>
+    <field editable="1" name="easting"/>
+    <field editable="1" name="embankment_fill_issues"/>
+    <field editable="1" name="embankment_issues"/>
+    <field editable="0" name="embed_score"/>
+    <field editable="1" name="environmental_impacts"/>
+    <field editable="1" name="erosion"/>
+    <field editable="1" name="erosion_issues"/>
+    <field editable="1" name="erosion_notes"/>
+    <field editable="0" name="external_crossing_reference"/>
+    <field editable="1" name="fid"/>
+    <field editable="1" name="fill_depth"/>
+    <field editable="1" name="fill_depth_meters"/>
+    <field editable="0" name="final_score"/>
+    <field editable="1" name="fish_bearing"/>
+    <field editable="1" name="fish_observed_ind"/>
+    <field editable="1" name="fish_observed_yes_no"/>
+    <field editable="1" name="fish_sampling"/>
+    <field editable="1" name="flooding"/>
+    <field editable="1" name="flow_depth"/>
+    <field editable="1" name="flow_depth_notes"/>
+    <field editable="1" name="flow_depth_photo"/>
+    <field editable="1" name="ften_client_name"/>
+    <field editable="1" name="ften_client_number"/>
+    <field editable="1" name="ften_file_type_description"/>
+    <field editable="1" name="ften_forest_file_id"/>
+    <field editable="1" name="funding_project_number"/>
+    <field editable="1" name="gnis_stream_name"/>
+    <field editable="1" name="gps_id"/>
+    <field editable="1" name="gps_waypoint_id"/>
+    <field editable="1" name="gps_waypoint_number"/>
+    <field editable="1" name="gps_wp"/>
+    <field editable="1" name="habitat_comment"/>
+    <field editable="1" name="habitat_value"/>
+    <field editable="1" name="habitat_value_code"/>
+    <field editable="1" name="inlet_drop_ind"/>
+    <field editable="1" name="inlet_drop_yes_no"/>
+    <field editable="1" name="land_owner"/>
+    <field editable="1" name="lat"/>
+    <field editable="1" name="length_meters"/>
+    <field editable="1" name="length_or_width"/>
+    <field editable="1" name="length_or_width_meters"/>
+    <field editable="1" name="likelihood_flood_event_affecting_culvert"/>
+    <field editable="1" name="linear_feature_id"/>
+    <field editable="1" name="lon"/>
+    <field editable="1" name="maintenance"/>
+    <field editable="1" name="maintenance_notes"/>
+    <field editable="1" name="maintenance_photo"/>
+    <field editable="1" name="mergin_user"/>
+    <field editable="1" name="modelled_crossing_id"/>
+    <field editable="1" name="mot_culvert_id"/>
+    <field editable="1" name="moti__chris_culvert_id"/>
+    <field editable="1" name="moti_chris_culvert_id"/>
+    <field editable="1" name="my_crossing_reference"/>
+    <field editable="1" name="northing"/>
+    <field editable="0" name="observedspp_upstr"/>
+    <field editable="1" name="outlet_drop"/>
+    <field editable="1" name="outlet_drop_meters"/>
+    <field editable="0" name="outlet_drop_score"/>
+    <field editable="1" name="outlet_pool_depth"/>
+    <field editable="1" name="outlet_pool_depth_0_01m"/>
+    <field editable="0" name="overall_rank"/>
+    <field editable="1" name="percentage_backwatered"/>
+    <field editable="1" name="photo"/>
+    <field editable="1" name="photo_access"/>
+    <field editable="1" name="photo_additional_notes"/>
+    <field editable="1" name="photo_barrel"/>
+    <field editable="1" name="photo_blockage"/>
+    <field editable="1" name="photo_condition"/>
+    <field editable="1" name="photo_constriction"/>
+    <field editable="1" name="photo_cover"/>
+    <field editable="1" name="photo_dewatering"/>
+    <field editable="1" name="photo_downstream"/>
+    <field editable="1" name="photo_embankment"/>
+    <field editable="1" name="photo_embankment_fill"/>
+    <field editable="1" name="photo_extra1"/>
+    <field editable="1" name="photo_extra1_tag"/>
+    <field editable="1" name="photo_extra2"/>
+    <field editable="1" name="photo_extra2_tag"/>
+    <field editable="1" name="photo_extra3"/>
+    <field editable="1" name="photo_extra3_tag"/>
+    <field editable="1" name="photo_extra4"/>
+    <field editable="1" name="photo_extra4_tag"/>
+    <field editable="1" name="photo_extra5"/>
+    <field editable="1" name="photo_extra5_tag"/>
+    <field editable="1" name="photo_flow_depth"/>
+    <field editable="1" name="photo_inlet"/>
+    <field editable="1" name="photo_maintenance"/>
+    <field editable="1" name="photo_outlet"/>
+    <field editable="1" name="photo_revegetation"/>
+    <field editable="1" name="photo_riparian"/>
+    <field editable="1" name="photo_road"/>
+    <field editable="1" name="photo_stability"/>
+    <field editable="1" name="photo_substrate"/>
+    <field editable="1" name="photo_upstream"/>
+    <field editable="1" name="photo_velocity"/>
+    <field editable="1" name="piping_leakage"/>
+    <field editable="1" name="priority_notes"/>
+    <field editable="0" name="priority_rank"/>
+    <field editable="1" name="pscis_crossing_id"/>
+    <field editable="0" name="pscis_status"/>
+    <field editable="1" name="rail_owner_name"/>
+    <field editable="1" name="recommended_diameter_or_span_meters"/>
+    <field editable="1" name="resemble_channel_ind"/>
+    <field editable="1" name="resemble_channel_yes_no"/>
+    <field editable="1" name="revegetation"/>
+    <field editable="1" name="revegetation_notes"/>
+    <field editable="1" name="revegetation_photo"/>
+    <field editable="1" name="riparian"/>
+    <field editable="1" name="riparian_notes"/>
+    <field editable="1" name="riparian_photo"/>
+    <field editable="1" name="road_km_mark"/>
+    <field editable="1" name="road_name"/>
+    <field editable="1" name="road_tenure"/>
+    <field editable="1" name="rowid"/>
+    <field editable="1" name="site_card_filled"/>
+    <field editable="1" name="site_id"/>
+    <field editable="1" name="source"/>
+    <field editable="1" name="stability"/>
+    <field editable="1" name="stability_notes"/>
+    <field editable="1" name="stability_photo"/>
+    <field editable="1" name="stream_crossing_id"/>
+    <field editable="1" name="stream_name"/>
+    <field editable="0" name="stream_order"/>
+    <field editable="1" name="stream_slope"/>
+    <field editable="0" name="stream_width_ratio"/>
+    <field editable="0" name="stream_width_ratio_score"/>
+    <field editable="1" name="substrate"/>
+    <field editable="1" name="substrate_notes"/>
+    <field editable="1" name="substrate_photo"/>
+    <field editable="0" name="surveyor"/>
+    <field editable="1" name="surveyor_1"/>
+    <field editable="1" name="surveyor_2"/>
+    <field editable="1" name="surveyor_3"/>
+    <field editable="1" name="surveyor_camera"/>
+    <field editable="1" name="surveyor_gps"/>
+    <field editable="1" name="test"/>
+    <field editable="1" name="time_start"/>
+    <field editable="1" name="traffic_volume"/>
+    <field editable="1" name="transport_line_structured_name_1"/>
+    <field editable="1" name="uav_flight"/>
+    <field editable="0" name="user_barrier_anthropogenic_id"/>
+    <field editable="1" name="utm_corrected"/>
+    <field editable="1" name="utm_corrected_easting"/>
+    <field editable="1" name="utm_corrected_northing"/>
+    <field editable="1" name="utm_easting"/>
+    <field editable="1" name="utm_easting_pscis"/>
+    <field editable="1" name="utm_northing"/>
+    <field editable="1" name="utm_northing_pscis"/>
+    <field editable="1" name="utm_zone"/>
+    <field editable="1" name="valley_fill"/>
+    <field editable="1" name="valley_fill_code"/>
+    <field editable="1" name="velocity"/>
+    <field editable="1" name="velocity_notes"/>
+    <field editable="1" name="velocity_photo"/>
+    <field editable="0" name="vulnerability_rank"/>
+    <field editable="0" name="watershed_group_code"/>
+    <field editable="1" name="width_meters"/>
   </editable>
   <labelOnTop>
+    <field name="access_comment" labelOnTop="0"/>
     <field name="aggregated_crossings_id" labelOnTop="0"/>
     <field name="assessment_comment" labelOnTop="0"/>
     <field name="assessment_date" labelOnTop="0"/>
@@ -3649,6 +2689,7 @@ def my_form_open(dialog, layer, feature):
     <field name="environmental_impacts" labelOnTop="0"/>
     <field name="erosion" labelOnTop="0"/>
     <field name="erosion_issues" labelOnTop="0"/>
+    <field name="erosion_notes" labelOnTop="0"/>
     <field name="external_crossing_reference" labelOnTop="0"/>
     <field name="fid" labelOnTop="0"/>
     <field name="fill_depth" labelOnTop="0"/>
@@ -3677,7 +2718,9 @@ def my_form_open(dialog, layer, feature):
     <field name="habitat_value_code" labelOnTop="0"/>
     <field name="inlet_drop_ind" labelOnTop="0"/>
     <field name="inlet_drop_yes_no" labelOnTop="0"/>
+    <field name="land_owner" labelOnTop="0"/>
     <field name="lat" labelOnTop="0"/>
+    <field name="length_meters" labelOnTop="0"/>
     <field name="length_or_width" labelOnTop="0"/>
     <field name="length_or_width_meters" labelOnTop="0"/>
     <field name="likelihood_flood_event_affecting_culvert" labelOnTop="0"/>
@@ -3702,6 +2745,7 @@ def my_form_open(dialog, layer, feature):
     <field name="overall_rank" labelOnTop="0"/>
     <field name="percentage_backwatered" labelOnTop="0"/>
     <field name="photo" labelOnTop="0"/>
+    <field name="photo_access" labelOnTop="0"/>
     <field name="photo_additional_notes" labelOnTop="0"/>
     <field name="photo_barrel" labelOnTop="0"/>
     <field name="photo_blockage" labelOnTop="0"/>
@@ -3720,6 +2764,8 @@ def my_form_open(dialog, layer, feature):
     <field name="photo_extra3_tag" labelOnTop="0"/>
     <field name="photo_extra4" labelOnTop="0"/>
     <field name="photo_extra4_tag" labelOnTop="0"/>
+    <field name="photo_extra5" labelOnTop="0"/>
+    <field name="photo_extra5_tag" labelOnTop="0"/>
     <field name="photo_flow_depth" labelOnTop="0"/>
     <field name="photo_inlet" labelOnTop="0"/>
     <field name="photo_maintenance" labelOnTop="0"/>
@@ -3792,8 +2838,10 @@ def my_form_open(dialog, layer, feature):
     <field name="velocity_photo" labelOnTop="0"/>
     <field name="vulnerability_rank" labelOnTop="0"/>
     <field name="watershed_group_code" labelOnTop="0"/>
+    <field name="width_meters" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
+    <field reuseLastValue="0" name="access_comment"/>
     <field reuseLastValue="0" name="aggregated_crossings_id"/>
     <field reuseLastValue="0" name="assessment_comment"/>
     <field reuseLastValue="0" name="assessment_date"/>
@@ -3860,6 +2908,7 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="environmental_impacts"/>
     <field reuseLastValue="0" name="erosion"/>
     <field reuseLastValue="0" name="erosion_issues"/>
+    <field reuseLastValue="0" name="erosion_notes"/>
     <field reuseLastValue="0" name="external_crossing_reference"/>
     <field reuseLastValue="0" name="fid"/>
     <field reuseLastValue="0" name="fill_depth"/>
@@ -3888,7 +2937,9 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="habitat_value_code"/>
     <field reuseLastValue="0" name="inlet_drop_ind"/>
     <field reuseLastValue="0" name="inlet_drop_yes_no"/>
+    <field reuseLastValue="0" name="land_owner"/>
     <field reuseLastValue="0" name="lat"/>
+    <field reuseLastValue="0" name="length_meters"/>
     <field reuseLastValue="0" name="length_or_width"/>
     <field reuseLastValue="0" name="length_or_width_meters"/>
     <field reuseLastValue="0" name="likelihood_flood_event_affecting_culvert"/>
@@ -3913,6 +2964,7 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="overall_rank"/>
     <field reuseLastValue="0" name="percentage_backwatered"/>
     <field reuseLastValue="0" name="photo"/>
+    <field reuseLastValue="0" name="photo_access"/>
     <field reuseLastValue="0" name="photo_additional_notes"/>
     <field reuseLastValue="0" name="photo_barrel"/>
     <field reuseLastValue="0" name="photo_blockage"/>
@@ -3931,6 +2983,8 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="photo_extra3_tag"/>
     <field reuseLastValue="0" name="photo_extra4"/>
     <field reuseLastValue="0" name="photo_extra4_tag"/>
+    <field reuseLastValue="0" name="photo_extra5"/>
+    <field reuseLastValue="0" name="photo_extra5_tag"/>
     <field reuseLastValue="0" name="photo_flow_depth"/>
     <field reuseLastValue="0" name="photo_inlet"/>
     <field reuseLastValue="0" name="photo_maintenance"/>
@@ -4003,6 +3057,7 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="velocity_photo"/>
     <field reuseLastValue="0" name="vulnerability_rank"/>
     <field reuseLastValue="0" name="watershed_group_code"/>
+    <field reuseLastValue="0" name="width_meters"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
