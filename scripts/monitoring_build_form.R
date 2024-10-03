@@ -7,7 +7,7 @@ source('scripts/packages.R')
 # form_prep1 <- fpr::fpr_import_pscis()
 
 # path_write <- 'data/qgis/form_pscis.gpkg'
-path_write <- '~/Projects/gis/restoration_wedzin_kwa/form_monitoring_ree.gpkg'
+path_write <- '~/Projects/gis/sern_skeena_2023/form_monitoring.gpkg'
 
 # import the pscis template with custom test function
 form_prep1 <- fpr::fpr_import_pscis_all() |>
@@ -37,15 +37,10 @@ form_prep2 <- form_prep1 %>%
   # example - add some columns of our own plus the ones for MoTi (see the other script but note the columns we already have! photo fields?)
   dplyr::mutate(date_time_start = NA_POSIXct_,
                 mergin_user = NA_character_,
-                surveyor_1 = NA_character_,
-                surveyor_2 = NA_character_,
-                surveyor_3 = NA_character_,
                 camera_id = NA_character_,
                 gps_id = NA_character_,
                 gps_waypoint_number = NA_character_,
                 moti_chris_culvert_id = NA_integer_,
-                habitat_comment = NA_character_, #let's encourage the tinyest bit of info here
-                utm_corrected = NA_character_, #this should be yes/no if defaults for $x and $y not used.  need to explain in alias
                 # condition = NA_integer_,
                 erosion_issues = NA_integer_,
                 embankment_fill_issues = NA_integer_,
@@ -128,25 +123,19 @@ form_prep2 <- form_prep1 %>%
   # mutate(date = NA_POSIXct_) %>%
   # reorder the columns - more to do than this
   select(date_time_start,
-         pscis_crossing_id,
-         my_crossing_reference,
-         crew_members,
-         matches('surveyor_'),
-         matches('_id'),
-         gps_waypoint_number,
-         stream_name,
-         matches('road_'),
-         matches('crossing'),
-         diameter_or_span_meters,
-         length_or_width_meters,
-         assessment_comment,
-         habitat_comment,
-         everything(),
-         -utm_zone,
-         -easting,
-         -northing,
-         -rowid)
-
+       pscis_crossing_id,
+       my_crossing_reference,
+       crew_members,
+       matches('surveyor_'),
+       matches('_id'),
+       gps_waypoint_number,
+       stream_name,
+       matches('road_'),
+       matches('crossing'),
+       diameter_or_span_meters,
+       length_or_width_meters,
+       assessment_comment,
+       everything())
 glimpse(form_prep1)
 glimpse(form_prep2)
 
