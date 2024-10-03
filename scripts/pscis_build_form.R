@@ -1,19 +1,19 @@
 # build a raw field form template using the excel file as the template for our template
 
 source('scripts/packages.R')
-source('scripts/functions.R')
+# source('scripts/functions.R')
 
-
+library(fpr)
 # path_write <- 'data/qgis/form_pscis.gpkg'
-path_write <- '~/Projects/gis/sern_skeena_2023/form_pscis_newgraph.gpkg'
+path_write <- '~/Projects/gis/sern_lchl_necr_fran_2023/form_pscis.gpkg'
 
 
 # whole thing is now a function
 sdff_pscis_build <- function(path){
 
   # import the pscis template with custom test function
-  form_prep1 <- tfpr_import_pscis_all() |>
-    bind_rows()
+  form_prep1 <- fpr::fpr_import_pscis_all() |>
+    dplyr::bind_rows()
 
 
   #---------------------------------------define your utm zone ------------------------------------------
