@@ -628,16 +628,34 @@
       </editWidget>
     </field>
     <field name="no_visible_channel" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
+      <editWidget type="ValueMap">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option name="map" type="List">
+              <Option type="Map">
+                <Option name="yes" value="Yes" type="QString"/>
+              </Option>
+              <Option type="Map">
+                <Option name="no" value="No" type="QString"/>
+              </Option>
+            </Option>
+          </Option>
         </config>
       </editWidget>
     </field>
     <field name="dewatered_dry_int_channel" configurationFlags="NoFlag">
-      <editWidget type="TextEdit">
+      <editWidget type="ValueMap">
         <config>
-          <Option/>
+          <Option type="Map">
+            <Option name="map" type="List">
+              <Option type="Map">
+                <Option name="yes" value="Yes" type="QString"/>
+              </Option>
+              <Option type="Map">
+                <Option name="no" value="No" type="QString"/>
+              </Option>
+            </Option>
+          </Option>
         </config>
       </editWidget>
     </field>
@@ -3337,8 +3355,8 @@
     <policy field="conductivity_m_s_cm" policy="Duplicate"/>
     <policy field="turbidity" policy="Duplicate"/>
     <policy field="stage" policy="Duplicate"/>
-    <policy field="no_visible_channel" policy="Duplicate"/>
-    <policy field="dewatered_dry_int_channel" policy="Duplicate"/>
+    <policy field="no_visible_channel" policy="DefaultValue"/>
+    <policy field="dewatered_dry_int_channel" policy="DefaultValue"/>
     <policy field="utm_zone" policy="Duplicate"/>
     <policy field="utm_easting" policy="Duplicate"/>
     <policy field="utm_northing" policy="Duplicate"/>
@@ -3427,7 +3445,7 @@
     <policy field="d_cm" policy="Duplicate"/>
     <policy field="morphology" policy="Duplicate"/>
     <policy field="channel_pattern" policy="Duplicate"/>
-    <policy field="coupling" policy="Duplicate"/>
+    <policy field="coupling" policy="DefaultValue"/>
     <policy field="confinement" policy="Duplicate"/>
     <policy field="feature_type" policy="Duplicate"/>
     <policy field="feature_height_m" policy="Duplicate"/>
@@ -3489,8 +3507,8 @@
     <default field="conductivity_m_s_cm" expression="" applyOnUpdate="0"/>
     <default field="turbidity" expression="" applyOnUpdate="0"/>
     <default field="stage" expression="" applyOnUpdate="0"/>
-    <default field="no_visible_channel" expression="" applyOnUpdate="0"/>
-    <default field="dewatered_dry_int_channel" expression="" applyOnUpdate="0"/>
+    <default field="no_visible_channel" expression="'No'" applyOnUpdate="0"/>
+    <default field="dewatered_dry_int_channel" expression="'No'" applyOnUpdate="0"/>
     <default field="utm_zone" expression="" applyOnUpdate="0"/>
     <default field="utm_easting" expression="" applyOnUpdate="0"/>
     <default field="utm_northing" expression="" applyOnUpdate="0"/>
@@ -4537,6 +4555,16 @@ def my_form_open(dialog, layer, feature):
       <labelStyle overrideLabelColor="0" labelColor="0,0,0,255" overrideLabelFont="0">
         <labelFont style="" underline="0" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" bold="0" italic="0"/>
       </labelStyle>
+      <attributeEditorField showLabel="1" name="no_visible_channel" verticalStretch="0" index="12" horizontalStretch="0">
+        <labelStyle overrideLabelColor="0" labelColor="0,0,0,255" overrideLabelFont="0">
+          <labelFont style="" underline="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" bold="0" italic="0"/>
+        </labelStyle>
+      </attributeEditorField>
+      <attributeEditorField showLabel="1" name="dewatered_dry_int_channel" verticalStretch="0" index="13" horizontalStretch="0">
+        <labelStyle overrideLabelColor="0" labelColor="0,0,0,255" overrideLabelFont="0">
+          <labelFont style="" underline="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" bold="0" italic="0"/>
+        </labelStyle>
+      </attributeEditorField>
       <attributeEditorField showLabel="1" name="bed_material_dominant" verticalStretch="0" index="68" horizontalStretch="0">
         <labelStyle overrideLabelColor="0" labelColor="0,0,0,255" overrideLabelFont="0">
           <labelFont style="" underline="0" strikethrough="0" description=".AppleSystemUIFont,13,-1,5,50,0,0,0,0,0" bold="0" italic="0"/>
