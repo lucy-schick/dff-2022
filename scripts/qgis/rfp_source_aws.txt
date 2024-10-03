@@ -6,5 +6,5 @@ whse_forest_tenure.ften_road_section_lines_svw
 whse_cadastre.pmbc_parcel_fabric_poly_svw
 whse_basemapping.transport_line
 bcfishpass.streams_vw
-whse_forest_vegetation.veg_comp_lyr_r1_poly
+#whse_forest_vegetation.veg_comp_lyr_r1_poly
 

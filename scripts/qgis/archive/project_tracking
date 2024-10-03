@@ -68,7 +68,7 @@ time ./rfp_source_bcdata.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','M
 time ./bcdata_update.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
 
 # sern_fraser_2024
-./rfp_source_bcdata.sh "'MORK', 'UFRA'" && ./rfp_source_aws.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
+./rfp_source_bcdata.sh "'LCHL', 'NECR', 'FRAN', 'MORK', 'UFRA', 'TABR', 'WILL'" && ./rfp_source_aws.sh "'LCHL', 'NECR', 'FRAN', 'MORK', 'UFRA', 'TABR', 'WILL'" && time ./rfp_qgis_create.sh "sern_fraser_2024" "bcrestoration_mobile.qgs"
 
 #20240808
 # test_adms
