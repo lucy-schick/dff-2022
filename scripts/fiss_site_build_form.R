@@ -3,7 +3,7 @@
 # source('scripts/packages.R')
 
 # path_write <- 'data/qgis/form_pscis.gpkg'
-path_write <- '~/Projects/gis/sern_skeena_2023/form_fiss_site_newgraph.gpkg'
+path_write <- '~/Projects/gis/sern_fraser_2024/form_fiss_site.gpkg'
 
 
 # whole thing is now a function
