@@ -36,6 +36,27 @@ To download and clip layers for an area of interest defined by a list of watersh
   
 If downloads in `rfp_source_bcdata.sh` fail, re-run `rfp_source_bcdata.sh` until downloads are complete.
 
+
+## `rfp_source_fwa.sh`
+
+1. **Edit your layer list**  
+   In `rfp_source_fwa.txt`, list one FWA collection per line. Optionally you can hash out (put # in front) entries to exclude. 
+   Available collections live at:  
+   https://features.hillcrestgeo.ca/fwa/collections
+
+
+3. **Run the script**  
+Non interactive:
+   ```bash
+   time ./rfp_source_fwa.sh "'BULK', 'MORR'" "update"
+   ```
+   
+Interactive:
+   ```bash
+   time ./rfp_source_fwa.sh "'BULK', 'MORR'"
+   ```
+   
+   
 ## rfp_source_aws.sh  
   1. download data from file sources stored on `aws` and load to `background_layers.gpkg` (and produce stand alone `lateral_habitat.tif`) 
   with clip from watershed group polygons.  Note that the `background_layers.gpkg` must be in the `scripts/qgis` directory:
