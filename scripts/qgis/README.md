@@ -1,7 +1,7 @@
-# `rfp_source_bcdata.sh`, `rfp_source_aws.sh` and `rfp_qgis_create_bcfishpass.sh`
-These are the scripts for creating projects ready for upload to mergin server.  
+# `rfp_source_bcdata.sh`, `rfp_source_aws.sh`, `rfp_source_fwa.sh` and `rfp_qgis_create_bcfishpass.sh`
+These are the scripts for creating QGIS projects.  
 
-Requires virtual environment built with:
+Requires virtual environment built with follow run from **`scripts/qgis`** (mergin-client environment is in main directory and title dff2):
     
     conda env create -f environment.yml
     conda activate dff
@@ -83,12 +83,14 @@ of this repo.
 **Or run everything at the same time**
   		
 
-    time ./rfp_source_bcdata.sh "'BULK', 'KLUM'" && time ./rfp_source_aws.sh "'BULK', 'KLUM'" && 
+    time ./rfp_source_bcdata.sh "'BULK', 'KLUM'" && 
+    time ./rfp_source_aws.sh "'BULK', 'KLUM'" && 
+    time ./rfp_source_fwa.sh "'BULK', 'KLUM'" && 
     time ./rfp_qgis_create.sh "rfp_test" "bcrestoration_mobile.qgs"
 
 
-**For updates to existing projects we copy the `background_layers.gpkg` from an existing project to the repo then run one or both of 
-`rfp_source_bcdata.sh` and `rfp_source_aws.sh`.  This will update the `background_layers.gpkg` with new data and in the
+**For updates to existing projects we copy the `background_layers.gpkg` from an existing project to the repo then run one or more of 
+the `rfp_source_{}.sh` files.  This will update the `background_layers.gpkg` with new data and in the
 case of `rfp_source_aws.sh` will produce a new `habitat_lateral.tif` file**.  Here is an example of how to do this:
   
     cp ~/Projects/gis/rfp_test/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
@@ -114,6 +116,5 @@ Note - if `background_layers.gpkg` is present and `update` is not provided as th
 the script will ask the user if they want to start over (yes) or update the existing geopackage (no).
     
 
-## mergin_status_sum.sh
-This script will create a file called  mergin_status_sum.txt  in the current directory. It will contain the status of all projects in the  newgraph  namespace provided those files are in directories in `~/Projects/gis/`. 
+
 
