@@ -79,14 +79,19 @@ process_geopackage() {
 
 # Main script logic
 if [[ -f "$GPKG" ]]; then
-    read -p "Do you wish to start over with a new $GPKG? If you are updating existing project info say NO (y/n): " answer
-    if [[ $answer == "y" ]]; then
-        echo "Removing $GPKG..."
-        rm -f "$GPKG"
-        process_geopackage "$1"
-    else
+    if [[ "$operation" == "update" ]]; then
         echo "Updating existing $GPKG with area of interest..."
         process_geopackage "$1" "update"
+    else
+        read -p "Do you wish to start over with a new $GPKG? If you are updating existing project info say NO (y/n): " answer
+        if [[ $answer == "y" ]]; then
+            echo "Removing $GPKG..."
+            rm -f "$GPKG"
+            process_geopackage "$1"
+        else
+            echo "Updating existing $GPKG with area of interest..."
+            process_geopackage "$1" "update"
+        fi
     fi
 else
     if [[ "$operation" == "update" ]]; then
