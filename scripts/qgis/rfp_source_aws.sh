@@ -103,7 +103,7 @@ for layer in $FGB_SOURCES; do
     -spat $BOUNDS \
     -spat_srs EPSG:3005 \
     -where "watershed_group_code in ($1)" \
-    /vsicurl/https://newgraph.s3.us-west-2.amazonaws.com/$layer.fgb \
+    /vsizip/vsicurl/https://newgraph.s3.us-west-2.amazonaws.com/${layer}.fgb.zip \
     $layer
 done
 
