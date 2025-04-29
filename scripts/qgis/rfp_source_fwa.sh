@@ -70,14 +70,19 @@ process_geopackage() {
 
 # Main script logic
 if [[ -f "$TARGET" ]]; then
-    read -p "Do you wish to start over with a new $TARGET? If you are updating existing project info say NO (y/n): " answer
-    if [[ $answer == "y" ]]; then
-        echo "Removing $TARGET..."
-        rm -f "$TARGET"
-        process_geopackage "$1"
-    else
+    if [[ "$operation" == "update" ]]; then
         echo "Updating existing $TARGET with area of interest..."
         process_geopackage "$1" "update"
+    else
+        read -p "Do you wish to start over with a new $TARGET? If you are updating existing project info say NO (y/n): " answer
+        if [[ $answer == "y" ]]; then
+            echo "Removing $TARGET..."
+            rm -f "$TARGET"
+            process_geopackage "$1"
+        else
+            echo "Updating existing $TARGET with area of interest..."
+            process_geopackage "$1" "update"
+        fi
     fi
 else
     if [[ "$operation" == "update" ]]; then
@@ -100,7 +105,7 @@ BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 -
 SOURCES_RAW="rfp_source_fwa.txt"
 
 # don't grab hashed out entries or empty lines
-SOURCES=$(grep -v '^#|$' $SOURCES_RAW)
+SOURCES=$(grep -vE '^\s*#|^\s*$' "$SOURCES_RAW")
 
 echo 'Getting layers from https://features.hillcrestgeo.ca/fwa/collections- this may take a while'
 
