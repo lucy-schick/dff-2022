@@ -75,7 +75,7 @@ BOUNDS_LL=$(echo "[$BOUNDS]" | tr ' ', ',' | rio transform --src_crs EPSG:3005 -
 echo 'Clipping lateral habitat tiff to project area'
 ogr2ogr -f GeoJSON aoi_alb.geojson -t_srs EPSG:3005 aoi.geojson
 
-rio mask /vsicurl/https://bcfishpass.s3.us-west-2.amazonaws.com/habitat_lateral.tif \
+rio mask /vsicurl/https://newgraph.s3.us-west-2.amazonaws.com/habitat_lateral.tif \
   habitat_lateral.tif \
   --overwrite \
   --crop \
