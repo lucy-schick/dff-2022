@@ -1,11 +1,14 @@
 # sern_peace_fwcp_2023
-time ./bcdata.sh "'CRKD', 'CARP', 'PARS'" && time ./background_layers.sh "'CRKD', 'CARP','PARS'"
+-- time ./bcdata.sh "'CRKD', 'CARP', 'PARS'" && time ./background_layers.sh "'CRKD', 'CARP','PARS'"
+
+time ./rfp_source_bcdata.sh "'CRKD', 'CARP', 'PARS', 'NATR', 'PARA', 'UPCE', 'PCEA'" && time ./rfp_source_aws.sh "'CRKD', 'CARP', 'PARS', 'NATR', 'PARA', 'UPCE', 'PCEA'" && time ./rfp_source_fwa.sh "'CRKD', 'CARP', 'PARS', 'NATR', 'PARA', 'UPCE', 'PCEA'"
 
 cp ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
 
-./rfp_source_bcdata.sh "'CRKD', 'CARP', 'PARS'"
+time ./rfp_source_bcdata.sh "'CRKD', 'CARP', 'PARS', 'NATR', 'PARA', 'UPCE', 'PCEA', 'MESI', 'LOMI', 'UOMI', 'FINA'" && time ./rfp_source_aws.sh "'CRKD', 'CARP', 'PARS', 'NATR', 'PARA', 'UPCE', 'PCEA', 'MESI', 'LOMI', 'UOMI', 'FINA'" && time ./rfp_source_fwa.sh "'CRKD', 'CARP', 'PARS', 'NATR', 'PARA', 'UPCE', 'PCEA', 'MESI', 'LOMI', 'UOMI', 'FINA'"
 
 mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_peace_fwcp_2023/background_layers.gpkg
+mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/sern_peace_fwcp_2023/habitat_lateral.tif
 
 time ./bcdata.sh "'LARL', 'SLOC', 'KOTL'" && time ./background_layers.sh  "'LARL', 'SLOC', 'KOTL'"
 
@@ -37,19 +40,6 @@ mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/sern
 # test_revl_clrh_2023
 time ./bcdata.sh "'REVL', 'CLRH'" && time ./background_layers.sh  "'REVL', 'CLRH'"
 
-
-
-# test_adms
-time ./bcdata.sh "'ADMS'" && time ./background_layers.sh  "'ADMS'"
-
-# test_larl_2023
-time ./bcdata.sh "'LARL'" && time ./background_layers.sh  "'LARL'"
-
-time ./bcdata.sh "'BABL'" && time ./background_layers.sh  "'BABL'"
-
-# sern_pg_2023
-time ./bcdata.sh "'TABR', 'WILL', 'BOWR', 'MORK', 'LCHL', 'LSAL'" && time ./background_layers.sh  "'TABR', 'WILL', 'BOWR', 'MORK', 'LCHL', 'LSAL'"
-
 # sern_skeena_2023
 
 cp ~/Projects/gis/sern_skeena_2023/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
@@ -68,9 +58,18 @@ time ./rfp_source_bcdata.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','M
 time ./bcdata_update.sh "'BABL','BABR','BULK','KISP','KLUM','LKEL','LSKE','MORR','MSKE','SUST','USKE','ZYMO'"
 
 # sern_fraser_2024
-./rfp_source_bcdata.sh "'LCHL', 'NECR', 'FRAN', 'MORK', 'UFRA', 'TABR', 'WILL'" && ./rfp_source_aws.sh "'LCHL', 'NECR', 'FRAN', 'MORK', 'UFRA', 'TABR', 'WILL'" && time ./rfp_qgis_create.sh "sern_fraser_2024" "bcrestoration_mobile.qgs"
+cp ~/Projects/gis/sern_fraser_2024/background_layers.gpkg ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg
 
-#20240808
-# test_adms
-time ./rfp_source_bcdata.sh "'ADMS'" && time ./rfp_source_aws.sh  "'ADMS'" && time ./rfp_qgis_create.sh "test_adms" "bcrestoration_mobile.qgs"
+
+##./rfp_source_bcdata.sh "'LCHL', 'NECR', 'FRAN', 'MORK', 'UFRA', 'TABR', 'WILL'" && ./rfp_source_aws.sh "'LCHL', 'NECR', 'FRAN', 'MORK', 'UFRA', 'TABR', 'WILL'" && time ./rfp_qgis_create.sh "sern_fraser_2024" "bcrestoration_mobile.qgs"
+
+./rfp_source_bcdata.sh "'LCHL', 'NECR', 'FRAN', 'MORK', 'UFRA', 'TABR', 'WILL', 'LSAL'" && ./rfp_source_aws.sh "'LCHL', 'NECR', 'FRAN', 'MORK', 'UFRA', 'TABR', 'WILL', 'LSAL'" && time ./rfp_source_fwa.sh "'LCHL', 'NECR', 'FRAN', 'MORK', 'UFRA', 'TABR', 'WILL', 'LSAL'"
+mv ~/Projects/repo/dff-2022/scripts/qgis/background_layers.gpkg ~/Projects/gis/sern_fraser_2024/background_layers.gpkg
+mv ~/Projects/repo/dff-2022/scripts/qgis/habitat_lateral.tif ~/Projects/gis/sern_fraser_2024/habitat_lateral.tif
+
+# 20241031
+
+#restoration_bc_2024
+mergin create newgraph/restoration_bc_2024 --from-dir ~/Projects/gis/restoration_bc_2024
+
 
